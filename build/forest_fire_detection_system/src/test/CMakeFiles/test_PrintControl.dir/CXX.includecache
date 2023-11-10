@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/erfan/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+cstdarg
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+
+/home/erfan/m300_ws/src/forest_fire_detection_system/src/test/test_PrintControl.cpp
+tools/PrintControl/PrintCtrlMacro.h
+-
+
