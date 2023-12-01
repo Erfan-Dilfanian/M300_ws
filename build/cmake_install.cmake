@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/m300_ws/src
+# Install script for directory: /home/erfan/M300_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,96 +49,96 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/_setup_util.py")
+   "/home/erfan/M300_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE PROGRAM FILES "/home/erfan/m300_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/env.sh")
+   "/home/erfan/M300_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE PROGRAM FILES "/home/erfan/m300_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/setup.bash;/home/erfan/m300_ws/install/local_setup.bash")
+   "/home/erfan/M300_ws/install/setup.bash;/home/erfan/M300_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE FILE FILES
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE FILE FILES
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/setup.sh;/home/erfan/m300_ws/install/local_setup.sh")
+   "/home/erfan/M300_ws/install/setup.sh;/home/erfan/M300_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE FILE FILES
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE FILE FILES
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/setup.zsh;/home/erfan/m300_ws/install/local_setup.zsh")
+   "/home/erfan/M300_ws/install/setup.zsh;/home/erfan/M300_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE FILE FILES
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/erfan/m300_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE FILE FILES
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/erfan/M300_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/erfan/m300_ws/install/.rosinstall")
+   "/home/erfan/M300_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/erfan/m300_ws/install" TYPE FILE FILES "/home/erfan/m300_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/erfan/M300_ws/install" TYPE FILE FILES "/home/erfan/M300_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/erfan/m300_ws/build/gtest/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/arduino_actuator/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/cv_bridge/opencv_tests/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/cv_bridge/vision_opencv/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/dji_osdk_ros_cv4/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/cv_bridge/cv_bridge/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/cv_bridge/image_geometry/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/forest_fire_detection_system/cmake_install.cmake")
-  include("/home/erfan/m300_ws/build/forest_fire_geopositioning/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/gtest/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/arduino_actuator/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/cv_bridge/opencv_tests/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/cv_bridge/vision_opencv/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/cv_bridge/cv_bridge/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/cv_bridge/image_geometry/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_geopositioning/cmake_install.cmake")
 
 endif()
 
@@ -150,5 +150,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/erfan/m300_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/erfan/M300_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

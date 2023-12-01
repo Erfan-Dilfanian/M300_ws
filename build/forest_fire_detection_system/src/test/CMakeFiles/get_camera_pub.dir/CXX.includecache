@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetupCameraStreamRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/SetupCameraStreamRequest.h
 dji_osdk_ros/SetupCameraStreamResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/src/test/get_camera_pub.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/get_camera_pub.cpp
 dji_osdk_ros/SetupCameraStream.h
 -
 ros/ros.h

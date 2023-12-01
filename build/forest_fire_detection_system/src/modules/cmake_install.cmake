@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/m300_ws/src/forest_fire_detection_system/src/modules
+# Install script for directory: /home/erfan/M300_ws/src/forest_fire_detection_system/src/modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

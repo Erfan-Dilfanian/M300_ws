@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/RecordGPSLocalPos"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/RecordGPSLocalPos.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/RecordGPSLocalPos"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/RecordGPSLocalPos.pdb"
   "CMakeFiles/RecordGPSLocalPos.dir/RecordGPSLocalPos.cpp.o"
 )
 

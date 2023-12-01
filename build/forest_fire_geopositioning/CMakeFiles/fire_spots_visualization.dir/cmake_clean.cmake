@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_geopositioning/fire_spots_visualization"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_geopositioning/fire_spots_visualization.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/fire_spots_visualization"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/fire_spots_visualization.pdb"
   "CMakeFiles/fire_spots_visualization.dir/src/fire_spots_visualization.cpp.o"
 )
 

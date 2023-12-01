@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/libforest_fire_detection_system_module.pdb"
-  "/home/erfan/m300_ws/devel/lib/libforest_fire_detection_system_module.so"
+  "/home/erfan/M300_ws/devel/lib/libforest_fire_detection_system_module.pdb"
+  "/home/erfan/M300_ws/devel/lib/libforest_fire_detection_system_module.so"
   "CMakeFiles/forest_fire_detection_system_module.dir/DroneMovementController/DroneMovementController.cpp.o"
   "CMakeFiles/forest_fire_detection_system_module.dir/GimbalCameraOperator/GimbalCameraOperator.cpp.o"
   "CMakeFiles/forest_fire_detection_system_module.dir/H20TIMUPoseGrabber/H20TIMUPoseGrabber.cpp.o"

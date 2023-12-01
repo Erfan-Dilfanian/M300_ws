@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/m300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/m300_ws/build/CMakeFiles /home/erfan/m300_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles /home/erfan/M300_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/m300_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -4185,6 +4185,19 @@ GrabDataDepthEstimation/fast:
 .PHONY : GrabDataDepthEstimation/fast
 
 #=============================================================================
+# Target rules for targets named InMotionDrop
+
+# Build rule for target.
+InMotionDrop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 InMotionDrop
+.PHONY : InMotionDrop
+
+# fast build rule for target.
+InMotionDrop/fast:
+	$(MAKE) -f forest_fire_detection_system/src/app/CMakeFiles/InMotionDrop.dir/build.make forest_fire_detection_system/src/app/CMakeFiles/InMotionDrop.dir/build
+.PHONY : InMotionDrop/fast
+
+#=============================================================================
 # Target rules for targets named vision_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -4235,6 +4248,19 @@ vision_msgs_generate_messages_py: cmake_check_build_system
 vision_msgs_generate_messages_py/fast:
 	$(MAKE) -f forest_fire_geopositioning/CMakeFiles/vision_msgs_generate_messages_py.dir/build.make forest_fire_geopositioning/CMakeFiles/vision_msgs_generate_messages_py.dir/build
 .PHONY : vision_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named geo_positioning
+
+# Build rule for target.
+geo_positioning: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geo_positioning
+.PHONY : geo_positioning
+
+# fast build rule for target.
+geo_positioning/fast:
+	$(MAKE) -f forest_fire_geopositioning/CMakeFiles/geo_positioning.dir/build.make forest_fire_geopositioning/CMakeFiles/geo_positioning.dir/build
+.PHONY : geo_positioning/fast
 
 #=============================================================================
 # Target rules for targets named vision_msgs_generate_messages_cpp
@@ -4597,10 +4623,12 @@ help:
 	@echo "... GrabInfoForReconstruction"
 	@echo "... PreciselyWaterDropping"
 	@echo "... GrabDataDepthEstimation"
+	@echo "... InMotionDrop"
 	@echo "... vision_msgs_generate_messages_eus"
 	@echo "... fire_spots_visualization"
 	@echo "... vision_msgs_generate_messages_nodejs"
 	@echo "... vision_msgs_generate_messages_py"
+	@echo "... geo_positioning"
 	@echo "... vision_msgs_generate_messages_cpp"
 	@echo "... vision_msgs_generate_messages_lisp"
 	@echo "... compress_video_node"

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/erfan/m300_ws/src
-# Build directory: /home/erfan/m300_ws/build
+# Source directory: /home/erfan/M300_ws/src
+# Build directory: /home/erfan/M300_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

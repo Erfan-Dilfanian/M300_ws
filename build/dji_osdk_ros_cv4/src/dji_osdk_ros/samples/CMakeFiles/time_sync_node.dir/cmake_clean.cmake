@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/time_sync_node"
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/time_sync_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/time_sync_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/time_sync_node.pdb"
   "CMakeFiles/time_sync_node.dir/time_sync_node.cpp.o"
 )
 

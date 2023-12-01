@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/Activation.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/Activation.h
 ros/service_traits.h
 -
 dji_osdk_ros/ActivationRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/ActivationRequest.h
 dji_osdk_ros/ActivationResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/ActivationRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ActivationRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/ActivationResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ActivationResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/CameraAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraActionRequest.h
@@ -54,7 +54,7 @@ dji_osdk_ros/CameraActionRequest.h
 dji_osdk_ros/CameraActionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/CameraActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraActionRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/CameraActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraActionResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneArmControl.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneArmControl.h
 ros/service_traits.h
 -
 dji_osdk_ros/DroneArmControlRequest.h
@@ -94,7 +94,7 @@ dji_osdk_ros/DroneArmControlRequest.h
 dji_osdk_ros/DroneArmControlResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneArmControlRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneArmControlRequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneArmControlResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneArmControlResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneTaskControl.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneTaskControl.h
 ros/service_traits.h
 -
 dji_osdk_ros/DroneTaskControlRequest.h
@@ -134,7 +134,7 @@ dji_osdk_ros/DroneTaskControlRequest.h
 dji_osdk_ros/DroneTaskControlResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneTaskControlRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneTaskControlRequest.h
 string
 -
 vector
@@ -150,7 +150,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DroneTaskControlResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DroneTaskControlResponse.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/FCTimeInUTC.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FCTimeInUTC.h
 string
 -
 vector
@@ -182,7 +182,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/FlightAnomaly.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightAnomaly.h
 string
 -
 vector
@@ -198,7 +198,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GPSUTC.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GPSUTC.h
 string
 -
 vector
@@ -214,7 +214,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/Gimbal.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/Gimbal.h
 string
 -
 vector
@@ -232,7 +232,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOConfig.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOConfig.h
 ros/service_traits.h
 -
 dji_osdk_ros/MFIOConfigRequest.h
@@ -240,7 +240,7 @@ dji_osdk_ros/MFIOConfigRequest.h
 dji_osdk_ros/MFIOConfigResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOConfigRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOConfigRequest.h
 string
 -
 vector
@@ -256,7 +256,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOConfigResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOConfigResponse.h
 string
 -
 vector
@@ -272,7 +272,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOSetValue.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOSetValue.h
 ros/service_traits.h
 -
 dji_osdk_ros/MFIOSetValueRequest.h
@@ -280,7 +280,7 @@ dji_osdk_ros/MFIOSetValueRequest.h
 dji_osdk_ros/MFIOSetValueResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOSetValueRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOSetValueRequest.h
 string
 -
 vector
@@ -296,7 +296,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MFIOSetValueResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MFIOSetValueResponse.h
 string
 -
 vector
@@ -312,7 +312,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHotpointTask.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHotpointTask.h
 string
 -
 vector
@@ -328,7 +328,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpActionRequest.h
@@ -336,7 +336,7 @@ dji_osdk_ros/MissionHpActionRequest.h
 dji_osdk_ros/MissionHpActionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpActionRequest.h
 string
 -
 vector
@@ -352,7 +352,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpActionResponse.h
 string
 -
 vector
@@ -368,7 +368,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpGetInfo.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpGetInfo.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpGetInfoRequest.h
@@ -376,7 +376,7 @@ dji_osdk_ros/MissionHpGetInfoRequest.h
 dji_osdk_ros/MissionHpGetInfoResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpGetInfoRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpGetInfoRequest.h
 string
 -
 vector
@@ -392,7 +392,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpGetInfoResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpGetInfoResponse.h
 string
 -
 vector
@@ -410,7 +410,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionHotpointTask.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpResetYaw.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpResetYaw.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpResetYawRequest.h
@@ -418,7 +418,7 @@ dji_osdk_ros/MissionHpResetYawRequest.h
 dji_osdk_ros/MissionHpResetYawResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpResetYawRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpResetYawRequest.h
 string
 -
 vector
@@ -434,7 +434,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpResetYawResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpResetYawResponse.h
 string
 -
 vector
@@ -450,7 +450,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadius.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadius.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpUpdateRadiusRequest.h
@@ -458,7 +458,7 @@ dji_osdk_ros/MissionHpUpdateRadiusRequest.h
 dji_osdk_ros/MissionHpUpdateRadiusResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadiusRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadiusRequest.h
 string
 -
 vector
@@ -474,7 +474,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadiusResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateRadiusResponse.h
 string
 -
 vector
@@ -490,7 +490,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRate.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRate.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpUpdateYawRateRequest.h
@@ -498,7 +498,7 @@ dji_osdk_ros/MissionHpUpdateYawRateRequest.h
 dji_osdk_ros/MissionHpUpdateYawRateResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRateRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRateRequest.h
 string
 -
 vector
@@ -514,7 +514,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRateResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpdateYawRateResponse.h
 string
 -
 vector
@@ -530,7 +530,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUpload.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUpload.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionHpUploadRequest.h
@@ -538,7 +538,7 @@ dji_osdk_ros/MissionHpUploadRequest.h
 dji_osdk_ros/MissionHpUploadResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUploadRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUploadRequest.h
 string
 -
 vector
@@ -556,7 +556,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionHotpointTask.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionHpUploadResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionHpUploadResponse.h
 string
 -
 vector
@@ -572,7 +572,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionStatus.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionStatus.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionStatusRequest.h
@@ -580,7 +580,7 @@ dji_osdk_ros/MissionStatusRequest.h
 dji_osdk_ros/MissionStatusResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionStatusRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionStatusRequest.h
 string
 -
 vector
@@ -596,7 +596,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionStatusResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionStatusResponse.h
 string
 -
 vector
@@ -612,7 +612,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWaypoint.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWaypoint.h
 string
 -
 vector
@@ -630,7 +630,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionWaypointAction.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWaypointAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWaypointAction.h
 string
 -
 vector
@@ -646,7 +646,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWaypointTask.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWaypointTask.h
 string
 -
 vector
@@ -664,7 +664,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionWaypoint.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionWpActionRequest.h
@@ -672,7 +672,7 @@ dji_osdk_ros/MissionWpActionRequest.h
 dji_osdk_ros/MissionWpActionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpActionRequest.h
 string
 -
 vector
@@ -688,7 +688,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpActionResponse.h
 string
 -
 vector
@@ -704,7 +704,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetInfo.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetInfo.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionWpGetInfoRequest.h
@@ -712,7 +712,7 @@ dji_osdk_ros/MissionWpGetInfoRequest.h
 dji_osdk_ros/MissionWpGetInfoResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetInfoRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetInfoRequest.h
 string
 -
 vector
@@ -728,7 +728,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetInfoResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetInfoResponse.h
 string
 -
 vector
@@ -746,7 +746,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionWaypointTask.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeed.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeed.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionWpGetSpeedRequest.h
@@ -754,7 +754,7 @@ dji_osdk_ros/MissionWpGetSpeedRequest.h
 dji_osdk_ros/MissionWpGetSpeedResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeedRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeedRequest.h
 string
 -
 vector
@@ -770,7 +770,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeedResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpGetSpeedResponse.h
 string
 -
 vector
@@ -786,7 +786,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeed.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeed.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionWpSetSpeedRequest.h
@@ -794,7 +794,7 @@ dji_osdk_ros/MissionWpSetSpeedRequest.h
 dji_osdk_ros/MissionWpSetSpeedResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeedRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeedRequest.h
 string
 -
 vector
@@ -810,7 +810,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeedResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpSetSpeedResponse.h
 string
 -
 vector
@@ -826,7 +826,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpUpload.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpUpload.h
 ros/service_traits.h
 -
 dji_osdk_ros/MissionWpUploadRequest.h
@@ -834,7 +834,7 @@ dji_osdk_ros/MissionWpUploadRequest.h
 dji_osdk_ros/MissionWpUploadResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpUploadRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpUploadRequest.h
 string
 -
 vector
@@ -852,7 +852,7 @@ ros/message_operations.h
 dji_osdk_ros/MissionWaypointTask.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MissionWpUploadResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MissionWpUploadResponse.h
 string
 -
 vector
@@ -868,7 +868,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/MobileData.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/MobileData.h
 string
 -
 vector
@@ -884,7 +884,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/PayloadData.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/PayloadData.h
 string
 -
 vector
@@ -900,7 +900,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/QueryDroneVersion.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/QueryDroneVersion.h
 ros/service_traits.h
 -
 dji_osdk_ros/QueryDroneVersionRequest.h
@@ -908,7 +908,7 @@ dji_osdk_ros/QueryDroneVersionRequest.h
 dji_osdk_ros/QueryDroneVersionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/QueryDroneVersionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/QueryDroneVersionRequest.h
 string
 -
 vector
@@ -924,7 +924,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/QueryDroneVersionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/QueryDroneVersionResponse.h
 string
 -
 vector
@@ -940,7 +940,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SDKControlAuthority.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SDKControlAuthority.h
 ros/service_traits.h
 -
 dji_osdk_ros/SDKControlAuthorityRequest.h
@@ -948,7 +948,7 @@ dji_osdk_ros/SDKControlAuthorityRequest.h
 dji_osdk_ros/SDKControlAuthorityResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SDKControlAuthorityRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SDKControlAuthorityRequest.h
 string
 -
 vector
@@ -964,7 +964,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SDKControlAuthorityResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SDKControlAuthorityResponse.h
 string
 -
 vector
@@ -980,7 +980,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendMobileData.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendMobileData.h
 ros/service_traits.h
 -
 dji_osdk_ros/SendMobileDataRequest.h
@@ -988,7 +988,7 @@ dji_osdk_ros/SendMobileDataRequest.h
 dji_osdk_ros/SendMobileDataResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendMobileDataRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendMobileDataRequest.h
 string
 -
 vector
@@ -1004,7 +1004,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendMobileDataResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendMobileDataResponse.h
 string
 -
 vector
@@ -1020,7 +1020,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendPayloadData.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendPayloadData.h
 ros/service_traits.h
 -
 dji_osdk_ros/SendPayloadDataRequest.h
@@ -1028,7 +1028,7 @@ dji_osdk_ros/SendPayloadDataRequest.h
 dji_osdk_ros/SendPayloadDataResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendPayloadDataRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendPayloadDataRequest.h
 string
 -
 vector
@@ -1044,7 +1044,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SendPayloadDataResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SendPayloadDataResponse.h
 string
 -
 vector
@@ -1060,7 +1060,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetHardSync.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetHardSync.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetHardSyncRequest.h
@@ -1068,7 +1068,7 @@ dji_osdk_ros/SetHardSyncRequest.h
 dji_osdk_ros/SetHardSyncResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetHardSyncRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetHardSyncRequest.h
 string
 -
 vector
@@ -1084,7 +1084,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetHardSyncResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetHardSyncResponse.h
 string
 -
 vector
@@ -1100,7 +1100,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRef.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRef.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetLocalPosRefRequest.h
@@ -1108,7 +1108,7 @@ dji_osdk_ros/SetLocalPosRefRequest.h
 dji_osdk_ros/SetLocalPosRefResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRefRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRefRequest.h
 string
 -
 vector
@@ -1124,7 +1124,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRefResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRefResponse.h
 string
 -
 vector
@@ -1140,7 +1140,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetupCameraStreamRequest.h
@@ -1148,7 +1148,7 @@ dji_osdk_ros/SetupCameraStreamRequest.h
 dji_osdk_ros/SetupCameraStreamResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
 string
 -
 vector
@@ -1164,7 +1164,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
 string
 -
 vector
@@ -1180,7 +1180,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/Stereo240pSubscription.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/Stereo240pSubscription.h
 ros/service_traits.h
 -
 dji_osdk_ros/Stereo240pSubscriptionRequest.h
@@ -1188,7 +1188,7 @@ dji_osdk_ros/Stereo240pSubscriptionRequest.h
 dji_osdk_ros/Stereo240pSubscriptionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/Stereo240pSubscriptionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/Stereo240pSubscriptionRequest.h
 string
 -
 vector
@@ -1204,7 +1204,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/Stereo240pSubscriptionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/Stereo240pSubscriptionResponse.h
 string
 -
 vector
@@ -1220,7 +1220,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoDepthSubscription.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoDepthSubscription.h
 ros/service_traits.h
 -
 dji_osdk_ros/StereoDepthSubscriptionRequest.h
@@ -1228,7 +1228,7 @@ dji_osdk_ros/StereoDepthSubscriptionRequest.h
 dji_osdk_ros/StereoDepthSubscriptionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoDepthSubscriptionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoDepthSubscriptionRequest.h
 string
 -
 vector
@@ -1244,7 +1244,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoDepthSubscriptionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoDepthSubscriptionResponse.h
 string
 -
 vector
@@ -1260,7 +1260,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoVGASubscription.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoVGASubscription.h
 ros/service_traits.h
 -
 dji_osdk_ros/StereoVGASubscriptionRequest.h
@@ -1268,7 +1268,7 @@ dji_osdk_ros/StereoVGASubscriptionRequest.h
 dji_osdk_ros/StereoVGASubscriptionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoVGASubscriptionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoVGASubscriptionRequest.h
 string
 -
 vector
@@ -1284,7 +1284,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StereoVGASubscriptionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StereoVGASubscriptionResponse.h
 string
 -
 vector
@@ -1300,7 +1300,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/VOPosition.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/VOPosition.h
 string
 -
 vector
@@ -1318,7 +1318,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_linux_environment.hpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_linux_environment.hpp
 fstream
 -
 iostream
@@ -1330,7 +1330,7 @@ stdexcept
 unistd.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_linux_helpers.hpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_linux_helpers.hpp
 iostream
 -
 fstream
@@ -1344,7 +1344,7 @@ dji_platform.hpp
 dji_setup_helpers.hpp
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_sdk/dji_sdk_node.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros_obsoleted/dji_sdk/dji_sdk_node.h
 ros/ros.h
 -
 tf/tf.h
@@ -1450,9 +1450,9 @@ dji_vehicle.hpp
 dji_linux_helpers.hpp
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdkhal_linux.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdkhal_linux.h
 stdint.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/stdint.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/stdint.h
 stdio.h
 -
 unistd.h
@@ -1472,13 +1472,13 @@ netinet/in.h
 arpa/inet.h
 -
 osdk_typedef.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdk_typedef.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdk_typedef.h
 osdk_platform.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdk_platform.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdk_platform.h
 libusb-1.0/libusb.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdkosal_linux.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdkosal_linux.h
 pthread.h
 -
 semaphore.h
@@ -1492,47 +1492,47 @@ sys/time.h
 unistd.h
 -
 osdk_typedef.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdk_typedef.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdk_typedef.h
 osdk_platform.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/include/osdk_platform.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/osdk_platform.h
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
 dji_linux_environment.hpp
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.hpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.hpp
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
 dji_linux_helpers.hpp
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.hpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.hpp
 osdkhal_linux.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/osdkhal_linux.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/osdkhal_linux.h
 osdkosal_linux.h
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/osdkosal_linux.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/osdkosal_linux.h
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
 dji_sdk/dji_sdk_node.h
 -
 tf/tf.h
@@ -1542,15 +1542,15 @@ sensor_msgs/Joy.h
 dji_telemetry.hpp
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
 dji_sdk/dji_sdk_node.h
 -
 

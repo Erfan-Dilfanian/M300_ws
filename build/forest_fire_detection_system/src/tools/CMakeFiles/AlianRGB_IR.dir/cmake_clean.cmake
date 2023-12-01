@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/AlianRGB_IR"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/AlianRGB_IR.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/AlianRGB_IR"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/AlianRGB_IR.pdb"
   "CMakeFiles/AlianRGB_IR.dir/AlianRGB_IR.cpp.o"
 )
 

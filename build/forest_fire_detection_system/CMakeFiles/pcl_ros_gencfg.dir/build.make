@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/m300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for pcl_ros_gencfg.
 
@@ -63,10 +63,10 @@ forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/build: pcl_ros_gencfg
 .PHONY : forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/build
 
 forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/clean:
-	cd /home/erfan/m300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/pcl_ros_gencfg.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/pcl_ros_gencfg.dir/cmake_clean.cmake
 .PHONY : forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/clean
 
 forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/depend:
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/m300_ws/src /home/erfan/m300_ws/src/forest_fire_detection_system /home/erfan/m300_ws/build /home/erfan/m300_ws/build/forest_fire_detection_system /home/erfan/m300_ws/build/forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/forest_fire_detection_system /home/erfan/M300_ws/build /home/erfan/M300_ws/build/forest_fire_detection_system /home/erfan/M300_ws/build/forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : forest_fire_detection_system/CMakeFiles/pcl_ros_gencfg.dir/depend
 

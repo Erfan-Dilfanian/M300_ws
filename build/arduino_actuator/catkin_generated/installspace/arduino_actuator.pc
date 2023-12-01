@@ -1,4 +1,4 @@
-prefix=/home/erfan/m300_ws/install
+prefix=/home/erfan/M300_ws/install
 
 Name: arduino_actuator
 Description: Description of arduino_actuator

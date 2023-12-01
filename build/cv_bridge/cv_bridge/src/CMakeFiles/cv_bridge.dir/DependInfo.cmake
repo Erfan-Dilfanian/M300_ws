@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/erfan/m300_ws/src/cv_bridge/cv_bridge/src/cv_bridge.cpp" "/home/erfan/m300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o"
-  "/home/erfan/m300_ws/src/cv_bridge/cv_bridge/src/rgb_colors.cpp" "/home/erfan/m300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o"
+  "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/cv_bridge.cpp" "/home/erfan/M300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o"
+  "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/rgb_colors.cpp" "/home/erfan/M300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,9 +20,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/erfan/m300_ws/src/cv_bridge/cv_bridge/include"
+  "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/include"
   "/opt/ros/noetic/include"
-  "/home/erfan/m300_ws/src/cv_bridge/cv_bridge/src/."
+  "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/."
   "/usr/include/python3.8"
   "/home/erfan/.local/lib/python3.8/site-packages/numpy/core/include"
   "/usr/include/opencv4"

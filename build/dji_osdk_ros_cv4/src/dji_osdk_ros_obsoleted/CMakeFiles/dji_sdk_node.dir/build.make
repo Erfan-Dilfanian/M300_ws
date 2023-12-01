@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/m300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Include any dependencies generated for this target.
 include dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/depend.make
@@ -58,186 +58,186 @@ include dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/
 include dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/main.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/main.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/main.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp > CMakeFiles/dji_sdk_node.dir/main.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp > CMakeFiles/dji_sdk_node.dir/main.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/main.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp -o CMakeFiles/dji_sdk_node.dir/main.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/main.cpp -o CMakeFiles/dji_sdk_node.dir/main.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_control.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_services.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mission_services.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_subscriber.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_publisher.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_mobile_comm.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_payload_comm.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp > CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/modules/dji_sdk_node_time_sync.cpp -o CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o   -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o   -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c > CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c > CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkhal_linux.c -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o   -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o   -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c > CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c > CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/osdkosal_linux.c -o CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp > CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp > CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp -o CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_environment.cpp -o CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/flags.make
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o: /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o -c /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o -c /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp > CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp > CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp -o CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/dji_linux_helpers.cpp -o CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s
 
 # Object files for target dji_sdk_node
 dji_sdk_node_OBJECTS = \
@@ -259,60 +259,60 @@ dji_sdk_node_OBJECTS = \
 # External object files for target dji_sdk_node
 dji_sdk_node_EXTERNAL_OBJECTS =
 
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libmessage_filters.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libroscpp.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librostime.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libcpp_common.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavcodec.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavformat.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavutil.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libswscale.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libtheora.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libz.so
-/home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erfan/m300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node"
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dji_sdk_node.dir/link.txt --verbose=$(VERBOSE)
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libmessage_filters.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libroscpp.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/librostime.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /opt/ros/noetic/lib/libcpp_common.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavcodec.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavformat.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libavutil.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libswscale.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libtheora.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: /usr/lib/x86_64-linux-gnu/libz.so
+/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable /home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node"
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dji_sdk_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build: /home/erfan/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node
+dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build: /home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node
 
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/clean:
-	cd /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && $(CMAKE_COMMAND) -P CMakeFiles/dji_sdk_node.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted && $(CMAKE_COMMAND) -P CMakeFiles/dji_sdk_node.dir/cmake_clean.cmake
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/clean
 
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/depend:
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/m300_ws/src /home/erfan/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted /home/erfan/m300_ws/build /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted /home/erfan/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted /home/erfan/M300_ws/build /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/depend
 

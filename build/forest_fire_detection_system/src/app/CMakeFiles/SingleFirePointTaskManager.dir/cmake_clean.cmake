@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/SingleFirePointTaskManager"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/SingleFirePointTaskManager.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/SingleFirePointTaskManager"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/SingleFirePointTaskManager.pdb"
   "CMakeFiles/SingleFirePointTaskManager.dir/single_fire_point_task/SingleFirePointTaskManager.cpp.o"
 )
 

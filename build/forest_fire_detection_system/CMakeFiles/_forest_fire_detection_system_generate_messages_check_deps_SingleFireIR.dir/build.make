@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/m300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for _forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
 include forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/progress.make
 
 forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR:
-	cd /home/erfan/m300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py forest_fire_detection_system /home/erfan/m300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg std_msgs/Header
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py forest_fire_detection_system /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg std_msgs/Header
 
 _forest_fire_detection_system_generate_messages_check_deps_SingleFireIR: forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR
 _forest_fire_detection_system_generate_messages_check_deps_SingleFireIR: forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/build.make
@@ -67,10 +67,10 @@ forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_m
 .PHONY : forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/build
 
 forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/clean:
-	cd /home/erfan/m300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/cmake_clean.cmake
 .PHONY : forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/clean
 
 forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/depend:
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/m300_ws/src /home/erfan/m300_ws/src/forest_fire_detection_system /home/erfan/m300_ws/build /home/erfan/m300_ws/build/forest_fire_detection_system /home/erfan/m300_ws/build/forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/forest_fire_detection_system /home/erfan/M300_ws/build /home/erfan/M300_ws/build/forest_fire_detection_system /home/erfan/M300_ws/build/forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : forest_fire_detection_system/CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SingleFireIR.dir/depend
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/DownloadWaypointV2MissionRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/DownloadWaypointV2MissionRequest.h
 dji_osdk_ros/DownloadWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2MissionRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/DownloadWaypointV2MissionResponse.h
 string
 -
 vector
@@ -48,7 +48,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2Action.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2Action.h
 ros/service_traits.h
 -
 dji_osdk_ros/GenerateWaypointV2ActionRequest.h
@@ -56,7 +56,7 @@ dji_osdk_ros/GenerateWaypointV2ActionRequest.h
 dji_osdk_ros/GenerateWaypointV2ActionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2ActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2ActionRequest.h
 string
 -
 vector
@@ -74,7 +74,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2Action.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2ActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GenerateWaypointV2ActionResponse.h
 string
 -
 vector
@@ -90,7 +90,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeed.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeed.h
 ros/service_traits.h
 -
 dji_osdk_ros/GetGlobalCruisespeedRequest.h
@@ -98,7 +98,7 @@ dji_osdk_ros/GetGlobalCruisespeedRequest.h
 dji_osdk_ros/GetGlobalCruisespeedResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeedRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeedRequest.h
 string
 -
 vector
@@ -114,7 +114,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeedResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGlobalCruisespeedResponse.h
 string
 -
 vector
@@ -130,7 +130,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/InitWaypointV2Setting.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/InitWaypointV2Setting.h
 ros/service_traits.h
 -
 dji_osdk_ros/InitWaypointV2SettingRequest.h
@@ -138,7 +138,7 @@ dji_osdk_ros/InitWaypointV2SettingRequest.h
 dji_osdk_ros/InitWaypointV2SettingResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/InitWaypointV2SettingRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/InitWaypointV2SettingRequest.h
 string
 -
 vector
@@ -156,7 +156,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2InitSetting.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/InitWaypointV2SettingResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/InitWaypointV2SettingResponse.h
 string
 -
 vector
@@ -172,7 +172,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/PauseWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/PauseWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/PauseWaypointV2MissionRequest.h
@@ -180,7 +180,7 @@ dji_osdk_ros/PauseWaypointV2MissionRequest.h
 dji_osdk_ros/PauseWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/PauseWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/PauseWaypointV2MissionRequest.h
 string
 -
 vector
@@ -196,7 +196,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/PauseWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/PauseWaypointV2MissionResponse.h
 string
 -
 vector
@@ -212,7 +212,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/ResumeWaypointV2MissionRequest.h
@@ -220,7 +220,7 @@ dji_osdk_ros/ResumeWaypointV2MissionRequest.h
 dji_osdk_ros/ResumeWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2MissionRequest.h
 string
 -
 vector
@@ -236,7 +236,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ResumeWaypointV2MissionResponse.h
 string
 -
 vector
@@ -252,7 +252,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeed.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeed.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetGlobalCruisespeedRequest.h
@@ -260,7 +260,7 @@ dji_osdk_ros/SetGlobalCruisespeedRequest.h
 dji_osdk_ros/SetGlobalCruisespeedResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeedRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeedRequest.h
 string
 -
 vector
@@ -276,7 +276,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeedResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGlobalCruisespeedResponse.h
 string
 -
 vector
@@ -292,7 +292,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StartWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StartWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/StartWaypointV2MissionRequest.h
@@ -300,7 +300,7 @@ dji_osdk_ros/StartWaypointV2MissionRequest.h
 dji_osdk_ros/StartWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StartWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StartWaypointV2MissionRequest.h
 string
 -
 vector
@@ -316,7 +316,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StartWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StartWaypointV2MissionResponse.h
 string
 -
 vector
@@ -332,7 +332,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StopWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StopWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/StopWaypointV2MissionRequest.h
@@ -340,7 +340,7 @@ dji_osdk_ros/StopWaypointV2MissionRequest.h
 dji_osdk_ros/StopWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StopWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StopWaypointV2MissionRequest.h
 string
 -
 vector
@@ -356,7 +356,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/StopWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/StopWaypointV2MissionResponse.h
 string
 -
 vector
@@ -372,7 +372,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2Action.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2Action.h
 ros/service_traits.h
 -
 dji_osdk_ros/UploadWaypointV2ActionRequest.h
@@ -380,7 +380,7 @@ dji_osdk_ros/UploadWaypointV2ActionRequest.h
 dji_osdk_ros/UploadWaypointV2ActionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2ActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2ActionRequest.h
 string
 -
 vector
@@ -396,7 +396,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2ActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2ActionResponse.h
 string
 -
 vector
@@ -412,7 +412,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2Mission.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2Mission.h
 ros/service_traits.h
 -
 dji_osdk_ros/UploadWaypointV2MissionRequest.h
@@ -420,7 +420,7 @@ dji_osdk_ros/UploadWaypointV2MissionRequest.h
 dji_osdk_ros/UploadWaypointV2MissionResponse.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2MissionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2MissionRequest.h
 string
 -
 vector
@@ -436,7 +436,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/UploadWaypointV2MissionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/UploadWaypointV2MissionResponse.h
 string
 -
 vector
@@ -452,7 +452,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2.h
 string
 -
 vector
@@ -470,7 +470,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2Config.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2Action.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2Action.h
 string
 -
 vector
@@ -500,7 +500,7 @@ dji_osdk_ros/WaypointV2GimbalActuator.h
 dji_osdk_ros/WaypointV2AircraftControlActuator.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuator.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuator.h
 string
 -
 vector
@@ -520,7 +520,7 @@ dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.h
 dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.h
 string
 -
 vector
@@ -536,7 +536,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.h
 string
 -
 vector
@@ -552,7 +552,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2AssociateTrigger.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2AssociateTrigger.h
 string
 -
 vector
@@ -568,7 +568,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuator.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuator.h
 string
 -
 vector
@@ -588,7 +588,7 @@ dji_osdk_ros/WaypointV2CameraActuatorFocusParam.h
 dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.h
 string
 -
 vector
@@ -604,7 +604,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuatorFocusParam.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2CameraActuatorFocusParam.h
 string
 -
 vector
@@ -620,7 +620,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2Config.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2Config.h
 string
 -
 vector
@@ -636,7 +636,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2GimbalActuator.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2GimbalActuator.h
 string
 -
 vector
@@ -654,7 +654,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.h
 string
 -
 vector
@@ -670,7 +670,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2InitSetting.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2InitSetting.h
 string
 -
 vector
@@ -688,7 +688,7 @@ ros/message_operations.h
 dji_osdk_ros/WaypointV2.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2IntervalTrigger.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2IntervalTrigger.h
 string
 -
 vector
@@ -704,7 +704,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2SampleReachPointTrigger.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2SampleReachPointTrigger.h
 string
 -
 vector
@@ -720,7 +720,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/devel/include/dji_osdk_ros/WaypointV2TrajectoryTrigger.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/WaypointV2TrajectoryTrigger.h
 string
 -
 vector
@@ -736,7 +736,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
 cmath
 -
 iostream
@@ -746,11 +746,11 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/modules/PathPlanner/PathPlannerBase.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/PathPlanner/PathPlannerBase.hpp
 iostream
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/modules/PathPlanner/ZigzagPathPlanner.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/PathPlanner/ZigzagPathPlanner.hpp
 dji_osdk_ros/WaypointV2.h
 -
 ros/ros.h
@@ -768,7 +768,7 @@ tools/MathLib.hpp
 vector
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/modules/WayPointOperator/WpV2Operator.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/WayPointOperator/WpV2Operator.hpp
 dji_osdk_ros/DownloadWaypointV2Mission.h
 -
 dji_osdk_ros/GenerateWaypointV2Action.h
@@ -802,7 +802,7 @@ dji_type.hpp
 vector
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/tools/GoogleEarthPath.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/GoogleEarthPath.hpp
 fstream
 -
 iomanip
@@ -810,13 +810,13 @@ iomanip
 iostream
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
 cmath
 -
 common/CommonTypes.hpp
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -826,7 +826,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
 ros/ros.h
 -
 sys/time.h
@@ -858,7 +858,7 @@ string
 glog/logging.h
 -
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/src/test/test_zigzag_planner.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_zigzag_planner.cpp
 modules/PathPlanner/ZigzagPathPlanner.hpp
 -
 tools/GoogleEarthPath.hpp

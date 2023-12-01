@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/m300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/m300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/m300_ws/build/CMakeFiles /home/erfan/m300_ws/build/forest_fire_detection_system/src/test/CMakeFiles/progress.marks
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/m300_ws/build/CMakeFiles 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles /home/erfan/M300_ws/build/forest_fire_detection_system/src/test/CMakeFiles/progress.marks
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/clean
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ test_FileWritter: forest_fire_detection_system/src/test/CMakeFiles/test_FileWrit
 
 # fast build rule for target.
 test_FileWritter/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build
 .PHONY : test_FileWritter/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ test_getParam: forest_fire_detection_system/src/test/CMakeFiles/test_getParam.di
 
 # fast build rule for target.
 test_getParam/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build
 .PHONY : test_getParam/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ test_locate_boundary: forest_fire_detection_system/src/test/CMakeFiles/test_loca
 
 # fast build rule for target.
 test_locate_boundary/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build
 .PHONY : test_locate_boundary/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ test_GimbalCameraOperator: forest_fire_detection_system/src/test/CMakeFiles/test
 
 # fast build rule for target.
 test_GimbalCameraOperator/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build
 .PHONY : test_GimbalCameraOperator/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ test_PolygonalPathPlanner: forest_fire_detection_system/src/test/CMakeFiles/test
 
 # fast build rule for target.
 test_PolygonalPathPlanner/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build
 .PHONY : test_PolygonalPathPlanner/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ test_PrintControl: forest_fire_detection_system/src/test/CMakeFiles/test_PrintCo
 
 # fast build rule for target.
 test_PrintControl/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build
 .PHONY : test_PrintControl/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ get_camera_pub: forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.
 
 # fast build rule for target.
 get_camera_pub/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build
 .PHONY : get_camera_pub/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ test_WpV2Operator: forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Ope
 
 # fast build rule for target.
 test_WpV2Operator/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build
 .PHONY : test_WpV2Operator/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ test_FileCreationRemove: forest_fire_detection_system/src/test/CMakeFiles/test_F
 
 # fast build rule for target.
 test_FileCreationRemove/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build
 .PHONY : test_FileCreationRemove/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ test_simple_command: forest_fire_detection_system/src/test/CMakeFiles/test_simpl
 
 # fast build rule for target.
 test_simple_command/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build
 .PHONY : test_simple_command/fast
 
 # Convenience name for target.
 forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/rule:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/rule
 .PHONY : forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/rule
 
 # Convenience name for target.
@@ -329,7 +329,7 @@ test_zigzag_planner: forest_fire_detection_system/src/test/CMakeFiles/test_zigza
 
 # fast build rule for target.
 test_zigzag_planner/fast:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build
 .PHONY : test_zigzag_planner/fast
 
 get_camera_pub.o: get_camera_pub.cpp.o
@@ -338,7 +338,7 @@ get_camera_pub.o: get_camera_pub.cpp.o
 
 # target to build an object file
 get_camera_pub.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.o
 .PHONY : get_camera_pub.cpp.o
 
 get_camera_pub.i: get_camera_pub.cpp.i
@@ -347,7 +347,7 @@ get_camera_pub.i: get_camera_pub.cpp.i
 
 # target to preprocess a source file
 get_camera_pub.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.i
 .PHONY : get_camera_pub.cpp.i
 
 get_camera_pub.s: get_camera_pub.cpp.s
@@ -356,7 +356,7 @@ get_camera_pub.s: get_camera_pub.cpp.s
 
 # target to generate assembly for a file
 get_camera_pub.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.s
 .PHONY : get_camera_pub.cpp.s
 
 test_FileCreationRemove.o: test_FileCreationRemove.cpp.o
@@ -365,7 +365,7 @@ test_FileCreationRemove.o: test_FileCreationRemove.cpp.o
 
 # target to build an object file
 test_FileCreationRemove.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.o
 .PHONY : test_FileCreationRemove.cpp.o
 
 test_FileCreationRemove.i: test_FileCreationRemove.cpp.i
@@ -374,7 +374,7 @@ test_FileCreationRemove.i: test_FileCreationRemove.cpp.i
 
 # target to preprocess a source file
 test_FileCreationRemove.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.i
 .PHONY : test_FileCreationRemove.cpp.i
 
 test_FileCreationRemove.s: test_FileCreationRemove.cpp.s
@@ -383,7 +383,7 @@ test_FileCreationRemove.s: test_FileCreationRemove.cpp.s
 
 # target to generate assembly for a file
 test_FileCreationRemove.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.s
 .PHONY : test_FileCreationRemove.cpp.s
 
 test_FileWritter.o: test_FileWritter.cpp.o
@@ -392,7 +392,7 @@ test_FileWritter.o: test_FileWritter.cpp.o
 
 # target to build an object file
 test_FileWritter.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.o
 .PHONY : test_FileWritter.cpp.o
 
 test_FileWritter.i: test_FileWritter.cpp.i
@@ -401,7 +401,7 @@ test_FileWritter.i: test_FileWritter.cpp.i
 
 # target to preprocess a source file
 test_FileWritter.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.i
 .PHONY : test_FileWritter.cpp.i
 
 test_FileWritter.s: test_FileWritter.cpp.s
@@ -410,7 +410,7 @@ test_FileWritter.s: test_FileWritter.cpp.s
 
 # target to generate assembly for a file
 test_FileWritter.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.s
 .PHONY : test_FileWritter.cpp.s
 
 test_GimbalCameraOperator.o: test_GimbalCameraOperator.cpp.o
@@ -419,7 +419,7 @@ test_GimbalCameraOperator.o: test_GimbalCameraOperator.cpp.o
 
 # target to build an object file
 test_GimbalCameraOperator.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.o
 .PHONY : test_GimbalCameraOperator.cpp.o
 
 test_GimbalCameraOperator.i: test_GimbalCameraOperator.cpp.i
@@ -428,7 +428,7 @@ test_GimbalCameraOperator.i: test_GimbalCameraOperator.cpp.i
 
 # target to preprocess a source file
 test_GimbalCameraOperator.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.i
 .PHONY : test_GimbalCameraOperator.cpp.i
 
 test_GimbalCameraOperator.s: test_GimbalCameraOperator.cpp.s
@@ -437,7 +437,7 @@ test_GimbalCameraOperator.s: test_GimbalCameraOperator.cpp.s
 
 # target to generate assembly for a file
 test_GimbalCameraOperator.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.s
 .PHONY : test_GimbalCameraOperator.cpp.s
 
 test_PolygonalPathPlanner.o: test_PolygonalPathPlanner.cpp.o
@@ -446,7 +446,7 @@ test_PolygonalPathPlanner.o: test_PolygonalPathPlanner.cpp.o
 
 # target to build an object file
 test_PolygonalPathPlanner.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.o
 .PHONY : test_PolygonalPathPlanner.cpp.o
 
 test_PolygonalPathPlanner.i: test_PolygonalPathPlanner.cpp.i
@@ -455,7 +455,7 @@ test_PolygonalPathPlanner.i: test_PolygonalPathPlanner.cpp.i
 
 # target to preprocess a source file
 test_PolygonalPathPlanner.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.i
 .PHONY : test_PolygonalPathPlanner.cpp.i
 
 test_PolygonalPathPlanner.s: test_PolygonalPathPlanner.cpp.s
@@ -464,7 +464,7 @@ test_PolygonalPathPlanner.s: test_PolygonalPathPlanner.cpp.s
 
 # target to generate assembly for a file
 test_PolygonalPathPlanner.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.s
 .PHONY : test_PolygonalPathPlanner.cpp.s
 
 test_PrintControl.o: test_PrintControl.cpp.o
@@ -473,7 +473,7 @@ test_PrintControl.o: test_PrintControl.cpp.o
 
 # target to build an object file
 test_PrintControl.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.o
 .PHONY : test_PrintControl.cpp.o
 
 test_PrintControl.i: test_PrintControl.cpp.i
@@ -482,7 +482,7 @@ test_PrintControl.i: test_PrintControl.cpp.i
 
 # target to preprocess a source file
 test_PrintControl.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.i
 .PHONY : test_PrintControl.cpp.i
 
 test_PrintControl.s: test_PrintControl.cpp.s
@@ -491,7 +491,7 @@ test_PrintControl.s: test_PrintControl.cpp.s
 
 # target to generate assembly for a file
 test_PrintControl.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.s
 .PHONY : test_PrintControl.cpp.s
 
 test_WpV2Operator.o: test_WpV2Operator.cpp.o
@@ -500,7 +500,7 @@ test_WpV2Operator.o: test_WpV2Operator.cpp.o
 
 # target to build an object file
 test_WpV2Operator.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.o
 .PHONY : test_WpV2Operator.cpp.o
 
 test_WpV2Operator.i: test_WpV2Operator.cpp.i
@@ -509,7 +509,7 @@ test_WpV2Operator.i: test_WpV2Operator.cpp.i
 
 # target to preprocess a source file
 test_WpV2Operator.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.i
 .PHONY : test_WpV2Operator.cpp.i
 
 test_WpV2Operator.s: test_WpV2Operator.cpp.s
@@ -518,7 +518,7 @@ test_WpV2Operator.s: test_WpV2Operator.cpp.s
 
 # target to generate assembly for a file
 test_WpV2Operator.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.s
 .PHONY : test_WpV2Operator.cpp.s
 
 test_getParam.o: test_getParam.cpp.o
@@ -527,7 +527,7 @@ test_getParam.o: test_getParam.cpp.o
 
 # target to build an object file
 test_getParam.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.o
 .PHONY : test_getParam.cpp.o
 
 test_getParam.i: test_getParam.cpp.i
@@ -536,7 +536,7 @@ test_getParam.i: test_getParam.cpp.i
 
 # target to preprocess a source file
 test_getParam.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.i
 .PHONY : test_getParam.cpp.i
 
 test_getParam.s: test_getParam.cpp.s
@@ -545,7 +545,7 @@ test_getParam.s: test_getParam.cpp.s
 
 # target to generate assembly for a file
 test_getParam.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_getParam.dir/test_getParam.cpp.s
 .PHONY : test_getParam.cpp.s
 
 test_locate_boundary.o: test_locate_boundary.cpp.o
@@ -554,7 +554,7 @@ test_locate_boundary.o: test_locate_boundary.cpp.o
 
 # target to build an object file
 test_locate_boundary.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.o
 .PHONY : test_locate_boundary.cpp.o
 
 test_locate_boundary.i: test_locate_boundary.cpp.i
@@ -563,7 +563,7 @@ test_locate_boundary.i: test_locate_boundary.cpp.i
 
 # target to preprocess a source file
 test_locate_boundary.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.i
 .PHONY : test_locate_boundary.cpp.i
 
 test_locate_boundary.s: test_locate_boundary.cpp.s
@@ -572,7 +572,7 @@ test_locate_boundary.s: test_locate_boundary.cpp.s
 
 # target to generate assembly for a file
 test_locate_boundary.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.s
 .PHONY : test_locate_boundary.cpp.s
 
 test_simple_command.o: test_simple_command.cpp.o
@@ -581,7 +581,7 @@ test_simple_command.o: test_simple_command.cpp.o
 
 # target to build an object file
 test_simple_command.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.o
 .PHONY : test_simple_command.cpp.o
 
 test_simple_command.i: test_simple_command.cpp.i
@@ -590,7 +590,7 @@ test_simple_command.i: test_simple_command.cpp.i
 
 # target to preprocess a source file
 test_simple_command.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.i
 .PHONY : test_simple_command.cpp.i
 
 test_simple_command.s: test_simple_command.cpp.s
@@ -599,7 +599,7 @@ test_simple_command.s: test_simple_command.cpp.s
 
 # target to generate assembly for a file
 test_simple_command.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_simple_command.dir/test_simple_command.cpp.s
 .PHONY : test_simple_command.cpp.s
 
 test_zigzag_planner.o: test_zigzag_planner.cpp.o
@@ -608,7 +608,7 @@ test_zigzag_planner.o: test_zigzag_planner.cpp.o
 
 # target to build an object file
 test_zigzag_planner.cpp.o:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.o
 .PHONY : test_zigzag_planner.cpp.o
 
 test_zigzag_planner.i: test_zigzag_planner.cpp.i
@@ -617,7 +617,7 @@ test_zigzag_planner.i: test_zigzag_planner.cpp.i
 
 # target to preprocess a source file
 test_zigzag_planner.cpp.i:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.i
 .PHONY : test_zigzag_planner.cpp.i
 
 test_zigzag_planner.s: test_zigzag_planner.cpp.s
@@ -626,7 +626,7 @@ test_zigzag_planner.s: test_zigzag_planner.cpp.s
 
 # target to generate assembly for a file
 test_zigzag_planner.cpp.s:
-	cd /home/erfan/m300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/build.make forest_fire_detection_system/src/test/CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.s
 .PHONY : test_zigzag_planner.cpp.s
 
 # Help Target
@@ -697,6 +697,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/erfan/m300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

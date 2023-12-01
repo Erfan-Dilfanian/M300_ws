@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/mobile_device_node"
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/mobile_device_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/mobile_device_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/mobile_device_node.pdb"
   "CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.o"
 )
 

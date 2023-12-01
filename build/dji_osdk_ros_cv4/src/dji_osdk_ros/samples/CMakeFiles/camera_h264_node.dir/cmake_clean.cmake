@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/camera_h264_node"
-  "/home/erfan/m300_ws/devel/lib/dji_osdk_ros/camera_h264_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/camera_h264_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/camera_h264_node.pdb"
   "CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.o"
 )
 

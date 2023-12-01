@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "arduino_actuator"
-PROJECT_SPACE_DIR = "/home/erfan/m300_ws/devel"
+PROJECT_SPACE_DIR = "/home/erfan/M300_ws/devel"
 PROJECT_VERSION = "0.9.2"

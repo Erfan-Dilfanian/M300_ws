@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/src/test/test_locate_boundary.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_locate_boundary.cpp
 opencv2/opencv.hpp
 -
 iostream

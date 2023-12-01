@@ -3,7 +3,7 @@
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/home/erfan/m300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v5.py'
+python_script = '/home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v5.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

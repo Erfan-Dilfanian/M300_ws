@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/ToggleVehicleVideo"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/ToggleVehicleVideo.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/ToggleVehicleVideo"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/ToggleVehicleVideo.pdb"
   "CMakeFiles/ToggleVehicleVideo.dir/ToggleVehicleVideo.cpp.o"
 )
 

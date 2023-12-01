@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/HandleImageTransport"
-  "/home/erfan/m300_ws/devel/lib/forest_fire_detection_system/HandleImageTransport.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/HandleImageTransport"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/HandleImageTransport.pdb"
   "CMakeFiles/HandleImageTransport.dir/HandleImageTransport.cpp.o"
 )
 

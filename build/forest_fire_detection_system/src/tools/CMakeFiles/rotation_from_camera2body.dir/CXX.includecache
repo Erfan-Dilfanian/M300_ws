@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/m300_ws/src/forest_fire_detection_system/src/tools/rotation_from_camera2body.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/tools/rotation_from_camera2body.cpp
 Eigen/Core
 -
 Eigen/Geometry

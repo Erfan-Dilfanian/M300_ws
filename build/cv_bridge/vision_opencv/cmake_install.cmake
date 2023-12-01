@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/m300_ws/src/cv_bridge/vision_opencv
+# Install script for directory: /home/erfan/M300_ws/src/cv_bridge/vision_opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_opencv" TYPE FILE FILES "/home/erfan/m300_ws/src/cv_bridge/vision_opencv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vision_opencv" TYPE FILE FILES "/home/erfan/M300_ws/src/cv_bridge/vision_opencv/package.xml")
 endif()
 
