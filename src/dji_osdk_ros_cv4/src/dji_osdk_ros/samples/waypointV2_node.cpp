@@ -26,6 +26,9 @@
  *
  */
 
+
+/* first see main() function. INside it, you see that the important funciton that is called is runWaypointV2Mission(nh). If you go to that fumciton, you see that multiple important functions are being called*/
+
 #include <dji_osdk_ros/waypointV2_node.h>
 
 void gpsPositionSubCallback(const sensor_msgs::NavSatFix::ConstPtr& gpsPosition)
