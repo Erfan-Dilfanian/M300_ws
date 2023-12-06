@@ -51,7 +51,21 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
   for (int i = 0; i < point_num + 1; ++i) {
     pos.z = zigzagHeight;
 
-    if (is_lower_left) {
+    if (i == point_num - 1){
+
+        pos.x = -10;
+        pos.y = 50;
+        LocalPosVec.push_back(pos);
+
+    }
+    else if (i == point_num){
+
+        pos.x = -10;
+        pos.y = 60;
+        LocalPosVec.push_back(pos);
+
+    }
+    else if (is_lower_left) {
       pos.x += 0.0;
       pos.y += zigzagWid;
       LocalPosVec.push_back(pos);
@@ -87,19 +101,6 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
       is_upper_left = false;
       is_lower_right = false;
       is_upper_right = false;
-    } else if (i == point_num - 1){
-
-        pos.x = 5;
-        pos.y = 6;
-        LocalPosVec.push_back(pos);
-
-    }
-    else if (i == point_num){
-
-        pos.x = 7;
-        pos.y = 8;
-        LocalPosVec.push_back(pos);
-
     }
     else {
       ROS_ERROR_STREAM("the bool is wrong!");

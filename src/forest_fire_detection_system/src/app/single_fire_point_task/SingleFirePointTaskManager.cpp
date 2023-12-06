@@ -178,7 +178,8 @@ void FFDS::APP::SingleFirePointTaskManager::initMission(dji_osdk_ros::InitWaypoi
     PRINT_INFO("Load zigzag shape from:%s", config_path.c_str());
     YAML::Node node = YAML::LoadFile(config_path);
 
-    int num = TOOLS::getParam(node, "num", 10);
+   /** int num = TOOLS::getParam(node, "num", 10);*/
+   int num = 2;
     float len = TOOLS::getParam(node, "len", 40.0);
     float wid = TOOLS::getParam(node, "wid", 10.0);
     float height = TOOLS::getParam(node, "height", 15.0);

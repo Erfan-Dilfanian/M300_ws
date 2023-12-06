@@ -23,6 +23,13 @@ add_executable(flight_control_node
 target_link_libraries(flight_control_node
         ${PROJECT_NAME}
         )
+        
+add_executable(InMotionDropping
+               InMotionDropping.cpp)
+target_link_libraries(InMotionDropping
+        ${PROJECT_NAME}
+        )     
+        
 add_dependencies(flight_control_node dji_osdk_ros_generate_messages_cpp)
 
 add_executable(gimbal_camera_control_node
