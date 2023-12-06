@@ -157,8 +157,8 @@ FFDS::MODULES::ZigzagPathPlanner::getWpV2Vec(bool useInitHeadDirection,
   /* Step: 1 generate the local position*/
   getLocalPosVec(useInitHeadDirection, homeHeadRad);
 
-  /* Step: 2 to global gps position*/
-  feedWp2Vec();
+  /* Step: 2 convert to global gps position*/
+  feedWp2Vec(); /*waypoints should be in gps not x,y,z. THis function do that conversion*/
 
   return wpV2Vec;
 }
