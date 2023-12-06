@@ -42,6 +42,23 @@
 #include<dji_osdk_ros/SetJoystickMode.h>
 #include<dji_osdk_ros/JoystickAction.h>
 
+#include <dji_osdk_ros/common_type.h>
+#include <dji_osdk_ros/GimbalAction.h>
+#include <dji_osdk_ros/CameraEV.h>
+#include <dji_osdk_ros/CameraShutterSpeed.h>
+#include <dji_osdk_ros/CameraAperture.h>
+#include <dji_osdk_ros/CameraISO.h>
+#include <dji_osdk_ros/CameraFocusPoint.h>
+#include <dji_osdk_ros/CameraTapZoomPoint.h>
+#include <dji_osdk_ros/CameraSetZoomPara.h>
+#include <dji_osdk_ros/CameraZoomCtrl.h>
+#include <dji_osdk_ros/CameraStartShootBurstPhoto.h>
+#include <dji_osdk_ros/CameraStartShootAEBPhoto.h>
+#include <dji_osdk_ros/CameraStartShootSinglePhoto.h>
+#include <dji_osdk_ros/CameraStartShootIntervalPhoto.h>
+#include <dji_osdk_ros/CameraStopShootPhoto.h>
+#include <dji_osdk_ros/CameraRecordVideoAction.h>
+
 //CODE
 using namespace dji_osdk_ros;
 
@@ -71,6 +88,29 @@ int main(int argc, char** argv)
 
   set_joystick_mode_client = nh.serviceClient<SetJoystickMode>("set_joystick_mode");
   joystick_action_client   = nh.serviceClient<JoystickAction>("joystick_action");
+  
+  
+  auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
+  auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
+  auto camera_set_shutter_speed_client = nh.serviceClient<CameraShutterSpeed>("camera_task_set_shutter_speed");
+  auto camera_set_aperture_client = nh.serviceClient<CameraAperture>("camera_task_set_aperture");
+  auto camera_set_iso_client = nh.serviceClient<CameraISO>("camera_task_set_ISO");
+  auto camera_set_focus_point_client = nh.serviceClient<CameraFocusPoint>("camera_task_set_focus_point");
+  auto camera_set_tap_zoom_point_client = nh.serviceClient<CameraTapZoomPoint>("camera_task_tap_zoom_point");
+  auto camera_set_zoom_para_client = nh.serviceClient<CameraSetZoomPara>("camera_task_set_zoom_para");
+  auto camera_task_zoom_ctrl_client = nh.serviceClient<CameraZoomCtrl>("camera_task_zoom_ctrl");
+  auto camera_start_shoot_single_photo_client = nh.serviceClient<CameraStartShootSinglePhoto>(
+      "camera_start_shoot_single_photo");
+  auto camera_start_shoot_aeb_photo_client = nh.serviceClient<CameraStartShootAEBPhoto>("camera_start_shoot_aeb_photo");
+  auto camera_start_shoot_burst_photo_client = nh.serviceClient<CameraStartShootBurstPhoto>(
+      "camera_start_shoot_burst_photo");
+  auto camera_start_shoot_interval_photo_client = nh.serviceClient<CameraStartShootIntervalPhoto>(
+      "camera_start_shoot_interval_photo");
+  auto camera_stop_shoot_photo_client = nh.serviceClient<CameraStopShootPhoto>("camera_stop_shoot_photo");
+  auto camera_record_video_action_client = nh.serviceClient<CameraRecordVideoAction>("camera_record_video_action");
+
+
+  
   std::cout
       << "| Available commands:                                            |"
       << std::endl;
@@ -137,6 +177,17 @@ int main(int argc, char** argv)
         {
           ROS_INFO_STREAM("Takeoff task successful");
           ros::Duration(2.0).sleep();
+
+
+        GimbalAction gimbalAction;
+        gimbalAction.request.is_reset = false;
+        gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+        gimbalAction.request.rotationMode = 0;
+        gimbalAction.request.pitch = 25.0f;
+        gimbalAction.request.roll = 0.0f;
+        gimbalAction.request.yaw = 90.0f;
+        gimbalAction.request.time = 0.5;
+        gimbal_control_client.call(gimbalAction);
 
           ROS_INFO_STREAM("Move by position offset request sending ...");
           moveByPosOffset(control_task, {0.0, 6.0, 6.0, 30.0}, 0.8, 1);
