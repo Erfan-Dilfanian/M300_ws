@@ -54,9 +54,9 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
                          &SingleFirePointTaskManager::singleFireIRCallback, this);
                          
       	gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
-	
-                  
-                         
+
+
+    joystick_action_client   = nh.serviceClient<dji_osdk_ros::JoystickAction>("joystick_action");
                          
 
     /* obtain the authorization when really needed... Now :) */
@@ -433,14 +433,14 @@ bool mybool;
 float yaw=30;
         joystickAction.request.joystickCommand.yaw = yaw;
             joystick_action_client.call(joystickAction);
-
+/*
          gimbalAction.request.rotationMode = 0;
     gimbalAction.request.pitch = 50.0f;
     gimbalAction.request.roll = 0.0f;
     gimbalAction.request.yaw = 30.0f;
     gimbalAction.request.time = 0.5;
     gimbal_control_client.call(gimbalAction); 
-        flag = 0;
+  */      flag = 0;
 }
         continue;
     }

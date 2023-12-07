@@ -74,6 +74,8 @@ class SingleFirePointTaskManager {
   ros::ServiceClient segment_smoke_client;
   ros::ServiceClient gimbal_control_client;
 
+  ros::ServiceClient joystick_action_client;
+
   /**
    * ros msg
    * */
