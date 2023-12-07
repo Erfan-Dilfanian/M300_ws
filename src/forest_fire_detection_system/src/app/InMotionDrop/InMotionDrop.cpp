@@ -410,7 +410,7 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 //    }
 
     while (ros::ok() && (waypoint_V2_mission_state_push_.state != 0x6)) {
-
+    ros::spinOnce();
         continue;
     }
 
