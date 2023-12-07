@@ -15,6 +15,8 @@
  ******************************************************************************/
 
 #include <modules/PathPlanner/ZigzagPathPlanner.hpp>
+#include <dji_osdk_ros/GimbalAction.h>
+#include <dji_osdk_ros/common_type.h>
 
 void FFDS::MODULES::ZigzagPathPlanner::setParams(sensor_msgs::NavSatFix home,
                                                  int num, float len, float wid,
@@ -25,6 +27,7 @@ void FFDS::MODULES::ZigzagPathPlanner::setParams(sensor_msgs::NavSatFix home,
   zigzagWid = wid;
   zigzagHeight = height;
 }
+
 
 void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
   float each_len = zigzagLen / zigzagNum;
@@ -42,12 +45,22 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
   pos.y = 0.0;
   pos.z = zigzagHeight;
   LocalPosVec.push_back(pos);
+    ros::NodeHandle nh;
 
+    auto gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
 
   /*
    * for (int i = 0; i < point_num - 1; ++i) {
    */
-
+    dji_osdk_ros::GimbalAction gimbalAction;
+    gimbalAction.request.is_reset = false;
+    gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+    gimbalAction.request.rotationMode = 0;
+    gimbalAction.request.pitch = 25.0f;
+    gimbalAction.request.roll = 0.0f;
+    gimbalAction.request.yaw = 90.0f;
+    gimbalAction.request.time = 0.5;
+    gimbal_control_client.call(gimbalAction);
   for (int i = 0; i < point_num + 1; ++i) {
     pos.z = zigzagHeight;
 
@@ -92,6 +105,7 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
       is_upper_left = true;
       is_lower_right = false;
       is_upper_right = false;
+
     } else if (is_upper_left) {
       pos.x += each_len;
       pos.y += 0.0;

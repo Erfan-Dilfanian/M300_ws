@@ -1,0 +1,16 @@
+In file included from [01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.cpp:35[m[K:
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:[m[K In function ‘[01m[Kint do_numpy_import()[m[K’:
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:39:5:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kint[m[K’ from NULL [[01;35m[K-Wconversion-null[m[K]
+   39 |     [01;35m[Kimport_array[m[K( );
+      |     [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module_opencv3.cpp:3[m[K:
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:[m[K In function ‘[01m[Kint do_numpy_import()[m[K’:
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:39:5:[m[K [01;35m[Kwarning: [m[Kconverting to non-pointer type ‘[01m[Kint[m[K’ from NULL [[01;35m[K-Wconversion-null[m[K]
+   39 |     [01;35m[Kimport_array[m[K( );
+      |     [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:40:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+   40 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp:40:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+   40 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

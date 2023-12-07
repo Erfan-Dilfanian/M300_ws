@@ -1,0 +1,7 @@
+Symlinking /home/erfan/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig-version.cmake
+Symlinking /home/erfan/M300_ws/devel/share/arduino_actuator/cmake/arduino_actuatorConfig.cmake
+Symlinking /home/erfan/M300_ws/devel/lib/pkgconfig/arduino_actuator.pc
+Symlinking /home/erfan/M300_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py
+Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/cmake.lock
+Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/serial_node.py
+Symlinking /home/erfan/M300_ws/devel/lib/arduino_actuator/message_info_service.py

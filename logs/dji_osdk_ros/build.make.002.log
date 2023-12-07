@@ -1,0 +1,1242 @@
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetupCameraStream[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SendMobileData[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetHardSync[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetupCameraStream
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SendMobileData
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetHardSync
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpAction[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionStatus[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionStatus
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_DroneArmControl[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MFIOConfig[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_DroneTaskControl[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MFIOSetValue[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpAction
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_JoystickAction[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_DroneArmControl
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_DroneTaskControl
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MFIOSetValue
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MFIOConfig
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_Waypoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_VOPosition[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_JoystickParams[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_JoystickAction
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointList[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_Waypoint
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_JoystickParams
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GPSUTC[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetDroneType[0m
+[  0%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetJoystickMode[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_VOPosition
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraISO[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointList
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetDroneType
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MobileData[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetJoystickMode
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GPSUTC
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_Gimbal[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraAction[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraISO
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MobileData
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_Gimbal
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraAction
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraAperture[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2Config[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SmartBatteryState[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWpAction[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWaypoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraAperture
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2Config
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWpAction
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SmartBatteryState
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWaypoint
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2Action[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_KillSwitch[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2Action
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_FlightAnomaly[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_KillSwitch
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_BatteryState[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_FlightTaskControl[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_BatteryState
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_FlightAnomaly
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_EmergencyBrake[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_HMSPushInfo[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_FlightTaskControl
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GimbalAction[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraEV[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_EmergencyBrake
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_HMSPushInfo
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GimbalAction
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraEV
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_PayloadData[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_Activation[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_PayloadData
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_MFIO[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetHomePoint[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SendPayloadData[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetupCameraH264[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_Activation
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetHomePoint
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SendPayloadData
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_MFIO
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission[0m
+[35m[1mScanning dependencies of target _dji_osdk_ros_generate_messages_check_deps_GetHMSData[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetupCameraH264
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  0%] Built target _dji_osdk_ros_generate_messages_check_deps_GetHMSData
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages_nodejs[0m
+[  0%] Built target nav_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages_py[0m
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages_cpp[0m
+[  0%] [34m[1mGenerating Javascript code from dji_osdk_ros/FCTimeInUTC.msg[0m
+[  1%] [34m[1mGenerating Javascript code from dji_osdk_ros/JoystickParams.msg[0m
+[  1%] [34m[1mGenerating Javascript code from dji_osdk_ros/Gimbal.msg[0m
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages_eus[0m
+[  1%] [34m[1mGenerating Javascript code from dji_osdk_ros/GPSUTC.msg[0m
+[  1%] [34m[1mGenerating Python from MSG dji_osdk_ros/FCTimeInUTC[0m
+[  2%] [34m[1mGenerating Lisp code from dji_osdk_ros/FCTimeInUTC.msg[0m
+[  2%] [34m[1mGenerating C++ code from dji_osdk_ros/FCTimeInUTC.msg[0m
+[  3%] [34m[1mGenerating EusLisp code from dji_osdk_ros/FCTimeInUTC.msg[0m
+[  3%] [34m[1mGenerating C++ code from dji_osdk_ros/JoystickParams.msg[0m
+[  3%] [34m[1mGenerating C++ code from dji_osdk_ros/GPSUTC.msg[0m
+[  3%] [34m[1mGenerating C++ code from dji_osdk_ros/Gimbal.msg[0m
+[  3%] [34m[1mGenerating C++ code from dji_osdk_ros/Waypoint.msg[0m
+[  3%] [34m[1mGenerating Javascript code from dji_osdk_ros/Waypoint.msg[0m
+[  3%] [34m[1mGenerating Lisp code from dji_osdk_ros/JoystickParams.msg[0m
+[  3%] [34m[1mGenerating Lisp code from dji_osdk_ros/GPSUTC.msg[0m
+[  3%] [34m[1mGenerating EusLisp code from dji_osdk_ros/JoystickParams.msg[0m
+[  3%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointList.msg[0m
+[  4%] [34m[1mGenerating Python from MSG dji_osdk_ros/JoystickParams[0m
+[  4%] [34m[1mGenerating Lisp code from dji_osdk_ros/Gimbal.msg[0m
+[  4%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.msg[0m
+[  4%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointList.msg[0m
+[  5%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.msg[0m
+[  5%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.msg[0m
+[  5%] [34m[1mGenerating Lisp code from dji_osdk_ros/Waypoint.msg[0m
+[  5%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GPSUTC.msg[0m
+[  5%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg[0m
+[  6%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.msg[0m
+[  6%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg[0m
+[  6%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointList.msg[0m
+[  6%] [34m[1mGenerating Python from MSG dji_osdk_ros/GPSUTC[0m
+[  6%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.msg[0m
+[  6%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2AssociateTrigger.msg[0m
+[  6%] [34m[1mGenerating EusLisp code from dji_osdk_ros/Gimbal.msg[0m
+[  6%] [34m[1mGenerating Python from MSG dji_osdk_ros/Gimbal[0m
+[  7%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.msg[0m
+[  7%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2AssociateTrigger.msg[0m
+[  7%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.msg[0m
+[  7%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2CameraActuatorFocusParam.msg[0m
+[  7%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2CameraActuatorFocusParam.msg[0m
+[  7%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.msg[0m
+[  8%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2CameraActuator.msg[0m
+[  8%] [34m[1mGenerating EusLisp code from dji_osdk_ros/Waypoint.msg[0m
+[  8%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2CameraActuator.msg[0m
+[  8%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg[0m
+[  8%] [34m[1mGenerating Python from MSG dji_osdk_ros/Waypoint[0m
+[  8%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2Config.msg[0m
+[  8%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointList[0m
+[  8%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.msg[0m
+[  8%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2AssociateTrigger.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2Config.msg[0m
+[  9%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointList.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.msg[0m
+[  9%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2GimbalActuator.msg[0m
+[  9%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2InitSetting.msg[0m
+[  9%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2GimbalActuator.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2InitSetting.msg[0m
+[  9%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2IntervalTrigger.msg[0m
+[  9%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorFlying[0m
+[  9%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2AircraftControlActuatorFlying.msg[0m
+[  9%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading[0m
+[  9%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2CameraActuatorFocusParam.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2IntervalTrigger.msg[0m
+[  9%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2ReachpointTrigger.msg[0m
+[ 10%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2ReachpointTrigger.msg[0m
+[ 10%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2SampleReachPointTrigger.msg[0m
+[ 10%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2CameraActuator.msg[0m
+[ 10%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2SampleReachPointTrigger.msg[0m
+[ 11%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading.msg[0m
+[ 12%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2TrajectoryTrigger.msg[0m
+[ 12%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2TrajectoryTrigger.msg[0m
+[ 13%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2Config.msg[0m
+[ 13%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2Action.msg[0m
+[ 13%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2.msg[0m
+[ 14%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuator[0m
+[ 14%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2AssociateTrigger[0m
+[ 14%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2Action.msg[0m
+[ 14%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam[0m
+[ 14%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.msg[0m
+[ 14%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg[0m
+[ 14%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2AssociateTrigger.msg[0m
+[ 14%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2.msg[0m
+[ 14%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2GimbalActuator.msg[0m
+[ 14%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2MissionEventPush.msg[0m
+[ 14%] [34m[1mGenerating C++ code from dji_osdk_ros/WaypointV2MissionStatePush.msg[0m
+[ 15%] [34m[1mGenerating C++ code from dji_osdk_ros/MobileData.msg[0m
+[ 15%] [34m[1mGenerating C++ code from dji_osdk_ros/PayloadData.msg[0m
+[ 15%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2InitSetting.msg[0m
+[ 15%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2MissionEventPush.msg[0m
+[ 15%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWaypointAction.msg[0m
+[ 15%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocusParam[0m
+[ 15%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam.msg[0m
+[ 15%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWaypoint.msg[0m
+[ 15%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2CameraActuatorFocusParam.msg[0m
+[ 15%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2IntervalTrigger.msg[0m
+[ 15%] [34m[1mGenerating Javascript code from dji_osdk_ros/WaypointV2MissionStatePush.msg[0m
+[ 15%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2CameraActuator.msg[0m
+[ 15%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWaypointTask.msg[0m
+[ 16%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHotpointTask.msg[0m
+[ 16%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2Config.msg[0m
+[ 16%] [34m[1mGenerating Javascript code from dji_osdk_ros/MobileData.msg[0m
+[ 16%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2GimbalActuatorRotationParam.msg[0m
+[ 16%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2ReachpointTrigger.msg[0m
+[ 16%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2GimbalActuator.msg[0m
+[ 17%] [34m[1mGenerating C++ code from dji_osdk_ros/FlightAnomaly.msg[0m
+[ 17%] [34m[1mGenerating C++ code from dji_osdk_ros/VOPosition.msg[0m
+[ 17%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2CameraActuator[0m
+[ 18%] [34m[1mGenerating Javascript code from dji_osdk_ros/PayloadData.msg[0m
+[ 19%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2SampleReachPointTrigger.msg[0m
+[ 19%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2InitSetting.msg[0m
+[ 19%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2IntervalTrigger.msg[0m
+[ 19%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWaypointAction.msg[0m
+[ 19%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2TrajectoryTrigger.msg[0m
+[ 19%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2Config[0m
+[ 20%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2GimbalActuatorRotationParam[0m
+[ 20%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2GimbalActuator[0m
+[ 20%] [34m[1mGenerating C++ code from dji_osdk_ros/BatteryState.msg[0m
+[ 20%] [34m[1mGenerating C++ code from dji_osdk_ros/BatteryWholeInfo.msg[0m
+[ 20%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2InitSetting[0m
+[ 20%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2IntervalTrigger[0m
+[ 20%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWaypoint.msg[0m
+[ 20%] [34m[1mGenerating C++ code from dji_osdk_ros/SmartBatteryState.msg[0m
+[ 20%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2Action.msg[0m
+[ 20%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2ReachpointTrigger.msg[0m
+[ 20%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2ReachpointTrigger[0m
+[ 20%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2.msg[0m
+[ 20%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWaypointTask.msg[0m
+[ 20%] [34m[1mGenerating C++ code from dji_osdk_ros/SmartBatteryDynamicInfo.msg[0m
+[ 21%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2TrajectoryTrigger[0m
+[ 21%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2SampleReachPointTrigger[0m
+[ 22%] [34m[1mGenerating C++ code from dji_osdk_ros/HMSPushInfo.msg[0m
+[ 22%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2Action[0m
+[ 23%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2SampleReachPointTrigger.msg[0m
+[ 23%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2MissionEventPush.msg[0m
+[ 23%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHotpointTask.msg[0m
+[ 23%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2TrajectoryTrigger.msg[0m
+[ 23%] [34m[1mGenerating C++ code from dji_osdk_ros/GetDroneType.srv[0m
+[ 23%] [34m[1mGenerating Lisp code from dji_osdk_ros/WaypointV2MissionStatePush.msg[0m
+[ 23%] [34m[1mGenerating Javascript code from dji_osdk_ros/FlightAnomaly.msg[0m
+[ 24%] [34m[1mGenerating Lisp code from dji_osdk_ros/MobileData.msg[0m
+[ 24%] [34m[1mGenerating Lisp code from dji_osdk_ros/PayloadData.msg[0m
+[ 24%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2Action.msg[0m
+[ 24%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2.msg[0m
+[ 24%] [34m[1mGenerating C++ code from dji_osdk_ros/GetM300StereoParams.srv[0m
+[ 24%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2[0m
+[ 24%] [34m[1mGenerating C++ code from dji_osdk_ros/FlightTaskControl.srv[0m
+[ 24%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWaypointAction.msg[0m
+[ 24%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWaypoint.msg[0m
+[ 25%] [34m[1mGenerating Javascript code from dji_osdk_ros/VOPosition.msg[0m
+[ 25%] [34m[1mGenerating Javascript code from dji_osdk_ros/BatteryState.msg[0m
+[ 25%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWaypointTask.msg[0m
+[ 25%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHotpointTask.msg[0m
+[ 25%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2MissionEventPush.msg[0m
+[ 25%] [34m[1mGenerating Lisp code from dji_osdk_ros/FlightAnomaly.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from dji_osdk_ros/VOPosition.msg[0m
+[ 26%] [34m[1mGenerating Javascript code from dji_osdk_ros/SmartBatteryState.msg[0m
+[ 26%] [34m[1mGenerating Javascript code from dji_osdk_ros/BatteryWholeInfo.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from dji_osdk_ros/BatteryState.msg[0m
+[ 26%] [34m[1mGenerating Javascript code from dji_osdk_ros/SmartBatteryDynamicInfo.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from dji_osdk_ros/BatteryWholeInfo.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from dji_osdk_ros/SmartBatteryState.msg[0m
+[ 26%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2MissionEventPush[0m
+[ 26%] [34m[1mGenerating Javascript code from dji_osdk_ros/HMSPushInfo.msg[0m
+[ 26%] [34m[1mGenerating Lisp code from dji_osdk_ros/SmartBatteryDynamicInfo.msg[0m
+[ 26%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetDroneType.srv[0m
+[ 27%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetM300StereoParams.srv[0m
+[ 27%] [34m[1mGenerating EusLisp code from dji_osdk_ros/WaypointV2MissionStatePush.msg[0m
+[ 28%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MobileData.msg[0m
+[ 28%] [34m[1mGenerating Lisp code from dji_osdk_ros/HMSPushInfo.msg[0m
+[ 28%] [34m[1mGenerating EusLisp code from dji_osdk_ros/PayloadData.msg[0m
+[ 28%] [34m[1mGenerating C++ code from dji_osdk_ros/SetJoystickMode.srv[0m
+[ 28%] [34m[1mGenerating C++ code from dji_osdk_ros/JoystickAction.srv[0m
+[ 28%] [34m[1mGenerating Javascript code from dji_osdk_ros/FlightTaskControl.srv[0m
+[ 28%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetM300StereoParams.srv[0m
+[ 29%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetDroneType.srv[0m
+[ 29%] [34m[1mGenerating Lisp code from dji_osdk_ros/FlightTaskControl.srv[0m
+[ 29%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWaypointAction.msg[0m
+[ 29%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetJoystickMode.srv[0m
+[ 29%] [34m[1mGenerating Lisp code from dji_osdk_ros/JoystickAction.srv[0m
+[ 29%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWaypoint.msg[0m
+[ 29%] [34m[1mGenerating Lisp code from dji_osdk_ros/ObtainControlAuthority.srv[0m
+[ 29%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWaypointTask.msg[0m
+[ 29%] [34m[1mGenerating Python from MSG dji_osdk_ros/WaypointV2MissionStatePush[0m
+[ 29%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetJoystickMode.srv[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/KillSwitch.srv[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/EmergencyBrake.srv[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/GimbalAction.srv[0m
+[ 30%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHotpointTask.msg[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraEV.srv[0m
+[ 30%] [34m[1mGenerating Javascript code from dji_osdk_ros/JoystickAction.srv[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraShutterSpeed.srv[0m
+[ 30%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraAperture.srv[0m
+[ 30%] [34m[1mGenerating EusLisp code from dji_osdk_ros/FlightAnomaly.msg[0m
+[ 31%] [34m[1mGenerating EusLisp code from dji_osdk_ros/VOPosition.msg[0m
+[ 31%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraISO.srv[0m
+[ 31%] [34m[1mGenerating EusLisp code from dji_osdk_ros/BatteryState.msg[0m
+[ 31%] [34m[1mGenerating Javascript code from dji_osdk_ros/ObtainControlAuthority.srv[0m
+[ 31%] [34m[1mGenerating Javascript code from dji_osdk_ros/KillSwitch.srv[0m
+[ 31%] [34m[1mGenerating EusLisp code from dji_osdk_ros/BatteryWholeInfo.msg[0m
+[ 31%] [34m[1mGenerating Python from MSG dji_osdk_ros/MobileData[0m
+[ 31%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SmartBatteryState.msg[0m
+[ 32%] [34m[1mGenerating Javascript code from dji_osdk_ros/EmergencyBrake.srv[0m
+[ 32%] [34m[1mGenerating C++ code from dji_osdk_ros/ObtainControlAuthority.srv[0m
+[ 33%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraFocusPoint.srv[0m
+[ 34%] [34m[1mGenerating C++ code from dji_osdk_ros/KillSwitch.srv[0m
+[ 34%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SmartBatteryDynamicInfo.msg[0m
+[ 34%] [34m[1mGenerating EusLisp code from dji_osdk_ros/HMSPushInfo.msg[0m
+[ 34%] [34m[1mGenerating Javascript code from dji_osdk_ros/GimbalAction.srv[0m
+[ 34%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraEV.srv[0m
+[ 34%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraShutterSpeed.srv[0m
+[ 35%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetDroneType.srv[0m
+[ 35%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetM300StereoParams.srv[0m
+[ 35%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraTapZoomPoint.srv[0m
+[ 35%] [34m[1mGenerating EusLisp code from dji_osdk_ros/FlightTaskControl.srv[0m
+[ 35%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraAperture.srv[0m
+[ 35%] [34m[1mGenerating C++ code from dji_osdk_ros/EmergencyBrake.srv[0m
+[ 35%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraISO.srv[0m
+[ 35%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraSetZoomPara.srv[0m
+[ 35%] [34m[1mGenerating Python from MSG dji_osdk_ros/PayloadData[0m
+[ 35%] [34m[1mGenerating C++ code from dji_osdk_ros/GimbalAction.srv[0m
+[ 35%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraZoomCtrl.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraFocusPoint.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraTapZoomPoint.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraSetZoomPara.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraZoomCtrl.srv[0m
+[ 36%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetJoystickMode.srv[0m
+[ 36%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraStartShootSinglePhoto.srv[0m
+[ 36%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraEV.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraStartShootSinglePhoto.srv[0m
+[ 36%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraStartShootBurstPhoto.srv[0m
+[ 36%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraShutterSpeed.srv[0m
+[ 37%] [34m[1mGenerating Python from MSG dji_osdk_ros/MissionWaypointAction[0m
+[ 37%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraStartShootAEBPhoto.srv[0m
+[ 37%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraAperture.srv[0m
+[ 37%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraStartShootBurstPhoto.srv[0m
+[ 38%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraISO.srv[0m
+[ 39%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraStartShootIntervalPhoto.srv[0m
+[ 39%] [34m[1mGenerating EusLisp code from dji_osdk_ros/JoystickAction.srv[0m
+[ 39%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraFocusPoint.srv[0m
+[ 39%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraStopShootPhoto.srv[0m
+[ 39%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraTapZoomPoint.srv[0m
+[ 39%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraRecordVideoAction.srv[0m
+[ 40%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraStartShootAEBPhoto.srv[0m
+[ 40%] [34m[1mGenerating Python from MSG dji_osdk_ros/MissionWaypoint[0m
+[ 40%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraStartShootIntervalPhoto.srv[0m
+[ 40%] [34m[1mGenerating EusLisp code from dji_osdk_ros/ObtainControlAuthority.srv[0m
+[ 40%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetWholeBatteryInfo.srv[0m
+[ 40%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraStopShootPhoto.srv[0m
+[ 40%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraRecordVideoAction.srv[0m
+[ 40%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraSetZoomPara.srv[0m
+[ 40%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetSingleBatteryDynamicInfo.srv[0m
+[ 40%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraZoomCtrl.srv[0m
+[ 40%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraStartShootSinglePhoto.srv[0m
+[ 40%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetWholeBatteryInfo.srv[0m
+[ 41%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraStartShootBurstPhoto.srv[0m
+[ 42%] [34m[1mGenerating EusLisp code from dji_osdk_ros/KillSwitch.srv[0m
+[ 42%] [34m[1mGenerating Python from MSG dji_osdk_ros/MissionWaypointTask[0m
+[ 42%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetSingleBatteryDynamicInfo.srv[0m
+[ 42%] [34m[1mGenerating Javascript code from dji_osdk_ros/MFIO.srv[0m
+[ 43%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetGoHomeAltitude.srv[0m
+[ 43%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetGoHomeAltitude.srv[0m
+[ 43%] [34m[1mGenerating EusLisp code from dji_osdk_ros/EmergencyBrake.srv[0m
+[ 44%] [34m[1mGenerating Lisp code from dji_osdk_ros/MFIO.srv[0m
+[ 44%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.srv[0m
+[ 44%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GimbalAction.srv[0m
+[ 44%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetHomePoint.srv[0m
+[ 44%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraEV.srv[0m
+[ 44%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetupCameraH264.srv[0m
+[ 44%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetGoHomeAltitude.srv[0m
+[ 44%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetGoHomeAltitude.srv[0m
+[ 44%] [34m[1mGenerating Python from MSG dji_osdk_ros/MissionHotpointTask[0m
+[ 44%] [34m[1mGenerating Python from MSG dji_osdk_ros/FlightAnomaly[0m
+[ 44%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraStartShootAEBPhoto.srv[0m
+[ 44%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraStartShootIntervalPhoto.srv[0m
+[ 44%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraShutterSpeed.srv[0m
+[ 44%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetAvoidEnable.srv[0m
+[ 44%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.srv[0m
+[ 44%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetHomePoint.srv[0m
+[ 45%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetAvoidEnable.srv[0m
+[ 45%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetupCameraH264.srv[0m
+[ 45%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraStopShootPhoto.srv[0m
+[ 46%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetAvoidEnable.srv[0m
+[ 46%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraAperture.srv[0m
+[ 46%] [34m[1mGenerating Javascript code from dji_osdk_ros/InitWaypointV2Setting.srv[0m
+[ 46%] [34m[1mGenerating Javascript code from dji_osdk_ros/UploadWaypointV2Mission.srv[0m
+[ 46%] [34m[1mGenerating Javascript code from dji_osdk_ros/UploadWaypointV2Action.srv[0m
+[ 46%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraISO.srv[0m
+[ 46%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetAvoidEnable.srv[0m
+[ 46%] [34m[1mGenerating Python from MSG dji_osdk_ros/VOPosition[0m
+[ 47%] [34m[1mGenerating Python from MSG dji_osdk_ros/BatteryState[0m
+[ 47%] [34m[1mGenerating Lisp code from dji_osdk_ros/InitWaypointV2Setting.srv[0m
+[ 47%] [34m[1mGenerating Python from MSG dji_osdk_ros/BatteryWholeInfo[0m
+[ 47%] [34m[1mGenerating Javascript code from dji_osdk_ros/DownloadWaypointV2Mission.srv[0m
+[ 47%] [34m[1mGenerating Python from MSG dji_osdk_ros/SmartBatteryState[0m
+[ 47%] [34m[1mGenerating Python from MSG dji_osdk_ros/SmartBatteryDynamicInfo[0m
+[ 48%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraFocusPoint.srv[0m
+[ 48%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraRecordVideoAction.srv[0m
+[ 48%] [34m[1mGenerating Lisp code from dji_osdk_ros/UploadWaypointV2Mission.srv[0m
+[ 48%] [34m[1mGenerating Javascript code from dji_osdk_ros/StartWaypointV2Mission.srv[0m
+[ 48%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraTapZoomPoint.srv[0m
+[ 48%] [34m[1mGenerating Lisp code from dji_osdk_ros/UploadWaypointV2Action.srv[0m
+[ 48%] [34m[1mGenerating Lisp code from dji_osdk_ros/DownloadWaypointV2Mission.srv[0m
+[ 48%] [34m[1mGenerating Python from MSG dji_osdk_ros/HMSPushInfo[0m
+[ 48%] [34m[1mGenerating Javascript code from dji_osdk_ros/StopWaypointV2Mission.srv[0m
+[ 48%] [34m[1mGenerating C++ code from dji_osdk_ros/GetWholeBatteryInfo.srv[0m
+[ 48%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetDroneType[0m
+[ 48%] [34m[1mGenerating C++ code from dji_osdk_ros/GetSingleBatteryDynamicInfo.srv[0m
+[ 49%] [34m[1mGenerating C++ code from dji_osdk_ros/MFIO.srv[0m
+[ 49%] [34m[1mGenerating C++ code from dji_osdk_ros/SetGoHomeAltitude.srv[0m
+[ 49%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraSetZoomPara.srv[0m
+[ 49%] [34m[1mGenerating Lisp code from dji_osdk_ros/StartWaypointV2Mission.srv[0m
+[ 50%] [34m[1mGenerating Javascript code from dji_osdk_ros/PauseWaypointV2Mission.srv[0m
+[ 51%] [34m[1mGenerating Lisp code from dji_osdk_ros/StopWaypointV2Mission.srv[0m
+[ 51%] [34m[1mGenerating Javascript code from dji_osdk_ros/ResumeWaypointV2Mission.srv[0m
+[ 51%] [34m[1mGenerating Javascript code from dji_osdk_ros/GenerateWaypointV2Action.srv[0m
+[ 51%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraZoomCtrl.srv[0m
+[ 52%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetM300StereoParams[0m
+[ 52%] [34m[1mGenerating C++ code from dji_osdk_ros/GetGoHomeAltitude.srv[0m
+[ 52%] [34m[1mGenerating Lisp code from dji_osdk_ros/PauseWaypointV2Mission.srv[0m
+[ 52%] [34m[1mGenerating Lisp code from dji_osdk_ros/ResumeWaypointV2Mission.srv[0m
+[ 52%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetGlobalCruisespeed.srv[0m
+[ 52%] [34m[1mGenerating Lisp code from dji_osdk_ros/GenerateWaypointV2Action.srv[0m
+[ 52%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraStartShootSinglePhoto.srv[0m
+[ 52%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetGlobalCruisespeed.srv[0m
+[ 52%] [34m[1mGenerating C++ code from dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.srv[0m
+[ 52%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetGlobalCruisespeed.srv[0m
+[ 52%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraStartShootBurstPhoto.srv[0m
+[ 52%] [34m[1mGenerating C++ code from dji_osdk_ros/SetHomePoint.srv[0m
+[ 52%] [34m[1mGenerating Python code from SRV dji_osdk_ros/FlightTaskControl[0m
+[ 52%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetJoystickMode[0m
+[ 52%] [34m[1mGenerating Python code from SRV dji_osdk_ros/JoystickAction[0m
+[ 52%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetGlobalCruisespeed.srv[0m
+[ 52%] [34m[1mGenerating Javascript code from dji_osdk_ros/GetHMSData.srv[0m
+[ 53%] [34m[1mGenerating Lisp code from dji_osdk_ros/GetHMSData.srv[0m
+[ 54%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraStartShootAEBPhoto.srv[0m
+[ 55%] [34m[1mGenerating Javascript code from dji_osdk_ros/SubscribeWaypointV2Event.srv[0m
+[ 55%] [34m[1mGenerating Python code from SRV dji_osdk_ros/ObtainControlAuthority[0m
+[ 55%] [34m[1mGenerating Lisp code from dji_osdk_ros/SubscribeWaypointV2Event.srv[0m
+[ 55%] [34m[1mGenerating Python code from SRV dji_osdk_ros/KillSwitch[0m
+[ 55%] [34m[1mGenerating C++ code from dji_osdk_ros/SetupCameraH264.srv[0m
+[ 56%] [34m[1mGenerating C++ code from dji_osdk_ros/SetAvoidEnable.srv[0m
+[ 56%] [34m[1mGenerating Javascript code from dji_osdk_ros/SubscribeWaypointV2State.srv[0m
+[ 56%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraStartShootIntervalPhoto.srv[0m
+[ 56%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraStopShootPhoto.srv[0m
+[ 56%] [34m[1mGenerating Lisp code from dji_osdk_ros/SubscribeWaypointV2State.srv[0m
+[ 56%] [34m[1mGenerating Lisp code from dji_osdk_ros/Activation.srv[0m
+[ 56%] [34m[1mGenerating Javascript code from dji_osdk_ros/Activation.srv[0m
+[ 56%] [34m[1mGenerating Javascript code from dji_osdk_ros/CameraAction.srv[0m
+[ 56%] [34m[1mGenerating Python code from SRV dji_osdk_ros/EmergencyBrake[0m
+[ 56%] [34m[1mGenerating C++ code from dji_osdk_ros/GetAvoidEnable.srv[0m
+[ 56%] [34m[1mGenerating Javascript code from dji_osdk_ros/DroneTaskControl.srv[0m
+[ 56%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraRecordVideoAction.srv[0m
+[ 56%] [34m[1mGenerating Lisp code from dji_osdk_ros/CameraAction.srv[0m
+[ 56%] [34m[1mGenerating Lisp code from dji_osdk_ros/DroneTaskControl.srv[0m
+[ 56%] [34m[1mGenerating Javascript code from dji_osdk_ros/SDKControlAuthority.srv[0m
+[ 57%] [34m[1mGenerating Lisp code from dji_osdk_ros/SDKControlAuthority.srv[0m
+[ 57%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetLocalPosRef.srv[0m
+[ 57%] [34m[1mGenerating C++ code from dji_osdk_ros/InitWaypointV2Setting.srv[0m
+[ 57%] [34m[1mGenerating Lisp code from dji_osdk_ros/MFIOConfig.srv[0m
+[ 57%] [34m[1mGenerating C++ code from dji_osdk_ros/UploadWaypointV2Mission.srv[0m
+[ 58%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetLocalPosRef.srv[0m
+[ 58%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetWholeBatteryInfo.srv[0m
+[ 58%] [34m[1mGenerating Lisp code from dji_osdk_ros/MFIOSetValue.srv[0m
+[ 58%] [34m[1mGenerating Lisp code from dji_osdk_ros/DroneArmControl.srv[0m
+[ 58%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionStatus.srv[0m
+[ 58%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetSingleBatteryDynamicInfo.srv[0m
+[ 59%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GimbalAction[0m
+[ 59%] [34m[1mGenerating Javascript code from dji_osdk_ros/MFIOConfig.srv[0m
+[ 59%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWpAction.srv[0m
+[ 59%] [34m[1mGenerating Javascript code from dji_osdk_ros/MFIOSetValue.srv[0m
+[ 59%] [34m[1mGenerating Javascript code from dji_osdk_ros/DroneArmControl.srv[0m
+[ 59%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionStatus.srv[0m
+[ 59%] [34m[1mGenerating C++ code from dji_osdk_ros/UploadWaypointV2Action.srv[0m
+[ 59%] [34m[1mGenerating C++ code from dji_osdk_ros/DownloadWaypointV2Mission.srv[0m
+[ 60%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpAction.srv[0m
+[ 60%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWpUpload.srv[0m
+[ 61%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MFIO.srv[0m
+[ 61%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWpSetSpeed.srv[0m
+[ 61%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWpAction.srv[0m
+[ 61%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetGoHomeAltitude.srv[0m
+[ 61%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWpGetSpeed.srv[0m
+[ 62%] [34m[1mGenerating C++ code from dji_osdk_ros/StartWaypointV2Mission.srv[0m
+[ 62%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraEV[0m
+[ 62%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionWpGetInfo.srv[0m
+[ 62%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpAction.srv[0m
+[ 63%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWpUpload.srv[0m
+[ 63%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetGoHomeAltitude.srv[0m
+[ 63%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWpSetSpeed.srv[0m
+[ 63%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpUpload.srv[0m
+[ 63%] [34m[1mGenerating C++ code from dji_osdk_ros/StopWaypointV2Mission.srv[0m
+[ 64%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpGetInfo.srv[0m
+[ 64%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpUpdateRadius.srv[0m
+[ 64%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpUpdateYawRate.srv[0m
+[ 64%] [34m[1mGenerating C++ code from dji_osdk_ros/PauseWaypointV2Mission.srv[0m
+[ 64%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWpGetSpeed.srv[0m
+[ 64%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraShutterSpeed[0m
+[ 64%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.srv[0m
+[ 64%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraAperture[0m
+[ 64%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetHomePoint.srv[0m
+[ 64%] [34m[1mGenerating Lisp code from dji_osdk_ros/MissionHpResetYaw.srv[0m
+[ 64%] [34m[1mGenerating C++ code from dji_osdk_ros/ResumeWaypointV2Mission.srv[0m
+[ 64%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionWpGetInfo.srv[0m
+[ 64%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpUpload.srv[0m
+[ 64%] [34m[1mGenerating Lisp code from dji_osdk_ros/SendMobileData.srv[0m
+[ 64%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpGetInfo.srv[0m
+[ 65%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpUpdateYawRate.srv[0m
+[ 65%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetupCameraH264.srv[0m
+[ 65%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpUpdateRadius.srv[0m
+[ 65%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetAvoidEnable.srv[0m
+[ 65%] [34m[1mGenerating C++ code from dji_osdk_ros/GenerateWaypointV2Action.srv[0m
+[ 65%] [34m[1mGenerating Lisp code from dji_osdk_ros/SendPayloadData.srv[0m
+[ 65%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraISO[0m
+[ 66%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetHardSync.srv[0m
+[ 66%] [34m[1mGenerating Lisp code from dji_osdk_ros/QueryDroneVersion.srv[0m
+[ 66%] [34m[1mGenerating Javascript code from dji_osdk_ros/MissionHpResetYaw.srv[0m
+[ 66%] [34m[1mGenerating Lisp code from dji_osdk_ros/Stereo240pSubscription.srv[0m
+[ 66%] [34m[1mGenerating C++ code from dji_osdk_ros/SetGlobalCruisespeed.srv[0m
+[ 67%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetAvoidEnable.srv[0m
+[ 67%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraFocusPoint[0m
+[ 67%] [34m[1mGenerating EusLisp code from dji_osdk_ros/InitWaypointV2Setting.srv[0m
+[ 68%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraTapZoomPoint[0m
+[ 68%] [34m[1mGenerating Javascript code from dji_osdk_ros/SendMobileData.srv[0m
+[ 68%] [34m[1mGenerating Lisp code from dji_osdk_ros/StereoVGASubscription.srv[0m
+[ 68%] [34m[1mGenerating C++ code from dji_osdk_ros/GetGlobalCruisespeed.srv[0m
+[ 68%] [34m[1mGenerating EusLisp code from dji_osdk_ros/UploadWaypointV2Mission.srv[0m
+[ 68%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraSetZoomPara[0m
+[ 68%] [34m[1mGenerating EusLisp code from dji_osdk_ros/UploadWaypointV2Action.srv[0m
+[ 68%] [34m[1mGenerating Javascript code from dji_osdk_ros/SendPayloadData.srv[0m
+[ 68%] [34m[1mGenerating Lisp code from dji_osdk_ros/StereoDepthSubscription.srv[0m
+[ 68%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetHardSync.srv[0m
+[ 68%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraZoomCtrl[0m
+[ 69%] [34m[1mGenerating C++ code from dji_osdk_ros/GetHMSData.srv[0m
+[ 69%] [34m[1mGenerating EusLisp code from dji_osdk_ros/DownloadWaypointV2Mission.srv[0m
+[ 69%] [34m[1mGenerating C++ code from dji_osdk_ros/SubscribeWaypointV2Event.srv[0m
+[ 69%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraStartShootSinglePhoto[0m
+[ 69%] [34m[1mGenerating EusLisp code from dji_osdk_ros/StartWaypointV2Mission.srv[0m
+[ 69%] [34m[1mGenerating Lisp code from dji_osdk_ros/SetupCameraStream.srv[0m
+[ 70%] [34m[1mGenerating Javascript code from dji_osdk_ros/QueryDroneVersion.srv[0m
+[ 70%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraStartShootBurstPhoto[0m
+[ 70%] [34m[1mGenerating Javascript code from dji_osdk_ros/Stereo240pSubscription.srv[0m
+[ 70%] Built target dji_osdk_ros_generate_messages_lisp
+[ 70%] [34m[1mGenerating Javascript code from dji_osdk_ros/StereoVGASubscription.srv[0m
+[ 70%] [34m[1mGenerating Javascript code from dji_osdk_ros/StereoDepthSubscription.srv[0m
+[ 71%] [34m[1mGenerating EusLisp code from dji_osdk_ros/StopWaypointV2Mission.srv[0m
+[ 71%] [34m[1mGenerating C++ code from dji_osdk_ros/SubscribeWaypointV2State.srv[0m
+[ 71%] [34m[1mGenerating Javascript code from dji_osdk_ros/SetupCameraStream.srv[0m
+[ 71%] [34m[1mGenerating C++ code from dji_osdk_ros/Activation.srv[0m
+[ 71%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraStartShootAEBPhoto[0m
+[ 72%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraStartShootIntervalPhoto[0m
+[ 72%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraStopShootPhoto[0m
+[ 72%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraRecordVideoAction[0m
+[ 72%] [34m[1mGenerating EusLisp code from dji_osdk_ros/PauseWaypointV2Mission.srv[0m
+[ 72%] Built target dji_osdk_ros_generate_messages_nodejs
+[ 72%] [34m[1mGenerating C++ code from dji_osdk_ros/CameraAction.srv[0m
+[ 72%] [34m[1mGenerating EusLisp code from dji_osdk_ros/ResumeWaypointV2Mission.srv[0m
+[ 72%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GenerateWaypointV2Action.srv[0m
+[ 72%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetGlobalCruisespeed.srv[0m
+[ 72%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetWholeBatteryInfo[0m
+[ 72%] [34m[1mGenerating C++ code from dji_osdk_ros/DroneTaskControl.srv[0m
+[ 72%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetGlobalCruisespeed.srv[0m
+[ 73%] [34m[1mGenerating C++ code from dji_osdk_ros/SDKControlAuthority.srv[0m
+[ 73%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetSingleBatteryDynamicInfo[0m
+[ 73%] [34m[1mGenerating C++ code from dji_osdk_ros/SetLocalPosRef.srv[0m
+[ 73%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MFIO[0m
+[ 74%] [34m[1mGenerating EusLisp code from dji_osdk_ros/GetHMSData.srv[0m
+[ 74%] [34m[1mGenerating C++ code from dji_osdk_ros/MFIOConfig.srv[0m
+[ 74%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SubscribeWaypointV2Event.srv[0m
+[ 74%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetGoHomeAltitude[0m
+[ 74%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SubscribeWaypointV2State.srv[0m
+[ 74%] [34m[1mGenerating EusLisp code from dji_osdk_ros/Activation.srv[0m
+[ 74%] [34m[1mGenerating C++ code from dji_osdk_ros/MFIOSetValue.srv[0m
+[ 74%] [34m[1mGenerating EusLisp code from dji_osdk_ros/CameraAction.srv[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetGoHomeAltitude[0m
+[ 75%] [34m[1mGenerating C++ code from dji_osdk_ros/DroneArmControl.srv[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetCurrentAircraftLocAsHomePoint[0m
+[ 75%] [34m[1mGenerating EusLisp code from dji_osdk_ros/DroneTaskControl.srv[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetHomePoint[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetupCameraH264[0m
+[ 75%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SDKControlAuthority.srv[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetAvoidEnable[0m
+[ 75%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetAvoidEnable[0m
+[ 75%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionStatus.srv[0m
+[ 76%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetLocalPosRef.srv[0m
+[ 76%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MFIOConfig.srv[0m
+[ 77%] [34m[1mGenerating Python code from SRV dji_osdk_ros/InitWaypointV2Setting[0m
+[ 78%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWpAction.srv[0m
+[ 78%] [34m[1mGenerating Python code from SRV dji_osdk_ros/UploadWaypointV2Mission[0m
+[ 78%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MFIOSetValue.srv[0m
+[ 78%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpAction.srv[0m
+[ 78%] [34m[1mGenerating Python code from SRV dji_osdk_ros/UploadWaypointV2Action[0m
+[ 78%] [34m[1mGenerating Python code from SRV dji_osdk_ros/DownloadWaypointV2Mission[0m
+[ 78%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWpUpload.srv[0m
+[ 78%] [34m[1mGenerating Python code from SRV dji_osdk_ros/StartWaypointV2Mission[0m
+[ 78%] [34m[1mGenerating Python code from SRV dji_osdk_ros/StopWaypointV2Mission[0m
+[ 78%] [34m[1mGenerating EusLisp code from dji_osdk_ros/DroneArmControl.srv[0m
+[ 79%] [34m[1mGenerating Python code from SRV dji_osdk_ros/PauseWaypointV2Mission[0m
+[ 79%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionStatus.srv[0m
+[ 79%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWpAction.srv[0m
+[ 79%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GenerateWaypointV2Action[0m
+[ 79%] [34m[1mGenerating Python code from SRV dji_osdk_ros/ResumeWaypointV2Mission[0m
+[ 79%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWpSetSpeed.srv[0m
+[ 79%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetGlobalCruisespeed[0m
+[ 79%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWpGetSpeed.srv[0m
+[ 80%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpAction.srv[0m
+[ 80%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWpUpload.srv[0m
+[ 80%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWpSetSpeed.srv[0m
+[ 80%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionWpGetInfo.srv[0m
+[ 80%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWpGetSpeed.srv[0m
+[ 80%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpUpload.srv[0m
+[ 80%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetGlobalCruisespeed[0m
+[ 81%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpGetInfo.srv[0m
+[ 81%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionWpGetInfo.srv[0m
+[ 81%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpUpload.srv[0m
+[ 82%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpGetInfo.srv[0m
+[ 82%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpUpdateYawRate.srv[0m
+[ 82%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpUpdateRadius.srv[0m
+[ 82%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpUpdateYawRate.srv[0m
+[ 82%] [34m[1mGenerating C++ code from dji_osdk_ros/MissionHpResetYaw.srv[0m
+[ 82%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpUpdateRadius.srv[0m
+[ 82%] [34m[1mGenerating Python code from SRV dji_osdk_ros/GetHMSData[0m
+[ 82%] [34m[1mGenerating C++ code from dji_osdk_ros/SendMobileData.srv[0m
+[ 82%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SubscribeWaypointV2Event[0m
+[ 82%] [34m[1mGenerating C++ code from dji_osdk_ros/SendPayloadData.srv[0m
+[ 82%] [34m[1mGenerating EusLisp code from dji_osdk_ros/MissionHpResetYaw.srv[0m
+[ 83%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SubscribeWaypointV2State[0m
+[ 83%] [34m[1mGenerating Python code from SRV dji_osdk_ros/Activation[0m
+[ 84%] [34m[1mGenerating C++ code from dji_osdk_ros/SetHardSync.srv[0m
+[ 84%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SendMobileData.srv[0m
+[ 84%] [34m[1mGenerating C++ code from dji_osdk_ros/Stereo240pSubscription.srv[0m
+[ 84%] [34m[1mGenerating Python code from SRV dji_osdk_ros/CameraAction[0m
+[ 84%] [34m[1mGenerating C++ code from dji_osdk_ros/QueryDroneVersion.srv[0m
+[ 84%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SendPayloadData.srv[0m
+[ 84%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetHardSync.srv[0m
+[ 84%] [34m[1mGenerating Python code from SRV dji_osdk_ros/DroneTaskControl[0m
+[ 84%] [34m[1mGenerating C++ code from dji_osdk_ros/StereoVGASubscription.srv[0m
+[ 84%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SDKControlAuthority[0m
+[ 85%] [34m[1mGenerating EusLisp code from dji_osdk_ros/QueryDroneVersion.srv[0m
+[ 85%] [34m[1mGenerating C++ code from dji_osdk_ros/StereoDepthSubscription.srv[0m
+[ 85%] [34m[1mGenerating C++ code from dji_osdk_ros/SetupCameraStream.srv[0m
+[ 85%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetLocalPosRef[0m
+[ 86%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MFIOConfig[0m
+[ 86%] [34m[1mGenerating EusLisp code from dji_osdk_ros/Stereo240pSubscription.srv[0m
+[ 86%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MFIOSetValue[0m
+[ 86%] [34m[1mGenerating Python code from SRV dji_osdk_ros/DroneArmControl[0m
+[ 86%] [34m[1mGenerating EusLisp code from dji_osdk_ros/StereoVGASubscription.srv[0m
+[ 86%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionStatus[0m
+[ 86%] [34m[1mGenerating EusLisp code from dji_osdk_ros/StereoDepthSubscription.srv[0m
+[ 86%] [34m[1mGenerating EusLisp code from dji_osdk_ros/SetupCameraStream.srv[0m
+[ 86%] [34m[1mGenerating EusLisp manifest code for dji_osdk_ros[0m
+[ 86%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpAction[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionWpUpload[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionWpAction[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionWpSetSpeed[0m
+[ 87%] Built target dji_osdk_ros_generate_messages_cpp
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionWpGetSpeed[0m
+[35m[1mScanning dependencies of target dji_osdk_ros[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionWpGetInfo[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpUpload[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpUpdateYawRate[0m
+[ 87%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpGetInfo[0m
+[ 87%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_mission_services.cpp.o[0m
+[ 88%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpUpdateRadius[0m
+[ 88%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_mobile_comm.cpp.o[0m
+[ 88%] [34m[1mGenerating Python code from SRV dji_osdk_ros/MissionHpResetYaw[0m
+[ 89%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_payload_comm.cpp.o[0m
+[ 89%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SendMobileData[0m
+[ 89%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SendPayloadData[0m
+[ 89%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetHardSync[0m
+[ 89%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_publisher.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_time_sync.cpp.o[0m
+[ 89%] [32mBuilding C object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/osdkhal_linux.c.o[0m
+[ 89%] [34m[1mGenerating Python code from SRV dji_osdk_ros/QueryDroneVersion[0m
+[ 90%] [34m[1mGenerating Python code from SRV dji_osdk_ros/Stereo240pSubscription[0m
+[ 90%] [34m[1mGenerating Python code from SRV dji_osdk_ros/StereoVGASubscription[0m
+[ 90%] [32mBuilding C object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/osdkosal_linux.c.o[0m
+[35m[1mScanning dependencies of target dji_sdk_node[0m
+[ 90%] Built target dji_osdk_ros_generate_messages_eus
+[ 90%] [32mBuilding CXX object src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/vehicle_wrapper.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o[0m
+[ 91%] [34m[1mGenerating Python code from SRV dji_osdk_ros/StereoDepthSubscription[0m
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o[0m
+[ 91%] [34m[1mGenerating Python code from SRV dji_osdk_ros/SetupCameraStream[0m
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o[0m
+[ 91%] [34m[1mGenerating Python msg __init__.py for dji_osdk_ros[0m
+[ 91%] [34m[1mGenerating Python srv __init__.py for dji_osdk_ros[0m
+[ 91%] Built target dji_osdk_ros_generate_messages_py
+[35m[1mScanning dependencies of target dji_osdk_ros_generate_messages[0m
+[ 91%] Built target dji_osdk_ros_generate_messages
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o[0m
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2StartMissionCallback(dji_osdk_ros::StartWaypointV2Mission::Request&, dji_osdk_ros::StartWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:661:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  661 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2StopMissionCallback(dji_osdk_ros::StopWaypointV2Mission::Request&, dji_osdk_ros::StopWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:676:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  676 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2PauseMissionCallback(dji_osdk_ros::PauseWaypointV2Mission::Request&, dji_osdk_ros::PauseWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:691:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  691 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2ResumeMissionCallback(dji_osdk_ros::ResumeWaypointV2Mission::Request&, dji_osdk_ros::ResumeWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:706:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  706 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 91%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o[0m
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2GetGlobalCruisespeedCallback(dji_osdk_ros::GetGlobalCruisespeed::Request&, dji_osdk_ros::GetGlobalCruisespeed::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:951:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  951 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 92%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o[0m
+[ 92%] [32mBuilding C object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o[0m
+[ 92%] [32mBuilding C object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o[0m
+[ 92%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o[0m
+[ 94%] [32m[1mLinking CXX shared library /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/libdji_osdk_ros.so[0m
+[ 94%] Built target dji_osdk_ros
+[35m[1mScanning dependencies of target InMotionDropping[0m
+[35m[1mScanning dependencies of target hms_node[0m
+[35m[1mScanning dependencies of target dji_vehicle_node[0m
+[35m[1mScanning dependencies of target battery_node[0m
+[35m[1mScanning dependencies of target payload_device_node[0m
+[35m[1mScanning dependencies of target InMotionDropper[0m
+[35m[1mScanning dependencies of target flight_control_node[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/InMotionDropping.dir/InMotionDropping.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/InMotionDropper.dir/InMotionDropper.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/CMakeFiles/dji_vehicle_node.dir/dji_vehicle_node.cpp.o[0m
+[35m[1mScanning dependencies of target time_sync_node[0m
+[ 94%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.o[0m
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 9 has type ‘[01m[Kdji_osdk_ros::GetHMSDataResponse_<std::allocator<void> >::_timeStamp_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   53 |             ROS_INFO([01;35m[K"hmsErrListNum: %d, timeStamp:%ld, alarm_id: 0x%08x, sensorIndex: %d, level: %d"[m[K,
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   54 |                       i+1, [32m[Kget_hms_data.response.timeStamp[m[K,
+      |                            [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kdji_osdk_ros::GetHMSDataResponse_<std::allocator<void> >::_timeStamp_type {aka unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   53 |             [01;36m[KROS_INFO[m[K("hmsErrListNum: %d, timeStamp:%ld, alarm_id: 0x%08x, sensorIndex: %d, level: %d",
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   53 |             ROS_INFO("hmsErrListNum: %d, timeStamp:[01;36m[K%ld[m[K, alarm_id: 0x%08x, sensorIndex: %d, level: %d",
+      |                                                    [01;36m[K~~^[m[K
+      |                                                      [01;36m[K|[m[K
+      |                                                      [01;36m[Klong int[m[K
+      |                                                    [32m[K%d[m[K
+[35m[1mScanning dependencies of target gimbal_camera_control_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.o[0m
+[35m[1mScanning dependencies of target mobile_device_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/hms_node[0m
+[ 95%] Built target hms_node
+[35m[1mScanning dependencies of target waypointV2_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/flight_control_node[0m
+[35m[1mScanning dependencies of target camera_stream_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/InMotionDropping[0m
+[ 95%] Built target flight_control_node
+[35m[1mScanning dependencies of target telemetry_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.o[0m
+[ 95%] Built target InMotionDropping
+[35m[1mScanning dependencies of target main_and_fpv_node[0m
+[ 95%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.o[0m
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   50 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)batteryCapacityPercentage is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   50 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)batteryCapacityPercentage is %d(%)",getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:78:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   50 |       ROS_INFO("(It's valid only for M210V2)batteryCapacityPercentage is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   54 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)goHomeNeedCapacity is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   54 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)goHomeNeedCapacity is %d(%)",getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:71:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   54 |       ROS_INFO("(It's valid only for M210V2)goHomeNeedCapacity is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |                                                                       [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   55 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)landNeedCapacity is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   55 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)landNeedCapacity is %d(%)",getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   55 |       ROS_INFO("(It's valid only for M210V2)landNeedCapacity is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |                                                                     [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   61 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   61 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%)",getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:77:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   61 |       ROS_INFO("(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   63 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   63 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%)",getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:84:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   63 |       ROS_INFO("(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |                                                                                    [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   76 |       ROS_INFO([01;35m[K"battery index %d batteryCapacityPercent is %d(%)"[m[K,firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   76 |       [01;36m[KROS_INFO[m[K("battery index %d batteryCapacityPercent is %d(%)",firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   76 |       ROS_INFO("battery index %d batteryCapacityPercent is %d(%[01;36m[K)[m[K",firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                                                                [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   85 |       ROS_INFO([01;35m[K"battery index %d batteryCapacityPercent is %d(%)"[m[K,secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   85 |       [01;36m[KROS_INFO[m[K("battery index %d batteryCapacityPercent is %d(%)",secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   85 |       ROS_INFO("battery index %d batteryCapacityPercent is %d(%[01;36m[K)[m[K",secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                                                                [01;36m[K^[m[K
+[ 95%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/battery_node[0m
+[ 96%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/payload_device_node[0m
+[ 96%] Built target battery_node
+[35m[1mScanning dependencies of target camera_h264_node[0m
+[ 97%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.o[0m
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/gimbal_camera_control_node[0m
+[ 97%] Built target payload_device_node
+[35m[1mScanning dependencies of target mission_node[0m
+[ 97%] [32mBuilding CXX object src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.o[0m
+[ 97%] Built target gimbal_camera_control_node
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/dji_sdk_node[0m
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/InMotionDropper[0m
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:[m[K In function ‘[01m[Kbool takePicture()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:215:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  215 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:[m[K In function ‘[01m[Kbool recordVideo()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:226:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  226 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kbool ffmpeg_init()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:62:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid avcodec_register_all()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   62 |     avcodec_register_all([01;35m[K)[m[K;
+      |                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4159:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4159 | void [01;36m[Kavcodec_register_all[m[K(void);
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:62:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid avcodec_register_all()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   62 |     avcodec_register_all([01;35m[K)[m[K;
+      |                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4159:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4159 | void [01;36m[Kavcodec_register_all[m[K(void);
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[ 97%] Built target InMotionDropper
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kvoid decodeToDisplay(uint8_t*, int)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:181:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avcodec_decode_video2(AVCodecContext*, AVFrame*, int*, const AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  181 |             avcodec_decode_video2(pCodecCtx, pFrameYUV, &gotPicture, &pkt[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4828:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4828 | int [01;36m[Kavcodec_decode_video2[m[K(AVCodecContext *avctx, AVFrame *picture,
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:181:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avcodec_decode_video2(AVCodecContext*, AVFrame*, int*, const AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  181 |             avcodec_decode_video2(pCodecCtx, pFrameYUV, &gotPicture, &pkt[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4828:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4828 | int [01;36m[Kavcodec_decode_video2[m[K(AVCodecContext *avctx, AVFrame *picture,
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:203:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  203 |                     bufSize = avpicture_get_size(AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5510:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5510 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:203:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  203 |                     bufSize = avpicture_get_size(AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5510:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5510 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:205:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  205 |                     avpicture_fill((AVPicture*)pFrameRGB, rgbBuf, AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                                         [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5495:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5495 | int [01;36m[Kavpicture_fill[m[K(AVPicture *picture, const uint8_t *ptr,
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:205:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  205 |                     avpicture_fill((AVPicture*)pFrameRGB, rgbBuf, AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                                         [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5495:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5495 | int [01;36m[Kavpicture_fill[m[K(AVPicture *picture, const uint8_t *ptr,
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:228:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_free_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  228 |     av_free_packet(&pkt[01;35m[K)[m[K;
+      |                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4473:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4473 | void [01;36m[Kav_free_packet[m[K(AVPacket *pkt);
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:228:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_free_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  228 |     av_free_packet(&pkt[01;35m[K)[m[K;
+      |                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4473:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4473 | void [01;36m[Kav_free_packet[m[K(AVPacket *pkt);
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[ 97%] Built target dji_sdk_node
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kbool ffmpeg_init()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:97:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+   97 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/time_sync_node[0m
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/mobile_device_node[0m
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/camera_h264_node[0m
+[ 97%] Built target time_sync_node
+[ 97%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/camera_stream_node[0m
+[ 97%] Built target camera_h264_node
+[ 97%] Built target mobile_device_node
+[ 97%] Built target camera_stream_node
+[ 98%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/main_and_fpv_node[0m
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:[m[K In function ‘[01m[KServiceAck missionAction(DJI::OSDK::DJI_MISSION_TYPE, DJI::OSDK::MISSION_ACTION)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:375:41:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[KmissionWpAction.dji_osdk_ros::MissionWpAction::response.dji_osdk_ros::MissionWpActionResponse_<std::allocator<void> >::result[m[K’ from ‘[01m[Kdji_osdk_ros::MissionWpActionResponse_<std::allocator<void> >::_result_type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} to ‘[01m[Kbool[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  375 |       return { [01;35m[KmissionWpAction.response.result[m[K,
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[100%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/waypointV2_node[0m
+[100%] Built target main_and_fpv_node
+[100%] Built target waypointV2_node
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:392:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  392 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[100%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/mission_node[0m
+[100%] Built target mission_node
+[100%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/telemetry_node[0m
+[100%] Built target telemetry_node
+[100%] [32m[1mLinking CXX executable /home/erfan/M300_ws/devel/.private/dji_osdk_ros/lib/dji_osdk_ros/dji_vehicle_node[0m
+[100%] Built target dji_vehicle_node

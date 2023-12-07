@@ -253,6 +253,7 @@
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/CMakeFiles/install/strip.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/InMotionDropping.dir
+/home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/InMotionDropper.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir

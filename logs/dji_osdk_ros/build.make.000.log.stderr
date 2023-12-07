@@ -1,0 +1,304 @@
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2StartMissionCallback(dji_osdk_ros::StartWaypointV2Mission::Request&, dji_osdk_ros::StartWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:661:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  661 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2StopMissionCallback(dji_osdk_ros::StopWaypointV2Mission::Request&, dji_osdk_ros::StopWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:676:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  676 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2PauseMissionCallback(dji_osdk_ros::PauseWaypointV2Mission::Request&, dji_osdk_ros::PauseWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:691:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  691 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2ResumeMissionCallback(dji_osdk_ros::ResumeWaypointV2Mission::Request&, dji_osdk_ros::ResumeWaypointV2Mission::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:706:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  706 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:[m[K In member function ‘[01m[Kbool dji_osdk_ros::VehicleNode::waypointV2GetGlobalCruisespeedCallback(dji_osdk_ros::GetGlobalCruisespeed::Request&, dji_osdk_ros::GetGlobalCruisespeed::Response&)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/dji_vehicle_node_mission_services.cpp:951:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  951 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 9 has type ‘[01m[Kdji_osdk_ros::GetHMSDataResponse_<std::allocator<void> >::_timeStamp_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   53 |             ROS_INFO([01;35m[K"hmsErrListNum: %d, timeStamp:%ld, alarm_id: 0x%08x, sensorIndex: %d, level: %d"[m[K,
+      |                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   54 |                       i+1, [32m[Kget_hms_data.response.timeStamp[m[K,
+      |                            [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kdji_osdk_ros::GetHMSDataResponse_<std::allocator<void> >::_timeStamp_type {aka unsigned int}[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   53 |             [01;36m[KROS_INFO[m[K("hmsErrListNum: %d, timeStamp:%ld, alarm_id: 0x%08x, sensorIndex: %d, level: %d",
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp:53:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   53 |             ROS_INFO("hmsErrListNum: %d, timeStamp:[01;36m[K%ld[m[K, alarm_id: 0x%08x, sensorIndex: %d, level: %d",
+      |                                                    [01;36m[K~~^[m[K
+      |                                                      [01;36m[K|[m[K
+      |                                                      [01;36m[Klong int[m[K
+      |                                                    [32m[K%d[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   50 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)batteryCapacityPercentage is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   50 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)batteryCapacityPercentage is %d(%)",getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:50:78:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   50 |       ROS_INFO("(It's valid only for M210V2)batteryCapacityPercentage is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.batteryCapacityPercentage);
+      |                                                                              [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   54 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)goHomeNeedCapacity is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   54 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)goHomeNeedCapacity is %d(%)",getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:54:71:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   54 |       ROS_INFO("(It's valid only for M210V2)goHomeNeedCapacity is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.goHomeNeedCapacity);
+      |                                                                       [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   55 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)landNeedCapacity is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   55 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)landNeedCapacity is %d(%)",getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:55:69:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   55 |       ROS_INFO("(It's valid only for M210V2)landNeedCapacity is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.landNeedCapacity);
+      |                                                                     [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   61 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   61 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%)",getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:61:77:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   61 |       ROS_INFO("(It's valid only for M210V2)lowBatteryAlarmThreshold is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.lowBatteryAlarmThreshold);
+      |                                                                             [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   63 |       ROS_INFO([01;35m[K"(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%)"[m[K,getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   63 |       [01;36m[KROS_INFO[m[K("(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%)",getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:63:84:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   63 |       ROS_INFO("(It's valid only for M210V2)seriousLowBatteryAlarmThreshold is %d(%[01;36m[K)[m[K",getWholeBatteryInfo.response.battery_whole_info.seriousLowBatteryAlarmThreshold);
+      |                                                                                    [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   76 |       ROS_INFO([01;35m[K"battery index %d batteryCapacityPercent is %d(%)"[m[K,firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   76 |       [01;36m[KROS_INFO[m[K("battery index %d batteryCapacityPercent is %d(%)",firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:76:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   76 |       ROS_INFO("battery index %d batteryCapacityPercent is %d(%[01;36m[K)[m[K",firstBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                                                                [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:29[m[K:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:16:[m[K [01;35m[Kwarning: [m[Kunknown conversion type character ‘[01m[K)[m[K’ in format [[01;35m[K-Wformat=[m[K]
+   85 |       ROS_INFO([01;35m[K"battery index %d batteryCapacityPercent is %d(%)"[m[K,secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   85 |       [01;36m[KROS_INFO[m[K("battery index %d batteryCapacityPercent is %d(%)",secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/battery_node.cpp:85:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   85 |       ROS_INFO("battery index %d batteryCapacityPercent is %d(%[01;36m[K)[m[K",secondBatteryDynamicInfo.response.smartBatteryDynamicInfo.batteryIndex,
+      |                                                                [01;36m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:[m[K In function ‘[01m[Kbool takePicture()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:215:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  215 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:[m[K In function ‘[01m[Kbool recordVideo()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mobile_device_node.cpp:226:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  226 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kbool ffmpeg_init()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:62:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid avcodec_register_all()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   62 |     avcodec_register_all([01;35m[K)[m[K;
+      |                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4159:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4159 | void [01;36m[Kavcodec_register_all[m[K(void);
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:62:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid avcodec_register_all()[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   62 |     avcodec_register_all([01;35m[K)[m[K;
+      |                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4159:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4159 | void [01;36m[Kavcodec_register_all[m[K(void);
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kvoid decodeToDisplay(uint8_t*, int)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:181:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avcodec_decode_video2(AVCodecContext*, AVFrame*, int*, const AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  181 |             avcodec_decode_video2(pCodecCtx, pFrameYUV, &gotPicture, &pkt[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4828:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4828 | int [01;36m[Kavcodec_decode_video2[m[K(AVCodecContext *avctx, AVFrame *picture,
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:181:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avcodec_decode_video2(AVCodecContext*, AVFrame*, int*, const AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  181 |             avcodec_decode_video2(pCodecCtx, pFrameYUV, &gotPicture, &pkt[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4828:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4828 | int [01;36m[Kavcodec_decode_video2[m[K(AVCodecContext *avctx, AVFrame *picture,
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:203:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  203 |                     bufSize = avpicture_get_size(AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5510:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5510 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:203:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_get_size(AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  203 |                     bufSize = avpicture_get_size(AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5510:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5510 | int [01;36m[Kavpicture_get_size[m[K(enum AVPixelFormat pix_fmt, int width, int height);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:205:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  205 |                     avpicture_fill((AVPicture*)pFrameRGB, rgbBuf, AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                                         [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5495:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5495 | int [01;36m[Kavpicture_fill[m[K(AVPicture *picture, const uint8_t *ptr,
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:205:89:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  205 |                     avpicture_fill((AVPicture*)pFrameRGB, rgbBuf, AV_PIX_FMT_RGB24, w, h[01;35m[K)[m[K;
+      |                                                                                         [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:5495:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 5495 | int [01;36m[Kavpicture_fill[m[K(AVPicture *picture, const uint8_t *ptr,
+      |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:228:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_free_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  228 |     av_free_packet(&pkt[01;35m[K)[m[K;
+      |                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4473:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4473 | void [01;36m[Kav_free_packet[m[K(AVPacket *pkt);
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:228:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_free_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  228 |     av_free_packet(&pkt[01;35m[K)[m[K;
+      |                        [01;35m[K^[m[K
+In file included from [01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:38[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4473:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 4473 | void [01;36m[Kav_free_packet[m[K(AVPacket *pkt);
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:[m[K In function ‘[01m[KServiceAck missionAction(DJI::OSDK::DJI_MISSION_TYPE, DJI::OSDK::MISSION_ACTION)[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:375:41:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[KmissionWpAction.dji_osdk_ros::MissionWpAction::response.dji_osdk_ros::MissionWpActionResponse_<std::allocator<void> >::result[m[K’ from ‘[01m[Kdji_osdk_ros::MissionWpActionResponse_<std::allocator<void> >::_result_type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} to ‘[01m[Kbool[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  375 |       return { [01;35m[KmissionWpAction.response.result[m[K,
+      |                [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:[m[K In function ‘[01m[Kbool ffmpeg_init()[m[K’:
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/camera_stream_node.cpp:97:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+   97 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/mission_node.cpp:392:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  392 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

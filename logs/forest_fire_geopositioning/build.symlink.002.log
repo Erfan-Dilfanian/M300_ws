@@ -1,0 +1,9 @@
+Symlinking /home/erfan/M300_ws/devel/share/forest_fire_geopositioning/cmake/forest_fire_geopositioningConfig.cmake
+Symlinking /home/erfan/M300_ws/devel/share/forest_fire_geopositioning/cmake/forest_fire_geopositioningConfig-version.cmake
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/geo_positioning
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/cmake.lock
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/fire_detection_v8.py
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/fire_detection_v5.py
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/compress_video_node
+Symlinking /home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/fire_spots_visualization
+Symlinking /home/erfan/M300_ws/devel/lib/pkgconfig/forest_fire_geopositioning.pc

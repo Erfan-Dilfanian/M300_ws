@@ -1,0 +1,23 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _forest_fire_detection_system_generate_messages_check_deps_SingleFireIR
+[  0%] Built target _forest_fire_detection_system_generate_messages_check_deps_SegmentSmoke
+[  0%] Built target _forest_fire_detection_system_generate_messages_check_deps_SingleFireRGB
+[  0%] Built target _forest_fire_detection_system_generate_messages_check_deps_SingleFireFuse
+[  0%] Built target _forest_fire_detection_system_generate_messages_check_deps_ToggleGrabDataDepthEstimation
+[ 28%] Built target forest_fire_detection_system_generate_messages_cpp
+[ 30%] Built target forest_fire_detection_system_generate_messages_eus
+[ 28%] Built target forest_fire_detection_system_generate_messages_nodejs
+[ 32%] Built target forest_fire_detection_system_generate_messages_lisp
+[ 33%] Built target forest_fire_detection_system_generate_messages_py
+[ 33%] Built target forest_fire_detection_system_generate_messages
+[ 34%] [32m[1mLinking CXX shared library /home/erfan/M300_ws/devel/.private/forest_fire_detection_system/lib/libforest_fire_detection_system_module.so[0m
+/usr/bin/ld: cannot find -ldji_osdk_ros
+/usr/bin/ld: cannot find -ldji_osdk_ros
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/modules/CMakeFiles/forest_fire_detection_system_module.dir/build.make:463: /home/erfan/M300_ws/devel/.private/forest_fire_detection_system/lib/libforest_fire_detection_system_module.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:3629: src/modules/CMakeFiles/forest_fire_detection_system_module.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
