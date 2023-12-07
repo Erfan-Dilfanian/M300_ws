@@ -111,8 +111,8 @@ void FFDS::APP::SingleFirePointTaskManager::gpsPositionSubCallback(
     gps_position_ = *gpsPosition;
     /*PRINT_DEBUG("the Latitude is: %f", gps_position_.latitude);
     ROS_DEBUG("the Latitude is: %f", gps_position_.latitude);*/
-    printf("[35] [%s:%d|in %s] the Latitude is: %f\n",
-           PCM_FILENAME(__FILE__), __LINE__, __FUNCTION__, gps_position_.latitude);
+    /*printf("[35] [%s:%d|in %s] the Latitude is: %f\n",
+           PCM_FILENAME(__FILE__), __LINE__, __FUNCTION__, gps_position_.latitude);*/
 
 }
 
@@ -409,12 +409,39 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 //        }
 //    }
 
+ros::Time lastPrintTime = ros::Time::now();
+ros::Duration printInterval(1.0); // 1 seconds, adjust as needed
+
+
+        bool flag = 1;
+bool mybool;
     while (ros::ok() && (waypoint_V2_mission_state_push_.state != 0x6)) {
     ros::spinOnce();
-        JoystickAction joystickAction;
+        dji_osdk_ros::JoystickAction joystickAction;
+        mybool = abs(gps_position_.latitude-45.45827)<0.0001 && flag == 1;
+      
+       if (ros::Time::now() - lastPrintTime > printInterval) {
+        printf("flag is %d and latitude is: %f and difference is %f, Boolean value: %d\n",
+               flag, gps_position_.latitude, abs(gps_position_.latitude-45.45827), mybool);
+        lastPrintTime = ros::Time::now(); // Update last print time
+    }
+        
+/*printf("the difference: %f\n", gps_position_.latitude - 45.45827);*/
+       if(mybool)
+        {
+			  printf("got it");
+float yaw=30;
+        joystickAction.request.joystickCommand.yaw = yaw;
+            joystick_action_client.call(joystickAction);
 
-        joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;
-
+         gimbalAction.request.rotationMode = 0;
+    gimbalAction.request.pitch = 50.0f;
+    gimbalAction.request.roll = 0.0f;
+    gimbalAction.request.yaw = 30.0f;
+    gimbalAction.request.time = 0.5;
+    gimbal_control_client.call(gimbalAction); 
+        flag = 0;
+}
         continue;
     }
 
