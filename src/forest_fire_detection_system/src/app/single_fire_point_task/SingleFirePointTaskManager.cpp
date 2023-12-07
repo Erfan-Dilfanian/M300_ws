@@ -109,6 +109,7 @@ void FFDS::APP::SingleFirePointTaskManager::attitudeSubCallback(
 void FFDS::APP::SingleFirePointTaskManager::gpsPositionSubCallback(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
+    ROS_DEBUG("Latitude: %f", gps_position_.latitude);
 }
 
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
@@ -284,6 +285,7 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
         PRINT_ERROR("Quit!");
         return;
     }
+
     ros::Duration(1.0).sleep();
 
     /* Step: 2 upload mission, empty srv works */
