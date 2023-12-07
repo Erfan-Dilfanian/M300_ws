@@ -41,6 +41,18 @@
 #include <tools/SystemLib.hpp>
 #include <tools/PrintControl/FileWritter.hpp>
 
+#include <dji_osdk_ros/FlightTaskControl.h>
+#include <dji_osdk_ros/SetGoHomeAltitude.h>
+#include <dji_osdk_ros/GetGoHomeAltitude.h>
+#include <dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.h>
+#include <dji_osdk_ros/SetAvoidEnable.h>
+#include <dji_osdk_ros/ObtainControlAuthority.h>
+#include <dji_osdk_ros/EmergencyBrake.h>
+#include <dji_osdk_ros/GetAvoidEnable.h>
+
+#include<dji_osdk_ros/SetJoystickMode.h>
+#include<dji_osdk_ros/JoystickAction.h>
+
 namespace FFDS {
 
 namespace APP {
