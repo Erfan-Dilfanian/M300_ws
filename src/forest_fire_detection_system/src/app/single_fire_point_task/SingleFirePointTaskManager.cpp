@@ -15,6 +15,8 @@
  ******************************************************************************/
 
 #include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
+#include <dji_osdk_ros/GimbalAction.h>
+#include <dji_osdk_ros/common_type.h>
 
 FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
 	
