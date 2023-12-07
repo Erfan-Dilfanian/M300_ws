@@ -109,8 +109,11 @@ void FFDS::APP::SingleFirePointTaskManager::attitudeSubCallback(
 void FFDS::APP::SingleFirePointTaskManager::gpsPositionSubCallback(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
-    /*PRINT_DEBUG("the Latitude is: %f", gps_position_.latitude);*/
-    ROS_DEBUG("the Latitude is: %f", gps_position_.latitude);
+    /*PRINT_DEBUG("the Latitude is: %f", gps_position_.latitude);
+    ROS_DEBUG("the Latitude is: %f", gps_position_.latitude);*/
+    printf("[35] [%s:%d|in %s] the Latitude is: %f\n",
+           PCM_FILENAME(__FILE__), __LINE__, __FUNCTION__, gps_position_.latitude);
+
 }
 
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
