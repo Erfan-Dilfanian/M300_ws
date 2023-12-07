@@ -109,7 +109,6 @@ void FFDS::APP::SingleFirePointTaskManager::attitudeSubCallback(
 void FFDS::APP::SingleFirePointTaskManager::gpsPositionSubCallback(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
-    ROS_DEBUG("Latitude: %f", gps_position_.latitude);
 }
 
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
@@ -405,6 +404,7 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 //    }
 
     while (ros::ok() && (waypoint_V2_mission_state_push_.state != 0x6)) {
+
         continue;
     }
 

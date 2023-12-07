@@ -55,15 +55,7 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
                          
       	gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
 	
-	dji_osdk_ros::GimbalAction gimbalAction;
-    gimbalAction.request.is_reset = false;
-    gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
-    gimbalAction.request.rotationMode = 0;
-    gimbalAction.request.pitch = 25.0f;
-    gimbalAction.request.roll = 0.0f;
-    gimbalAction.request.yaw = 90.0f;
-    gimbalAction.request.time = 0.5;
-    gimbal_control_client.call(gimbalAction);                   
+                  
                          
                          
 
@@ -117,6 +109,7 @@ void FFDS::APP::SingleFirePointTaskManager::attitudeSubCallback(
 void FFDS::APP::SingleFirePointTaskManager::gpsPositionSubCallback(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
+    PRINT_DEBUG("the Latitude is: %f", gps_position_.latitude);
 }
 
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
@@ -285,6 +278,17 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
         PRINT_WARN("reset camera and gimbal failed!")
     }
 
+	dji_osdk_ros::GimbalAction gimbalAction;
+    gimbalAction.request.is_reset = false;
+    gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+    gimbalAction.request.rotationMode = 0;
+    gimbalAction.request.pitch = 25.0f;
+    gimbalAction.request.roll = 0.0f;
+    gimbalAction.request.yaw = 90.0f;
+    gimbalAction.request.time = 0.5;
+    gimbal_control_client.call(gimbalAction); 
+
+
     /* Step: 1 init the mission, create the basic waypointV2 vector... */
     dji_osdk_ros::InitWaypointV2Setting initWaypointV2Setting_;
     initMission(&initWaypointV2Setting_);
@@ -402,6 +406,7 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 //    }
 
     while (ros::ok() && (waypoint_V2_mission_state_push_.state != 0x6)) {
+
         continue;
     }
 
@@ -418,7 +423,6 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 
 int main(int argc, char *argv[]) {
 	
-	    ros::NodeHandle nh;
 
 	
 
