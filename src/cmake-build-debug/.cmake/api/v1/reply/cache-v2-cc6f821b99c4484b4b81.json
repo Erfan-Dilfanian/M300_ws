@@ -227,7 +227,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "26"
+			"value" : "27"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -239,7 +239,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "4"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -263,7 +263,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -275,7 +275,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/250/bin/ninja/linux/x64/ninja"
+			"value" : "/snap/clion/259/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1387,7 +1387,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/share/cmake-3.27"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1596,6 +1596,22 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/strip"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -2059,7 +2075,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindCUDA/make2cmake.cmake"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindCUDA/make2cmake.cmake"
 		},
 		{
 			"name" : "CUDA_parse_cubin",
@@ -2071,7 +2087,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindCUDA/parse_cubin.cmake"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindCUDA/parse_cubin.cmake"
 		},
 		{
 			"name" : "CUDA_run_nvcc",
@@ -2083,7 +2099,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindCUDA/run_nvcc.cmake"
+			"value" : "/snap/clion/259/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindCUDA/run_nvcc.cmake"
 		},
 		{
 			"name" : "DOXYGEN_EXECUTABLE",
@@ -2763,7 +2779,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : ""
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -2779,7 +2795,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : ""
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -2891,7 +2907,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : ""
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -2983,7 +2999,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : ""
 				}
 			],
 			"type" : "UNINITIALIZED",

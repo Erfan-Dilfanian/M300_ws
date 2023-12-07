@@ -60,6 +60,7 @@ class SingleFirePointTaskManager {
   ros::ServiceClient waypointV2_mission_state_push_client;
   ros::ServiceClient waypointV2_mission_event_push_client;
   ros::ServiceClient segment_smoke_client;
+  ros::ServiceClient gimbal_control_client;
 
   /**
    * ros msg
