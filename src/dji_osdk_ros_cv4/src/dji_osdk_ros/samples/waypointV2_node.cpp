@@ -26,9 +26,6 @@
  *
  */
 
-
-/* first see main() function. Inside it, you see that the important funciton that is called is runWaypointV2Mission(nh). If you go to that fumciton, you see that multiple important functions are being called*/
-
 #include <dji_osdk_ros/waypointV2_node.h>
 
 void gpsPositionSubCallback(const sensor_msgs::NavSatFix::ConstPtr& gpsPosition)
@@ -113,12 +110,8 @@ std::vector<dji_osdk_ros::WaypointV2> generatePolygonWaypoints(ros::NodeHandle &
   for (int i = 0; i < polygonNum; i++) {
     float32_t angle = i * 2 * M_PI / polygonNum;
     setWaypointV2Defaults(waypointV2);
-
     float32_t X = radius * cos(angle);
     float32_t Y = radius * sin(angle);
-     /**
-      float32_t X = 5+i;
-      float32_t Y = 6+i;**/
     waypointV2.latitude = Y/EARTH_RADIUS + startPoint.latitude;
     waypointV2.longitude = X/(EARTH_RADIUS * cos(startPoint.latitude)) + startPoint.longitude;
     waypointV2.relativeHeight = startPoint.relativeHeight ;

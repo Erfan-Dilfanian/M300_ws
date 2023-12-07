@@ -17,6 +17,9 @@
 #include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
 
 FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
+	
+
+	
     task_control_client =
             nh.serviceClient<dji_osdk_ros::FlightTaskControl>("/flight_task_control");
     obtain_ctrl_authority_client =
@@ -47,6 +50,20 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
     singleFirePosIRSub =
             nh.subscribe("forest_fire_detection_system/single_fire_in_ir_image", 10,
                          &SingleFirePointTaskManager::singleFireIRCallback, this);
+                         
+      	gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
+	
+		dji_osdk_ros::GimbalAction gimbalAction;
+    gimbalAction.request.is_reset = false;
+    gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+    gimbalAction.request.rotationMode = 0;
+    gimbalAction.request.pitch = 25.0f;
+    gimbalAction.request.roll = 0.0f;
+    gimbalAction.request.yaw = 90.0f;
+    gimbalAction.request.time = 0.5;
+    gimbal_control_client.call(gimbalAction);                   
+                         
+                         
 
     /* obtain the authorization when really needed... Now :) */
     obtainCtrlAuthority.request.enable_obtain = true;
@@ -398,6 +415,12 @@ void FFDS::APP::SingleFirePointTaskManager::run() {
 }
 
 int main(int argc, char *argv[]) {
+	
+	    ros::NodeHandle nh;
+
+	
+
+	
     ros::init(argc, argv, "single_fire_point_task_manager_node");
 
     FFDS::APP::SingleFirePointTaskManager taskManager;

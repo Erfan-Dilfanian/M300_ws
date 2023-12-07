@@ -52,7 +52,7 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
   /*
    * for (int i = 0; i < point_num - 1; ++i) {
    */
-    dji_osdk_ros::GimbalAction gimbalAction;
+   /* dji_osdk_ros::GimbalAction gimbalAction;
     gimbalAction.request.is_reset = false;
     gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
     gimbalAction.request.rotationMode = 0;
@@ -60,7 +60,7 @@ void FFDS::MODULES::ZigzagPathPlanner::calLocalPos() {
     gimbalAction.request.roll = 0.0f;
     gimbalAction.request.yaw = 90.0f;
     gimbalAction.request.time = 0.5;
-    gimbal_control_client.call(gimbalAction);
+    gimbal_control_client.call(gimbalAction);*/
   for (int i = 0; i < point_num + 1; ++i) {
     pos.z = zigzagHeight;
 
