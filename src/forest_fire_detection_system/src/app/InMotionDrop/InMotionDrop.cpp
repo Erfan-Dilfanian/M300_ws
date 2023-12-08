@@ -459,6 +459,8 @@ bool mybool;
        flag = 0;
 }
        */
+
+      printf("%d",this->currentWaypointIndex);
       if(this->currentWaypointIndex == 1){
           gimbalAction.request.rotationMode = 0;
           gimbalAction.request.pitch = 0.0f;
