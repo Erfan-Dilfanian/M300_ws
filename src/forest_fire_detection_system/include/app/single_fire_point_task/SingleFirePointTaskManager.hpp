@@ -76,6 +76,9 @@ class SingleFirePointTaskManager {
 
   ros::ServiceClient joystick_action_client;
 
+
+    int currentWaypointIndex;
+
   /**
    * ros msg
    * */

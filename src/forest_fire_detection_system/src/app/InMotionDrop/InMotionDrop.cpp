@@ -18,8 +18,9 @@
 #include <dji_osdk_ros/GimbalAction.h>
 #include <dji_osdk_ros/common_type.h>
 
-FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
+FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager()  {
 	
+currentWaypointIndex = 0; //initialize
 
 	
     task_control_client =
@@ -131,7 +132,7 @@ void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
  * 0x5:enter mission after ending pause.
  * 0x6:exit mission.
  * */
-void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
+/*void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
         const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr
         &waypointV2MissionStatePush) {
     waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
@@ -140,6 +141,14 @@ void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
     printf("Current waypoint index: %d\n", currentWaypointIndex);
 
 }
+*/
+
+void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
+        const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr &waypointV2MissionStatePush) {
+    waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
+    this->currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex;
+}
+
 
 void FFDS::APP::SingleFirePointTaskManager::singleFireIRCallback(
         const forest_fire_detection_system::SingleFireIR::ConstPtr &sfPos) {
@@ -421,6 +430,7 @@ ros::Duration printInterval(1.0); // 1 seconds, adjust as needed
 bool mybool;
     while (ros::ok() && (waypoint_V2_mission_state_push_.state != 0x6)) {
     ros::spinOnce();
+    /*
         dji_osdk_ros::JoystickAction joystickAction;
         mybool = abs(gps_position_.latitude-45.45827)<0.0001 && flag == 1;
       
@@ -429,25 +439,36 @@ bool mybool;
                flag, gps_position_.latitude, abs(gps_position_.latitude-45.45827), mybool);
         lastPrintTime = ros::Time::now(); // Update last print time
     }
-        
+       */
 /*printf("the difference: %f\n", gps_position_.latitude - 45.45827);*/
-       if(mybool)
+      /* if(mybool)
         {
-			
+
          gimbalAction.request.rotationMode = 0;
     gimbalAction.request.pitch = 50.0f;
     gimbalAction.request.roll = 0.0f;
     gimbalAction.request.yaw = 30.0f;
     gimbalAction.request.time = 0.5;
     gimbal_control_client.call(gimbalAction);
-    /*
+
 			float yaw=30;
         joystickAction.request.joystickCommand.yaw = yaw;
             joystick_action_client.call(joystickAction);
 		  printf("got it");
- */
+
        flag = 0;
 }
+       */
+      if(this->currentWaypointIndex == 1){
+          gimbalAction.request.rotationMode = 0;
+          gimbalAction.request.pitch = 0.0f;
+          gimbalAction.request.roll = 0.0f;
+          gimbalAction.request.yaw = 90.0f;
+          gimbalAction.request.time = 0.5;
+          gimbal_control_client.call(gimbalAction);
+
+      }
+
         continue;
     }
 
@@ -469,6 +490,8 @@ int main(int argc, char *argv[]) {
 
 	
     ros::init(argc, argv, "single_fire_point_task_manager_node");
+
+
 
     FFDS::APP::SingleFirePointTaskManager taskManager;
     taskManager.run();
