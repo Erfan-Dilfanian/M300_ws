@@ -146,7 +146,7 @@ void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
         const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr &waypointV2MissionStatePush) {
     waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
-    this->currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex;
+    currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex;
 }
 
 
@@ -460,7 +460,7 @@ bool mybool;
 }
        */
 
-      printf("%d",this->currentWaypointIndex);
+      /*printf("%d",this->currentWaypointIndex);
       if(this->currentWaypointIndex == 1){
           gimbalAction.request.rotationMode = 0;
           gimbalAction.request.pitch = 0.0f;
@@ -470,6 +470,10 @@ bool mybool;
           gimbal_control_client.call(gimbalAction);
 
       }
+*/
+
+        printf("%d",currentWaypointIndex);
+
 
         continue;
     }
@@ -486,11 +490,11 @@ bool mybool;
 }
 
 int main(int argc, char *argv[]) {
-	
 
-	
 
-	
+
+
+
     ros::init(argc, argv, "single_fire_point_task_manager_node");
 
 
