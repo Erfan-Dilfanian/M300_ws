@@ -429,18 +429,20 @@ bool mybool;
 /*printf("the difference: %f\n", gps_position_.latitude - 45.45827);*/
        if(mybool)
         {
-			  printf("got it");
-float yaw=30;
-        joystickAction.request.joystickCommand.yaw = yaw;
-            joystick_action_client.call(joystickAction);
-/*
+			
          gimbalAction.request.rotationMode = 0;
     gimbalAction.request.pitch = 50.0f;
     gimbalAction.request.roll = 0.0f;
     gimbalAction.request.yaw = 30.0f;
     gimbalAction.request.time = 0.5;
-    gimbal_control_client.call(gimbalAction); 
-  */      flag = 0;
+    gimbal_control_client.call(gimbalAction);
+    /*
+			float yaw=30;
+        joystickAction.request.joystickCommand.yaw = yaw;
+            joystick_action_client.call(joystickAction);
+		  printf("got it");
+ */
+       flag = 0;
 }
         continue;
     }
