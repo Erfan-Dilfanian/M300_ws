@@ -57,7 +57,7 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
 
 
     joystick_action_client   = nh.serviceClient<dji_osdk_ros::JoystickAction>("joystick_action");
-                         
+
 
     /* obtain the authorization when really needed... Now :) */
     obtainCtrlAuthority.request.enable_obtain = true;
@@ -135,6 +135,10 @@ void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
         const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr
         &waypointV2MissionStatePush) {
     waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
+
+    int currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex; // Replace 'currentIndex' with the actual field name
+    printf("Current waypoint index: %d\n", currentWaypointIndex);
+
 }
 
 void FFDS::APP::SingleFirePointTaskManager::singleFireIRCallback(
