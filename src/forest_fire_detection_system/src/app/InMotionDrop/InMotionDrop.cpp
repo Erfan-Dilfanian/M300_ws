@@ -132,23 +132,25 @@ void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionEventSubCallback(
  * 0x5:enter mission after ending pause.
  * 0x6:exit mission.
  * */
-/*void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
+void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
         const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr
         &waypointV2MissionStatePush) {
     waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
 
-    int currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex; // Replace 'currentIndex' with the actual field name
-    printf("Current waypoint index: %d\n", currentWaypointIndex);
+    /*int currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex; // Replace 'currentIndex' with the actual field name*/
+    int a = waypoint_V2_mission_state_push_.curWaypointIndex;
+    printf("Current waypoint index: %d\n", a);
 
 }
-*/
 
+/*
 void FFDS::APP::SingleFirePointTaskManager::waypointV2MissionStateSubCallback(
         const dji_osdk_ros::WaypointV2MissionStatePush::ConstPtr &waypointV2MissionStatePush) {
     waypoint_V2_mission_state_push_ = *waypointV2MissionStatePush;
     currentWaypointIndex = waypoint_V2_mission_state_push_.curWaypointIndex;
+    printf("index is %d",currentWaypointIndex);
 }
-
+*/
 
 void FFDS::APP::SingleFirePointTaskManager::singleFireIRCallback(
         const forest_fire_detection_system::SingleFireIR::ConstPtr &sfPos) {
@@ -472,7 +474,7 @@ bool mybool;
       }
 */
 
-        printf("%d",currentWaypointIndex);
+      /*  printf("index is %d",currentWaypointIndex);*/
 
 
         continue;
