@@ -481,6 +481,7 @@
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/test/CMakeFiles/install/local.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/test/CMakeFiles/install/strip.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/CMakeFiles/InMotionDrop.dir
+/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/CMakeFiles/InMotionDropping_Flight_control_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/CMakeFiles/GrabDataDepthEstimation.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/CMakeFiles/PreciselyWaterDropping.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/CMakeFiles/GrabInfoForReconstruction.dir

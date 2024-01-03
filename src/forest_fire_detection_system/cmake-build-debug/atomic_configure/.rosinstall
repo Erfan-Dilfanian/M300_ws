@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/erfan/M300_ws/src/forest_fire_detection_system/cmake-build-debug/devel/setup.sh
