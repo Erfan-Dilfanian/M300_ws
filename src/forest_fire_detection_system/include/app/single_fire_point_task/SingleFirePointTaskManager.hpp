@@ -53,6 +53,8 @@
 #include<dji_osdk_ros/SetJoystickMode.h>
 #include<dji_osdk_ros/JoystickAction.h>
 
+
+
 namespace FFDS {
 
 namespace APP {
@@ -83,7 +85,6 @@ class SingleFirePointTaskManager {
    * ros msg
    * */
 
-  sensor_msgs::NavSatFix gps_position_;
   geometry_msgs::QuaternionStamped attitude_data_;
   dji_osdk_ros::WaypointV2MissionEventPush waypoint_V2_mission_event_push_;
   dji_osdk_ros::WaypointV2MissionStatePush waypoint_V2_mission_state_push_;
@@ -130,7 +131,9 @@ class SingleFirePointTaskManager {
       const forest_fire_detection_system::SingleFireIR::ConstPtr &sfPos);
 
  public:
-  SingleFirePointTaskManager();
+    sensor_msgs::NavSatFix gps_position_;
+
+    SingleFirePointTaskManager();
   ~SingleFirePointTaskManager();
 
   void goHomeLand();
