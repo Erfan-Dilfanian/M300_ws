@@ -485,10 +485,10 @@ case 'e':
               ROS_INFO("z is [%f]",local_position_.point.z);*/
               //ROS_INFO("latitude is [%f]",gps_position_.latitude);
               //ROS_INFO("longitude is [%f]",gps_position_.longitude);
-              ros::spin(); //here is good?
+              //ros::spin(); //here is good?
 
 
-              /*        ROS_INFO_STREAM("Step 1 over!");
+                   ROS_INFO_STREAM("Step 1 over!");
                       moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
                       ROS_INFO_STREAM("Step 2 over!");
                       moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
@@ -508,7 +508,7 @@ case 'e':
                       }
                       ROS_INFO_STREAM("Land task failed.");
                       break;
-                      */
+                      
           }
           break;
 
