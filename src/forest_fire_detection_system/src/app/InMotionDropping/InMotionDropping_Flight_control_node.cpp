@@ -444,11 +444,11 @@ case 'e':
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {2, 6.0, 6.0, 30.0}, 0.8, 1);
-              ROS_INFO("x is [%s]",local_position_.point.x);
-              ROS_INFO("y is [%s]",local_position_.point.y);
-              ROS_INFO("z is [%s]",local_position_.point.z);
-              ROS_INFO("latitude is [%s]",gps_position_.latitude);
-              ROS_INFO("longitude is [%s]",gps_position_.longitude);
+              ROS_INFO("x is [%f]",local_position_.point.x);
+              ROS_INFO("y is [%f]",local_position_.point.y);
+              ROS_INFO("z is [%f]",local_position_.point.z);
+              ROS_INFO("latitude is [%f]",gps_position_.latitude);
+              ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
 
               /*        ROS_INFO_STREAM("Step 1 over!");
