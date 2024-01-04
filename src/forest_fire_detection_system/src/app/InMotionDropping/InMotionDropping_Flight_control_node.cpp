@@ -167,7 +167,7 @@ int main(int argc, char** argv)
     ros::Subscriber LocalPosSub;
     gpsPositionSub =
             nh.subscribe("dji_osdk_ros/local_position", 10,
-                         gpsPositionSubCallback);
+                         LocalPositionSubCallback);
 
 
     switch (inputChar)
@@ -443,7 +443,7 @@ case 'e':
               gimbal_control_client.call(gimbalAction);
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
-              moveByPosOffset(control_task, {0.0, 6.0, 6.0, 30.0}, 0.8, 1);
+              moveByPosOffset(control_task, {2, 6.0, 6.0, 30.0}, 0.8, 1);
               ROS_INFO("x is [%s]",local_position_.point.x);
               ROS_INFO("y is [%s]",local_position_.point.y);
               ROS_INFO("z is [%s]",local_position_.point.z);
