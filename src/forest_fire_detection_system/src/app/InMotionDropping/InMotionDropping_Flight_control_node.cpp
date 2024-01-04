@@ -513,8 +513,9 @@ case 'e':
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
 
-              ROS_INFO("x is [%f]",m[1]);
-              ROS_INFO("y is [%f]",m[2]);
+              ROS_INFO("x is [%f]",m[0]);
+              ROS_INFO("y is [%f]",m[1]);
+              ROS_INFO("z is [%f]",m[2]);
 
               /* ROS_INFO("x is [%f]",local_position_.point.x);
                ROS_INFO("y is [%f]",local_position_.point.y);
