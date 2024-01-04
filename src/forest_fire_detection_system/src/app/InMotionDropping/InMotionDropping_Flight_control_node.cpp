@@ -490,7 +490,9 @@ case 'e':
 
                    ROS_INFO_STREAM("Step 1 over!");
                       moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
-                      ROS_INFO_STREAM("Step 2 over!");
+              ros::spinOnce();
+
+              ROS_INFO_STREAM("Step 2 over!");
                       moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
                       ROS_INFO_STREAM("Step 3 over!");
                       velocityAndYawRateCtrl( {0, 0, 5.0, 0}, 2000);
@@ -508,7 +510,7 @@ case 'e':
                       }
                       ROS_INFO_STREAM("Land task failed.");
                       break;
-                      
+
           }
           break;
 
