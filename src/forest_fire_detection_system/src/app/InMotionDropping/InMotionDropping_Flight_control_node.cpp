@@ -85,9 +85,11 @@ sensor_msgs::NavSatFix gps_position_;
 geometry_msgs::PointStamped local_position_;
 
 
-void gpsPositionSubCallback(
+void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
+    ROS_INFO("latitude is [%f]",gps_position_.latitude);
+    ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
 }
 
@@ -195,7 +197,7 @@ int main(int argc, char** argv)
     ros::Subscriber gpsPositionSub;
     gpsPositionSub =
             nh.subscribe("dji_osdk_ros/gps_position", 10,
-                         gpsPositionSubCallback);
+                         gpsPositionSubCallback2);
 
 
     ros::Subscriber LocalPositionSub;
