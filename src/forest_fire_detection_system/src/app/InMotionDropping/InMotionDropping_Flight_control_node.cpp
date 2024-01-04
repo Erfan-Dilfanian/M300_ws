@@ -164,8 +164,8 @@ int main(int argc, char** argv)
                          gpsPositionSubCallback);
 
 
-    ros::Subscriber LocalPosSub;
-    gpsPositionSub =
+    ros::Subscriber LocalPositionSub;
+    LocalPositionSub =
             nh.subscribe("dji_osdk_ros/local_position", 10,
                          LocalPositionSubCallback);
 
