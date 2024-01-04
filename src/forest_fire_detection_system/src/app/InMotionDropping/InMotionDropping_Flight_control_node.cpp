@@ -381,12 +381,61 @@ int main(int argc, char** argv)
         }
         break;
       }
-//case 'e':
-  //    {
+case 'e':
+      {
+          control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
+          ROS_INFO_STREAM("Takeoff request sending ...");
+          task_control_client.call(control_task);
+          if(control_task.response.result == false)
+          {
+              ROS_ERROR_STREAM("Takeoff task failed");
+              break;
+          }
+
+          if(control_task.response.result == true)
+          {
+              ROS_INFO_STREAM("Takeoff task successful");
+              ros::Duration(2.0).sleep();
+
+
+              GimbalAction gimbalAction;
+              gimbalAction.request.is_reset = false;
+              gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+              gimbalAction.request.rotationMode = 0;
+              gimbalAction.request.pitch = 25.0f;
+              gimbalAction.request.roll = 0.0f;
+              gimbalAction.request.yaw = 90.0f;
+              gimbalAction.request.time = 0.5;
+              gimbal_control_client.call(gimbalAction);
+
+              ROS_INFO_STREAM("Move by position offset request sending ...");
+              moveByPosOffset(control_task, {0.0, 6.0, 6.0, 30.0}, 0.8, 1);
+              ROS_INFO_STREAM("Step 1 over!");
+              moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
+              ROS_INFO_STREAM("Step 2 over!");
+              moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
+              ROS_INFO_STREAM("Step 3 over!");
+              velocityAndYawRateCtrl( {0, 0, 5.0, 0}, 2000);
+              ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
+              emergency_brake_client.call(emergency_brake);
+              ros::Duration(2).sleep();
+
+              control_task.request.task = FlightTaskControl::Request::TASK_LAND;
+              ROS_INFO_STREAM("Landing request sending ...");
+              task_control_client.call(control_task);
+              if(control_task.response.result == true)
+              {
+                  ROS_INFO_STREAM("Land task successful");
+                  break;
+              }
+              ROS_INFO_STREAM("Land task failed.");
+              break;
+          }
+          break;
 
 
 
-    //  }
+     }
     default:
       break;
 
