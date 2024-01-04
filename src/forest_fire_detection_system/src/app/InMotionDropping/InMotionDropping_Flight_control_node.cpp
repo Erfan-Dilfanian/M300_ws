@@ -63,6 +63,9 @@
 
 #include <geometry_msgs/PointStamped.h>
 
+#include <tools/MathLib.hpp>
+
+// #include <dji_sdk_ros/SetLocalPosRef.h>
 
 //CODE
 using namespace dji_osdk_ros;
@@ -110,9 +113,40 @@ int main(int argc, char** argv)
 
   set_joystick_mode_client = nh.serviceClient<SetJoystickMode>("set_joystick_mode");
   joystick_action_client   = nh.serviceClient<JoystickAction>("joystick_action");
-  
-  
-  auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
+
+    // Here, you can add the code to set the home position using the /dji_sdk/set_local_pos_ref service
+     /*ros::ServiceClient client = nh.serviceClient<dji_osdk_ros::SetLocalPosRef>("/set_local_pos_reference");
+
+    // Wait for the service to become available
+    if (!setLocalPosRefClient.waitForExistence(ros::Duration(5.0)))
+    {
+        ROS_ERROR("Service '/dji_sdk/set_local_pos_ref' not available.");
+        return 1;
+    }
+
+    // Create the service request
+    dji_sdk::SetLocalPosRef srv;
+
+    // Call the service to set the home position
+    if (setLocalPosRefClient.call(srv))
+    {
+        if (srv.response.result)
+        {
+            ROS_INFO("Home position set successfully.");
+        }
+        else
+        {
+            ROS_ERROR("Failed to set home position.");
+        }
+    }
+    else
+    {
+        ROS_ERROR("Service call failed.");
+        return 1;
+    }
+
+*/
+    auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
   auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
   auto camera_set_shutter_speed_client = nh.serviceClient<CameraShutterSpeed>("camera_task_set_shutter_speed");
   auto camera_set_aperture_client = nh.serviceClient<CameraAperture>("camera_task_set_aperture");
@@ -444,11 +478,12 @@ case 'e':
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {2, 6.0, 6.0, 30.0}, 0.8, 1);
-              ROS_INFO("x is [%f]",local_position_.point.x);
+             /* ROS_INFO("x is [%f]",local_position_.point.x);
               ROS_INFO("y is [%f]",local_position_.point.y);
-              ROS_INFO("z is [%f]",local_position_.point.z);
+              ROS_INFO("z is [%f]",local_position_.point.z);*/
               ROS_INFO("latitude is [%f]",gps_position_.latitude);
               ROS_INFO("longitude is [%f]",gps_position_.longitude);
+              ros::spin(); //here is good?
 
 
               /*        ROS_INFO_STREAM("Step 1 over!");
