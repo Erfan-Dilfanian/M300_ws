@@ -104,7 +104,6 @@ class SingleFirePointTaskManager {
    * */
 
   void readPathParams();
-  sensor_msgs::NavSatFix getHomeGPosAverage(int times);
   Eigen::Vector3d getInitAttAverage(int times);
   void initMission(
       dji_osdk_ros::InitWaypointV2Setting *initWaypointV2SettingPtr);
@@ -132,6 +131,9 @@ class SingleFirePointTaskManager {
 
  public:
     sensor_msgs::NavSatFix gps_position_;
+
+    sensor_msgs::NavSatFix getHomeGPosAverage(int times);
+
 
     SingleFirePointTaskManager();
   ~SingleFirePointTaskManager();

@@ -99,6 +99,13 @@ void LocalPositionSubCallback(
 
 }
 
+
+sensor_msgs::NavSatFix
+FFDS::APP::SingleFirePointTaskManager::getHomeGPosAverage(int times) {
+    FFDS::TOOLS::PositionHelper posHelper;
+    return posHelper.getAverageGPS(times);
+}
+
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "flight_control_node");
@@ -148,6 +155,9 @@ int main(int argc, char** argv)
     }
 
 */
+
+
+
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
   auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
   auto camera_set_shutter_speed_client = nh.serviceClient<CameraShutterSpeed>("camera_task_set_shutter_speed");
@@ -453,6 +463,9 @@ int main(int argc, char** argv)
       }
 case 'e':
       {
+          FFDS::APP::SingleFirePointTaskManager taskManager;
+          sensor_msgs::NavSatFix homeGPos = taskManager.getHomeGPosAverage(100);
+
           control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
           ROS_INFO_STREAM("Takeoff request sending ...");
           task_control_client.call(control_task);
@@ -480,17 +493,21 @@ case 'e':
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {2, 6.0, 6.0, 30.0}, 0.8, 1);
-             /* ROS_INFO("x is [%f]",local_position_.point.x);
-              ROS_INFO("y is [%f]",local_position_.point.y);
-              ROS_INFO("z is [%f]",local_position_.point.z);*/
+              ros::spinOnce();
+
+
+              FFDS::TOOLS::LatLong2Meter();
+
+              /* ROS_INFO("x is [%f]",local_position_.point.x);
+               ROS_INFO("y is [%f]",local_position_.point.y);
+               ROS_INFO("z is [%f]",local_position_.point.z);*/
               //ROS_INFO("latitude is [%f]",gps_position_.latitude);
               //ROS_INFO("longitude is [%f]",gps_position_.longitude);
               //ros::spin(); //here is good?
+              ROS_INFO_STREAM("Step 1 over!");
 
 
-                   ROS_INFO_STREAM("Step 1 over!");
                       moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
-              ros::spinOnce();
 
               ROS_INFO_STREAM("Step 2 over!");
                       moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
