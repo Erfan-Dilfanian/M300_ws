@@ -623,7 +623,23 @@ case 'e':
                   PRINT_INFO("go home successful");
               } else {
                   PRINT_WARN("go home failed.");
+              }
+
+              control_task.request.task =
+                      dji_osdk_ros::FlightTaskControl::Request::TASK_LAND;
+              PRINT_INFO(
+                      "Landing request sending ... need your confirmation on the remoter!");
+              task_control_client.call(control_task);
+              if (control_task.response.result == true) {
+                  PRINT_INFO("land task successful");
+              } else {
+                  PRINT_ERROR("land task failed.");
+              }
+
+
+
           }
+
           break;
 
 
