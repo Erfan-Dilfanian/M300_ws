@@ -70,6 +70,53 @@
 //CODE
 using namespace dji_osdk_ros;
 
+FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
+
+
+
+    task_control_client =
+            nh.serviceClient<dji_osdk_ros::FlightTaskControl>("/flight_task_control");
+
+
+    /*gpsPositionSub =
+            nh.subscribe("dji_osdk_ros/gps_position", 10,
+                         &SingleFirePointTaskManager::gpsPositionSubCallback, this);
+    attitudeSub =
+            nh.subscribe("dji_osdk_ros/attitude", 10,
+                         &SingleFirePointTaskManager::attitudeSubCallback, this);*/
+
+
+
+   /* gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");*/
+
+
+
+
+
+    /* obtain the authorization when really needed... Now :)
+    obtainCtrlAuthority.request.enable_obtain = true;
+    obtain_ctrl_authority_client.call(obtainCtrlAuthority);
+    if (obtainCtrlAuthority.response.result) {
+        PRINT_INFO("get control authority!");
+    } else {
+        PRINT_ERROR("can NOT get control authority!");
+        return;
+    }
+*/
+    ros::Duration(3.0).sleep();
+    /*PRINT_INFO("initializing Done");*/
+}
+
+FFDS::APP::SingleFirePointTaskManager::~SingleFirePointTaskManager() {
+   /* obtainCtrlAuthority.request.enable_obtain = false;
+    obtain_ctrl_authority_client.call(obtainCtrlAuthority);
+    if (obtainCtrlAuthority.response.result) {
+        PRINT_INFO("release control authority!");
+    } else {
+        PRINT_ERROR("can NOT release control authority!");
+    }*/
+}
+
 ros::ServiceClient task_control_client;
 ros::ServiceClient set_joystick_mode_client;
 ros::ServiceClient joystick_action_client;
