@@ -562,7 +562,7 @@ case 'e':
 
               ROS_INFO("x is [%f]",m[0]);
               ROS_INFO("y is [%f]",m[1]);
-              ROS_INFO("z is [%f]",m[2]);
+
 
               /* ROS_INFO("x is [%f]",local_position_.point.x);
                ROS_INFO("y is [%f]",local_position_.point.y);
@@ -574,6 +574,19 @@ case 'e':
 
 
                       moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
+              ros::spinOnce();
+
+
+
+
+              current_GPS_posArray[0] = gps_position_.latitude;
+              current_GPS_posArray[1] = gps_position_.longitude;
+              current_GPS_posArray[2] = gps_position_.altitude;
+
+              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
+
+              ROS_INFO("x is [%f]",m[0]);
+              ROS_INFO("y is [%f]",m[1]);
 
               ROS_INFO_STREAM("Step 2 over!");
                       moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
