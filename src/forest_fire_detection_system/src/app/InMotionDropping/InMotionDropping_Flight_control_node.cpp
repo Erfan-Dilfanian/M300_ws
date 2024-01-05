@@ -597,6 +597,8 @@ case 'e':
               moveByPosOffset(control_task, {4, 0, 0.0, 0.0}, 0.8, 1);
               moveByPosOffset(control_task, {3, -6.5, 0.0, 0.0}, 0.8, 1);
 
+
+
               velocityAndYawRateCtrl( {5, 0, 0, 0}, 2000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
@@ -613,6 +615,14 @@ case 'e':
                       ROS_INFO_STREAM("Land task failed.");
                       break;
 
+              PRINT_INFO("going home now");
+              control_task.request.task =
+                      dji_osdk_ros::FlightTaskControl::Request::TASK_GOHOME;
+              task_control_client.call(control_task);
+              if (control_task.response.result == true) {
+                  PRINT_INFO("go home successful");
+              } else {
+                  PRINT_WARN("go home failed.");
           }
           break;
 
