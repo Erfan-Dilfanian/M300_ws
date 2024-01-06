@@ -223,6 +223,6 @@ CMake Deprecation Warning at forest_fire_geopositioning/CMakeLists.txt:1 (cmake_
 -- Found OpenCV: /usr (found version "4.2.0") 
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v8.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v5.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
--- Configuring done (3.8s)
+-- Configuring done (5.0s)
 -- Generating done (0.7s)
 -- Build files have been written to: /home/erfan/M300_ws/src/cmake-build-debug

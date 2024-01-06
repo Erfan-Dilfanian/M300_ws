@@ -59,7 +59,8 @@
 #include <dji_osdk_ros/CameraStopShootPhoto.h>
 #include <dji_osdk_ros/CameraRecordVideoAction.h>
 
-#include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
+// #include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
+#include <sensor_msgs/NavSatFix.h>
 
 #include <geometry_msgs/PointStamped.h>
 
@@ -70,6 +71,7 @@
 //CODE
 using namespace dji_osdk_ros;
 
+/*
 FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
 
 
@@ -78,7 +80,7 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
             nh.serviceClient<dji_osdk_ros::FlightTaskControl>("/flight_task_control");
 
 
-    /*gpsPositionSub =
+    gpsPositionSub =
             nh.subscribe("dji_osdk_ros/gps_position", 10,
                          &SingleFirePointTaskManager::gpsPositionSubCallback, this);
     attitudeSub =
@@ -87,14 +89,14 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
 
 
 
-   /* gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");*/
+   // gimbal_control_client = nh.serviceClient<dji_osdk_ros::GimbalAction>("gimbal_task_control");
 
 
 
 
 
-    /* obtain the authorization when really needed... Now :)
-    obtainCtrlAuthority.request.enable_obtain = true;
+    // obtain the authorization when really needed... Now :)
+   /* obtainCtrlAuthority.request.enable_obtain = true;
     obtain_ctrl_authority_client.call(obtainCtrlAuthority);
     if (obtainCtrlAuthority.response.result) {
         PRINT_INFO("get control authority!");
@@ -102,12 +104,13 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
         PRINT_ERROR("can NOT get control authority!");
         return;
     }
-*/
-    ros::Duration(3.0).sleep();
-    /*PRINT_INFO("initializing Done");*/
-}
 
-FFDS::APP::SingleFirePointTaskManager::~SingleFirePointTaskManager() {
+    ros::Duration(3.0).sleep();
+    //PRINT_INFO("initializing Done");
+}
+*/
+
+/*FFDS::APP::SingleFirePointTaskManager::~SingleFirePointTaskManager() {
    /* obtainCtrlAuthority.request.enable_obtain = false;
     obtain_ctrl_authority_client.call(obtainCtrlAuthority);
     if (obtainCtrlAuthority.response.result) {
@@ -115,7 +118,7 @@ FFDS::APP::SingleFirePointTaskManager::~SingleFirePointTaskManager() {
     } else {
         PRINT_ERROR("can NOT release control authority!");
     }*/
-}
+//}
 
 ros::ServiceClient task_control_client;
 ros::ServiceClient set_joystick_mode_client;
@@ -147,11 +150,13 @@ void LocalPositionSubCallback(
 }
 
 
-sensor_msgs::NavSatFix
+/*sensor_msgs::NavSatFix
 FFDS::APP::SingleFirePointTaskManager::getHomeGPosAverage(int times) {
     FFDS::TOOLS::PositionHelper posHelper;
     return posHelper.getAverageGPS(times);
-}
+}*/
+
+sensor_msgs::NavSatFix getAverageGPS(const int);
 
 int main(int argc, char** argv)
 {
@@ -510,8 +515,10 @@ int main(int argc, char** argv)
       }
 case 'e':
       {
-          FFDS::APP::SingleFirePointTaskManager taskManager;
-          sensor_msgs::NavSatFix homeGPos = taskManager.getHomeGPosAverage(100);
+
+
+
+          sensor_msgs::NavSatFix homeGPos = getAverageGPS(100);
           float homeGPS_posArray[2];
           homeGPS_posArray[0] = homeGPos.latitude;
           homeGPS_posArray[1] = homeGPos.longitude;
@@ -708,3 +715,34 @@ void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeM
     joystick_action_client.call(joystickAction);
   }
 }
+
+static bool isEqual(const double a, const double b) {
+    return (fabs(a - b) <= 1e-15);
+}
+
+sensor_msgs::NavSatFix getAverageGPS(
+        const int average_times) {
+    sensor_msgs::NavSatFix homeGPos;
+
+    for (int i = 0; (i < average_times) && ros::ok(); i++) {
+        ros::spinOnce();
+        if (isEqual(0.0, gps_position_.latitude) ||
+            isEqual(0.0, gps_position_.longitude) ||
+            isEqual(0.0, gps_position_.altitude)) {
+            PRINT_WARN("zero in gps_position, waiting for normal gps position!");
+            i = 0;
+            continue;
+        }
+        homeGPos.latitude += gps_position_.latitude;
+        homeGPos.longitude += gps_position_.longitude;
+        homeGPos.altitude += gps_position_.altitude;
+
+        ros::Rate(10).sleep();
+    }
+    homeGPos.latitude = homeGPos.latitude / average_times;
+    homeGPos.longitude = homeGPos.longitude / average_times;
+    homeGPos.altitude = homeGPos.altitude / average_times;
+
+    return homeGPos;
+}
+
