@@ -606,13 +606,14 @@ case 'e':
 
                       control_task.request.task = FlightTaskControl::Request::TASK_LAND;
                       ROS_INFO_STREAM("Landing request sending ...");
-                     /* task_control_client.call(control_task);
+                      task_control_client.call(control_task);
                       if(control_task.response.result == true)
                       {
                           ROS_INFO_STREAM("Land task successful");
                           break;
                       }
-                      ROS_INFO_STREAM("Land task failed.");*/
+                      ROS_INFO_STREAM("Land task failed.");
+                      break;
 
               PRINT_INFO("going home now");
               control_task.request.task =
@@ -634,10 +635,6 @@ case 'e':
               } else {
                   PRINT_ERROR("land task failed.");
               }
-
-                      break; // what is this break for?
-
-
 
 
 
