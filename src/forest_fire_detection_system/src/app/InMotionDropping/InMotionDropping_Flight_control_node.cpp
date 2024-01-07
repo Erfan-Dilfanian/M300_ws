@@ -162,8 +162,15 @@ void QuaternionSubCallback(const geometry_msgs::QuaternionStamped msg)
     euler[1] = asin(2.0 * (quat[2] * quat[0] - quat[3] * quat[1]));
     euler[2] = atan2(2.0 * (quat[3] * quat[0] + quat[1] * quat[2]),
                      -1.0 + 2.0 * (quat[0] * quat[0] + quat[1] * quat[1]));
+euler[0] = euler[0]* 180 / M_PI; // radian to degree
+    euler[1] = euler[1]* 180 / M_PI; // radian to degree
+    euler[2] = euler[2]* 180 / M_PI; // radian to degree
 
-  
+    // calibration. making frames equal. when drone pointing north, yaw be 0.
+    euler[0] = euler[0] - 90;
+
+
+    // euler[0] is yaw
 }
 
 void LocalPositionSubCallback(
