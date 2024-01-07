@@ -577,7 +577,7 @@ case 'e':
               ROS_INFO("euler2 is [%f]",euler[1]);
               ROS_INFO("euler3 is [%f]",euler[2]);
 
-              moveByPosOffset(control_task, {0, 0, 10, 0}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 0, 10, 90}, 0.8, 1);
 
 
               GimbalAction gimbalAction;
@@ -591,7 +591,7 @@ case 'e':
               gimbal_control_client.call(gimbalAction);
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
-              moveByPosOffset(control_task, {0, 10.0, 10, 0}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 10.0, 10, 90}, 0.8, 1);
               ros::spinOnce();
 
 
