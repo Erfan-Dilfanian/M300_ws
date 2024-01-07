@@ -64,6 +64,9 @@
 
 #include <geometry_msgs/PointStamped.h>
 
+#include <geometry_msgs/QuaternionStamped.h>
+
+
 #include <tools/MathLib.hpp>
 
 // #include <dji_sdk_ros/SetLocalPosRef.h>
@@ -134,6 +137,7 @@ sensor_msgs::NavSatFix gps_position_;
 
 geometry_msgs::PointStamped local_position_;
 
+float euler[3];
 
 void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
@@ -141,6 +145,25 @@ void gpsPositionSubCallback2(
     ROS_INFO("latitude is [%f]",gps_position_.latitude);
     ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
+}
+
+void QuaternionSubCallback(const geometry_msgs::QuaternionStamped msg)
+{
+
+
+    float quat[4];
+    quat[0]= msg.quaternion.x;
+    quat[1]= msg.quaternion.y;
+    quat[2]= msg.quaternion.z;
+    quat[3]= msg.quaternion.w;
+
+    euler[0] = atan2(2.0 * (quat[3] * quat[2] + quat[0] * quat[1]),
+                             1.0 - 2.0 * (quat[1] * quat[1] + quat[2] * quat[2]));
+    euler[1] = asin(2.0 * (quat[2] * quat[0] - quat[3] * quat[1]));
+    euler[2] = atan2(2.0 * (quat[3] * quat[0] + quat[1] * quat[2]),
+                     -1.0 + 2.0 * (quat[0] * quat[0] + quat[1] * quat[1]));
+
+  
 }
 
 void LocalPositionSubCallback(
@@ -266,6 +289,11 @@ int main(int argc, char** argv)
     LocalPositionSub =
             nh.subscribe("dji_osdk_ros/local_position", 10,
                          LocalPositionSubCallback);
+
+    ros::Subscriber QuaternionSub;
+    QuaternionSub =
+            nh.subscribe("dji_osdk_ros/attitude", 10,
+                         QuaternionSubCallback);
 
 
     switch (inputChar)
@@ -527,6 +555,8 @@ case 'e':
           // FFDS::TOOLS::T a_pos[2];
 
 
+
+
           control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
           ROS_INFO_STREAM("Takeoff request sending ...");
           task_control_client.call(control_task);
@@ -541,6 +571,10 @@ case 'e':
               ROS_INFO_STREAM("Takeoff task successful");
               ros::Duration(2.0).sleep();
 
+              ros::spinOnce();
+              ROS_INFO("euler1 is [%f]",euler[0]);
+              ROS_INFO("euler2 is [%f]",euler[1]);
+              ROS_INFO("euler3 is [%f]",euler[2]);
 
               GimbalAction gimbalAction;
               gimbalAction.request.is_reset = false;

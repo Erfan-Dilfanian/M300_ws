@@ -492,15 +492,7 @@ bool mybool;
 }
 
 int main(int argc, char *argv[]) {
-
-
-
-
-
     ros::init(argc, argv, "single_fire_point_task_manager_node");
-
-
-
     FFDS::APP::SingleFirePointTaskManager taskManager;
     taskManager.run();
     return 0;
