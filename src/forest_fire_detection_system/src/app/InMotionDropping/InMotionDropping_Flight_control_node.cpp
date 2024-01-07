@@ -577,6 +577,9 @@ case 'e':
               ROS_INFO("euler2 is [%f]",euler[1]);
               ROS_INFO("euler3 is [%f]",euler[2]);
 
+              moveByPosOffset(control_task, {0, 0, 10, 0}, 0.8, 1);
+
+
               GimbalAction gimbalAction;
               gimbalAction.request.is_reset = false;
               gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
