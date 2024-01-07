@@ -167,7 +167,8 @@ euler[0] = euler[0]* 180 / M_PI; // radian to degree
     euler[2] = euler[2]* 180 / M_PI; // radian to degree
 
     // calibration. making frames equal. when drone pointing north, yaw be 0.
-    euler[0] = euler[0] - 90;
+    // beware of changes between NED  and ENU
+    euler[0] = 90 - euler[0];
 
 
     // euler[0] is yaw
@@ -343,7 +344,7 @@ int main(int argc, char** argv)
         if(control_task.response.result == true)
         {
           ROS_INFO_STREAM("Takeoff task successful");
-          ros::Duration(2.0).sleep();
+          ros::Duration(0.5).sleep();
 
 
         GimbalAction gimbalAction;
@@ -577,14 +578,13 @@ case 'e':
           {
               ROS_INFO_STREAM("Takeoff task successful");
               ros::Duration(2.0).sleep();
-              moveByPosOffset(control_task, {0, 0, 0, 90}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 0, 0, -30}, 0.8, 1);
 
               ros::spinOnce();
               ROS_INFO("euler1 is [%f]",euler[0]);
               ROS_INFO("euler2 is [%f]",euler[1]);
               ROS_INFO("euler3 is [%f]",euler[2]);
 
-              moveByPosOffset(control_task, {0, 0, 10, 90}, 0.8, 1);
 
 
               GimbalAction gimbalAction;
@@ -598,7 +598,7 @@ case 'e':
               gimbal_control_client.call(gimbalAction);
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
-              moveByPosOffset(control_task, {0, 10.0, 10, 90}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 10.0, 10, -30}, 0.8, 1);
               ros::spinOnce();
 
 
@@ -626,7 +626,7 @@ case 'e':
               ROS_INFO_STREAM("Step 1 over!");
 
 
-                      moveByPosOffset(control_task, {4, 0, 0, 0}, 0.8, 1);
+                      moveByPosOffset(control_task, {4, 0, 0, -30}, 0.8, 1);
               ros::spinOnce();
 
 
@@ -642,30 +642,21 @@ case 'e':
               ROS_INFO("y is [%f]",m[1]);
 
               ROS_INFO_STREAM("Step 2 over!");
-                      moveByPosOffset(control_task, {0, -10, 0.0, 0.0}, 0.8, 1);
+                      moveByPosOffset(control_task, {0, -10, 0.0, -30}, 0.8, 1);
                       ROS_INFO_STREAM("Step 3 over!");
-              moveByPosOffset(control_task, {4, 0, 0.0, 0.0}, 0.8, 1);
-              moveByPosOffset(control_task, {0, 10, 0.0, 0.0}, 0.8, 1);
-              moveByPosOffset(control_task, {4, 0, 0.0, 0.0}, 0.8, 1);
-              moveByPosOffset(control_task, {3, -6.5, 0.0, 0.0}, 0.8, 1);
+              moveByPosOffset(control_task, {4, 0, 0.0, -30.0}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 10, 0.0, -30.0}, 0.8, 1);
+              moveByPosOffset(control_task, {4, 0, 0.0, -30.0}, 0.8, 1);
+              moveByPosOffset(control_task, {3, -6.5, 0.0, -30.0}, 0.8, 1);
 
 
 
-              velocityAndYawRateCtrl( {5, 0, 0, 0}, 2000);
+              velocityAndYawRateCtrl( {5, 0, 0, -30}, 2000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
 
-                      control_task.request.task = FlightTaskControl::Request::TASK_LAND;
-                      ROS_INFO_STREAM("Landing request sending ...");
-                      task_control_client.call(control_task);
-                      if(control_task.response.result == true)
-                      {
-                          ROS_INFO_STREAM("Land task successful");
-                          break;
-                      }
-                      ROS_INFO_STREAM("Land task failed.");
-                      break;
+
 
               PRINT_INFO("going home now");
               control_task.request.task =
