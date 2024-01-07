@@ -570,6 +570,7 @@ case 'e':
           {
               ROS_INFO_STREAM("Takeoff task successful");
               ros::Duration(2.0).sleep();
+              moveByPosOffset(control_task, {0, 0, 0, 90}, 0.8, 1);
 
               ros::spinOnce();
               ROS_INFO("euler1 is [%f]",euler[0]);
