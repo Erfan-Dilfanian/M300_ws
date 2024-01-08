@@ -189,6 +189,17 @@ FFDS::APP::SingleFirePointTaskManager::getHomeGPosAverage(int times) {
 
 sensor_msgs::NavSatFix getAverageGPS(const int);
 
+
+float cosd(float angleDegrees) {
+    double angleRadians = angleDegrees * (M_PI / 180.0);
+    return cos(angleRadians);
+}
+
+float sind(float angleDegrees) {
+    double angleRadians = angleDegrees * (M_PI / 180.0);
+    return sin(angleRadians);
+}
+
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "flight_control_node");
@@ -292,7 +303,6 @@ int main(int argc, char** argv)
 float yaw_const;
 std::cout<< " pleasse enter initial yaw angle in degree-Z axes downward";
 std::cin>>yaw_const;
-yaw_const = yaw_const*(M_PI/180);  // degree to radian
 
 /*
     char inputChar;
@@ -367,6 +377,7 @@ yaw_const = yaw_const*(M_PI/180);  // degree to radian
               ROS_INFO("euler2 is [%f]",euler[1]);
               ROS_INFO("euler3 is [%f]",euler[2]);
 
+              ROS_INFO("yaw_const is [%f]",yaw_const);
 
 
               GimbalAction gimbalAction;
@@ -380,14 +391,16 @@ yaw_const = yaw_const*(M_PI/180);  // degree to radian
               gimbal_control_client.call(gimbalAction);
 
               float zz_w = 10;  //zigzag_width
-              float zz_l = 4;   //zigzag_length
+              float zz_l = 5;   //zigzag_length
 
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {0, 0, 10, yaw_const}, 1, 3);
               ros::spinOnce();
 
-              moveByPosOffset(control_task, {-zz_l*sin(yaw_const), zz_l*cos(yaw_const), 0, yaw_const}, 1, 3);
+ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd(yaw_const));
+
+              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0, yaw_const}, 1, 3);
 
 
               float m[2];
@@ -413,7 +426,7 @@ yaw_const = yaw_const*(M_PI/180);  // degree to radian
               ROS_INFO_STREAM("Step 1 over!");
 
 
-                      moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0, yaw_const}, 1, 3);
+                      moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0, yaw_const}, 1, 3);
               ros::spinOnce();
 
 
@@ -429,12 +442,12 @@ yaw_const = yaw_const*(M_PI/180);  // degree to radian
               ROS_INFO("y is [%f]",m[1]);
 
               ROS_INFO_STREAM("Step 2 over!");
-                      moveByPosOffset(control_task, {-zz_l*sin(yaw_const), -zz_l*cos(yaw_const), 0.0, yaw_const}, 0.8, 3);
+                      moveByPosOffset(control_task, {-zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
-              moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {-zz_l*sin(yaw_const), zz_l*cos(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {-3*sin(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cos(yaw_const)), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
 // the more generous you are in threshold, the more agile your drone would be       
 
