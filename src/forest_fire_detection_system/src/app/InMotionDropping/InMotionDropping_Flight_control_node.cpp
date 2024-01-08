@@ -288,7 +288,11 @@ int main(int argc, char** argv)
     std::cout << "| [h] North-East |"
               << std::endl;
 */
-    float yaw_const = -30;
+
+float yaw_const;
+std::cout<< " pleasse enter initial yaw angle in degree-Z axes downward";
+std::cin>>yaw_const;
+yaw_const = yaw_const*(M_PI/180);  // degree to radian
 
 /*
     char inputChar;
