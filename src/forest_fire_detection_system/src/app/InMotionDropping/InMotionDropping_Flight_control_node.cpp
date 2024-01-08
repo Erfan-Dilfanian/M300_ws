@@ -262,24 +262,48 @@ int main(int argc, char** argv)
 
 
   
-  std::cout
-      << "| Available commands:                                            |"
-      << std::endl;
-  std::cout
-      << "| [a] Monitored Takeoff + Landing                                |"
-      << std::endl;
-  std::cout
-      << "| [b] Monitored Takeoff + Position Control + Landing             |"
-      << std::endl;
-  std::cout << "| [c] Monitored Takeoff + Position Control + Force Landing "
-               "Avoid Ground  |"
-            << std::endl;
-  std::cout << "| [d] Monitored Takeoff + Velocity Control + Landing |"
-            << std::endl;
+/*
 
-  std::cout << "Please select command: ";
-  char inputChar;
-  std::cin >> inputChar;
+  std::cout << "Please select the estimated orientation of the fire: ";
+
+    std::cout
+            << "| Available commands:                                            |"
+            << std::endl;
+    std::cout
+            << "| [a] North                                |"
+            << std::endl;
+    std::cout
+            << "| [b] North-west             |"
+            << std::endl;
+    std::cout << "| [c] West  |"
+              << std::endl;
+    std::cout << "| [d] South-West |"
+              << std::endl;
+    std::cout << "| [e] South |"
+              << std::endl;
+    std::cout << "| [f] South-East |"
+              << std::endl;
+    std::cout << "| [g] East |"
+              << std::endl;
+    std::cout << "| [h] North-East |"
+              << std::endl;
+*/
+    float yaw_const = -30;
+
+/*
+    char inputChar;
+    std::cin >> inputChar;
+
+    switch (inputChar) {
+        case 'a':
+        {
+            break;
+        }
+
+        
+    }
+  */
+
   EmergencyBrake emergency_brake;
   FlightTaskControl control_task;
   ObtainControlAuthority obtainCtrlAuthority;
@@ -304,253 +328,8 @@ int main(int argc, char** argv)
                          QuaternionSubCallback);
 
 
-    switch (inputChar)
-  {
-    case 'a':
-      {
-        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
-        ROS_INFO_STREAM("Takeoff request sending ...");
-        task_control_client.call(control_task);
-        if(control_task.response.result == true)
-        {
-          ROS_INFO_STREAM("Takeoff task successful");
-          ros::Duration(2.0).sleep();
-
-          ROS_INFO_STREAM("Land request sending ...");
-          control_task.request.task = FlightTaskControl::Request::TASK_LAND;
-          task_control_client.call(control_task);
-          if(control_task.response.result == true)
-          {
-            ROS_INFO_STREAM("Land task successful");
-            break;
-          }
-          ROS_INFO_STREAM("Land task failed.");
-          break;
-        }
-        ROS_ERROR_STREAM("Takeoff task failed");
-        break;
-      }
-    case 'b':
-      {
-        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
-        ROS_INFO_STREAM("Takeoff request sending ...");
-        task_control_client.call(control_task);
-        if(control_task.response.result == false)
-        {
-          ROS_ERROR_STREAM("Takeoff task failed");
-          break;
-        }
-
-        if(control_task.response.result == true)
-        {
-          ROS_INFO_STREAM("Takeoff task successful");
-          ros::Duration(0.5).sleep();
 
 
-        GimbalAction gimbalAction;
-        gimbalAction.request.is_reset = false;
-        gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
-        gimbalAction.request.rotationMode = 0;
-        gimbalAction.request.pitch = 25.0f;
-        gimbalAction.request.roll = 0.0f;
-        gimbalAction.request.yaw = 90.0f;
-        gimbalAction.request.time = 0.5;
-        gimbal_control_client.call(gimbalAction);
-
-          ROS_INFO_STREAM("Move by position offset request sending ...");
-          moveByPosOffset(control_task, {0.0, 6.0, 6.0, 30.0}, 0.8, 1);
-          ROS_INFO_STREAM("Step 1 over!");
-          moveByPosOffset(control_task, {6.0, 0.0, -3, -30.0}, 0.8, 1);
-          ROS_INFO_STREAM("Step 2 over!");
-          moveByPosOffset(control_task, {-6.0, -6.0, 0.0, 0.0}, 0.8, 1);
-          ROS_INFO_STREAM("Step 3 over!");
-
-          control_task.request.task = FlightTaskControl::Request::TASK_LAND;
-          ROS_INFO_STREAM("Landing request sending ...");
-          task_control_client.call(control_task);
-          if(control_task.response.result == true)
-          {
-            ROS_INFO_STREAM("Land task successful");
-            break;
-          }
-          ROS_INFO_STREAM("Land task failed.");
-          break;
-        }
-        break;
-      }
-    case 'c':
-      {
-        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
-        ROS_INFO_STREAM("Takeoff request sending ...");
-        task_control_client.call(control_task);
-        if(control_task.response.result == false)
-        {
-          ROS_ERROR_STREAM("Takeoff task failed");
-          break;
-        }
-
-        if (control_task.response.result == true)
-        {
-          ROS_INFO_STREAM("Takeoff task successful");
-          ros::Duration(2.0).sleep();
-
-          ROS_INFO_STREAM("turn on Horizon_Collision-Avoidance-Enabled");
-          SetAvoidEnable horizon_avoid_req;
-          horizon_avoid_req.request.enable = true;
-          enable_horizon_avoid_client.call(horizon_avoid_req);
-          if(horizon_avoid_req.response.result == false)
-          {
-            ROS_ERROR_STREAM("Enable Horizon Avoid FAILED");
-          }
-
-          ROS_INFO_STREAM("turn on Upwards-Collision-Avoidance-Enabled");
-          SetAvoidEnable upward_avoid_req;
-          upward_avoid_req.request.enable = true;
-          enable_upward_avoid_client.call(upward_avoid_req);
-          if(upward_avoid_req.response.result == false)
-          {
-            ROS_ERROR_STREAM("Enable Upward Avoid FAILED");
-          }
-
-          GetAvoidEnable getAvoidEnable;
-          get_avoid_enable_client.call(getAvoidEnable);
-          if (getAvoidEnable.response.result)
-          {
-            ROS_INFO("get horizon avoid enable status:%d, get upwards avoid enable status:%d",
-                     getAvoidEnable.response.horizon_avoid_enable_status,
-                     getAvoidEnable.response.upwards_avoid_enable_status);
-          }
-
-          ROS_INFO_STREAM("Move by position offset request sending ...");
-          ROS_INFO_STREAM("Move to higher altitude");
-          moveByPosOffset(control_task, {0.0, 0.0, 30.0, 0.0}, 0.8, 1);
-          ROS_INFO_STREAM("Move a short distance");
-          moveByPosOffset(control_task, {10.0, 0.0, 0.0, 0.0}, 0.8, 1);
-
-          ROS_INFO_STREAM("Set aircraft current position as new home location");
-          SetCurrentAircraftLocAsHomePoint home_set_req;
-          set_current_point_as_home_client.call(home_set_req);
-          if(home_set_req.response.result == false)
-          {
-            ROS_ERROR_STREAM("Set current position as Home, FAILED");
-            break;
-          }
-
-
-          ROS_INFO_STREAM("Get current go home altitude");
-          GetGoHomeAltitude current_go_home_altitude;
-          get_go_home_altitude_client.call(current_go_home_altitude);
-          if(current_go_home_altitude.response.result == false)
-          {
-            ROS_ERROR_STREAM("Get altitude for go home FAILED");
-            break;
-          }
-          ROS_INFO("Current go home altitude is :%d m", current_go_home_altitude.response.altitude);
-
-          ROS_INFO_STREAM("Set new go home altitude");
-          SetGoHomeAltitude altitude_go_home;
-          altitude_go_home.request.altitude = 50;
-          set_go_home_altitude_client.call(altitude_go_home);
-          if(altitude_go_home.response.result == false)
-          {
-            ROS_ERROR_STREAM("Set altitude for go home FAILED");
-            break;
-          }
-
-          get_go_home_altitude_client.call(current_go_home_altitude);
-          if(current_go_home_altitude.response.result == false)
-          {
-            ROS_ERROR_STREAM("Get altitude for go home FAILED");
-            break;
-          }
-          ROS_INFO("Current go home altitude is :%d m", current_go_home_altitude.response.altitude);
-
-          ROS_INFO_STREAM("Move to another position");
-          moveByPosOffset(control_task, {50.0, 0.0, 0.0, 0.0} , 0.8, 1);
-
-          ROS_INFO_STREAM("Shut down Horizon_Collision-Avoidance-Enabled");
-          horizon_avoid_req.request.enable = false;
-          enable_horizon_avoid_client.call(horizon_avoid_req);
-          if(horizon_avoid_req.response.result == false)
-          {
-            ROS_ERROR_STREAM("Disable Horizon Avoid FAILED");
-          }
-
-          ROS_INFO_STREAM("Shut down Upwards-Collision-Avoidance-Enabled");
-          upward_avoid_req.request.enable = false;
-          enable_upward_avoid_client.call(upward_avoid_req);
-          if(upward_avoid_req.response.result == false)
-          {
-            ROS_ERROR_STREAM("Enable Upward Avoid FAILED");
-          }
-
-          get_avoid_enable_client.call(getAvoidEnable);
-          if (getAvoidEnable.response.result)
-          {
-            ROS_INFO("get horizon avoid enable status:%d, get upwards avoid enable status:%d",
-                     getAvoidEnable.response.horizon_avoid_enable_status,
-                     getAvoidEnable.response.upwards_avoid_enable_status);
-          }
-
-          ROS_INFO_STREAM("Go home...");
-
-          control_task.request.task = FlightTaskControl::Request::TASK_GOHOME_AND_CONFIRM_LANDING;
-          task_control_client.call(control_task);
-          if(control_task.response.result == false)
-          {
-            ROS_ERROR_STREAM("GO HOME FAILED");
-          }
-          break;
-        }
-      }
-    case 'd':
-      {
-        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
-        ROS_INFO_STREAM("Takeoff request sending ...");
-        task_control_client.call(control_task);
-        if(control_task.response.result == false)
-        {
-          ROS_ERROR_STREAM("Takeoff task failed");
-          break;
-        }
-
-        if(control_task.response.result == true)
-        {
-          ROS_INFO_STREAM("Takeoff task successful");
-          ros::Duration(2).sleep();
-
-          velocityAndYawRateCtrl( {0, 0, 5.0, 0}, 2000);
-          ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
-          emergency_brake_client.call(emergency_brake);
-          ros::Duration(2).sleep();
-          velocityAndYawRateCtrl({-1.5, 2, 0, 0}, 2000);
-          ROS_INFO_STREAM("Step 2 over!EmergencyBrake for 2s\n");
-          emergency_brake_client.call(emergency_brake);
-          ros::Duration(2).sleep();
-          velocityAndYawRateCtrl({3, 0, 0, 0}, 2500);
-          ROS_INFO_STREAM("Step 3 over!EmergencyBrake for 2s\n");
-          emergency_brake_client.call(emergency_brake);
-          ros::Duration(2).sleep();
-          velocityAndYawRateCtrl({-1.6, -2, 0, 0}, 2200);
-          ROS_INFO_STREAM("Step 4 over!EmergencyBrake for 2s\n");
-          emergency_brake_client.call(emergency_brake);
-          ros::Duration(2).sleep();
-
-          control_task.request.task = FlightTaskControl::Request::TASK_LAND;
-          ROS_INFO_STREAM("Landing request sending ...");
-          task_control_client.call(control_task);
-          if(control_task.response.result == true)
-          {
-            ROS_INFO_STREAM("Land task successful");
-            break;
-          }
-          ROS_INFO_STREAM("Land task failed.");
-          break;
-        }
-        break;
-      }
-case 'e':
-      {
 
 
 
@@ -571,14 +350,13 @@ case 'e':
           if(control_task.response.result == false)
           {
               ROS_ERROR_STREAM("Takeoff task failed");
-              break;
           }
 
           if(control_task.response.result == true)
           {
               ROS_INFO_STREAM("Takeoff task successful");
               ros::Duration(2.0).sleep();
-              moveByPosOffset(control_task, {0, 0, 0, -30}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
 
               ros::spinOnce();
               ROS_INFO("euler1 is [%f]",euler[0]);
@@ -597,10 +375,15 @@ case 'e':
               gimbalAction.request.time = 0.5;
               gimbal_control_client.call(gimbalAction);
 
+              float zz_w = 10;  //zigzag_width
+              float zz_l = 4;   //zigzag_length
+
+
               ROS_INFO_STREAM("Move by position offset request sending ...");
-              moveByPosOffset(control_task, {0, 10.0, 10, -30}, 0.8, 1);
+              moveByPosOffset(control_task, {0, 0, 10, yaw_const}, 1, 3);
               ros::spinOnce();
 
+              moveByPosOffset(control_task, {-zz_l*sin(yaw_const), zz_l*cos(yaw_const), 0, yaw_const}, 1, 3);
 
 
               float m[2];
@@ -626,7 +409,7 @@ case 'e':
               ROS_INFO_STREAM("Step 1 over!");
 
 
-                      moveByPosOffset(control_task, {4, 0, 0, -30}, 0.8, 1);
+                      moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0, yaw_const}, 1, 3);
               ros::spinOnce();
 
 
@@ -642,16 +425,16 @@ case 'e':
               ROS_INFO("y is [%f]",m[1]);
 
               ROS_INFO_STREAM("Step 2 over!");
-                      moveByPosOffset(control_task, {0, -10, 0.0, -30}, 0.8, 1);
+                      moveByPosOffset(control_task, {-zz_l*sin(yaw_const), -zz_l*cos(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
-              moveByPosOffset(control_task, {4, 0, 0.0, -30.0}, 0.8, 1);
-              moveByPosOffset(control_task, {0, 10, 0.0, -30.0}, 0.8, 1);
-              moveByPosOffset(control_task, {4, 0, 0.0, -30.0}, 0.8, 1);
-              moveByPosOffset(control_task, {3, -6.5, 0.0, -30.0}, 0.8, 1);
+              moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {-zz_l*sin(yaw_const), zz_l*cos(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {zz_w*cos(yaw_const), zz_w*sin(yaw_const), 0.0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {-3*sin(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cos(yaw_const)), 0.0, yaw_const}, 1, 3);
 
+// the more generous you are in threshold, the more agile your drone would be       
 
-
-              velocityAndYawRateCtrl( {5, 0, 0, -30}, 2000);
+              velocityAndYawRateCtrl( {5, 0, 0, yaw_const}, 2000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
@@ -683,17 +466,13 @@ case 'e':
 
           }
 
-          break;
 
 
 
-     }
-    default:
-      break;
 
 
 
-  }
+
 
   ROS_INFO_STREAM("Finished. Press CTRL-C to terminate the node");
 
