@@ -347,7 +347,7 @@ std::cin>>yaw_const;
 
 
 
-          sensor_msgs::NavSatFix homeGPos = getAverageGPS(100);
+          sensor_msgs::NavSatFix homeGPos = getAverageGPS(200);
           float homeGPS_posArray[2];
           homeGPS_posArray[0] = homeGPos.latitude;
           homeGPS_posArray[1] = homeGPos.longitude;
@@ -580,6 +580,7 @@ sensor_msgs::NavSatFix getAverageGPS(
             i = 0;
             continue;
         }
+
         homeGPos.latitude += gps_position_.latitude;
         homeGPos.longitude += gps_position_.longitude;
         homeGPos.altitude += gps_position_.altitude;
