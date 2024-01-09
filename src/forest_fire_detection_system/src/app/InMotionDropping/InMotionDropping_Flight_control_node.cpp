@@ -522,7 +522,7 @@ ROS_INFO("m[0] is [%f]",m[0]);
 
               float abs_vel = 5; // absolute velocity that needs to be projected
 
-              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_adjustment), abs_vel*sind(yaw_adjustment), 0}, 4000);
+              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_adjustment), abs_vel*sind(yaw_adjustment), 0}, 5000);
 
 
 
