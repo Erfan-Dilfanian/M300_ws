@@ -489,13 +489,14 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray,fire_gps_local_pos);
 
-              float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
 
 
               ROS_INFO("fire's x is [%f]",fire_gps_local_pos[0]);
               ROS_INFO("fire's y is [%f]",fire_gps_local_pos[1]);
+              ROS_INFO("fire's z is [%f]",fire_gps_local_pos[2]);
 
 
+              float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
 
 ROS_INFO("moving to the start mission position");
 ROS_INFO("m[0] is [%f]",m[0]);
@@ -611,16 +612,17 @@ void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeM
   originTime  = ros::Time::now().toSec();
   currentTime = originTime;
   elapsedTimeInMs = (currentTime - originTime)*1000;
-
+bool flag = 0;
   while(elapsedTimeInMs <= timeMs)
   {
     currentTime = ros::Time::now().toSec();
     elapsedTimeInMs = (currentTime - originTime) * 1000;
       ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
 
-    if(elapsedTimeInMs>1000) {
+    if(elapsedTimeInMs>1000 && flag==0) {
         ROS_INFO("release valve");
         joystick_action_client.call(joystickAction);
+        flag = 1;
     }else{
             joystick_action_client.call(joystickAction);
 
