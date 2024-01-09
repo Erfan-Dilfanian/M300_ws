@@ -519,7 +519,7 @@ char scenario;
 std::cin>>scenario;
               switch (scenario) {
                   case 'a':{
-                      moveByPosOffset(control_task, {fire_gps_local_pos[0]-m[0], fire_gps_local_pos[1]-m[1], 0.0, yaw_const}, 1, 3);
+                      moveByPosOffset(control_task, {fire_gps_local_pos[0]-m[0], fire_gps_local_pos[1]-m[1], 0.0, yaw_const}, 0.1, 3); //less threshold
 
                       ros::spinOnce();
 
