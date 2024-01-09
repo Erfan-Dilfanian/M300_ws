@@ -347,7 +347,7 @@ std::cin>>yaw_const;
 
 
 
-          sensor_msgs::NavSatFix homeGPos = getAverageGPS(200);
+          sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
           float homeGPS_posArray[2];
           homeGPS_posArray[0] = homeGPos.latitude;
           homeGPS_posArray[1] = homeGPos.longitude;
@@ -476,10 +476,12 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
               ros::spinOnce();
 
-              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
               current_GPS_posArray[0] = gps_position_.latitude;
               current_GPS_posArray[1] = gps_position_.longitude;
-              current_GPS_posArray[2] = gps_position_.altitude;
+              current_GPS_posArray[2] = gps_position_.altitude;  // these assignments should be before using LatLong2Meter function
+
+              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
+
 
               float fire_gps_local_pos[2];
 
@@ -550,9 +552,6 @@ ROS_INFO("m[0] is [%f]",m[0]);
 
 
           }
-
-
-
 
 
 
