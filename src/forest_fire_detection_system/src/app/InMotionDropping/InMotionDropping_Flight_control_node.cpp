@@ -615,7 +615,7 @@ void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeM
   {
     currentTime = ros::Time::now().toSec();
     elapsedTimeInMs = (currentTime - originTime) * 1000;
-      ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
+      ROS_INFO("timeinMs [%d]",elapsedTimeInMs);
       joystick_action_client.call(joystickAction);
     if(elapsedTimeInMs>1000){
         ROS_INFO("release valve");
