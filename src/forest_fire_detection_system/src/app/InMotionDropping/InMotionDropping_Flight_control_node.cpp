@@ -466,8 +466,8 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 // the more generous you are in threshold, the more agile your drone would be       
 
               sensor_msgs::NavSatFix fire_gps;
-              fire_gps.latitude = 45.458460;
-              fire_gps.longitude = -73.932568;
+              fire_gps.latitude = 45.458478;
+              fire_gps.longitude = -73.932531;
               fire_gps.altitude =111.356392;
 
               float fire_GPS_posArray[2];
@@ -616,6 +616,9 @@ void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeM
     currentTime = ros::Time::now().toSec();
     elapsedTimeInMs = (currentTime - originTime) * 1000;
     joystick_action_client.call(joystickAction);
+    if(elapsedTimeInMs == 1000){
+        ROS_INFO("release valve");
+    }
   }
 }
 
