@@ -400,7 +400,7 @@ std::cin>>yaw_const;
 
 ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd(yaw_const));
 
-              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0}, 1, 3);
 
               ros::spinOnce();
 
