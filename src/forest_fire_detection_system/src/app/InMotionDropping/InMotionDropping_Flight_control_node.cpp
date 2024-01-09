@@ -459,8 +459,13 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
                       moveByPosOffset(control_task, {zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+
+
               ros::spinOnce();
 
+              current_GPS_posArray[0] = gps_position_.latitude;
+              current_GPS_posArray[1] = gps_position_.longitude;
+              current_GPS_posArray[2] = gps_position_.altitude;
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
 
@@ -474,8 +479,8 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 // the more generous you are in threshold, the more agile your drone would be       
 
               sensor_msgs::NavSatFix fire_gps;
-              fire_gps.latitude = 45.458478;
-              fire_gps.longitude = -73.932531;
+              fire_gps.latitude = 45.458345997148996;
+              fire_gps.longitude = -73.93284786829994;
               fire_gps.altitude =111.356392;
 
               float fire_GPS_posArray[2];
@@ -489,6 +494,11 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               current_GPS_posArray[0] = gps_position_.latitude;
               current_GPS_posArray[1] = gps_position_.longitude;
               current_GPS_posArray[2] = gps_position_.altitude;  // these assignments should be before using LatLong2Meter function
+
+              ROS_INFO("fire_GPS_posArray[0] Is [%f]",fire_GPS_posArray[0]);
+              ROS_INFO("fire_GPS_posArray[0] Is [%f]",fire_GPS_posArray[1]);
+              ROS_INFO("fire_GPS_posArray[0] Is [%f]",fire_GPS_posArray[2]);
+
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
 
