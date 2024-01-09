@@ -411,6 +411,17 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               current_GPS_posArray[1] = gps_position_.longitude;
               current_GPS_posArray[2] = gps_position_.altitude;
 
+              ROS_INFO("homegpos latitude is [%f]",homeGPS_posArray[0]);
+              ROS_INFO("homegpos longitude is [%f]",homeGPS_posArray[1]);
+              ROS_INFO("homegpos attitude is [%f]",homeGPS_posArray[2]);
+
+              ROS_INFO("currentpos latitude is [%f]",current_GPS_posArray[0]);
+              ROS_INFO("currentgpos longitude is [%f]",current_GPS_posArray[1]);
+              ROS_INFO("currentgpos attitude is [%f]",current_GPS_posArray[2]);
+
+              ros::Duration(2).sleep();
+
+
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
 
               ROS_INFO("x is [%f]",m[0]);
