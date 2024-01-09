@@ -442,7 +442,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               ROS_INFO("y is [%f]",m[1]);
 
               ROS_INFO_STREAM("Step 2 over!");
-                      moveByPosOffset(control_task, {-zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
+                      moveByPosOffset(control_task, {zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
               moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
