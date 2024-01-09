@@ -472,7 +472,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               ROS_INFO("x is [%f]",m[0]);
               ROS_INFO("y is [%f]",m[1]);
 
-              // moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
+               moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
               // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
               // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
@@ -501,7 +501,9 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
-
+              ROS_INFO("current position's x is [%f]",m[0]);
+              ROS_INFO("current position's y is [%f]",m[1]);
+              ROS_INFO("current position's z is [%f]",m[2]); //m[2] is incorrect
 
               float fire_gps_local_pos[2];
 
@@ -512,47 +514,69 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               ROS_INFO("fire's x is [%f]",fire_gps_local_pos[0]);
               ROS_INFO("fire's y is [%f]",fire_gps_local_pos[1]);
               ROS_INFO("fire's z is [%f]",fire_gps_local_pos[2]);
+std::cout<<"please select case: [a] hovering mode  [b] in motion droppping"<<std::endl;
+char scenario;
+std::cin>>scenario;
+              switch (scenario) {
+                  case 'a':{
+                      moveByPosOffset(control_task, {fire_gps_local_pos[0]-m[0], fire_gps_local_pos[1]-m[1], 0.0, yaw_const}, 1, 3);
+
+                      ros::spinOnce();
+
+                      current_GPS_posArray[0] = gps_position_.latitude;
+                      current_GPS_posArray[1] = gps_position_.longitude;
+                      current_GPS_posArray[2] = gps_position_.altitude;
+
+                      FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
+                      ROS_INFO("current position's x is [%f]",m[0]);
+                      ROS_INFO("current position's y is [%f]",m[1]);
+                      ROS_INFO("current position's z is [%f]",m[2]); //m[2] is incorrect
+                      break;}
+                  case 'b':{
 
 // set mission start position. I set it at the south east of the fire point
-              float mission_start_pos[3] = {fire_gps_local_pos[0]-7,fire_gps_local_pos[1]+4,10}; // it also can be current x y z
+                      float mission_start_pos[3] = {fire_gps_local_pos[0]-7,fire_gps_local_pos[1]+4,10}; // it also can be current x y z
 
-ROS_INFO("moving to the start mission position");
-ROS_INFO("m[0] is [%f]",m[0]);
-              ROS_INFO("m[1] is [%f]",m[1]);
-              ROS_INFO("m[2] is [%f]",m[2]); //m[2] is incorrect
+                      ROS_INFO("moving to the start mission position");
 
 
 
-              // go to mission start position
-              moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], 0, yaw_const}, 1, 3);
+
+                      // go to mission start position
+                      moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], 0, yaw_const}, 1, 3);
 
 
-              // adjust initial yaw angle
-              float yaw_adjustment; // yaw adjustment before approach
-              float deltaX = fire_gps_local_pos[0]-mission_start_pos[2];
-              float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
+                      // adjust initial yaw angle
+                      float yaw_adjustment; // yaw adjustment before approach
+                      float deltaX = fire_gps_local_pos[0]-mission_start_pos[2];
+                      float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
 
-ROS_INFO("deltaX is [%f]",deltaX);
-ROS_INFO("deltaY is [%f]",deltaY);
+                      ROS_INFO("deltaX is [%f]",deltaX);
+                      ROS_INFO("deltaY is [%f]",deltaY);
 
 
-              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY))+90; // note that tan2 output is in radian
-              // Also I added 90 as we want the yaw angle from x axis which is in Y direction
+                      yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY))+90; // note that tan2 output is in radian
+                      // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
-              ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
-              moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
+                      ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
+                      moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
 
-              // velocity mission
+                      // velocity mission
 
-              float abs_vel = 5; // absolute velocity that needs to be projected
+                      float abs_vel = 5; // absolute velocity that needs to be projected
 
-              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_adjustment), abs_vel*sind(yaw_adjustment), 0}, 5000);
+                      velocityAndYawRateCtrl( {abs_vel*cosd(yaw_adjustment), abs_vel*sind(yaw_adjustment), 0}, 5000);
 
 
 
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
+
+
+                      break;}
+
+              }
 
 
 
