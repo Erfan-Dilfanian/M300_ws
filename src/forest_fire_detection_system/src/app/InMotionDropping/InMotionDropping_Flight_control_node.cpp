@@ -396,6 +396,8 @@ std::cin>>yaw_const;
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {0, 0, 10, yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {3, 6, 0, yaw_const}, 1, 3);
+
               ros::spinOnce();
 
 ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd(yaw_const));
@@ -454,7 +456,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 float abs_vel = 5; // absolute velocity that needs to be projected
 
 
-              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(0), 0, yaw_const}, 2000);
+              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(yaw_const), 0, yaw_const}, 3000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
