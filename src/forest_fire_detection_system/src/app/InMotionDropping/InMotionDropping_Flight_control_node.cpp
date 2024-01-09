@@ -142,8 +142,8 @@ float euler[3];
 void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
-    ROS_INFO("latitude is [%f]",gps_position_.latitude);
-    ROS_INFO("longitude is [%f]",gps_position_.longitude);
+    // ROS_INFO("latitude is [%f]",gps_position_.latitude);
+    // ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
 }
 
