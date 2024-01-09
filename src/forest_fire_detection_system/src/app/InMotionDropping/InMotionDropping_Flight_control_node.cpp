@@ -498,10 +498,12 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 ROS_INFO("moving to the start mission position");
 ROS_INFO("m[0] is [%f]",m[0]);
               ROS_INFO("m[1] is [%f]",m[1]);
-              ROS_INFO("m[2] is [%f]",m[2]);
+              ROS_INFO("m[2] is [%f]",m[2]); //m[2] is incorrect
+
+
 
               // go to mission start position
-              moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], mission_start_pos[2]-m[2], yaw_const}, 1, 3);
+              moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], 0, yaw_const}, 1, 3);
 
 
               // adjust initial yaw angle
