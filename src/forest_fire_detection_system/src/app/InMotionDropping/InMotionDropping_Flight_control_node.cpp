@@ -532,7 +532,12 @@ ROS_INFO("m[0] is [%f]",m[0]);
               float deltaX = fire_gps_local_pos[0]-mission_start_pos[2];
               float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
 
-              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY)); // note that tan2 output is in radian
+ROS_INFO("deltaX is [%f]",deltaX);
+ROS_INFO("deltaY is [%f]",deltaY);
+
+
+              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY))-90; // note that tan2 output is in radian
+              // Also we subtracted 90 as we want the yaw angle from x axis which is in Y direction
 
               ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
               moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
@@ -635,7 +640,7 @@ bool flag = 0;
   {
     currentTime = ros::Time::now().toSec();
     elapsedTimeInMs = (currentTime - originTime) * 1000;
-      ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
+      // ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
 
     if(elapsedTimeInMs>1000 && flag==0) {
         ROS_INFO("release valve");
