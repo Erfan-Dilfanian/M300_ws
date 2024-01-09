@@ -570,17 +570,17 @@ static bool isEqual(const double a, const double b) {
 sensor_msgs::NavSatFix getAverageGPS(
         const int average_times) {
     sensor_msgs::NavSatFix homeGPos;
+while(isEqual(0.0, gps_position_.latitude) ||
+      isEqual(0.0, gps_position_.longitude) ||
+      isEqual(0.0, gps_position_.altitude))
+{
+    ros::spinOnce();
+
+}
 
     for (int i = 0; (i < average_times) && ros::ok(); i++) {
         ros::spinOnce();
-        if (isEqual(0.0, gps_position_.latitude) ||
-            isEqual(0.0, gps_position_.longitude) ||
-            isEqual(0.0, gps_position_.altitude)) {
-            PRINT_WARN("zero in gps_position, waiting for normal gps position!");
-            i = 0;
-            continue;
-        }
-
+        
         homeGPos.latitude += gps_position_.latitude;
         homeGPos.longitude += gps_position_.longitude;
         homeGPos.altitude += gps_position_.altitude;
