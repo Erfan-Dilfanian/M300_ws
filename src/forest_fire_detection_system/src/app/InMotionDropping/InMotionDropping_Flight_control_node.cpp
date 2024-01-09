@@ -200,6 +200,8 @@ float sind(float angleDegrees) {
     return sin(angleRadians);
 }
 
+float Rad2Deg(float Rad){ return Rad*(180/M_PI);}
+
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "flight_control_node");
@@ -457,8 +459,8 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
                       moveByPosOffset(control_task, {zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+              // moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
+              // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
               // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
 // the more generous you are in threshold, the more agile your drone would be       
@@ -485,7 +487,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
               float fire_gps_local_pos[2];
 
-              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,fire_gps_local_pos);
+              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray,fire_gps_local_pos);
 
               float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
 
@@ -511,7 +513,7 @@ ROS_INFO("m[0] is [%f]",m[0]);
               float deltaX = fire_gps_local_pos[0]-mission_start_pos[2];
               float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
 
-              yaw_adjustment = atan2(deltaX, deltaY);
+              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY)); // note that tan2 output is in radian
 
               ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
               moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
