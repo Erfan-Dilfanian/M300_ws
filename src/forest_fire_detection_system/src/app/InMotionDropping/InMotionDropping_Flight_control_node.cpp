@@ -459,7 +459,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
               moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0.0, yaw_const}, 1, 3);
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
+              // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
 // the more generous you are in threshold, the more agile your drone would be       
 
@@ -488,8 +488,10 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
 
 
+              ROS_INFO("fire's x is [%f]",fire_gps_local_pos[0]);
+              ROS_INFO("fire's y is [%f]",fire_gps_local_pos[1]);
 
-
+ROS_INFO("moving to the start mission position");
               // go to mission start position
               moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], mission_start_pos[2]-m[2], yaw_const}, 1, 3);
 
@@ -500,6 +502,8 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
 
               yaw_adjustment = atan2(deltaX, deltaY);
+
+              ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
               moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
 
               // velocity mission
