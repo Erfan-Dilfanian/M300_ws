@@ -483,7 +483,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               fire_gps.longitude = -73.93284786829994;
               fire_gps.altitude =111.356392;
 
-              float fire_GPS_posArray[2];
+              float fire_GPS_posArray[3];
 
               fire_GPS_posArray[0] =  fire_gps.latitude;
               fire_GPS_posArray[1] =  fire_gps.longitude;
