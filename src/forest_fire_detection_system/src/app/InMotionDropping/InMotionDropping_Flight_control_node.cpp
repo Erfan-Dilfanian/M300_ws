@@ -396,7 +396,6 @@ std::cin>>yaw_const;
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {0, 0, 10, yaw_const}, 1, 3);
-              moveByPosOffset(control_task, {3, 6, 0, yaw_const}, 1, 3);
 
               ros::spinOnce();
 
