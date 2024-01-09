@@ -397,12 +397,12 @@ std::cin>>yaw_const;
               ROS_INFO_STREAM("Move by position offset request sending ...");
               moveByPosOffset(control_task, {0, 0, 10, yaw_const}, 1, 3);
 
-              ros::spinOnce();
 
 ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd(yaw_const));
 
               moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0, yaw_const}, 1, 3);
 
+              ros::spinOnce();
 
               float m[2];
 
@@ -577,10 +577,11 @@ while(isEqual(0.0, gps_position_.latitude) ||
     ros::spinOnce();
 
 }
+    // PRINT_WARN("zero in gps_position, waiting for normal gps position!");
 
     for (int i = 0; (i < average_times) && ros::ok(); i++) {
         ros::spinOnce();
-        
+
         homeGPos.latitude += gps_position_.latitude;
         homeGPos.longitude += gps_position_.longitude;
         homeGPos.altitude += gps_position_.altitude;
