@@ -513,8 +513,8 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
               ROS_INFO("fire's y is [%f]",fire_gps_local_pos[1]);
               ROS_INFO("fire's z is [%f]",fire_gps_local_pos[2]);
 
-
-              float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
+// set mission start position. I set it at the south east of the fire point
+              float mission_start_pos[3] = {fire_gps_local_pos[0]-7,fire_gps_local_pos[1]+4,10}; // it also can be current x y z
 
 ROS_INFO("moving to the start mission position");
 ROS_INFO("m[0] is [%f]",m[0]);
@@ -536,8 +536,8 @@ ROS_INFO("deltaX is [%f]",deltaX);
 ROS_INFO("deltaY is [%f]",deltaY);
 
 
-              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY))-90; // note that tan2 output is in radian
-              // Also we subtracted 90 as we want the yaw angle from x axis which is in Y direction
+              yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY))+90; // note that tan2 output is in radian
+              // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
               ROS_INFO("yaw_adjustment_angle is [%f]",yaw_adjustment);
               moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
@@ -642,7 +642,7 @@ bool flag = 0;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
       // ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
 
-    if(elapsedTimeInMs>1000 && flag==0) {
+    if(elapsedTimeInMs>2000 && flag==0) {
         ROS_INFO("release valve");
         joystick_action_client.call(joystickAction);
         flag = 1;
