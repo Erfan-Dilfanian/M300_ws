@@ -459,9 +459,10 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
                       moveByPosOffset(control_task, {zz_l*sind(yaw_const), -zz_l*cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
                       ROS_INFO_STREAM("Step 3 over!");
               moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+              ros::spinOnce();
+
 
               FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
-              ros::spinOnce();
 
               ROS_INFO("x is [%f]",m[0]);
               ROS_INFO("y is [%f]",m[1]);
