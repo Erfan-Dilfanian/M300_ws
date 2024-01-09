@@ -400,7 +400,7 @@ std::cin>>yaw_const;
 
 ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd(yaw_const));
 
-              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0}, 1, 3);
+              moveByPosOffset(control_task, {-zz_l*sind(yaw_const), zz_l*cosd(yaw_const), 0,yaw_const}, 1, 3);
 
               ros::spinOnce();
 
@@ -463,10 +463,53 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
 // the more generous you are in threshold, the more agile your drone would be       
 
-float abs_vel = 5; // absolute velocity that needs to be projected
+              sensor_msgs::NavSatFix fire_gps;
+              fire_gps.latitude = 45.458460;
+              fire_gps.longitude = -73.932568;
+              fire_gps.altitude =111.356392;
+
+              float fire_GPS_posArray[2];
+
+              fire_GPS_posArray[0] =  fire_gps.latitude;
+              fire_GPS_posArray[1] =  fire_gps.longitude;
+              fire_GPS_posArray[2] =  fire_gps.altitude;
+
+              ros::spinOnce();
+
+              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
+              current_GPS_posArray[0] = gps_position_.latitude;
+              current_GPS_posArray[1] = gps_position_.longitude;
+              current_GPS_posArray[2] = gps_position_.altitude;
+
+              float fire_gps_local_pos[2];
+
+              FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,fire_gps_local_pos);
+
+              float mission_start_pos[3] = {8,9,10}; // it also can be current x y z
 
 
-              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(yaw_const), 0}, 3000);
+
+
+              // go to mission start position
+              moveByPosOffset(control_task, {mission_start_pos[0]-m[0], mission_start_pos[1]-m[1], mission_start_pos[2]-m[2], yaw_const}, 1, 3);
+
+
+              // adjust initial yaw angle
+              float yaw_adjustment; // yaw adjustment before approach
+              float deltaX = fire_gps_local_pos[0]-mission_start_pos[2];
+              float deltaY = fire_gps_local_pos[0]-mission_start_pos[2];
+
+              yaw_adjustment = atan2(deltaX, deltaY);
+              moveByPosOffset(control_task, {0, 0,0, yaw_adjustment}, 1, 3);
+
+              // velocity mission
+
+              float abs_vel = 5; // absolute velocity that needs to be projected
+
+              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_adjustment), abs_vel*sind(yaw_adjustment), 0}, 4000);
+
+
+
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
