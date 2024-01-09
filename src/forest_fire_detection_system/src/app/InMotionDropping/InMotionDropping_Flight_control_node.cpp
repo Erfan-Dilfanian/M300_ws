@@ -455,7 +455,7 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 float abs_vel = 5; // absolute velocity that needs to be projected
 
 
-              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(yaw_const), 0, 0}, 3000);
+              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(yaw_const), 0}, 3000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
@@ -538,7 +538,7 @@ void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeM
   joystickAction.request.joystickCommand.x = offsetDesired.x;
   joystickAction.request.joystickCommand.y = offsetDesired.y;
   joystickAction.request.joystickCommand.z = offsetDesired.z;
-  joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;
+  // joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;  // This is for yaw rate, which we dont want
 
   originTime  = ros::Time::now().toSec();
   currentTime = originTime;
