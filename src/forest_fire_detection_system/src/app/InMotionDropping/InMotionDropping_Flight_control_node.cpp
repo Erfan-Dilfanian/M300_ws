@@ -128,8 +128,8 @@ ros::ServiceClient set_joystick_mode_client;
 ros::ServiceClient joystick_action_client;
 
 bool moveByPosOffset(FlightTaskControl& task,const JoystickCommand &offsetDesired,
-                     float posThresholdInM = 0.8,
-                     float yawThresholdInDeg = 1.0);
+                     float posThresholdInM ,
+                     float yawThresholdInDeg);
 
 void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeMs);
 
@@ -301,7 +301,7 @@ int main(int argc, char** argv)
 */
 
 float yaw_const;
-std::cout<< " pleasse enter initial yaw angle in degree-Z axes downward";
+std::cout<< " plasse enter initial yaw angle in degree-Z axes downward"<<std::endl;
 std::cin>>yaw_const;
 
 /*
@@ -390,8 +390,8 @@ std::cin>>yaw_const;
               gimbalAction.request.time = 0.5;
               gimbal_control_client.call(gimbalAction);
 
-              float zz_w = 10;  //zigzag_width
-              float zz_l = 5;   //zigzag_length
+              float zz_l = 8;  //zigzag_width
+              float zz_w = 4;   //zigzag_length
 
 
               ROS_INFO_STREAM("Move by position offset request sending ...");
@@ -451,7 +451,10 @@ ROS_INFO("destination y is [%f] and x is [%f]: ",zz_l*sind(yaw_const), zz_l*cosd
 
 // the more generous you are in threshold, the more agile your drone would be       
 
-              velocityAndYawRateCtrl( {5, 0, 0, yaw_const}, 2000);
+float abs_vel = 5; // absolute velocity that needs to be projected
+
+
+              velocityAndYawRateCtrl( {abs_vel*cosd(yaw_const), abs_vel*sind(yaw_const), 0, yaw_const}, 2000);
                       ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                       emergency_brake_client.call(emergency_brake);
                       ros::Duration(2).sleep();
