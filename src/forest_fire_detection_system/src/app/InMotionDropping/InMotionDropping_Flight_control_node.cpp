@@ -527,10 +527,14 @@ std::cin>>scenario;
                       current_GPS_posArray[1] = gps_position_.longitude;
                       current_GPS_posArray[2] = gps_position_.altitude;
 
+
+
                       FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray,m);
                       ROS_INFO("current position's x is [%f]",m[0]);
                       ROS_INFO("current position's y is [%f]",m[1]);
-                      ROS_INFO("current position's z is [%f]",m[2]); //m[2] is incorrect
+
+                      ROS_INFO("current position's lat is [%f]",current_GPS_posArray[0]);
+                      ROS_INFO("current position's long is [%f]",current_GPS_posArray[1]);
                       break;}
                   case 'b':{
 
