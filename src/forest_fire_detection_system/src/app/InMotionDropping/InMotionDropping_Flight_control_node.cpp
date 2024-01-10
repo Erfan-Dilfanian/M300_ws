@@ -479,7 +479,7 @@ int main(int argc, char **argv) {
         fire_gps.longitude = -73.932391256363;
         fire_gps.altitude = 111.356392;
 
-        
+
         float fire_GPS_posArray[3];
 
         fire_GPS_posArray[0] = fire_gps.latitude;
@@ -550,8 +550,8 @@ int main(int argc, char **argv) {
 
                 // adjust initial yaw angle
                 float yaw_adjustment; // yaw adjustment before approach
-                float deltaX = fire_gps_local_pos[0] - mission_start_pos[2];
-                float deltaY = fire_gps_local_pos[0] - mission_start_pos[2];
+                float deltaX = fire_gps_local_pos[0] - mission_start_pos[0];
+                float deltaY = fire_gps_local_pos[1] - mission_start_pos[1];
 
                 ROS_INFO("deltaX is [%f]", deltaX);
                 ROS_INFO("deltaY is [%f]", deltaY);
