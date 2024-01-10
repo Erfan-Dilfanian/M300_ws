@@ -557,7 +557,7 @@ int main(int argc, char **argv) {
                 ROS_INFO("deltaY is [%f]", deltaY);
 
 
-                yaw_adjustment = Rad2Deg(atan2(deltaX, deltaY)) + 90; // note that tan2 output is in radian
+                yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX)); // note that tan2 output is in radian
                 // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
                 ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
