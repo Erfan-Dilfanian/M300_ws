@@ -1,29 +1,5 @@
 /** @file advanced_sensing_node.cpp
- *  @version 4.0
- *  @date May 2020
- *
- *  @brief sample node of flight control.
- *
- *  @Copyright (c) 2020 DJI
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
+author: Erfan Dilfanian
  */
 
 //INCLUDE
@@ -73,6 +49,7 @@
 
 //CODE
 using namespace dji_osdk_ros;
+using namespace std;
 
 /*
 FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
@@ -134,6 +111,8 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
                      float yawThresholdInDeg);
 
 void velocityAndYawRateCtrl(const JoystickCommand &offsetDesired, uint32_t timeMs);
+
+
 
 sensor_msgs::NavSatFix gps_position_;
 
@@ -254,9 +233,9 @@ int main(int argc, char **argv) {
 
 */
 
-    std::cout << "please select case (all cases are for single fire point): "<< std::endl<<"[a] In-motion-dropping without geo-positioning"<<std::endl<<"[b] Hovering dropping after geo-positioning"<<std::endl<<"[c] In-motion-dropping after geo-positioning"<<std::endl<<"[d] guided-IN-motion-dropping after geopositioning" << std::endl;
+    cout << "please select case (all cases are for single fire point): "<< std::endl<<"[a] In-motion-dropping without geo-positioning"<<std::endl<<"[b] Hovering dropping after geo-positioning"<<std::endl<<"[c] In-motion-dropping after geo-positioning"<<std::endl<<"[d] guided-IN-motion-dropping after geopositioning" << std::endl;
     char scenario;
-    std::cin >> scenario;
+    cin >> scenario;
 
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
     auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
@@ -350,7 +329,7 @@ int main(int argc, char **argv) {
 
 
     sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
-    float homeGPS_posArray[2];
+    float homeGPS_posArray[3];
     homeGPS_posArray[0] = homeGPos.latitude;
     homeGPS_posArray[1] = homeGPos.longitude;
     homeGPS_posArray[2] = homeGPos.altitude;
@@ -369,7 +348,7 @@ int main(int argc, char **argv) {
 
     if (control_task.response.result == true) {
         ROS_INFO_STREAM("Takeoff task successful");
-        ros::Duration(2.0).sleep();
+        // ros::Duration(2.0).sleep();
         moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
 
         ros::spinOnce();
@@ -390,8 +369,8 @@ int main(int argc, char **argv) {
         gimbalAction.request.time = 0.5;
         gimbal_control_client.call(gimbalAction);
 
-        float zz_l = 8;  //zigzag_width
-        float zz_w = 4;   //zigzag_length
+        float zz_l = 8;  //zigzag_length
+        float zz_w = 4;   //zigzag_width
 
 
         ROS_INFO_STREAM("Move by position offset request sending ...");
@@ -419,7 +398,7 @@ int main(int argc, char **argv) {
         ROS_INFO("currentgpos longitude is [%f]", current_GPS_posArray[1]);
         ROS_INFO("currentgpos attitude is [%f]", current_GPS_posArray[2]);
 
-        ros::Duration(2).sleep();
+        // ros::Duration(2).sleep();
 
 
         FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
@@ -475,12 +454,13 @@ int main(int argc, char **argv) {
 // the more generous you are in threshold, the more agile your drone would be       
 
         sensor_msgs::NavSatFix fire_gps;
-        fire_gps.latitude = 45.458427810853344;
-        fire_gps.longitude = -73.932391256363;
+        fire_gps.latitude = 45.458081888880834;
+        fire_gps.longitude = -73.93151313288602;
         fire_gps.altitude = 111.356392;
 
+        
 
-        float fire_GPS_posArray[3];
+        float fire_GPS_posArray[3]; // posArray :  Position Array
 
         fire_GPS_posArray[0] = fire_gps.latitude;
         fire_GPS_posArray[1] = fire_gps.longitude;
@@ -693,7 +673,7 @@ sensor_msgs::NavSatFix getAverageGPS(
         homeGPos.longitude += gps_position_.longitude;
         homeGPos.altitude += gps_position_.altitude;
 
-        ros::Rate(10).sleep();
+        ros::Rate(30).sleep();
     }
     homeGPos.latitude = homeGPos.latitude / average_times;
     homeGPos.longitude = homeGPos.longitude / average_times;
