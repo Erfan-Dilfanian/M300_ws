@@ -131,8 +131,8 @@ float euler[3];
 void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
-    // ROS_INFO("latitude is [%f]",gps_position_.latitude);
-    // ROS_INFO("longitude is [%f]",gps_position_.longitude);
+     ROS_INFO("latitude is [%f]",gps_position_.latitude);
+     ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
 }
 
@@ -837,7 +837,7 @@ sensor_msgs::NavSatFix getAverageGPS(
         homeGPos.longitude += gps_position_.longitude;
         homeGPos.altitude += gps_position_.altitude;
 
-        ros::Rate(30).sleep();
+        ros::Rate(10).sleep();
     }
     homeGPos.latitude = homeGPos.latitude / average_times;
     homeGPos.longitude = homeGPos.longitude / average_times;
