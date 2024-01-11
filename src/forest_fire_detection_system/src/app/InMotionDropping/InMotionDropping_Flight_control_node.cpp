@@ -535,7 +535,7 @@ int main(int argc, char **argv) {
 
             float m[3];
 
-            float current_GPS_posArray[2];
+            float current_GPS_posArray[3];
             current_GPS_posArray[0] = gps_position_.latitude;
             current_GPS_posArray[1] = gps_position_.longitude;
             current_GPS_posArray[2] = gps_position_.altitude;
