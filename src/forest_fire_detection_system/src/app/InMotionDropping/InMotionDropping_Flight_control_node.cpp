@@ -440,6 +440,7 @@ int main(int argc, char **argv) {
             ros::spinOnce();
 
 
+
             ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
             ROS_INFO("fire_GPS_posArray[1] Is [%f]", fire_GPS_posArray[1]);
             ROS_INFO("fire_GPS_posArray[2] Is [%f]", fire_GPS_posArray[2]);
@@ -456,20 +457,30 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
 
-
             float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
             ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
             ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
 
-            cout<<"mission_start_pos[0] - homeGPS_posArray[0]"<<mission_start_pos[0] - homeGPS_posArray[0];
-            cout<<"mission_start_pos[0] - homeGPS_posArray[0]"<<mission_start_pos[1] - homeGPS_posArray[1];
+
+
 
             moveByPosOffset(control_task,
-                            {mission_start_pos[0] - homeGPS_posArray[0], mission_start_pos[1] - homeGPS_posArray[1], 0,
+                            {mission_start_pos[0], mission_start_pos[1], 0,
                              yaw_const}, 1, 3);
 
+            ros::spinOnce();
+
+            float current_GPS_posArray[3];
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, mission_start_pos);
+
+
+            
             float yaw_adjustment; // yaw adjustment before approach
             float deltaX = fire_gps_local_pos[0] - mission_start_pos[0];
             float deltaY = fire_gps_local_pos[1] - mission_start_pos[1];
