@@ -55,6 +55,8 @@ author: Erfan Dilfanian
 
 // #include <dji_sdk_ros/SetLocalPosRef.h>
 
+#include "std_msgs/UInt16.h"
+
 //CODE
 
 using namespace dji_osdk_ros;
@@ -109,7 +111,7 @@ FFDS::APP::SingleFirePointTaskManager::SingleFirePointTaskManager() {
     }*/
 //}
 
-
+ros::Publisher servoPub;
 
 ros::ServiceClient task_control_client;
 ros::ServiceClient set_joystick_mode_client;
@@ -220,6 +222,12 @@ void FireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
 
 void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) ;
 
+void controlServo(int angle)
+{
+    std_msgs::UInt16 msg;
+    msg.data = angle;
+    servoPub.publish(msg);
+}
 
 int main(int argc, char **argv) {
 
@@ -368,6 +376,8 @@ int main(int argc, char **argv) {
                          QuaternionSubCallback);
 
 
+    servoPub = nh.advertise<std_msgs::UInt16>("servo", 10); // Initialize servoPub
+
     // subscribe to the fire GPS
     // ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback);
 
@@ -416,9 +426,11 @@ int main(int argc, char **argv) {
             fire_gps.altitude = alt;
             */
 
-            fire_gps.latitude = 45.458081888880834;
-            fire_gps.longitude = -73.93151313288602;
+            fire_gps.latitude = 45.45845906874022;
+            fire_gps.longitude = -73.93239720140058;
             fire_gps.altitude = 111.356392;
+
+            
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
 
@@ -430,8 +442,8 @@ int main(int argc, char **argv) {
 
 
             ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
-            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[1]);
-            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[2]);
+            ROS_INFO("fire_GPS_posArray[1] Is [%f]", fire_GPS_posArray[1]);
+            ROS_INFO("fire_GPS_posArray[2] Is [%f]", fire_GPS_posArray[2]);
 
             float fire_gps_local_pos[3];
 
@@ -439,6 +451,7 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
+            moveByPosOffset(control_task, {0,0, 9, yaw_const},1, 3);
 
 
             float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,9}; // it also can be current x y z
@@ -775,7 +788,7 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
     joystickAction.request.joystickCommand.y = offsetDesired.y;
     joystickAction.request.joystickCommand.z = offsetDesired.z;
     // joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;  // This is for yaw rate, which we dont want
-
+    int angle = 100;  // Set the desired angle here
     originTime = ros::Time::now().toSec();
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
@@ -789,8 +802,10 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
 
         float release_time = (d/abs_vel) - sqrt((2*height)/g); // release time in Ms
 
-        if (elapsedTimeInMs > release_time && flag == 0) {
-            ROS_INFO("released valve at [%f]",elapsedTimeInMs);
+        if (elapsedTimeInMs > release_time) {
+            // controlServo(angle);
+            ros::spinOnce();
+            if (flag == 0){ROS_INFO("released valve at [%f]",elapsedTimeInMs);}
             joystick_action_client.call(joystickAction);
             flag = 1;
         } else {
