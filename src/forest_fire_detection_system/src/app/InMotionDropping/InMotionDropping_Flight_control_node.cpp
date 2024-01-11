@@ -448,17 +448,23 @@ int main(int argc, char **argv) {
 
             FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
 
+            ROS_INFO("fire_gps_local_pos[0] Is [%f]", fire_gps_local_pos[0]);
+            ROS_INFO("fire_gps_local_pos[1] Is [%f]", fire_gps_local_pos[1]);
+            ROS_INFO("fire_gps_local_pos[2] Is [%f]", fire_gps_local_pos[2]);
+
             ros::spinOnce();
 
             moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
 
 
-            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,
-                                          9}; // it also can be current x y z
+            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
             ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
             ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
+
+            cout<<"mission_start_pos[0] - homeGPS_posArray[0]"<<mission_start_pos[0] - homeGPS_posArray[0];
+            cout<<"mission_start_pos[0] - homeGPS_posArray[0]"<<mission_start_pos[1] - homeGPS_posArray[1];
 
             moveByPosOffset(control_task,
                             {mission_start_pos[0] - homeGPS_posArray[0], mission_start_pos[1] - homeGPS_posArray[1], 0,
