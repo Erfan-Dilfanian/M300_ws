@@ -426,8 +426,8 @@ int main(int argc, char **argv) {
             fire_gps.altitude = alt;
             */
 
-            fire_gps.latitude = 45.45845906874022;
-            fire_gps.longitude = -73.93239720140058;
+            fire_gps.latitude = 45.45842238198102;
+            fire_gps.longitude = -73.93238311980387;
             fire_gps.altitude = 111.356392;
 
 
@@ -605,9 +605,10 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            fire_gps.latitude = 45.45845906874022;
-            fire_gps.longitude = -73.93239720140058;
+            fire_gps.latitude = 45.45842238198102;
+            fire_gps.longitude = -73.93238311980387;
             fire_gps.altitude = 111.356392;
+
 
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
@@ -797,7 +798,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
         float g = 9.81;
 
-        float release_time = (d / abs_vel) - sqrt((2 * height) / g); // release time in Ms
+        float release_time = ((d / abs_vel) - sqrt((2 * height) / g))*1000; // release time in Ms
 
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
