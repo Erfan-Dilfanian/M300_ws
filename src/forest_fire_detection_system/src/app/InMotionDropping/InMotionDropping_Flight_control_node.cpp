@@ -334,9 +334,7 @@ int main(int argc, char **argv) {
               << std::endl;
 */
 
-    float yaw_const;
-    std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
-    std::cin >> yaw_const;
+
 
 /*
     char inputChar;
@@ -404,7 +402,7 @@ int main(int argc, char **argv) {
         cout << "please enter fire's latitude" << endl;
         cin >> lat;
         cout << endl;
-        cout << "please enter fire's lon<<" << endl;
+        cout << "please enter fire's longitude" << endl;
         cin >> lon;
         cout << endl;
         // cout<<"please enter fire's alt"<<endl;
@@ -516,6 +514,10 @@ int main(int argc, char **argv) {
         }
 
     } else {
+
+        float yaw_const;
+        std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
+        std::cin >> yaw_const;
 
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
         ROS_INFO_STREAM("Takeoff request sending ...");
@@ -673,9 +675,14 @@ int main(int argc, char **argv) {
 
 
             if (scenario == 'b') {
+
+                int angle = 100;
+
                 moveByPosOffset(control_task,
                                 {fire_gps_local_pos[0] - m[0], fire_gps_local_pos[1] - m[1], 0.0, yaw_const}, 0.1,
                                 3); //less threshold
+
+
 
                 ros::spinOnce();
 
@@ -690,6 +697,13 @@ int main(int argc, char **argv) {
 
                 ROS_INFO("current position's lat is [%f]", current_GPS_posArray[0]);
                 ROS_INFO("current position's long is [%f]", current_GPS_posArray[1]);
+
+
+                for (int i=1; i<100;i++) {
+                    controlServo(angle);
+                    ros::spinOnce();
+                }
+
             }
             if (scenario == 'c') {
 
