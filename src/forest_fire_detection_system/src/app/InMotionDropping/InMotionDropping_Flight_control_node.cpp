@@ -698,12 +698,12 @@ int main(int argc, char **argv) {
                 ROS_INFO("current position's lat is [%f]", current_GPS_posArray[0]);
                 ROS_INFO("current position's long is [%f]", current_GPS_posArray[1]);
 
-
+/*
                 for (int i=1; i<100;i++) {
                     controlServo(angle);
                     ros::spinOnce();
                 }
-
+*/
             }
             if (scenario == 'c') {
 
