@@ -122,8 +122,6 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
                      float yawThresholdInDeg);
 
 
-
-
 sensor_msgs::NavSatFix gps_position_;
 
 geometry_msgs::PointStamped local_position_;
@@ -195,7 +193,6 @@ float Rad2Deg(float Rad) { return Rad * (180 / M_PI); }
 sensor_msgs::NavSatFix fire_gps;
 
 
-
 void FireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
     // print number of fire spots
     LOG(INFO) << "The number of fire spots: " << fire_spots_GPS->poses.size() << ".";
@@ -220,10 +217,10 @@ void FireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
 
 }
 
-void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) ;
+void
+velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height);
 
-void controlServo(int angle)
-{
+void controlServo(int angle) {
     std_msgs::UInt16 msg;
     msg.data = angle;
     servoPub.publish(msg);
@@ -281,7 +278,10 @@ int main(int argc, char **argv) {
 
 */
 
-    cout << "please select case (all cases are for single fire point): "<< std::endl<<"[a] In-motion-dropping without geo-positioning"<<std::endl<<"[b] Hovering dropping after geo-positioning"<<std::endl<<"[c] In-motion-dropping after geo-positioning"<<std::endl<<"[d] guided-IN-motion-dropping after geopositioning" << std::endl;
+    cout << "please select case (all cases are for single fire point): " << std::endl
+         << "[a] In-motion-dropping without geo-positioning" << std::endl
+         << "[b] Hovering dropping after geo-positioning" << std::endl << "[c] In-motion-dropping after geo-positioning"
+         << std::endl << "[d] guided-IN-motion-dropping after geopositioning" << std::endl;
     char scenario;
     cin >> scenario;
 
@@ -405,7 +405,7 @@ int main(int argc, char **argv) {
         // ros::Duration(2.0).sleep();
 
 
-        if(scenario == 'a') {
+        if (scenario == 'a') {
             /*
             float lat;
             float lon;
@@ -430,7 +430,6 @@ int main(int argc, char **argv) {
             fire_gps.longitude = -73.93239720140058;
             fire_gps.altitude = 111.356392;
 
-            
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
 
@@ -451,16 +450,19 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            moveByPosOffset(control_task, {0,0, 9, yaw_const},1, 3);
+            moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
 
 
-            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,9}; // it also can be current x y z
+            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,
+                                          9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
             ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
             ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
 
-            moveByPosOffset(control_task, {mission_start_pos[0] - homeGPS_posArray[0], mission_start_pos[1] - homeGPS_posArray[1], 0, yaw_const},1, 3);
+            moveByPosOffset(control_task,
+                            {mission_start_pos[0] - homeGPS_posArray[0], mission_start_pos[1] - homeGPS_posArray[1], 0,
+                             yaw_const}, 1, 3);
 
             float yaw_adjustment; // yaw adjustment before approach
             float deltaX = fire_gps_local_pos[0] - mission_start_pos[0];
@@ -486,7 +488,8 @@ int main(int argc, char **argv) {
 
             float height = 10;
 
-            velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,abs_vel, d, height);
+            velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
+                                      abs_vel, d, height);
 
 
             ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
@@ -494,159 +497,152 @@ int main(int argc, char **argv) {
             ros::Duration(2).sleep();
 
 
-        }
-        else{
+        } else {
 
-        moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
+            moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
 
-        ros::spinOnce();
-        ROS_INFO("euler1 is [%f]", euler[0]);
-        ROS_INFO("euler2 is [%f]", euler[1]);
-        ROS_INFO("euler3 is [%f]", euler[2]);
+            ros::spinOnce();
+            ROS_INFO("euler1 is [%f]", euler[0]);
+            ROS_INFO("euler2 is [%f]", euler[1]);
+            ROS_INFO("euler3 is [%f]", euler[2]);
 
-        ROS_INFO("yaw_const is [%f]", yaw_const);
-
-
-        GimbalAction gimbalAction;
-        gimbalAction.request.is_reset = false;
-        gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
-        gimbalAction.request.rotationMode = 0;
-        gimbalAction.request.pitch = 25.0f;
-        gimbalAction.request.roll = 0.0f;
-        gimbalAction.request.yaw = 90.0f;
-        gimbalAction.request.time = 0.5;
-        gimbal_control_client.call(gimbalAction);
-
-        float zz_l = 8;  //zigzag_length
-        float zz_w = 4;   //zigzag_width
+            ROS_INFO("yaw_const is [%f]", yaw_const);
 
 
-        ROS_INFO_STREAM("Move by position offset request sending ...");
-        moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
+            GimbalAction gimbalAction;
+            gimbalAction.request.is_reset = false;
+            gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+            gimbalAction.request.rotationMode = 0;
+            gimbalAction.request.pitch = 25.0f;
+            gimbalAction.request.roll = 0.0f;
+            gimbalAction.request.yaw = 90.0f;
+            gimbalAction.request.time = 0.5;
+            gimbal_control_client.call(gimbalAction);
+
+            float zz_l = 8;  //zigzag_length
+            float zz_w = 4;   //zigzag_width
 
 
-        ROS_INFO("destination y is [%f] and x is [%f]: ", zz_l * sind(yaw_const), zz_l * cosd(yaw_const));
-
-        moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1, 3);
-
-        ros::spinOnce();
-
-        float m[3];
-
-        float current_GPS_posArray[2];
-        current_GPS_posArray[0] = gps_position_.latitude;
-        current_GPS_posArray[1] = gps_position_.longitude;
-        current_GPS_posArray[2] = gps_position_.altitude;
-
-        ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
-        ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
-        ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
-
-        ROS_INFO("currentpos latitude is [%f]", current_GPS_posArray[0]);
-        ROS_INFO("currentgpos longitude is [%f]", current_GPS_posArray[1]);
-        ROS_INFO("currentgpos attitude is [%f]", current_GPS_posArray[2]);
-
-        // ros::Duration(2).sleep();
+            ROS_INFO_STREAM("Move by position offset request sending ...");
+            moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
 
 
-        FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+            ROS_INFO("destination y is [%f] and x is [%f]: ", zz_l * sind(yaw_const), zz_l * cosd(yaw_const));
 
-        ROS_INFO("x is [%f]", m[0]);
-        ROS_INFO("y is [%f]", m[1]);
+            moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1, 3);
 
+            ros::spinOnce();
 
+            float m[3];
 
-        /* ROS_INFO("x is [%f]",local_position_.point.x);
-         ROS_INFO("y is [%f]",local_position_.point.y);
-         ROS_INFO("z is [%f]",local_position_.point.z);*/
-        //ROS_INFO("latitude is [%f]",gps_position_.latitude);
-        //ROS_INFO("longitude is [%f]",gps_position_.longitude);
-        //ros::spin(); //here is good?
-        ROS_INFO_STREAM("Step 1 over!");
+            float current_GPS_posArray[2];
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;
 
+            ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
+            ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
+            ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
 
-        moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0, yaw_const}, 1, 3);
-        ros::spinOnce();
+            ROS_INFO("currentpos latitude is [%f]", current_GPS_posArray[0]);
+            ROS_INFO("currentgpos longitude is [%f]", current_GPS_posArray[1]);
+            ROS_INFO("currentgpos attitude is [%f]", current_GPS_posArray[2]);
 
-
-        current_GPS_posArray[0] = gps_position_.latitude;
-        current_GPS_posArray[1] = gps_position_.longitude;
-        current_GPS_posArray[2] = gps_position_.altitude;
-
-        FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
-
-        ROS_INFO("x is [%f]", m[0]);
-        ROS_INFO("y is [%f]", m[1]);
-
-        ROS_INFO_STREAM("Step 2 over!");
-        moveByPosOffset(control_task, {zz_l * sind(yaw_const), -zz_l * cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
-        ROS_INFO_STREAM("Step 3 over!");
-        moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0.0, yaw_const}, 1, 3);
+            // ros::Duration(2).sleep();
 
 
-        ros::spinOnce();
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
 
-        current_GPS_posArray[0] = gps_position_.latitude;
-        current_GPS_posArray[1] = gps_position_.longitude;
-        current_GPS_posArray[2] = gps_position_.altitude;
+            ROS_INFO("x is [%f]", m[0]);
+            ROS_INFO("y is [%f]", m[1]);
 
-        FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
 
-        ROS_INFO("x is [%f]", m[0]);
-        ROS_INFO("y is [%f]", m[1]);
 
-        moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0.0, yaw_const}, 1, 3);
-        // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
-        // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
+            /* ROS_INFO("x is [%f]",local_position_.point.x);
+             ROS_INFO("y is [%f]",local_position_.point.y);
+             ROS_INFO("z is [%f]",local_position_.point.z);*/
+            //ROS_INFO("latitude is [%f]",gps_position_.latitude);
+            //ROS_INFO("longitude is [%f]",gps_position_.longitude);
+            //ros::spin(); //here is good?
+            ROS_INFO_STREAM("Step 1 over!");
+
+
+            moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0, yaw_const}, 1, 3);
+            ros::spinOnce();
+
+
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+
+            ROS_INFO("x is [%f]", m[0]);
+            ROS_INFO("y is [%f]", m[1]);
+
+            ROS_INFO_STREAM("Step 2 over!");
+            moveByPosOffset(control_task, {zz_l * sind(yaw_const), -zz_l * cosd(yaw_const), 0.0, yaw_const}, 0.8, 3);
+            ROS_INFO_STREAM("Step 3 over!");
+            moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0.0, yaw_const}, 1, 3);
+
+
+            ros::spinOnce();
+
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+
+            ROS_INFO("x is [%f]", m[0]);
+            ROS_INFO("y is [%f]", m[1]);
+
+            moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0.0, yaw_const}, 1, 3);
+            // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+            // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
 // the more generous you are in threshold, the more agile your drone would be       
 
-ros::spinOnce();
+            ros::spinOnce();
 
-        fire_gps.latitude = 45.458081888880834;
-        fire_gps.longitude = -73.93151313288602;
-        fire_gps.altitude = 111.356392;
-
-
-
-        float fire_GPS_posArray[3]; // posArray :  Position Array
-
-        fire_GPS_posArray[0] = fire_gps.latitude;
-        fire_GPS_posArray[1] = fire_gps.longitude;
-        fire_GPS_posArray[2] = fire_gps.altitude;
-
-        ros::spinOnce();
-
-        current_GPS_posArray[0] = gps_position_.latitude;
-        current_GPS_posArray[1] = gps_position_.longitude;
-        current_GPS_posArray[2] = gps_position_.altitude;  // these assignments should be before using LatLong2Meter function
-
-        ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
-        ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[1]);
-        ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[2]);
+            fire_gps.latitude = 45.45845906874022;
+            fire_gps.longitude = -73.93239720140058;
+            fire_gps.altitude = 111.356392;
 
 
-        FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
-        ROS_INFO("current position's x is [%f]", m[0]);
-        ROS_INFO("current position's y is [%f]", m[1]);
-        ROS_INFO("current position's z is [%f]", m[2]); //m[2] is incorrect
+            float fire_GPS_posArray[3]; // posArray :  Position Array
 
-        float fire_gps_local_pos[3];
+            fire_GPS_posArray[0] = fire_gps.latitude;
+            fire_GPS_posArray[1] = fire_gps.longitude;
+            fire_GPS_posArray[2] = fire_gps.altitude;
 
-        FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
+            ros::spinOnce();
 
+            current_GPS_posArray[0] = gps_position_.latitude;
+            current_GPS_posArray[1] = gps_position_.longitude;
+            current_GPS_posArray[2] = gps_position_.altitude;  // these assignments should be before using LatLong2Meter function
 
-        ROS_INFO("fire's x is [%f]", fire_gps_local_pos[0]);
-        ROS_INFO("fire's y is [%f]", fire_gps_local_pos[1]);
-        ROS_INFO("fire's z is [%f]", fire_gps_local_pos[2]);
-
-
-
-
+            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
+            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[1]);
+            ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[2]);
 
 
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+            ROS_INFO("current position's x is [%f]", m[0]);
+            ROS_INFO("current position's y is [%f]", m[1]);
+            ROS_INFO("current position's z is [%f]", m[2]); //m[2] is incorrect
 
-            if (scenario == 'b'){
+            float fire_gps_local_pos[3];
+
+            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
+
+
+            ROS_INFO("fire's x is [%f]", fire_gps_local_pos[0]);
+            ROS_INFO("fire's y is [%f]", fire_gps_local_pos[1]);
+            ROS_INFO("fire's z is [%f]", fire_gps_local_pos[2]);
+
+
+            if (scenario == 'b') {
                 moveByPosOffset(control_task,
                                 {fire_gps_local_pos[0] - m[0], fire_gps_local_pos[1] - m[1], 0.0, yaw_const}, 0.1,
                                 3); //less threshold
@@ -665,7 +661,7 @@ ros::spinOnce();
                 ROS_INFO("current position's lat is [%f]", current_GPS_posArray[0]);
                 ROS_INFO("current position's long is [%f]", current_GPS_posArray[1]);
             }
-            if (scenario == 'c'){
+            if (scenario == 'c') {
 
                 // set mission start position. I set it at the south east of the fire point
                 float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,
@@ -706,13 +702,13 @@ ros::spinOnce();
 
                 float height = 10;
 
-                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,abs_vel, d, height);
+                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
+                                          abs_vel, d, height);
 
 
                 ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
                 emergency_brake_client.call(emergency_brake);
                 ros::Duration(2).sleep();
-
 
 
             }
@@ -768,7 +764,8 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
 }
 
 
-void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) {
+void
+velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) {
     double originTime = 0;
     double currentTime = 0;
     // uint64_t elapsedTimeInMs = 0;
@@ -800,12 +797,12 @@ void velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t ti
 
         float g = 9.81;
 
-        float release_time = (d/abs_vel) - sqrt((2*height)/g); // release time in Ms
+        float release_time = (d / abs_vel) - sqrt((2 * height) / g); // release time in Ms
 
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
             ros::spinOnce();
-            if (flag == 0){ROS_INFO("released valve at [%f]",elapsedTimeInMs);}
+            if (flag == 0) { ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
             joystick_action_client.call(joystickAction);
             flag = 1;
         } else {
