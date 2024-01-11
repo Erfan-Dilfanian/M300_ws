@@ -131,8 +131,8 @@ float euler[3];
 void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
-     ROS_INFO("latitude is [%f]",gps_position_.latitude);
-     ROS_INFO("longitude is [%f]",gps_position_.longitude);
+     // ROS_INFO("latitude is [%f]",gps_position_.latitude);
+     // ROS_INFO("longitude is [%f]",gps_position_.longitude);
 
 }
 
@@ -406,7 +406,7 @@ int main(int argc, char **argv) {
 
 
         if (scenario == 'a') {
-            /*
+
             float lat;
             float lon;
             float alt;
@@ -424,12 +424,12 @@ int main(int argc, char **argv) {
             fire_gps.latitude = lat;
             fire_gps.longitude = lon;
             fire_gps.altitude = alt;
-            */
 
+/*
             fire_gps.latitude = 45.45842238198102;
             fire_gps.longitude = -73.93238311980387;
             fire_gps.altitude = 111.356392;
-
+*/
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
 
@@ -480,7 +480,7 @@ int main(int argc, char **argv) {
             FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, mission_start_pos);
 
 
-            
+
             float yaw_adjustment; // yaw adjustment before approach
             float deltaX = fire_gps_local_pos[0] - mission_start_pos[0];
             float deltaY = fire_gps_local_pos[1] - mission_start_pos[1];
@@ -493,7 +493,7 @@ int main(int argc, char **argv) {
             // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
             ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
-            moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1, 3);
+            moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1, 3);  // note that x y z goes into this funciton
 
             // velocity mission
 
