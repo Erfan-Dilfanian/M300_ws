@@ -465,9 +465,10 @@ int main(int argc, char **argv) {
             ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
 
 
+            float yaw_const= 0 ;
+
             moveByPosOffset(control_task,
-                            {mission_start_pos[0], mission_start_pos[1], 0,
-                             yaw_const}, 1, 3);
+                            {mission_start_pos[0], mission_start_pos[1], 0,yaw_const}, 1, 3);
 
             ros::spinOnce();
 
@@ -842,7 +843,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
         float release_time = ((d / abs_vel) - sqrt((2 * height) / g)) * 1000; // release time in Ms
 
         if (elapsedTimeInMs > release_time) {
-            // controlServo(angle);
+            controlServo(angle);
             ros::spinOnce();
             if (flag == 0) { ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
             joystick_action_client.call(joystickAction);
