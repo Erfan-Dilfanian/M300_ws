@@ -396,6 +396,18 @@ int main(int argc, char **argv) {
 
     if (scenario == 'a') {
 
+        std:: string DropWaterCommand = "rosrun rosserial_python servo_pub.py";
+        FILE *pp = popen(DropWaterCommand.c_str(),"r");
+        if(pp != NULL)
+        {
+            PRINT_INFO("drop water successfully!");
+        }
+        else{
+            PRINT_INFO("fail to drop water!");
+
+
+        }
+
         float lat;
         float lon;
         float alt;
@@ -843,7 +855,18 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
         float release_time = ((d / abs_vel) - sqrt((2 * height) / g)) * 1000; // release time in Ms
 
         if (elapsedTimeInMs > release_time) {
-            controlServo(angle);
+            // controlServo(angle);
+            std:: string DropWaterCommand = "rosrun rosserial_python servo_pub.py";
+            FILE *pp = popen(DropWaterCommand.c_str(),"r");
+            if(pp != NULL)
+            {
+                PRINT_INFO("drop water successfully!");
+            }
+            else{
+                PRINT_INFO("fail to drop water!");
+
+
+            }
             ros::spinOnce();
             if (flag == 0) { ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
             joystick_action_client.call(joystickAction);
