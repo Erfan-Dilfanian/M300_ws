@@ -266,6 +266,7 @@
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir
+/home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node_h_3.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/test.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/edit_cache.dir
 /home/erfan/M300_ws/src/cmake-build-debug/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/rebuild_cache.dir

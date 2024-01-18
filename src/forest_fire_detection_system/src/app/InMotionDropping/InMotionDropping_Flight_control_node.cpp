@@ -398,17 +398,6 @@ int main(int argc, char **argv) {
 
     if (scenario == 'a') {
 
-        std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
-        FILE *pp = popen(DropWaterCommand.c_str(),"r");
-        if(pp != NULL)
-        {
-            PRINT_INFO("drop water successfully!");
-        }
-        else{
-            PRINT_INFO("fail to drop water!");
-
-
-        }
 
         float lat;
         float lon;
@@ -823,6 +812,8 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
 
 void
 velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) {
+
+
     double originTime = 0;
     double currentTime = 0;
     // uint64_t elapsedTimeInMs = 0;
@@ -858,19 +849,23 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
-            std:: string DropWaterCommand = "rosrun rosserial_python servo_pub.py";
-            FILE *pp = popen(DropWaterCommand.c_str(),"r");
-            if(pp != NULL)
-            {
-                PRINT_INFO("drop water successfully!");
-            }
-            else{
-                PRINT_INFO("fail to drop water!");
 
 
-            }
             ros::spinOnce();
-            if (flag == 0) { ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
+            if (flag == 0) {
+                std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                FILE *pp = popen(DropWaterCommand.c_str(),"r");
+                if(pp != NULL)
+                {
+                    PRINT_INFO("drop water successfully!");
+                }
+                else{
+                    PRINT_INFO("fail to drop water!");
+
+
+                }
+
+                ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
             joystick_action_client.call(joystickAction);
             flag = 1;
         } else {
