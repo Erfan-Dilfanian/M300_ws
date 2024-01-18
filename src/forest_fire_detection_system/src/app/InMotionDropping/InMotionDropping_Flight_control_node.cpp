@@ -16,6 +16,8 @@ author: Erfan Dilfanian
 #include <dji_osdk_ros/EmergencyBrake.h>
 #include <dji_osdk_ros/GetAvoidEnable.h>
 
+#include <cstdlib>
+
 #include<dji_osdk_ros/SetJoystickMode.h>
 #include<dji_osdk_ros/JoystickAction.h>
 
@@ -396,7 +398,7 @@ int main(int argc, char **argv) {
 
     if (scenario == 'a') {
 
-        std:: string DropWaterCommand = "rosrun rosserial_python servo_pub.py";
+        std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
         FILE *pp = popen(DropWaterCommand.c_str(),"r");
         if(pp != NULL)
         {

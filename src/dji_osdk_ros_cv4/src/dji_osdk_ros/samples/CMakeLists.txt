@@ -159,3 +159,10 @@ else()
    message(STATUS "Did not find required libraries, stereo vision depth perception node will not be compiled.")
 endif ()
 
+# by huajun
+
+add_executable(waypointV2_node_h_3 waypointV2_node_h_3.cpp)
+target_link_libraries(waypointV2_node_h_3
+        ${PROJECT_NAME}
+        )
+add_dependencies(waypointV2_node_h_3 dji_osdk_ros_generate_messages_cpp)
