@@ -1,0 +1,8 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SegmentSmoke"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/_forest_fire_detection_system_generate_messages_check_deps_SegmentSmoke.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
