@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dimage_geometry_EXPORTS
 
-CXX_INCLUDES = -I"/home/erfan/Qiaomeng workspace/m300_ws/src/cv_bridge/image_geometry/include" -I/opt/ros/noetic/include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/erfan/M300_ws/src/cv_bridge/image_geometry/include -I/opt/ros/noetic/include -isystem /usr/include/opencv4 
 

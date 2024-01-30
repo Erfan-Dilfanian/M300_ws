@@ -1,4 +1,4 @@
-prefix=/home/erfan/Qiaomeng workspace/m300_ws/install
+prefix=/home/erfan/M300_ws/install
 
 Name: forest_fire_geopositioning
 Description: Description of forest_fire_geopositioning

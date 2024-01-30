@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/libcv_bridge.pdb"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/libcv_bridge.so"
+  "/home/erfan/M300_ws/devel/lib/libcv_bridge.pdb"
+  "/home/erfan/M300_ws/devel/lib/libcv_bridge.so"
   "CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o"
   "CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o"
 )

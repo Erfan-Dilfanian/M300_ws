@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/dji_osdk_ros/camera_stream_node"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/dji_osdk_ros/camera_stream_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/camera_stream_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/camera_stream_node.pdb"
   "CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.o"
 )
 

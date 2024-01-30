@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GetHMSData.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetHMSData.h
 ros/service_traits.h
 -
 dji_osdk_ros/GetHMSDataRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/GetHMSDataRequest.h
 dji_osdk_ros/GetHMSDataResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GetHMSDataRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetHMSDataRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GetHMSDataResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetHMSDataResponse.h
 string
 -
 vector
@@ -48,7 +48,7 @@ ros/message_operations.h
 dji_osdk_ros/HMSPushInfo.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/HMSPushInfo.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/HMSPushInfo.h
 string
 -
 vector
@@ -64,7 +64,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/hms_node.cpp
 ros/ros.h
 -
 dji_osdk_ros/GetHMSData.h

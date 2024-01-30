@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/libimage_geometry.pdb"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/libimage_geometry.so"
+  "/home/erfan/M300_ws/devel/lib/libimage_geometry.pdb"
+  "/home/erfan/M300_ws/devel/lib/libimage_geometry.so"
   "CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o"
   "CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o"
 )

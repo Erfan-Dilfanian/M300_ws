@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -16,7 +16,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/test/test_PrintControl.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_PrintControl.cpp
 tools/PrintControl/PrintCtrlMacro.h
 -
 

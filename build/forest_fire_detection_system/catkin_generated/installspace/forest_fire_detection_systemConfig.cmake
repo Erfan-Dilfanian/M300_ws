@@ -67,14 +67,14 @@ set(forest_fire_detection_system_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(forest_fire_detection_system_SOURCE_PREFIX /home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system)
-  set(forest_fire_detection_system_DEVEL_PREFIX /home/erfan/Qiaomeng workspace/m300_ws/devel)
+  set(forest_fire_detection_system_SOURCE_PREFIX /home/erfan/M300_ws/src/forest_fire_detection_system)
+  set(forest_fire_detection_system_DEVEL_PREFIX /home/erfan/M300_ws/devel)
   set(forest_fire_detection_system_INSTALL_PREFIX "")
   set(forest_fire_detection_system_PREFIX ${forest_fire_detection_system_DEVEL_PREFIX})
 else()
   set(forest_fire_detection_system_SOURCE_PREFIX "")
   set(forest_fire_detection_system_DEVEL_PREFIX "")
-  set(forest_fire_detection_system_INSTALL_PREFIX /home/erfan/Qiaomeng workspace/m300_ws/install)
+  set(forest_fire_detection_system_INSTALL_PREFIX /home/erfan/M300_ws/install)
   set(forest_fire_detection_system_PREFIX ${forest_fire_detection_system_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/erfan/Qiaomeng workspace/m300_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/erfan/M300_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

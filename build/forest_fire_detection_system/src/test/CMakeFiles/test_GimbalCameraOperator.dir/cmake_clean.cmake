@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_GimbalCameraOperator"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_GimbalCameraOperator.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_GimbalCameraOperator"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_GimbalCameraOperator.pdb"
   "CMakeFiles/test_GimbalCameraOperator.dir/test_GimbalCameraOperator.cpp.o"
 )
 

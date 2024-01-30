@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/PreciselyWaterDropping"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/PreciselyWaterDropping.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/PreciselyWaterDropping"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/PreciselyWaterDropping.pdb"
   "CMakeFiles/PreciselyWaterDropping.dir/precisely_water_dropping/PreciselyWaterDropping.cpp.o"
 )
 

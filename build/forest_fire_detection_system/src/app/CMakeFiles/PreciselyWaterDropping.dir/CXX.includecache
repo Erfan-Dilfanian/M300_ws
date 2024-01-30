@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraFocusPoint.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPoint.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraFocusPointRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/CameraFocusPointRequest.h
 dji_osdk_ros/CameraFocusPointResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraFocusPointRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraFocusPointResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraSetZoomPara.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomPara.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraSetZoomParaRequest.h
@@ -54,7 +54,7 @@ dji_osdk_ros/CameraSetZoomParaRequest.h
 dji_osdk_ros/CameraSetZoomParaResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraTapZoomPoint.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPoint.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraTapZoomPointRequest.h
@@ -94,7 +94,7 @@ dji_osdk_ros/CameraTapZoomPointRequest.h
 dji_osdk_ros/CameraTapZoomPointResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointRequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
 ros/service_traits.h
 -
 dji_osdk_ros/FlightTaskControlRequest.h
@@ -134,7 +134,7 @@ dji_osdk_ros/FlightTaskControlRequest.h
 dji_osdk_ros/FlightTaskControlResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
 string
 -
 vector
@@ -152,7 +152,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
 string
 -
 vector
@@ -168,7 +168,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GimbalAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/GimbalActionRequest.h
@@ -176,7 +176,7 @@ dji_osdk_ros/GimbalActionRequest.h
 dji_osdk_ros/GimbalActionResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GimbalActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalActionRequest.h
 string
 -
 vector
@@ -194,7 +194,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/GimbalActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalActionResponse.h
 string
 -
 vector
@@ -210,7 +210,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/JoystickAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/JoystickActionRequest.h
@@ -218,7 +218,7 @@ dji_osdk_ros/JoystickActionRequest.h
 dji_osdk_ros/JoystickActionResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
 string
 -
 vector
@@ -236,7 +236,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
 string
 -
 vector
@@ -252,7 +252,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/JoystickParams.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickParams.h
 string
 -
 vector
@@ -268,7 +268,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
 ros/service_traits.h
 -
 dji_osdk_ros/ObtainControlAuthorityRequest.h
@@ -276,7 +276,7 @@ dji_osdk_ros/ObtainControlAuthorityRequest.h
 dji_osdk_ros/ObtainControlAuthorityResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
 string
 -
 vector
@@ -292,7 +292,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
 string
 -
 vector
@@ -308,7 +308,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetJoystickModeRequest.h
@@ -316,7 +316,7 @@ dji_osdk_ros/SetJoystickModeRequest.h
 dji_osdk_ros/SetJoystickModeResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
 string
 -
 vector
@@ -332,7 +332,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
 string
 -
 vector
@@ -348,7 +348,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/forest_fire_detection_system/SingleFireIR.h
+/home/erfan/M300_ws/devel/include/forest_fire_detection_system/SingleFireIR.h
 string
 -
 vector
@@ -366,17 +366,17 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
 dji_type.hpp
 -
 vector
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/app/precisely_water_dropping/PreciselyWaterDropping.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/app/precisely_water_dropping/PreciselyWaterDropping.hpp
 ros/ros.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
 cmath
 -
 iostream
@@ -386,9 +386,9 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/BasicController/PIDController.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/PIDController.hpp
 iostream
 -
 tools/MathLib.hpp
@@ -396,9 +396,9 @@ tools/MathLib.hpp
 tools/SystemLib.hpp
 -
 ControllerBase.hpp
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/DroneMovementController.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/DroneMovementController.hpp
 dji_osdk_ros/FlightTaskControl.h
 -
 dji_osdk_ros/JoystickAction.h
@@ -422,11 +422,11 @@ ros/ros.h
 ros/time.h
 -
 forest_fire_detection_system/SingleFireIR.h
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/forest_fire_detection_system/SingleFireIR.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/forest_fire_detection_system/SingleFireIR.h
 tools/PrintControl/PrintCtrlMacro.h
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/DroneMovementController/tools/PrintControl/PrintCtrlMacro.h
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
 Eigen/Core
 -
 dji_osdk_ros/CameraFocusPoint.h
@@ -458,13 +458,13 @@ tools/PrintControl/FileWritter.hpp
 tools/SystemLib.hpp
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
 cmath
 -
 common/CommonTypes.hpp
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
 tools/PrintControl/PrintCtrlMacro.h
 -
 iostream
@@ -474,7 +474,7 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -484,7 +484,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
 ros/ros.h
 -
 sys/time.h
@@ -516,13 +516,13 @@ string
 glog/logging.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/PreciselyWaterDropping.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/PreciselyWaterDropping.cpp
 app/precisely_water_dropping/PreciselyWaterDropping.hpp
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/app/precisely_water_dropping/PreciselyWaterDropping.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/app/precisely_water_dropping/PreciselyWaterDropping.hpp
 modules/GimbalCameraOperator/GimbalCameraOperator.hpp
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
 modules/DroneMovementController/DroneMovementController.hpp
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/modules/DroneMovementController/DroneMovementController.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/app/precisely_water_dropping/modules/DroneMovementController/DroneMovementController.hpp
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

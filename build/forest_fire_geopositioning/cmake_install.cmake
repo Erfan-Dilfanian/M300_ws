@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_geopositioning
+# Install script for directory: /home/erfan/M300_ws/src/forest_fire_geopositioning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/Qiaomeng workspace/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/Qiaomeng workspace/m300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioning.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/M300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioning.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_geopositioning/cmake" TYPE FILE FILES
-    "/home/erfan/Qiaomeng workspace/m300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioningConfig.cmake"
-    "/home/erfan/Qiaomeng workspace/m300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioningConfig-version.cmake"
+    "/home/erfan/M300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioningConfig.cmake"
+    "/home/erfan/M300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/forest_fire_geopositioningConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_geopositioning" TYPE FILE FILES "/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_geopositioning/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_geopositioning" TYPE FILE FILES "/home/erfan/M300_ws/src/forest_fire_geopositioning/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/Qiaomeng workspace/m300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v8.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v8.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/Qiaomeng workspace/m300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v5.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v5.py")
 endif()
 

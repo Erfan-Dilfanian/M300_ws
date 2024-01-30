@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_zigzag_planner"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_zigzag_planner.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_zigzag_planner"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_zigzag_planner.pdb"
   "CMakeFiles/test_zigzag_planner.dir/test_zigzag_planner.cpp.o"
 )
 

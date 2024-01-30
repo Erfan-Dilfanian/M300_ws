@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/erfan/Qiaomeng workspace/m300_ws/src"
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/erfan/Qiaomeng workspace/m300_ws/build"
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/erfan/Qiaomeng workspace/m300_ws/build/CMakeFiles" "/home/erfan/Qiaomeng workspace/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/progress.marks"
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/erfan/Qiaomeng workspace/m300_ws/build/CMakeFiles" 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/progress.marks
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/clean
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ flight_control_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight
 
 # fast build rule for target.
 flight_control_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build
 .PHONY : flight_control_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ payload_device_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payloa
 
 # fast build rule for target.
 payload_device_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build
 .PHONY : payload_device_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ gimbal_camera_control_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles
 
 # fast build rule for target.
 gimbal_camera_control_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build
 .PHONY : gimbal_camera_control_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ mobile_device_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_
 
 # fast build rule for target.
 mobile_device_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build
 .PHONY : mobile_device_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ waypointV2_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2
 
 # fast build rule for target.
 waypointV2_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build
 .PHONY : waypointV2_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ hms_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/rule
 
 # fast build rule for target.
 hms_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build
 .PHONY : hms_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ time_sync_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_n
 
 # fast build rule for target.
 time_sync_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build
 .PHONY : time_sync_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ camera_stream_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_
 
 # fast build rule for target.
 camera_stream_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build
 .PHONY : camera_stream_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ telemetry_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_n
 
 # fast build rule for target.
 telemetry_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build
 .PHONY : telemetry_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ main_and_fpv_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and
 
 # fast build rule for target.
 main_and_fpv_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build
 .PHONY : main_and_fpv_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ camera_h264_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h2
 
 # fast build rule for target.
 camera_h264_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build
 .PHONY : camera_h264_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ mission_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.
 
 # fast build rule for target.
 mission_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build
 .PHONY : mission_node/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/rule:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/rule
 
 # Convenience name for target.
@@ -359,7 +359,7 @@ battery_node: dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.
 
 # fast build rule for target.
 battery_node/fast:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build
 .PHONY : battery_node/fast
 
 battery_node.o: battery_node.cpp.o
@@ -368,7 +368,7 @@ battery_node.o: battery_node.cpp.o
 
 # target to build an object file
 battery_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.o
 .PHONY : battery_node.cpp.o
 
 battery_node.i: battery_node.cpp.i
@@ -377,7 +377,7 @@ battery_node.i: battery_node.cpp.i
 
 # target to preprocess a source file
 battery_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.i
 .PHONY : battery_node.cpp.i
 
 battery_node.s: battery_node.cpp.s
@@ -386,7 +386,7 @@ battery_node.s: battery_node.cpp.s
 
 # target to generate assembly for a file
 battery_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/battery_node.dir/battery_node.cpp.s
 .PHONY : battery_node.cpp.s
 
 camera_h264_node.o: camera_h264_node.cpp.o
@@ -395,7 +395,7 @@ camera_h264_node.o: camera_h264_node.cpp.o
 
 # target to build an object file
 camera_h264_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.o
 .PHONY : camera_h264_node.cpp.o
 
 camera_h264_node.i: camera_h264_node.cpp.i
@@ -404,7 +404,7 @@ camera_h264_node.i: camera_h264_node.cpp.i
 
 # target to preprocess a source file
 camera_h264_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.i
 .PHONY : camera_h264_node.cpp.i
 
 camera_h264_node.s: camera_h264_node.cpp.s
@@ -413,7 +413,7 @@ camera_h264_node.s: camera_h264_node.cpp.s
 
 # target to generate assembly for a file
 camera_h264_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_h264_node.dir/camera_h264_node.cpp.s
 .PHONY : camera_h264_node.cpp.s
 
 camera_stream_node.o: camera_stream_node.cpp.o
@@ -422,7 +422,7 @@ camera_stream_node.o: camera_stream_node.cpp.o
 
 # target to build an object file
 camera_stream_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.o
 .PHONY : camera_stream_node.cpp.o
 
 camera_stream_node.i: camera_stream_node.cpp.i
@@ -431,7 +431,7 @@ camera_stream_node.i: camera_stream_node.cpp.i
 
 # target to preprocess a source file
 camera_stream_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.i
 .PHONY : camera_stream_node.cpp.i
 
 camera_stream_node.s: camera_stream_node.cpp.s
@@ -440,7 +440,7 @@ camera_stream_node.s: camera_stream_node.cpp.s
 
 # target to generate assembly for a file
 camera_stream_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/camera_stream_node.dir/camera_stream_node.cpp.s
 .PHONY : camera_stream_node.cpp.s
 
 flight_control_node.o: flight_control_node.cpp.o
@@ -449,7 +449,7 @@ flight_control_node.o: flight_control_node.cpp.o
 
 # target to build an object file
 flight_control_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.o
 .PHONY : flight_control_node.cpp.o
 
 flight_control_node.i: flight_control_node.cpp.i
@@ -458,7 +458,7 @@ flight_control_node.i: flight_control_node.cpp.i
 
 # target to preprocess a source file
 flight_control_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.i
 .PHONY : flight_control_node.cpp.i
 
 flight_control_node.s: flight_control_node.cpp.s
@@ -467,7 +467,7 @@ flight_control_node.s: flight_control_node.cpp.s
 
 # target to generate assembly for a file
 flight_control_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/flight_control_node.dir/flight_control_node.cpp.s
 .PHONY : flight_control_node.cpp.s
 
 gimbal_camera_control_node.o: gimbal_camera_control_node.cpp.o
@@ -476,7 +476,7 @@ gimbal_camera_control_node.o: gimbal_camera_control_node.cpp.o
 
 # target to build an object file
 gimbal_camera_control_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.o
 .PHONY : gimbal_camera_control_node.cpp.o
 
 gimbal_camera_control_node.i: gimbal_camera_control_node.cpp.i
@@ -485,7 +485,7 @@ gimbal_camera_control_node.i: gimbal_camera_control_node.cpp.i
 
 # target to preprocess a source file
 gimbal_camera_control_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.i
 .PHONY : gimbal_camera_control_node.cpp.i
 
 gimbal_camera_control_node.s: gimbal_camera_control_node.cpp.s
@@ -494,7 +494,7 @@ gimbal_camera_control_node.s: gimbal_camera_control_node.cpp.s
 
 # target to generate assembly for a file
 gimbal_camera_control_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.s
 .PHONY : gimbal_camera_control_node.cpp.s
 
 hms_node.o: hms_node.cpp.o
@@ -503,7 +503,7 @@ hms_node.o: hms_node.cpp.o
 
 # target to build an object file
 hms_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.o
 .PHONY : hms_node.cpp.o
 
 hms_node.i: hms_node.cpp.i
@@ -512,7 +512,7 @@ hms_node.i: hms_node.cpp.i
 
 # target to preprocess a source file
 hms_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.i
 .PHONY : hms_node.cpp.i
 
 hms_node.s: hms_node.cpp.s
@@ -521,7 +521,7 @@ hms_node.s: hms_node.cpp.s
 
 # target to generate assembly for a file
 hms_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/hms_node.dir/hms_node.cpp.s
 .PHONY : hms_node.cpp.s
 
 main_and_fpv_node.o: main_and_fpv_node.cpp.o
@@ -530,7 +530,7 @@ main_and_fpv_node.o: main_and_fpv_node.cpp.o
 
 # target to build an object file
 main_and_fpv_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.o
 .PHONY : main_and_fpv_node.cpp.o
 
 main_and_fpv_node.i: main_and_fpv_node.cpp.i
@@ -539,7 +539,7 @@ main_and_fpv_node.i: main_and_fpv_node.cpp.i
 
 # target to preprocess a source file
 main_and_fpv_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.i
 .PHONY : main_and_fpv_node.cpp.i
 
 main_and_fpv_node.s: main_and_fpv_node.cpp.s
@@ -548,7 +548,7 @@ main_and_fpv_node.s: main_and_fpv_node.cpp.s
 
 # target to generate assembly for a file
 main_and_fpv_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/main_and_fpv_node.dir/main_and_fpv_node.cpp.s
 .PHONY : main_and_fpv_node.cpp.s
 
 mission_node.o: mission_node.cpp.o
@@ -557,7 +557,7 @@ mission_node.o: mission_node.cpp.o
 
 # target to build an object file
 mission_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.o
 .PHONY : mission_node.cpp.o
 
 mission_node.i: mission_node.cpp.i
@@ -566,7 +566,7 @@ mission_node.i: mission_node.cpp.i
 
 # target to preprocess a source file
 mission_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.i
 .PHONY : mission_node.cpp.i
 
 mission_node.s: mission_node.cpp.s
@@ -575,7 +575,7 @@ mission_node.s: mission_node.cpp.s
 
 # target to generate assembly for a file
 mission_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mission_node.dir/mission_node.cpp.s
 .PHONY : mission_node.cpp.s
 
 mobile_device_node.o: mobile_device_node.cpp.o
@@ -584,7 +584,7 @@ mobile_device_node.o: mobile_device_node.cpp.o
 
 # target to build an object file
 mobile_device_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.o
 .PHONY : mobile_device_node.cpp.o
 
 mobile_device_node.i: mobile_device_node.cpp.i
@@ -593,7 +593,7 @@ mobile_device_node.i: mobile_device_node.cpp.i
 
 # target to preprocess a source file
 mobile_device_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.i
 .PHONY : mobile_device_node.cpp.i
 
 mobile_device_node.s: mobile_device_node.cpp.s
@@ -602,7 +602,7 @@ mobile_device_node.s: mobile_device_node.cpp.s
 
 # target to generate assembly for a file
 mobile_device_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/mobile_device_node.dir/mobile_device_node.cpp.s
 .PHONY : mobile_device_node.cpp.s
 
 payload_device_node.o: payload_device_node.cpp.o
@@ -611,7 +611,7 @@ payload_device_node.o: payload_device_node.cpp.o
 
 # target to build an object file
 payload_device_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.o
 .PHONY : payload_device_node.cpp.o
 
 payload_device_node.i: payload_device_node.cpp.i
@@ -620,7 +620,7 @@ payload_device_node.i: payload_device_node.cpp.i
 
 # target to preprocess a source file
 payload_device_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.i
 .PHONY : payload_device_node.cpp.i
 
 payload_device_node.s: payload_device_node.cpp.s
@@ -629,7 +629,7 @@ payload_device_node.s: payload_device_node.cpp.s
 
 # target to generate assembly for a file
 payload_device_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/payload_device_node.dir/payload_device_node.cpp.s
 .PHONY : payload_device_node.cpp.s
 
 telemetry_node.o: telemetry_node.cpp.o
@@ -638,7 +638,7 @@ telemetry_node.o: telemetry_node.cpp.o
 
 # target to build an object file
 telemetry_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.o
 .PHONY : telemetry_node.cpp.o
 
 telemetry_node.i: telemetry_node.cpp.i
@@ -647,7 +647,7 @@ telemetry_node.i: telemetry_node.cpp.i
 
 # target to preprocess a source file
 telemetry_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.i
 .PHONY : telemetry_node.cpp.i
 
 telemetry_node.s: telemetry_node.cpp.s
@@ -656,7 +656,7 @@ telemetry_node.s: telemetry_node.cpp.s
 
 # target to generate assembly for a file
 telemetry_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/telemetry_node.dir/telemetry_node.cpp.s
 .PHONY : telemetry_node.cpp.s
 
 time_sync_node.o: time_sync_node.cpp.o
@@ -665,7 +665,7 @@ time_sync_node.o: time_sync_node.cpp.o
 
 # target to build an object file
 time_sync_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.o
 .PHONY : time_sync_node.cpp.o
 
 time_sync_node.i: time_sync_node.cpp.i
@@ -674,7 +674,7 @@ time_sync_node.i: time_sync_node.cpp.i
 
 # target to preprocess a source file
 time_sync_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.i
 .PHONY : time_sync_node.cpp.i
 
 time_sync_node.s: time_sync_node.cpp.s
@@ -683,7 +683,7 @@ time_sync_node.s: time_sync_node.cpp.s
 
 # target to generate assembly for a file
 time_sync_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/time_sync_node.dir/time_sync_node.cpp.s
 .PHONY : time_sync_node.cpp.s
 
 waypointV2_node.o: waypointV2_node.cpp.o
@@ -692,7 +692,7 @@ waypointV2_node.o: waypointV2_node.cpp.o
 
 # target to build an object file
 waypointV2_node.cpp.o:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.o
 .PHONY : waypointV2_node.cpp.o
 
 waypointV2_node.i: waypointV2_node.cpp.i
@@ -701,7 +701,7 @@ waypointV2_node.i: waypointV2_node.cpp.i
 
 # target to preprocess a source file
 waypointV2_node.cpp.i:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.i
 .PHONY : waypointV2_node.cpp.i
 
 waypointV2_node.s: waypointV2_node.cpp.s
@@ -710,7 +710,7 @@ waypointV2_node.s: waypointV2_node.cpp.s
 
 # target to generate assembly for a file
 waypointV2_node.cpp.s:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros/samples/CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.s
 .PHONY : waypointV2_node.cpp.s
 
 # Help Target
@@ -789,6 +789,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/erfan/Qiaomeng workspace/m300_ws/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

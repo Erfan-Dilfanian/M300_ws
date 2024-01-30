@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/get_camera_pub"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/get_camera_pub.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/get_camera_pub"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/get_camera_pub.pdb"
   "CMakeFiles/get_camera_pub.dir/get_camera_pub.cpp.o"
 )
 

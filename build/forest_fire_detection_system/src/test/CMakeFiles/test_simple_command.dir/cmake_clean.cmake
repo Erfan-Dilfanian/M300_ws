@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_simple_command"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_simple_command.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_simple_command"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_simple_command.pdb"
   "CMakeFiles/test_simple_command.dir/test_simple_command.cpp.o"
 )
 

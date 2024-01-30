@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "opencv_tests"
-PROJECT_SPACE_DIR = "/home/erfan/Qiaomeng workspace/m300_ws/devel"
+PROJECT_SPACE_DIR = "/home/erfan/M300_ws/devel"
 PROJECT_VERSION = "1.13.0"

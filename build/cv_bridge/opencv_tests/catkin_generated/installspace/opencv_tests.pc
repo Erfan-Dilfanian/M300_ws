@@ -1,4 +1,4 @@
-prefix=/home/erfan/Qiaomeng workspace/m300_ws/install
+prefix=/home/erfan/M300_ws/install
 
 Name: opencv_tests
 Description: Description of opencv_tests

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRef.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRef.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetLocalPosRefRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/SetLocalPosRefRequest.h
 dji_osdk_ros/SetLocalPosRefResponse.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRefRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRefRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/devel/include/dji_osdk_ros/SetLocalPosRefResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetLocalPosRefResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
 tools/PrintControl/PrintCtrlMacro.h
 -
 iostream
@@ -56,7 +56,7 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -66,7 +66,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
 ros/ros.h
 -
 sys/time.h
@@ -98,7 +98,7 @@ string
 glog/logging.h
 -
 
-/home/erfan/Qiaomeng workspace/m300_ws/src/forest_fire_detection_system/src/tools/RecordGPSLocalPos.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/tools/RecordGPSLocalPos.cpp
 dji_osdk_ros/SetLocalPosRef.h
 -
 geometry_msgs/PointStamped.h

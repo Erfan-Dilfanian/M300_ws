@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/Qiaomeng workspace/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros
+# Install script for directory: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/Qiaomeng workspace/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros/dji_vehicle_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros" TYPE EXECUTABLE FILES "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/dji_osdk_ros/dji_vehicle_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros" TYPE EXECUTABLE FILES "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_vehicle_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros/dji_vehicle_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros/dji_vehicle_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros/dji_vehicle_node"
-         OLD_RPATH "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/erfan/M300_ws/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_osdk_ros/dji_vehicle_node")
@@ -59,8 +59,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/erfan/Qiaomeng workspace/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/cmake_install.cmake")
-  include("/home/erfan/Qiaomeng workspace/m300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/cmake_install.cmake")
 
 endif()
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/dji_osdk_ros/dji_sdk_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/dji_sdk_node.pdb"
   "CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o"
   "CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o"
   "CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o"

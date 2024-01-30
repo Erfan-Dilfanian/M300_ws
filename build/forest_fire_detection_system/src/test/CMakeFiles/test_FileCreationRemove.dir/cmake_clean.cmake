@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_FileCreationRemove"
-  "/home/erfan/Qiaomeng workspace/m300_ws/devel/lib/forest_fire_detection_system/test_FileCreationRemove.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_FileCreationRemove"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_FileCreationRemove.pdb"
   "CMakeFiles/test_FileCreationRemove.dir/test_FileCreationRemove.cpp.o"
 )
 

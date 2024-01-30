@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/Qiaomeng workspace/m300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules
+# Install script for directory: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/modules
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/Qiaomeng workspace/m300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

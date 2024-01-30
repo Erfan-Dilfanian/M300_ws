@@ -2,11 +2,11 @@
 "use strict";
 
 let SingleFireIR = require('./SingleFireIR.js');
-let SingleFireRGB = require('./SingleFireRGB.js');
 let SingleFireFuse = require('./SingleFireFuse.js');
+let SingleFireRGB = require('./SingleFireRGB.js');
 
 module.exports = {
   SingleFireIR: SingleFireIR,
-  SingleFireRGB: SingleFireRGB,
   SingleFireFuse: SingleFireFuse,
+  SingleFireRGB: SingleFireRGB,
 };
