@@ -575,7 +575,7 @@ PYTHON_LIBRARY:FILEPATH=/usr/lib/aarch64-linux-gnu/libpython3.8.so
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Numpy include directory
-PYTHON_NUMPY_INCLUDE_DIR:PATH=/home/erfan/.local/lib/python3.8/site-packages/numpy/core/include
+PYTHON_NUMPY_INCLUDE_DIR:PATH=/usr/lib/python3/dist-packages/numpy/core/include
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=3

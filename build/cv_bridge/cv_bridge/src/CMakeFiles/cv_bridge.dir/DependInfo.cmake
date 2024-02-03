@@ -24,7 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/."
   "/usr/include/python3.8"
-  "/home/erfan/.local/lib/python3.8/site-packages/numpy/core/include"
+  "/usr/lib/python3/dist-packages/numpy/core/include"
   "/usr/include/opencv4"
   )
 
