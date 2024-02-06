@@ -548,9 +548,9 @@ int main(int argc, char **argv) {
             gimbalAction.request.is_reset = false;
             gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
             gimbalAction.request.rotationMode = 0;
-            gimbalAction.request.pitch = 25.0f;
+            gimbalAction.request.pitch = -80.0f;
             gimbalAction.request.roll = 0.0f;
-            gimbalAction.request.yaw = 90.0f;
+            gimbalAction.request.yaw = 0.0f;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
