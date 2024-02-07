@@ -287,6 +287,18 @@ int main(int argc, char **argv) {
     char scenario;
     cin >> scenario;
 
+    cout << "please enter camera pitch angle in degreef"<<endl;
+    float camera_pitch;
+    cin>>camera_pitch;
+
+    cout<< "indoor test or outdoor test?"<<endl
+    <<"[a] indoor"<<endl<<"[b] outdoor";
+    char in_or_out;
+    cin>>"in_or_out";
+
+
+
+
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
     auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
     auto camera_set_shutter_speed_client = nh.serviceClient<CameraShutterSpeed>("camera_task_set_shutter_speed");
@@ -548,7 +560,7 @@ int main(int argc, char **argv) {
             gimbalAction.request.is_reset = false;
             gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
             gimbalAction.request.rotationMode = 0;
-            gimbalAction.request.pitch = -80.0f;
+            gimbalAction.request.pitch = camera_pitch;
             gimbalAction.request.roll = 0.0f;
             gimbalAction.request.yaw = 0.0f;
             gimbalAction.request.time = 0.5;
@@ -560,6 +572,29 @@ int main(int argc, char **argv) {
 
             ROS_INFO_STREAM("Move by position offset request sending ...");
             moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
+
+
+            if(in_or_out=='b') {
+
+                std::string ORB_SLAM_Command = "rosrun ORB_SLAM3 fire_localization /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Vocabulary/ORBvoc.txt /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Examples_old/Monocular/GoPro.yaml";
+                int result = system(ORB_SLAM_Command.c_str());
+
+                if (result == 0) {
+                    ROS_INFO("SLAM started successfully!");
+                } else {
+                    ROS_INFO("SLAM didn't started!");
+                }
+
+                std::string fire_geoposition_Command = "rosrun forest_fire_geopositioning geo_positioning";
+                int result = system(fire_geoposition_Command.c_str());
+
+                if (result == 0) {
+                    ROS_INFO("fire geopositioning started successfully!");
+                } else {
+                    ROS_INFO("fire geopositioning didn't started!");
+                }
+
+            }
 
 
             ROS_INFO("destination y is [%f] and x is [%f]: ", zz_l * sind(yaw_const), zz_l * cosd(yaw_const));
@@ -641,10 +676,13 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            fire_gps.latitude = 45.45842238198102;
-            fire_gps.longitude = -73.93238311980387;
-            fire_gps.altitude = 111.356392;
 
+            if(in_or_out=='a') {
+
+                fire_gps.latitude = 45.45842238198102;
+                fire_gps.longitude = -73.93238311980387;
+                fire_gps.altitude = 111.356392;
+            }
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
 
@@ -702,6 +740,15 @@ int main(int argc, char **argv) {
                 ROS_INFO("current position's lat is [%f]", current_GPS_posArray[0]);
                 ROS_INFO("current position's long is [%f]", current_GPS_posArray[1]);
 
+
+                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                int result = system(DropWaterCommand.c_str());
+
+                if (result == 0) {
+                    ROS_INFO("drop water successfully!");
+                } else {
+                    ROS_INFO("fail to drop water!");
+                }
 /*
                 for (int i=1; i<100;i++) {
                     controlServo(angle);
@@ -853,7 +900,8 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
             ros::spinOnce();
             if (flag == 0) {
-                std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                /*
+                 std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
                 FILE *pp = popen(DropWaterCommand.c_str(),"r");
                 if(pp != NULL)
                 {
@@ -863,6 +911,15 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
                     PRINT_INFO("fail to drop water!");
 
 
+                }
+*/
+                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                int result = system(DropWaterCommand.c_str());
+
+                if (result == 0) {
+                    ROS_INFO("drop water successfully!");
+                } else {
+                    ROS_INFO("fail to drop water!");
                 }
 
                 ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
