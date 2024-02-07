@@ -294,7 +294,7 @@ int main(int argc, char **argv) {
     cout<< "indoor test or outdoor test?"<<endl
     <<"[a] indoor"<<endl<<"[b] outdoor";
     char in_or_out;
-    cin>>"in_or_out";
+    cin>>in_or_out;
 
 
 
