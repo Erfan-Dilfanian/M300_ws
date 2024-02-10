@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_WpV2Operator"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_WpV2Operator.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_WpV2Operator"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_WpV2Operator.pdb"
   "CMakeFiles/test_WpV2Operator.dir/test_WpV2Operator.cpp.o"
 )
 

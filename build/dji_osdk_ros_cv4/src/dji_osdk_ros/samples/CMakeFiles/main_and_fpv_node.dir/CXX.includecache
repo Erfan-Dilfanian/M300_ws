@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetupCameraH264Request.h
@@ -14,7 +14,7 @@ dji_osdk_ros/SetupCameraH264Request.h
 dji_osdk_ros/SetupCameraH264Response.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264Request.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264Request.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264Response.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraH264Response.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetupCameraStreamRequest.h
@@ -54,7 +54,7 @@ dji_osdk_ros/SetupCameraStreamRequest.h
 dji_osdk_ros/SetupCameraStreamResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/main_and_fpv_node.cpp
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/main_and_fpv_node.cpp
 ros/ros.h
 -
 iostream
@@ -106,9 +106,9 @@ libavformat/avformat.h
 libswscale/swscale.h
 -
 opencv2/opencv.hpp
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/opencv2/opencv.hpp
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/opencv2/opencv.hpp
 opencv2/highgui/highgui.hpp
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/opencv2/highgui/highgui.hpp
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/opencv2/highgui/highgui.hpp
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/src
+# Install script for directory: /home/qin/M300_ws/src/dji_osdk_ros_cv4/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/cmake_install.cmake")
-  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/cmake_install.cmake")
+  include("/home/qin/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/cmake_install.cmake")
+  include("/home/qin/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/cmake_install.cmake")
 
 endif()
 

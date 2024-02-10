@@ -45,7 +45,8 @@ date = datetime.datetime.now().strftime("%Y%m%d")
 # to get the parameter:
 # yolo task=detect mode=train model=yolov8n.pt data=AVITAGS_NAVLAB20230930-1/data.yaml epochs=30 imgsz=640
 classNames = ["Wildfire Spot"]
-model = YOLO("/home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/YoloWeights/v8l.pt")
+model = YOLO("/home/qin/M300_ws/src/forest_fire_geopositioning/scripts/YoloWeights/yolov8n150_snowwork.pt")
+
 # model = YOLO("/home/qin/m300_ws/src/forest_fire_fighting/scripts/YoloWeights/yolov8n.pt")
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -65,7 +66,9 @@ def callback(image, pub):
         # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # cv2.imshow("original", frame)
         # cv2.waitKey(1)
-        results = model(frame, stream=True)
+        
+        # qiao20240209, add the detection confidence
+        results = model(frame, stream=True, conf=0.6)
         ros_boxes = Detection2DArray()
         ros_boxes.header = image.header
         for result in results:

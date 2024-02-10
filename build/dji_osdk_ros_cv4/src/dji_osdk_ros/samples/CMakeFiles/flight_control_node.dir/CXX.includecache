@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/EmergencyBrake.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/EmergencyBrake.h
 ros/service_traits.h
 -
 dji_osdk_ros/EmergencyBrakeRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/EmergencyBrakeRequest.h
 dji_osdk_ros/EmergencyBrakeResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/EmergencyBrakeRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/EmergencyBrakeRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/EmergencyBrakeResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/EmergencyBrakeResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
 ros/service_traits.h
 -
 dji_osdk_ros/FlightTaskControlRequest.h
@@ -54,7 +54,7 @@ dji_osdk_ros/FlightTaskControlRequest.h
 dji_osdk_ros/FlightTaskControlResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
 string
 -
 vector
@@ -72,7 +72,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
 string
 -
 vector
@@ -88,7 +88,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnable.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnable.h
 ros/service_traits.h
 -
 dji_osdk_ros/GetAvoidEnableRequest.h
@@ -96,7 +96,7 @@ dji_osdk_ros/GetAvoidEnableRequest.h
 dji_osdk_ros/GetAvoidEnableResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnableRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnableRequest.h
 string
 -
 vector
@@ -112,7 +112,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnableResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetAvoidEnableResponse.h
 string
 -
 vector
@@ -128,7 +128,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitude.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitude.h
 ros/service_traits.h
 -
 dji_osdk_ros/GetGoHomeAltitudeRequest.h
@@ -136,7 +136,7 @@ dji_osdk_ros/GetGoHomeAltitudeRequest.h
 dji_osdk_ros/GetGoHomeAltitudeResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitudeRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitudeRequest.h
 string
 -
 vector
@@ -152,7 +152,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitudeResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GetGoHomeAltitudeResponse.h
 string
 -
 vector
@@ -168,7 +168,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickAction.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/JoystickActionRequest.h
@@ -176,7 +176,7 @@ dji_osdk_ros/JoystickActionRequest.h
 dji_osdk_ros/JoystickActionResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
 string
 -
 vector
@@ -194,7 +194,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
 string
 -
 vector
@@ -210,7 +210,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickParams.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickParams.h
 string
 -
 vector
@@ -226,7 +226,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
 ros/service_traits.h
 -
 dji_osdk_ros/ObtainControlAuthorityRequest.h
@@ -234,7 +234,7 @@ dji_osdk_ros/ObtainControlAuthorityRequest.h
 dji_osdk_ros/ObtainControlAuthorityResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
 string
 -
 vector
@@ -250,7 +250,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
 string
 -
 vector
@@ -266,7 +266,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnable.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnable.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetAvoidEnableRequest.h
@@ -274,7 +274,7 @@ dji_osdk_ros/SetAvoidEnableRequest.h
 dji_osdk_ros/SetAvoidEnableResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnableRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnableRequest.h
 string
 -
 vector
@@ -290,7 +290,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnableResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetAvoidEnableResponse.h
 string
 -
 vector
@@ -306,7 +306,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePoint.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetCurrentAircraftLocAsHomePointRequest.h
@@ -314,7 +314,7 @@ dji_osdk_ros/SetCurrentAircraftLocAsHomePointRequest.h
 dji_osdk_ros/SetCurrentAircraftLocAsHomePointResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePointRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePointRequest.h
 string
 -
 vector
@@ -330,7 +330,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePointResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetCurrentAircraftLocAsHomePointResponse.h
 string
 -
 vector
@@ -346,7 +346,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitude.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitude.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetGoHomeAltitudeRequest.h
@@ -354,7 +354,7 @@ dji_osdk_ros/SetGoHomeAltitudeRequest.h
 dji_osdk_ros/SetGoHomeAltitudeResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitudeRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitudeRequest.h
 string
 -
 vector
@@ -370,7 +370,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitudeResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetGoHomeAltitudeResponse.h
 string
 -
 vector
@@ -386,7 +386,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetJoystickModeRequest.h
@@ -394,7 +394,7 @@ dji_osdk_ros/SetJoystickModeRequest.h
 dji_osdk_ros/SetJoystickModeResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
 string
 -
 vector
@@ -410,7 +410,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
 string
 -
 vector
@@ -426,13 +426,13 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
 dji_type.hpp
 -
 vector
 -
 
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/flight_control_node.cpp
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/src/dji_osdk_ros/samples/flight_control_node.cpp
 ros/ros.h
 -
 dji_osdk_ros/common_type.h

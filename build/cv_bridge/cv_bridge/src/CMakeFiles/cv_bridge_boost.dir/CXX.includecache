@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/include/cv_bridge/cv_bridge.h
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
 -
 sensor_msgs/CompressedImage.h
@@ -24,11 +24,11 @@ opencv2/imgproc/types_c.h
 stdexcept
 -
 
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.cpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/module.cpp
 module.hpp
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
 
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
 iostream
 -
 boost/python.hpp
@@ -42,17 +42,17 @@ numpy/ndarrayobject.h
 opencv2/core/core.hpp
 -
 
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module_opencv3.cpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/module_opencv3.cpp
 module.hpp
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/module.hpp
 opencv2/core/types_c.h
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/opencv2/core/types_c.h
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/opencv2/core/types_c.h
 opencv2/opencv_modules.hpp
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/opencv2/opencv_modules.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/opencv2/opencv_modules.hpp
 pycompat.hpp
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/pycompat.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/pycompat.hpp
 
-/home/erfan/M300_ws/src/cv_bridge/cv_bridge/src/pycompat.hpp
+/home/qin/M300_ws/src/cv_bridge/cv_bridge/src/pycompat.hpp
 
 /opt/ros/noetic/include/ros/builtin_message_traits.h
 message_traits.h

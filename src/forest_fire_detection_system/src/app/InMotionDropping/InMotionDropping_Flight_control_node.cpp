@@ -38,6 +38,8 @@ author: Erfan Dilfanian
 #include <dji_osdk_ros/CameraStopShootPhoto.h>
 #include <dji_osdk_ros/CameraRecordVideoAction.h>
 
+#include <fstream> 
+
 // #include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
 #include <sensor_msgs/NavSatFix.h>
 
@@ -130,6 +132,8 @@ geometry_msgs::PointStamped local_position_;
 
 float euler[3];
 
+
+
 void gpsPositionSubCallback2(
         const sensor_msgs::NavSatFix::ConstPtr &gpsPosition) {
     gps_position_ = *gpsPosition;
@@ -220,7 +224,7 @@ void FireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
 }
 
 void
-velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height);
+velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height, float delay);
 
 void controlServo(int angle) {
     std_msgs::UInt16 msg;
@@ -229,6 +233,33 @@ void controlServo(int angle) {
 }
 
 int main(int argc, char **argv) {
+
+  /*FFDS::MODULES::GimbalCameraOperator gcOperator;
+
+    /*reset the camera and gimbal */
+   // if (gcOperator.resetCameraZoom() && gcOperator.resetGimbal()) {
+    //    PRINT_INFO("reset camera and gimbal successfully!")
+    //} else {
+     //   PRINT_WARN("reset camera and gimbal failed!")
+    //}
+
+    float release_delay;
+    
+    std::string filename;
+    std::cout << "Enter the name of the file: ";
+    std::cin >> filename;
+    
+    // Open the file for writing
+    std::ofstream outputFile(filename);
+
+    // Check if the file is opened successfully
+    if (!outputFile.is_open()) {
+        std::cerr << "Error opening the file!" << std::endl;
+        return 1; // Exit with error
+    }
+
+    // Write header
+    outputFile << "M300_position: (s)\tM300.lat \tM300.long \tM300.alt \t fire.lat \t fire.long\t fire.alt \t fire_gps_expected.lat \t fire_gps_expected.long \tfire_gps_expected.alt \n  ";
 
     ros::init(argc, argv, "flight_control_node");
     ros::NodeHandle nh;
@@ -287,14 +318,20 @@ int main(int argc, char **argv) {
     char scenario;
     cin >> scenario;
 
-    cout << "please enter camera pitch angle in degreef"<<endl;
+    cout << "please enter camera pitch angle in degree (no f at end please)"<<endl;
     float camera_pitch;
     cin>>camera_pitch;
 
-    cout<< "indoor test or outdoor test?"<<endl
-    <<"[a] indoor"<<endl<<"[b] outdoor";
+    cout<< "indoor test or outdoor test?"<<endl<<"[a] indoor"<<endl<<"[b] outdoor"<<endl;
     char in_or_out;
     cin>>in_or_out;
+    
+    cout<<"please enter valve delay in miliseconds"<<endl;
+    cin>>release_delay;
+    
+    float height;
+    cout<<"please enter altitude to reach"<<endl;
+    cin>>height;
 
 
 
@@ -391,7 +428,7 @@ int main(int argc, char **argv) {
     servoPub = nh.advertise<std_msgs::UInt16>("servo", 10); // Initialize servoPub
 
     // subscribe to the fire GPS
-    // ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback);
+    ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback);
 
 
     sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
@@ -420,6 +457,10 @@ int main(int argc, char **argv) {
         cout << "please enter fire's longitude" << endl;
         cin >> lon;
         cout << endl;
+        cout<<"please enter lateral adjustment"<<endl;
+        float lateral_adjustment;
+        cout<<endl;
+        cin>>lateral_adjustment;
         // cout<<"please enter fire's alt"<<endl;
         //cin>>alt;
 
@@ -470,9 +511,9 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            moveByPosOffset(control_task, {0, 0, 9, 0}, 1, 3);
+            moveByPosOffset(control_task, {0, 0, height-1, 0}, 1, 3);
 
-            float mission_start_pos[3] = {fire_gps_local_pos[0] - 7, fire_gps_local_pos[1] + 4,
+            float mission_start_pos[3] = {fire_gps_local_pos[0] - 10, fire_gps_local_pos[1] + 8,
                                           9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
@@ -518,10 +559,15 @@ int main(int argc, char **argv) {
 
             float abs_vel = 5; // absolute velocity that needs to be projected
 
-            float height = 10;
+
+            
+            moveByPosOffset(control_task, {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0, yaw_adjustment}, 1,
+                            3); 
+                            
+                            
 
             velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
-                                      abs_vel, d, height);
+                                      abs_vel, d, height,release_delay);
 
 
             ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
@@ -530,10 +576,51 @@ int main(int argc, char **argv) {
         }
 
     } else {
+    
+    sensor_msgs::NavSatFix fire_gps_expected;
+	    float epsilon;
+    
+        float diff_latitude;
+        float diff_longitude;
+        float diff_altitude;
+        
+        float zz_l; //zigzag_length
+        float zz_w; //zigzag_width
+        
+        cout<<"please enter zigzag length (like 8 meter)"<<endl;
+        cin>>zz_l;
+        cout<<"please enter zigzag width (like 4 meter)"<<endl;
+        cin>>zz_w;
+        
+        float split; // split value
+        cout<<"please enter the split value, like 12"<<endl;
+        cin>>split;
+
+
+	std::cout << "Please enter the approximate expected GPS position of fire: " << std::endl;
+            std::cout << "Latitude: ";
+            std::cin >> fire_gps_expected.latitude;
+            std::cout << "Longitude: ";
+            std::cin >> fire_gps_expected.longitude;
+            std::cout << "Altitude: ";
+            std::cin >> fire_gps_expected.altitude;
+            
+            cout<<"please enter the epsilon, the allowed geolocalizing error, like 0.001"<<endl;
+             cin>>epsilon;
+            
+            //note that inputs shoudl be before take off!
+	float m[3];
+
+        float current_GPS_posArray[3];
 
         float yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
         std::cin >> yaw_const;
+        
+        float gimbal_yaw_adjustment;
+        cout<<"please enter gimbal yaw adjustment"<<endl;
+        cin>>gimbal_yaw_adjustment;
+        
 
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
         ROS_INFO_STREAM("Takeoff request sending ...");
@@ -562,50 +649,91 @@ int main(int argc, char **argv) {
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = camera_pitch;
             gimbalAction.request.roll = 0.0f;
-            gimbalAction.request.yaw = 0.0f;
+            // gimbalAction.request.yaw = -yaw_const+90;
+            gimbalAction.request.yaw = 180.0f+gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
+            
+            cout<<"camera angle changed!"<<endl;
 
-            float zz_l = 8;  //zigzag_length
-            float zz_w = 4;   //zigzag_width
+
+            
+
+            
+
+           
 
 
             ROS_INFO_STREAM("Move by position offset request sending ...");
-            moveByPosOffset(control_task, {0, 0, 9, yaw_const}, 1, 3);
+            moveByPosOffset(control_task, {0, 0, height-1, yaw_const}, 1, 3);
+            
+            cout<<"M300 rotated";
 
+	    
 
             if(in_or_out=='b') {
+            bool SLAM_flag=0;
+            while(SLAM_flag == 0)
+            {
+            cout<<"please rosrun detection and SLAM nodes. Then press 1"<<endl;
+	    int detect_index;//detection_starter_indicator
+	    cin>>detect_index;
+	    if(detect_index==1){SLAM_flag=1;}
+	    else{cout<<"Please press 1 if SLAM is initiated";}
+	    }
 
-                std::string ORB_SLAM_Command = "rosrun ORB_SLAM3 fire_localization /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Vocabulary/ORBvoc.txt /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Examples_old/Monocular/GoPro.yaml";
-                int result = system(ORB_SLAM_Command.c_str());
+	    
+            
+            // Print the entered GPS coordinates
+	    std::cout << "Entered GPS position: " << std::endl;
+	    std::cout << "Latitude: " << fire_gps_expected.latitude << std::endl;
+	    std::cout << "Longitude: " << fire_gps_expected.longitude << std::endl;
+	    std::cout << "Altitude: " << fire_gps_expected.altitude << std::endl;
+	    
 
-                if (result == 0) {
-                    ROS_INFO("SLAM started successfully!");
-                } else {
-                    ROS_INFO("SLAM didn't started!");
-                }
-
-                std::string fire_geoposition_Command = "rosrun forest_fire_geopositioning geo_positioning";
-                int result = system(fire_geoposition_Command.c_str());
-
-                if (result == 0) {
-                    ROS_INFO("fire geopositioning started successfully!");
-                } else {
-                    ROS_INFO("fire geopositioning didn't started!");
-                }
+             
+	    
 
             }
+            
+            if(in_or_out=='a') {
 
+                fire_gps.latitude = 45.45842238198102;
+                fire_gps.longitude = -73.93238311980387;
+                fire_gps.altitude = 111.356392;
+            }
+            
 
-            ROS_INFO("destination y is [%f] and x is [%f]: ", zz_l * sind(yaw_const), zz_l * cosd(yaw_const));
-
-            moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1, 3);
-
+           while(true){
+ 
+            
+            
             ros::spinOnce();
 
-            float m[3];
 
-            float current_GPS_posArray[3];
+            double frequency = 30; // 30 Hz
+            ros::Rate rate(frequency);
+	    
+
+            ROS_INFO("destination y is [%f] and x is [%f]: ", zz_l * sind(yaw_const), zz_l * cosd(yaw_const));
+            
+            float zzl1 =  -zz_l * sind(yaw_const)/split;
+            float zzl2 = zz_l * cosd(yaw_const)/split;
+            
+            for(int i = 0;i<split;i++){
+
+            moveByPosOffset(control_task, {zzl1, zzl2, 0, yaw_const}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+            outputFile <<std::setprecision(10)<<gps_position_.latitude << "\t" <<std::setprecision(10)<< gps_position_.longitude << "\t" <<std::setprecision(10)<< gps_position_.altitude << "\t" <<std::setprecision(10)<< fire_gps.latitude<<"\t"<<std::setprecision(10)<<fire_gps.longitude<<"\t"<<std::setprecision(10)<<fire_gps.altitude<<"\t"<<std::setprecision(10)<< fire_gps_expected.latitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.longitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.altitude<<"\n";
+                    
+            }
+            
+            
+
+            
             current_GPS_posArray[0] = gps_position_.latitude;
             current_GPS_posArray[1] = gps_position_.longitude;
             current_GPS_posArray[2] = gps_position_.altitude;
@@ -634,11 +762,55 @@ int main(int argc, char **argv) {
             //ROS_INFO("latitude is [%f]",gps_position_.latitude);
             //ROS_INFO("longitude is [%f]",gps_position_.longitude);
             //ros::spin(); //here is good?
-            ROS_INFO_STREAM("Step 1 over!");
+            ROS_INFO_STREAM("first zigzag line completed!");
 
+            diff_latitude = std::abs(fire_gps_expected.latitude - fire_gps.latitude);
+            diff_longitude = std::abs(fire_gps_expected.longitude - fire_gps.longitude);
+            diff_altitude = std::abs(fire_gps_expected.altitude - fire_gps.altitude);
+            
+            cout<<"diff_latitude is"<<diff_latitude<<endl;
+            cout<<"diff_longitude is"<<diff_longitude<<endl;
+            cout<<"diff_latitude is"<<diff_altitude<<endl;
 
-            moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0, yaw_const}, 1, 3);
+	    // Check if the difference exceeds the epsilon value
+	    if (diff_latitude < epsilon || diff_longitude < epsilon) {
+		cout<<"desirable difference"<<endl;
+		break;
+		
+		// altitude difference does not matter
+	    }
+	    
+	    float zzw1 =  zz_w * cosd(yaw_const)/split;
+            float zzw2 = zz_w * sind(yaw_const)/split;
+	    
+	    for(int i = 0;i<split;i++){
+
+            moveByPosOffset(control_task, {zzw1, zzw2, 0, yaw_const}, 1, 3);
+
             ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+ outputFile <<std::setprecision(10)<<gps_position_.latitude << "\t" <<std::setprecision(10)<< gps_position_.longitude << "\t" <<std::setprecision(10)<< gps_position_.altitude << "\t" <<std::setprecision(10)<< fire_gps.latitude<<"\t"<<std::setprecision(10)<<fire_gps.longitude<<"\t"<<std::setprecision(10)<<fire_gps.altitude<<"\t"<<std::setprecision(10)<< fire_gps_expected.latitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.longitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.altitude<<"\n";
+                    
+                    
+            }
+            
+            ros::spinOnce();
+            
+            diff_latitude = std::abs(fire_gps_expected.latitude - fire_gps.latitude);
+            diff_longitude = std::abs(fire_gps_expected.longitude - fire_gps.longitude);
+            diff_altitude = std::abs(fire_gps_expected.altitude - fire_gps.altitude);
+            
+            cout<<"diff_latitude is"<<diff_latitude<<endl;
+            cout<<"diff_longitude is"<<diff_longitude<<endl;
+            cout<<"diff_latitude is"<<diff_altitude<<endl;
+
+            
+            if (diff_latitude < epsilon && diff_longitude < epsilon) {
+		cout<<"desirable difference"<<endl;
+		break;
+	    }
+
 
 
             current_GPS_posArray[0] = gps_position_.latitude;
@@ -649,14 +821,105 @@ int main(int argc, char **argv) {
 
             ROS_INFO("x is [%f]", m[0]);
             ROS_INFO("y is [%f]", m[1]);
+            
+            
 
-            ROS_INFO_STREAM("Step 2 over!");
-            moveByPosOffset(control_task, {zz_l * sind(yaw_const), -zz_l * cosd(yaw_const), 0.0, yaw_const}, 0.8,
-                            3);
-            ROS_INFO_STREAM("Step 3 over!");
-            moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0.0, yaw_const}, 1, 3);
+            ROS_INFO_STREAM("Second zigzag line completed!");
+            
+            float zzl3 = zz_l * sind(yaw_const)/split;
+            float zzl4 = -zz_l * cosd(yaw_const)/split;
+            
+             for(int i = 0;i<split;i++){
+
+	      moveByPosOffset(control_task, {zzl3, zzl4, 0.0, yaw_const}, 0.8,3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+             outputFile <<std::setprecision(10)<<gps_position_.latitude << "\t" <<std::setprecision(10)<< gps_position_.longitude << "\t" <<std::setprecision(10)<< gps_position_.altitude << "\t" <<std::setprecision(10)<< fire_gps.latitude<<"\t"<<std::setprecision(10)<<fire_gps.longitude<<"\t"<<std::setprecision(10)<<fire_gps.altitude<<"\t"<<std::setprecision(10)<< fire_gps_expected.latitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.longitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.altitude<<"\n";
+                    
+            }
+            
+            ros::spinOnce();
+            
+            diff_latitude = std::abs(fire_gps_expected.latitude - fire_gps.latitude);
+            diff_longitude = std::abs(fire_gps_expected.longitude - fire_gps.longitude);
+            diff_altitude = std::abs(fire_gps_expected.altitude - fire_gps.altitude);
+            
+            cout<<"diff_latitude is"<<diff_latitude<<endl;
+            cout<<"diff_longitude is"<<diff_longitude<<endl;
+            cout<<"diff_latitude is"<<diff_altitude<<endl;
+
+            
+            if (diff_latitude < epsilon && diff_longitude < epsilon) {
+		cout<<"desirable difference"<<endl;
+		break;
+	    }
+            
+            
+            ROS_INFO_STREAM("Third zigzag line completed!");
+            
+            
+             float zzw3 = zz_w * cosd(yaw_const)/split;
+            float zzw4 = zz_w * sind(yaw_const)/split;
+            
+             for(int i = 0;i<split;i++){
+
+            moveByPosOffset(control_task, {zzw3, zzw4, 0.0, yaw_const}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+             outputFile <<std::setprecision(10)<<gps_position_.latitude << "\t" <<std::setprecision(10)<< gps_position_.longitude << "\t" <<std::setprecision(10)<< gps_position_.altitude << "\t" <<std::setprecision(10)<< fire_gps.latitude<<"\t"<<std::setprecision(10)<<fire_gps.longitude<<"\t"<<std::setprecision(10)<<fire_gps.altitude<<"\t"<<std::setprecision(10)<< fire_gps_expected.latitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.longitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.altitude<<"\n";
+                    
+            }
+            
+            ros::spinOnce();
+            
+            diff_latitude = std::abs(fire_gps_expected.latitude - fire_gps.latitude);
+            diff_longitude = std::abs(fire_gps_expected.longitude - fire_gps.longitude);
+            diff_altitude = std::abs(fire_gps_expected.altitude - fire_gps.altitude);
+            
+            cout<<"diff_latitude is"<<diff_latitude<<endl;
+            cout<<"diff_longitude is"<<diff_longitude<<endl;
+            cout<<"diff_latitude is"<<diff_altitude<<endl;
+
+            
+            if (diff_latitude < epsilon && diff_longitude < epsilon) {
+		cout<<"desirable difference"<<endl;
+		break;
+	    }
+            
+            
+            ROS_INFO_STREAM("Fourth zigzag line completed!");
 
 
+            float zzl5 = -zz_l * sind(yaw_const)/split;
+            float zzl6 = zz_l * cosd(yaw_const)/split;
+            
+            for(int i = 0;i<split;i++){
+
+            moveByPosOffset(control_task, {zzl5, zzl6, 0.0, yaw_const}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+             outputFile <<std::setprecision(10)<<gps_position_.latitude << "\t" <<std::setprecision(10)<< gps_position_.longitude << "\t" <<std::setprecision(10)<< gps_position_.altitude << "\t" <<std::setprecision(10)<< fire_gps.latitude<<"\t"<<std::setprecision(10)<<fire_gps.longitude<<"\t"<<std::setprecision(10)<<fire_gps.altitude<<"\t"<<std::setprecision(10)<< fire_gps_expected.latitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.longitude<<"\t"<<std::setprecision(10)<<fire_gps_expected.altitude<<"\n";
+                    
+            }
+            
+            ros::spinOnce();
+            
+            diff_latitude = std::abs(fire_gps_expected.latitude - fire_gps.latitude);
+            diff_longitude = std::abs(fire_gps_expected.longitude - fire_gps.longitude);
+            diff_altitude = std::abs(fire_gps_expected.altitude - fire_gps.altitude);
+            
+            cout<<"diff_latitude is"<<diff_latitude<<endl;
+            cout<<"diff_longitude is"<<diff_longitude<<endl;
+            cout<<"diff_latitude is"<<diff_altitude<<endl;
+
+            ROS_INFO_STREAM("fifth zigzag line completed!");
+            
             ros::spinOnce();
 
             current_GPS_posArray[0] = gps_position_.latitude;
@@ -668,27 +931,46 @@ int main(int argc, char **argv) {
             ROS_INFO("x is [%f]", m[0]);
             ROS_INFO("y is [%f]", m[1]);
 
-            moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0.0, yaw_const}, 1, 3);
+            ros::spinOnce();
+            
+            if (diff_latitude < epsilon && diff_longitude < epsilon) {
+		cout<<"desirable difference"<<endl;
+		break;
+	    }
+	    else{break;}
+            
+            
+
+
+            
+
             // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
             // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
 
 // the more generous you are in threshold, the more agile your drone would be       
 
-            ros::spinOnce();
 
 
-            if(in_or_out=='a') {
 
-                fire_gps.latitude = 45.45842238198102;
-                fire_gps.longitude = -73.93238311980387;
-                fire_gps.altitude = 111.356392;
-            }
+           }
+
+
+            
 
             float fire_GPS_posArray[3]; // posArray :  Position Array
+            
+            if(diff_latitude < epsilon && diff_longitude < epsilon){
 
             fire_GPS_posArray[0] = fire_gps.latitude;
             fire_GPS_posArray[1] = fire_gps.longitude;
             fire_GPS_posArray[2] = fire_gps.altitude;
+}
+else
+{
+            fire_GPS_posArray[0] = fire_gps_expected.latitude ;
+            fire_GPS_posArray[1] = fire_gps_expected.longitude ;
+            fire_GPS_posArray[2] = fire_gps_expected.altitude ;
+}
 
             ros::spinOnce();
 
@@ -721,8 +1003,7 @@ int main(int argc, char **argv) {
                 int angle = 100;
 
                 moveByPosOffset(control_task,
-                                {fire_gps_local_pos[0] - m[0], fire_gps_local_pos[1] - m[1], 0.0, yaw_const}, 0.1,
-                                3); //less threshold
+                                {fire_gps_local_pos[0] - m[0], fire_gps_local_pos[1] - m[1], 0.0, yaw_const}, 0.1,3); //less threshold
 
 
 
@@ -741,15 +1022,31 @@ int main(int argc, char **argv) {
                 ROS_INFO("current position's long is [%f]", current_GPS_posArray[1]);
 
 
-                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
-                int result = system(DropWaterCommand.c_str());
+                std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                FILE *pp = popen(DropWaterCommand.c_str(),"r");
+                if(pp != NULL)
+                {
+                    PRINT_INFO("drop water successfully!");
+                }
+                else{
+                    PRINT_INFO("fail to drop water!");
 
-                if (result == 0) {
+
+                }
+                
+                ros::Duration(4).sleep();
+
+/*
+
+                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                int result2 = system(DropWaterCommand.c_str());
+
+                if (result2 == 0) {
                     ROS_INFO("drop water successfully!");
                 } else {
                     ROS_INFO("fail to drop water!");
                 }
-/*
+
                 for (int i=1; i<100;i++) {
                     controlServo(angle);
                     ros::spinOnce();
@@ -796,10 +1093,10 @@ int main(int argc, char **argv) {
 
                 float abs_vel = 5; // absolute velocity that needs to be projected
 
-                float height = 10;
+
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
-                                          abs_vel, d, height);
+                                          abs_vel, d, height,release_delay);
 
 
                 ROS_INFO_STREAM("Step 1 over!EmergencyBrake for 2s\n");
@@ -835,7 +1132,7 @@ int main(int argc, char **argv) {
 
 
     ROS_INFO_STREAM("Finished. Press CTRL-C to terminate the node");
-
+    outputFile.close();
     ros::spin();
     return 0;
 }
@@ -858,7 +1155,7 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
 
 
 void
-velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height) {
+velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs, float abs_vel, float d, float height, float delay) {
 
 
     double originTime = 0;
@@ -892,7 +1189,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
         float g = 9.81;
 
-        float release_time = ((d / abs_vel) - sqrt((2 * height) / g)) * 1000; // release time in Ms
+        float release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
 
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
@@ -900,7 +1197,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
             ros::spinOnce();
             if (flag == 0) {
-                /*
+                
                  std:: string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
                 FILE *pp = popen(DropWaterCommand.c_str(),"r");
                 if(pp != NULL)
@@ -912,15 +1209,17 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
 
                 }
-*/
-                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
-                int result = system(DropWaterCommand.c_str());
 
-                if (result == 0) {
+/*
+                std::string DropWaterCommand = "rosrun arduino_actuator servo_pub.py";
+                int result3 = system(DropWaterCommand.c_str());
+
+                if (result3 == 0) {
                     ROS_INFO("drop water successfully!");
                 } else {
                     ROS_INFO("fail to drop water!");
                 }
+                */
 
                 ROS_INFO("released valve at [%f]", elapsedTimeInMs); }
             joystick_action_client.call(joystickAction);

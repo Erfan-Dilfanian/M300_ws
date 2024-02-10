@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
+CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
+CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles /home/erfan/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/progress.marks
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles 0
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles /home/qin/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/progress.marks
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/clean
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/preinstall
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/preinstall
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ dji_osdk_ros_genpy: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/rule
 
 # fast build rule for target.
 dji_osdk_ros_genpy/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genpy.dir/build
 .PHONY : dji_osdk_ros_genpy/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ dji_osdk_ros_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs.dir/build
 .PHONY : dji_osdk_ros_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ dji_osdk_ros_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_ge
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_lisp.dir/build
 .PHONY : dji_osdk_ros_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ dji_osdk_ros_gencpp: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/rule
 
 # fast build rule for target.
 dji_osdk_ros_gencpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gencpp.dir/build
 .PHONY : dji_osdk_ros_gencpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ dji_osdk_ros_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gen
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/build
 .PHONY : dji_osdk_ros_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetupCameraStream: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetupCameraStream/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraStream.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetupCameraStream/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription: dji_osdk_ros
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_StereoDepthSubscription/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ _dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_StereoVGASubscription/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_Stereo240pSubscription/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_QueryDroneVersion/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetHardSync: dji_osdk_ros_cv4/CMakeFi
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetHardSync/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHardSync.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetHardSync/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ dji_osdk_ros_geneus: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/rule
 
 # fast build rule for target.
 dji_osdk_ros_geneus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_geneus.dir/build
 .PHONY : dji_osdk_ros_geneus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _dji_osdk_ros_generate_messages_check_deps_SendMobileData: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SendMobileData/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendMobileData.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SendMobileData/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpResetYaw/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ dji_osdk_ros_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gen
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus.dir/build
 .PHONY : dji_osdk_ros_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateRadius/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpUpdateYawRate/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWpGetInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWpSetSpeed/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpAction: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionStatus: dji_osdk_ros_cv4/CMake
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionStatus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionStatus.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionStatus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ _dji_osdk_ros_generate_messages_check_deps_DroneArmControl: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_DroneArmControl/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneArmControl.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_DroneArmControl/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ _dji_osdk_ros_generate_messages_check_deps_MFIOSetValue: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MFIOSetValue/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOSetValue.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MFIOSetValue/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ _dji_osdk_ros_generate_messages_check_deps_MFIOConfig: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MFIOConfig/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIOConfig.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MFIOConfig/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ _dji_osdk_ros_generate_messages_check_deps_DroneTaskControl: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_DroneTaskControl/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DroneTaskControl.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_DroneTaskControl/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlyi
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorFlying/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2InitSetting/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ geometry_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_g
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ _dji_osdk_ros_generate_messages_check_deps_VOPosition: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_VOPosition/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_VOPosition.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_VOPosition/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuator/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger: dji_osdk_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2AssociateTrigger/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ _dji_osdk_ros_generate_messages_check_deps_JoystickAction: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_JoystickAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_JoystickAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetAvoidEnable/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2Event/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ nav_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_me
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ _dji_osdk_ros_generate_messages_check_deps_Waypoint: dji_osdk_ros_cv4/CMakeFiles
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_Waypoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Waypoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_Waypoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ _dji_osdk_ros_generate_messages_check_deps_Gimbal: dji_osdk_ros_cv4/CMakeFiles/_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_Gimbal/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Gimbal.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_Gimbal/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ _dji_osdk_ros_generate_messages_check_deps_JoystickParams: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_JoystickParams/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_JoystickParams.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_JoystickParams/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ nmea_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_
 
 # fast build rule for target.
 nmea_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_cpp.dir/build
 .PHONY : nmea_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointList: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointList/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointList.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointList/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2GimbalActuatorRotationParam/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ nav_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_mes
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission: dji_osdk_ros
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ _dji_osdk_ros_generate_messages_check_deps_GPSUTC: dji_osdk_ros_cv4/CMakeFiles/_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GPSUTC/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GPSUTC.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GPSUTC/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ sensor_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_genera
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ sensor_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_gene
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ sensor_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_gener
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetJoystickMode: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetJoystickMode/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetJoystickMode.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetJoystickMode/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetDroneType: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetDroneType/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetDroneType.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetDroneType/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpGetInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraISO: dji_osdk_ros_cv4/CMakeFile
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraISO/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraISO.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraISO/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ rosgraph_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_ge
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ nav_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_m
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraFocusPoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRota
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuatorRotateHeading/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator: dj
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWpGetSpeed/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask: dji_osdk_ros_cv4
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHotpointTask/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ rosgraph_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_g
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetLocalPosRef/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ roscpp_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messag
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed: dji_osdk_ros_cv
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetGlobalCruisespeed/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2Config: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2Config/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Config.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2Config/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWpAction: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWpAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWpAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger: dji_osdk
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2ReachpointTrigger/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWaypoint: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWaypoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWaypoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1199,12 +1199,12 @@ std_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_mes
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ std_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/rule
 
 # Convenience name for target.
@@ -1229,12 +1229,12 @@ _dji_osdk_ros_generate_messages_check_deps_MobileData: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MobileData/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MobileData.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MobileData/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1244,12 +1244,12 @@ actionlib_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/actionlib_msg
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1259,12 +1259,12 @@ actionlib_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/actionlib_m
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1274,12 +1274,12 @@ roscpp_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/rule
 
 # Convenience name for target.
@@ -1289,12 +1289,12 @@ _dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC: dji_osdk_ros_cv4/CMakeFi
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_FCTimeInUTC/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1304,12 +1304,12 @@ std_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_me
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/rule
 
 # Convenience name for target.
@@ -1319,12 +1319,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraAction: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/rule
 
 # Convenience name for target.
@@ -1334,12 +1334,12 @@ _dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_InitWaypointV2Setting/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/rule
 
 # Convenience name for target.
@@ -1349,12 +1349,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush: dji_osdk_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionEventPush/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1364,12 +1364,12 @@ geometry_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_g
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1379,12 +1379,12 @@ rosgraph_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -1394,12 +1394,12 @@ dji_osdk_ros_gennodejs: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/r
 
 # fast build rule for target.
 dji_osdk_ros_gennodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gennodejs.dir/build
 .PHONY : dji_osdk_ros_gennodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1409,12 +1409,12 @@ actionlib_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1424,12 +1424,12 @@ std_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_me
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1439,12 +1439,12 @@ roscpp_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1454,12 +1454,12 @@ std_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1469,12 +1469,12 @@ nav_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_me
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -1484,12 +1484,12 @@ dji_osdk_ros_generate_messages: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generat
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages.dir/build
 .PHONY : dji_osdk_ros_generate_messages/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/rule
 
 # Convenience name for target.
@@ -1499,12 +1499,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/rule
 
 # Convenience name for target.
@@ -1514,12 +1514,12 @@ _dji_osdk_ros_generate_messages_check_deps_SmartBatteryState: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SmartBatteryState/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryState.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SmartBatteryState/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/rule
 
 # Convenience name for target.
@@ -1529,12 +1529,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraAperture: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraAperture/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraAperture.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraAperture/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1544,12 +1544,12 @@ actionlib_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/rule
 
 # Convenience name for target.
@@ -1559,12 +1559,12 @@ _dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_BatteryWholeInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1574,12 +1574,12 @@ geometry_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_ge
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1589,12 +1589,12 @@ rosgraph_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_g
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1604,12 +1604,12 @@ nmea_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_genera
 
 # fast build rule for target.
 nmea_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_nodejs.dir/build
 .PHONY : nmea_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1619,12 +1619,12 @@ nmea_msgs_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_m
 
 # fast build rule for target.
 nmea_msgs_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_py.dir/build
 .PHONY : nmea_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1634,12 +1634,12 @@ nmea_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate
 
 # fast build rule for target.
 nmea_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_lisp.dir/build
 .PHONY : nmea_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1649,12 +1649,12 @@ roscpp_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messag
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/rule
 
 # Convenience name for target.
@@ -1664,12 +1664,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam: d
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocusParam/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/rule
 
 # Convenience name for target.
@@ -1679,12 +1679,12 @@ _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_UploadWaypointV2Action/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -1694,12 +1694,12 @@ _dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_StopWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/rule
 
 # Convenience name for target.
@@ -1709,12 +1709,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger: dji_osdk
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2TrajectoryTrigger/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/rule
 
 # Convenience name for target.
@@ -1724,12 +1724,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto: dji_osdk
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraStartShootSinglePhoto/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1739,12 +1739,12 @@ geometry_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/geometry_msg
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/rule
 
 # Convenience name for target.
@@ -1754,12 +1754,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger: dj
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2SampleReachPointTrigger/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/rule
 
 # Convenience name for target.
@@ -1769,12 +1769,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2Action: dji_osdk_ros_cv4/CM
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2Action/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2Action.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2Action/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1784,12 +1784,12 @@ sensor_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_gener
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/rule
 
 # Convenience name for target.
@@ -1799,12 +1799,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush: dji_osdk_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2MissionStatePush/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1814,12 +1814,12 @@ rosgraph_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/rule
 
 # Convenience name for target.
@@ -1829,12 +1829,12 @@ _dji_osdk_ros_generate_messages_check_deps_KillSwitch: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_KillSwitch/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_KillSwitch.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_KillSwitch/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/rule
 
 # Convenience name for target.
@@ -1844,12 +1844,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction: dji_osdk_ros_c
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWaypointAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/rule
 
 # Convenience name for target.
@@ -1859,12 +1859,12 @@ _dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask: dji_osdk_ros_cv4
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MissionWaypointTask/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/rule
 
 # Convenience name for target.
@@ -1874,12 +1874,12 @@ _dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority: dji_osdk_ros_cv4
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SDKControlAuthority/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/rule
 
 # Convenience name for target.
@@ -1889,12 +1889,12 @@ _dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_ObtainControlAuthority/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/rule
 
 # Convenience name for target.
@@ -1904,12 +1904,12 @@ _dji_osdk_ros_generate_messages_check_deps_FlightAnomaly: dji_osdk_ros_cv4/CMake
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_FlightAnomaly/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightAnomaly.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_FlightAnomaly/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/rule
 
 # Convenience name for target.
@@ -1919,12 +1919,12 @@ _dji_osdk_ros_generate_messages_check_deps_BatteryState: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_BatteryState/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_BatteryState.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_BatteryState/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/rule
 
 # Convenience name for target.
@@ -1934,12 +1934,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetGoHomeAltitude/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/rule
 
 # Convenience name for target.
@@ -1949,12 +1949,12 @@ _dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo: dji_osdk_ros
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SmartBatteryDynamicInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/rule
 
 # Convenience name for target.
@@ -1964,12 +1964,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger: dji_osdk_r
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2IntervalTrigger/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/rule
 
 # Convenience name for target.
@@ -1979,12 +1979,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuator/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/rule
 
 # Convenience name for target.
@@ -1994,12 +1994,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams: dji_osdk_ros_cv4
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetM300StereoParams/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -2009,12 +2009,12 @@ nmea_msgs_generate_messages_eus: dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_
 
 # fast build rule for target.
 nmea_msgs_generate_messages_eus/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nmea_msgs_generate_messages_eus.dir/build
 .PHONY : nmea_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/rule
 
 # Convenience name for target.
@@ -2024,12 +2024,12 @@ _dji_osdk_ros_generate_messages_check_deps_FlightTaskControl: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_FlightTaskControl/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_FlightTaskControl.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_FlightTaskControl/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/rule
 
 # Convenience name for target.
@@ -2039,12 +2039,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint: dji
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetCurrentAircraftLocAsHomePoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/rule
 
 # Convenience name for target.
@@ -2054,12 +2054,12 @@ _dji_osdk_ros_generate_messages_check_deps_EmergencyBrake: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_EmergencyBrake/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_EmergencyBrake.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_EmergencyBrake/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/rule
 
 # Convenience name for target.
@@ -2069,12 +2069,12 @@ _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthPa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_WaypointV2CameraActuatorFocalLengthParam/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/rule
 
 # Convenience name for target.
@@ -2084,12 +2084,12 @@ _dji_osdk_ros_generate_messages_check_deps_HMSPushInfo: dji_osdk_ros_cv4/CMakeFi
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_HMSPushInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_HMSPushInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_HMSPushInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/rule
 
 # Convenience name for target.
@@ -2099,12 +2099,12 @@ _dji_osdk_ros_generate_messages_check_deps_GimbalAction: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GimbalAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GimbalAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GimbalAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/rule
 
 # Convenience name for target.
@@ -2114,12 +2114,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraEV: dji_osdk_ros_cv4/CMakeFiles
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraEV/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraEV.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraEV/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2129,12 +2129,12 @@ dji_osdk_ros_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_gene
 
 # fast build rule for target.
 dji_osdk_ros_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build
 .PHONY : dji_osdk_ros_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/rule
 
 # Convenience name for target.
@@ -2144,12 +2144,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed: dji_osdk_ros_cv4/
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraShutterSpeed/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/rule
 
 # Convenience name for target.
@@ -2159,12 +2159,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint: dji_osdk_ros_cv4/
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraTapZoomPoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/rule
 
 # Convenience name for target.
@@ -2174,12 +2174,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraZoomCtrl/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/rule
 
 # Convenience name for target.
@@ -2189,12 +2189,12 @@ dji_osdk_ros_genlisp: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/rule
 
 # fast build rule for target.
 dji_osdk_ros_genlisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_genlisp.dir/build
 .PHONY : dji_osdk_ros_genlisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/rule
 
 # Convenience name for target.
@@ -2204,12 +2204,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed: dji_osdk_ros_cv
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetGlobalCruisespeed/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/rule
 
 # Convenience name for target.
@@ -2219,12 +2219,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto: dji_osdk_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraStartShootBurstPhoto/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2234,12 +2234,12 @@ sensor_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_ge
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -2249,12 +2249,12 @@ roscpp_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_message
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/build.make dji_osdk_ros_cv4/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/rule
 
 # Convenience name for target.
@@ -2264,12 +2264,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraStartShootAEBPhoto/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/rule
 
 # Convenience name for target.
@@ -2279,12 +2279,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto: dji_os
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraStartShootIntervalPhoto/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -2294,12 +2294,12 @@ geometry_msgs_generate_messages_lisp: dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/rule
 
 # Convenience name for target.
@@ -2309,12 +2309,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto: dji_osdk_ros_cv
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraStopShootPhoto/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -2324,12 +2324,12 @@ nav_msgs_generate_messages_nodejs: dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make dji_osdk_ros_cv4/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/rule
 
 # Convenience name for target.
@@ -2339,12 +2339,12 @@ _dji_osdk_ros_generate_messages_check_deps_PayloadData: dji_osdk_ros_cv4/CMakeFi
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_PayloadData/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PayloadData.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_PayloadData/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/rule
 
 # Convenience name for target.
@@ -2354,12 +2354,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo: dji_osdk_ros_cv4
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetWholeBatteryInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/rule
 
 # Convenience name for target.
@@ -2369,12 +2369,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraSetZoomPara/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/rule
 
 # Convenience name for target.
@@ -2384,12 +2384,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo: dji_osdk
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetSingleBatteryDynamicInfo/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -2399,12 +2399,12 @@ actionlib_msgs_generate_messages_cpp: dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make dji_osdk_ros_cv4/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/rule
 
 # Convenience name for target.
@@ -2414,12 +2414,12 @@ _dji_osdk_ros_generate_messages_check_deps_Activation: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_Activation/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_Activation.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_Activation/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/rule
 
 # Convenience name for target.
@@ -2429,12 +2429,12 @@ _dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction: dji_osdk_ros
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_CameraRecordVideoAction/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/rule
 
 # Convenience name for target.
@@ -2444,12 +2444,12 @@ _dji_osdk_ros_generate_messages_check_deps_MFIO: dji_osdk_ros_cv4/CMakeFiles/_dj
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_MFIO/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MFIO.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_MFIO/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/rule
 
 # Convenience name for target.
@@ -2459,12 +2459,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude: dji_osdk_ros_cv4/C
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetGoHomeAltitude/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/rule
 
 # Convenience name for target.
@@ -2474,12 +2474,12 @@ _dji_osdk_ros_generate_messages_check_deps_SendPayloadData: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SendPayloadData/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SendPayloadData.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SendPayloadData/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/rule
 
 # Convenience name for target.
@@ -2489,12 +2489,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetHomePoint: dji_osdk_ros_cv4/CMakeF
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetHomePoint/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetHomePoint.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetHomePoint/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/rule
 
 # Convenience name for target.
@@ -2504,12 +2504,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetupCameraH264: dji_osdk_ros_cv4/CMa
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetupCameraH264/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetupCameraH264.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetupCameraH264/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/rule
 
 # Convenience name for target.
@@ -2519,12 +2519,12 @@ _dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable: dji_osdk_ros_cv4/CMak
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SetAvoidEnable/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -2534,12 +2534,12 @@ _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission: dji_osdk_r
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -2549,12 +2549,12 @@ _dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_StartWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -2564,12 +2564,12 @@ _dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission: dji_osdk_ros_
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_PauseWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/rule
 
 # Convenience name for target.
@@ -2579,12 +2579,12 @@ _dji_osdk_ros_generate_messages_check_deps_GetHMSData: dji_osdk_ros_cv4/CMakeFil
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GetHMSData/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GetHMSData.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GetHMSData/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/rule
 
 # Convenience name for target.
@@ -2594,12 +2594,12 @@ _dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission: dji_osdk_ros
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_ResumeWaypointV2Mission/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/rule
 
 # Convenience name for target.
@@ -2609,12 +2609,12 @@ _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action/fast
 
 # Convenience name for target.
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/rule:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/rule
+	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/rule
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/rule
 
 # Convenience name for target.
@@ -2624,7 +2624,7 @@ _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State: dji_osdk_ro
 
 # fast build rule for target.
 _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State/fast:
-	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/build
+	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/build.make dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State.dir/build
 .PHONY : _dji_osdk_ros_generate_messages_check_deps_SubscribeWaypointV2State/fast
 
 # Help Target
@@ -2815,6 +2815,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

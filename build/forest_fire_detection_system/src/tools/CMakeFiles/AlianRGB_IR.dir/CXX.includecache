@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -16,7 +16,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/src/tools/AlianRGB_IR.cpp
+/home/qin/M300_ws/src/forest_fire_detection_system/src/tools/AlianRGB_IR.cpp
 cv_bridge/cv_bridge.h
 -
 ros/init.h

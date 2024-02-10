@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
+CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
+CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 
 # Utility rule file for _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 include dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/progress.make
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload:
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv dji_osdk_ros/MissionHotpointTask
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv dji_osdk_ros/MissionHotpointTask
 
 _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload
 _dji_osdk_ros_generate_messages_check_deps_MissionHpUpload: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build.make
@@ -67,10 +67,10 @@ dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHp
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/build
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/clean:
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/cmake_clean.cmake
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/cmake_clean.cmake
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/clean
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/depend:
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/dji_osdk_ros_cv4 /home/erfan/M300_ws/build /home/erfan/M300_ws/build/dji_osdk_ros_cv4 /home/erfan/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/dji_osdk_ros_cv4 /home/qin/M300_ws/build /home/qin/M300_ws/build/dji_osdk_ros_cv4 /home/qin/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionHpUpload.dir/depend
 

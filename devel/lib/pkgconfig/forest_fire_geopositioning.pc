@@ -1,4 +1,4 @@
-prefix=/home/erfan/M300_ws/devel
+prefix=/home/qin/M300_ws/devel
 
 Name: forest_fire_geopositioning
 Description: Description of forest_fire_geopositioning
