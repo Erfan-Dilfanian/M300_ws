@@ -7,11 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/qin/M300_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/qin/M300_ws/devel/lib:/opt/ros/noetic/lib:/usr/local/cuda-11.4/lib64'
-export PATH='/opt/ros/noetic/bin:/home/qin/.local/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-export PKG_CONFIG_PATH="/home/qin/M300_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/qin/M300_ws/build'
-export PYTHONPATH="/home/qin/M300_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/qin/M300_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH='/home/qin/M300_ws/src:/opt/ros/noetic/share'
+export CMAKE_PREFIX_PATH="/home/erfan/M300_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/erfan/M300_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/erfan/M300_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/erfan/M300_ws/build'
+export PYTHONPATH="/home/erfan/M300_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/erfan/M300_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/erfan/M300_ws/src:$ROS_PACKAGE_PATH"

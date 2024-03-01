@@ -1,8 +1,8 @@
-# Install script for directory: /home/qin/M300_ws/src/forest_fire_detection_system/src
+# Install script for directory: /home/erfan/M300_ws/src/forest_fire_detection_system/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/common/cmake_install.cmake")
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/modules/cmake_install.cmake")
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/tools/cmake_install.cmake")
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/test/cmake_install.cmake")
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/app/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/common/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/modules/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/tools/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/test/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/app/cmake_install.cmake")
 
 endif()
 

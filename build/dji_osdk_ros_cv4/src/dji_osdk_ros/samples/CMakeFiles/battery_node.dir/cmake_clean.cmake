@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/battery_node"
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/battery_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/battery_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/battery_node.pdb"
   "CMakeFiles/battery_node.dir/battery_node.cpp.o"
 )
 

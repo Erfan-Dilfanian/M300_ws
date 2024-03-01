@@ -68,7 +68,7 @@ def callback(image, pub):
         # cv2.waitKey(1)
         
         # qiao20240209, add the detection confidence
-        results = model(frame, stream=True, conf=0.5)
+        results = model(frame, stream=True, conf=0.6)
         ros_boxes = Detection2DArray()
         ros_boxes.header = image.header
         for result in results:

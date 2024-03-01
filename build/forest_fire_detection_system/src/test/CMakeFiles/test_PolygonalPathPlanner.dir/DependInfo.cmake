@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/qin/M300_ws/src/forest_fire_detection_system/src/test/test_PolygonalPathPlanner.cpp" "/home/qin/M300_ws/build/forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.o"
+  "/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_PolygonalPathPlanner.cpp" "/home/erfan/M300_ws/build/forest_fire_detection_system/src/test/CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,25 +20,25 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/qin/M300_ws/devel/include"
-  "/home/qin/M300_ws/src/forest_fire_detection_system/include"
-  "/home/qin/M300_ws/src/dji_osdk_ros_cv4/include"
+  "/home/erfan/M300_ws/devel/include"
+  "/home/erfan/M300_ws/src/forest_fire_detection_system/include"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.10"
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
-  "/home/qin/m300_ws/src/cv_bridge/cv_bridge/include"
-  "/home/qin/M300_ws/src/forest_fire_detection_system/ThirdParty/stereo_camera_vo/include"
+  "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/include"
+  "/home/erfan/M300_ws/src/forest_fire_detection_system/ThirdParty/stereo_camera_vo/include"
   "/usr/include/opencv4"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/qin/M300_ws/build/forest_fire_detection_system/src/modules/CMakeFiles/forest_fire_detection_system_module.dir/DependInfo.cmake"
-  "/home/qin/M300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
-  "/home/qin/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/DependInfo.cmake"
+  "/home/erfan/M300_ws/build/forest_fire_detection_system/src/modules/CMakeFiles/forest_fire_detection_system_module.dir/DependInfo.cmake"
+  "/home/erfan/M300_ws/build/cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
+  "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros/modules/CMakeFiles/dji_osdk_ros.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

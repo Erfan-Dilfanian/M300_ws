@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for run_tests_cv_bridge.
 
@@ -63,10 +63,10 @@ cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/build: run_tests_cv_
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/build
 
 cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/clean:
-	cd /home/qin/M300_ws/build/cv_bridge/cv_bridge/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_cv_bridge.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_cv_bridge.dir/cmake_clean.cmake
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/clean
 
 cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/cv_bridge/cv_bridge/test /home/qin/M300_ws/build /home/qin/M300_ws/build/cv_bridge/cv_bridge/test /home/qin/M300_ws/build/cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/cv_bridge/cv_bridge/test /home/erfan/M300_ws/build /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/run_tests_cv_bridge.dir/depend
 
