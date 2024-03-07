@@ -1568,16 +1568,24 @@ int main(int argc, char **argv) {
 
                 float fire_gps_local_pos[nodes_vec.size()][3];
 
+                float fire_GPS_posArray[nodes_vec.size()][3];
+
+
 
                 for (int i = 0; i < nodes_vec.size(); ++i) {
-                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, nodes_vec[i], fire_gps_local_pos[i]);
+
+                    fire_GPS_posArray[i][0] = nodes_vec[i].x;
+                    fire_GPS_posArray[i][1] = nodes_vec[i].y;
+                    fire_GPS_posArray[i][2] = nodes_vec[i].z;
+
+                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
 
 
                     std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
-                    std::cout << "fire's x position " << nodes_vec[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
+                    std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
 
                 }
-                
+
             }
 
         }
