@@ -1570,7 +1570,7 @@ int main(int argc, char **argv) {
 
                 float fire_GPS_posArray[nodes_vec.size()][3];
 
-
+cout<<nodes_vec.size()<<std::endl;
 
                 for (int i = 0; i < nodes_vec.size(); ++i) {
 
@@ -1579,14 +1579,15 @@ int main(int argc, char **argv) {
                     fire_GPS_posArray[i][2] = nodes_vec[i].z;
 
                     FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
-
-
                     std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
                     std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
 
 
 
+
                 }
+
+
 
             }
 
