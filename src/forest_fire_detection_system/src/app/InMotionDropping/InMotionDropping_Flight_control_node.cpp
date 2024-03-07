@@ -1676,7 +1676,19 @@ int main(int argc, char **argv) {
 
                 }
 
+                // Process the array and fit the line
+                Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
 
+                // Print the parameters of the best-fitting line
+                std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
+                std::cout << "Number of inliers: " << best_line.num_inliers << std::endl;
+
+                // Calculate the point on the fitted line closest to the first sample
+                Point first_sample = {fire_gps_local_pos[0][0], fire_gps_local_pos[0][1]};
+                Point closest_point = closestPointOnLine(best_line, first_sample);
+
+                // Print the coordinates of the closest point
+                std::cout << "Closest point on the line to the first sample: (" << closest_point.x << ", " << closest_point.y << ")" << std::endl;
 
             }
 
