@@ -1524,7 +1524,7 @@ int main(int argc, char **argv) {
     if (scenario == 'f') {
         // float homeGPS_posArray[3];
 
-
+cout<<"we are insided scenario's f if loop";  // for debug
         //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
