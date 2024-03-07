@@ -1,5 +1,5 @@
 /** @file advanced_sensing_node.cpp
-author: Erfan Dilfanian
+author: Erfan Dilfanian, Huajun Dong
  */
 
 //INCLUDE
@@ -382,32 +382,39 @@ void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS)
 
 
     if (in_or_out == 'a'){
-        // giving fake gps
-        N = 4;
-        node nodes[N];
+// Clear the vector if needed
+        nodes_vec.clear();
 
-        // 45.45927600007199, -73.91910849377791
+        // Create and initialize node objects
+        node n1;
+        n1.x = 45.459209212306355;
+        n1.y = -73.91904076800327;
+        n1.z = 0;
+        n1.id = 1;
 
-        nodes[0].id = 1;
-        nodes[0].x = 45.459209212306355;
-        nodes[0].y = -73.91904076800327;
-        nodes[0].z = 0;
+        node n2;
+        n2.x = 45.45923743249868;
+        n2.y = -73.91904210910772;
+        n2.z = 0;
+        n2.id = 2;
 
-        nodes[1].id = 2;
-        nodes[1].x = 45.45923743249868;
-        nodes[1].y = -73.91904210910772;
-        nodes[1].z = 0;
+        node n3;
+        n3.x = 45.459243546871804;
+        n3.y = -73.91907295451003;
+        n3.z = 0;
+        n3.id = 3;
 
+        node n4;
+        n4.x = 45.45927694074417;
+        n4.y = -73.91904210910772;
+        n4.z = 0;
+        n4.id = 4;
 
-        nodes[2].id = 3;
-        nodes[2].x = 45.459243546871804;
-        nodes[2].y = -73.91907295451003;
-        nodes[2].z = 0;
-
-        nodes[3].id = 4;
-        nodes[3].x = 45.45927694074417;
-        nodes[3].y = -73.91904210910772;
-        nodes[3].z = 0;
+        // Push nodes into the vector
+        nodes_vec.push_back(n1);
+        nodes_vec.push_back(n2);
+        nodes_vec.push_back(n3);
+        nodes_vec.push_back(n4);
 
 
     }
@@ -1353,7 +1360,7 @@ int main(int argc, char **argv) {
         }
     }
 
-            if (scenario == 'e') {
+    if (scenario == 'e') {
                 // float homeGPS_posArray[3];
 
 
@@ -1514,8 +1521,70 @@ int main(int argc, char **argv) {
                 }
             }
 
+    if (scenario == 'f') {
+        // float homeGPS_posArray[3];
 
-            PRINT_INFO("going home now");
+
+        //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
+        ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
+
+
+        // Some copied codes from Erfan's about M300 functions (including some new codes)
+        control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
+        ROS_INFO_STREAM("Takeoff request sending ...");
+        task_control_client.call(control_task);
+        if (control_task.response.result == false) {
+            ROS_ERROR_STREAM("Takeoff task failed");
+        }
+        if (control_task.response.result == true) {
+            ROS_INFO_STREAM("Takeoff task successful");
+
+            float yaw_const;
+            std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
+            std::cin >> yaw_const;
+
+            if (in_or_out=='a') {
+                moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
+
+                float zz_l = 8;  //zigzag_length
+                float zz_w = 4;   //zigzag_width
+
+                moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1,
+                                3);
+
+                moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0, yaw_const}, 1, 3);
+
+                moveByPosOffset(control_task, {zz_l * sind(yaw_const), -zz_l * cosd(yaw_const), 0.0, yaw_const},
+                                0.8,
+                                3);
+
+                moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0.0, yaw_const}, 1,
+                                3);
+
+
+                ros::spinOnce();
+
+                float current_GPS_posArray[3];
+
+                float fire_gps_local_pos[nodes_vec.size()][3];
+
+
+                for (int i = 0; i < nodes_vec.size(); ++i) {
+                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, nodes_vec[i], fire_gps_local_pos[i]);
+
+
+                    std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
+                    std::cout << "fire's x position " << nodes_vec[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
+
+                }
+                
+            }
+
+        }
+    }
+
+
+    PRINT_INFO("going home now");
             control_task.request.task =
                     dji_osdk_ros::FlightTaskControl::Request::TASK_GOHOME;
             task_control_client.call(control_task);
