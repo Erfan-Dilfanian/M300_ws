@@ -1676,7 +1676,7 @@ int main(int argc, char **argv) {
 
                 }
 
-                int size = std::extent<decltype(fire_gps_local_pos)>::value;
+                int size = 4; // # number of rows in fire_gps_local
                 // Process the array and fit the line
                 Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
 
