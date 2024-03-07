@@ -7,6 +7,11 @@ author: Erfan Dilfanian, Huajun Dong
 #include <dji_osdk_ros/common_type.h>
 #include <iostream>
 
+#include <vector>
+#include <random>
+#include <cmath>
+
+
 #include <dji_osdk_ros/FlightTaskControl.h>
 #include <dji_osdk_ros/SetGoHomeAltitude.h>
 #include <dji_osdk_ros/GetGoHomeAltitude.h>
@@ -381,44 +386,10 @@ void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS)
 
 cout<<"LineOfFireCallback called";
 
-    if (in_or_out == 'a'){
-// Clear the vector if needed
-        nodes_vec.clear();
-
-        // Create and initialize node objects
-        node n1;
-        n1.x = 45.459209212306355;
-        n1.y = -73.91904076800327;
-        n1.z = 0;
-        n1.id = 1;
-
-        node n2;
-        n2.x = 45.45923743249868;
-        n2.y = -73.91904210910772;
-        n2.z = 0;
-        n2.id = 2;
-
-        node n3;
-        n3.x = 45.459243546871804;
-        n3.y = -73.91907295451003;
-        n3.z = 0;
-        n3.id = 3;
-
-        node n4;
-        n4.x = 45.45927694074417;
-        n4.y = -73.91904210910772;
-        n4.z = 0;
-        n4.id = 4;
-
-        // Push nodes into the vector
-        nodes_vec.push_back(n1);
-        nodes_vec.push_back(n2);
-        nodes_vec.push_back(n3);
-        nodes_vec.push_back(n4);
 
 
-    }
-    else {
+
+
         // Print number of fire spots
         LOG(INFO) << "The number of fire spots: " << fire_spots_GPS->poses.size() << ".";
 
@@ -438,10 +409,95 @@ cout<<"LineOfFireCallback called";
             nodes[i].z = fire_spot.position.z;
             i++;
         }
+
+
+
+
+}
+
+
+// Define a structure to represent a 2D point
+struct Point {
+    float x, y;
+};
+
+// Structure to hold the parameters of a line
+struct Line {
+    double slope;
+    double intercept;
+    int num_inliers;
+};
+
+// Function to calculate the distance between two points
+double distance(const Point& p1, const Point& p2) {
+    return std::sqrt(std::pow(p2.x - p1.x, 2) + std::pow(p2.y - p1.y, 2));
+}
+
+// Function to fit a line to a set of 2D points using RANSAC
+Line fitLineRANSAC(const std::vector<Point>& points, int num_iterations, double threshold) {
+    // Initialize variables to store the best-fitting line parameters
+    Line best_line = {0.0, 0.0, 0};
+
+    // Random number generator for sampling points
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    for (int i = 0; i < num_iterations; ++i) {
+        // Randomly sample two points
+        std::uniform_int_distribution<int> dist(0, points.size() - 1);
+        int idx1 = dist(gen);
+        int idx2 = dist(gen);
+
+        // Fit a line to the sampled points (simple linear regression)
+        float x1 = points[idx1].x, y1 = points[idx1].y;
+        float x2 = points[idx2].x, y2 = points[idx2].y;
+        double slope = (y2 - y1) / (x2 - x1);
+        double intercept = y1 - slope * x1;
+
+        // Count the number of inliers
+        int inliers = 0;
+        for (const Point& p : points) {
+            double d = std::abs(p.y - (slope * p.x + intercept));
+            if (d < threshold) {
+                inliers++;
+            }
+        }
+
+        // Update the best-fitting line if the current line has more inliers
+        if (inliers > best_line.num_inliers) {
+            best_line.slope = slope;
+            best_line.intercept = intercept;
+            best_line.num_inliers = inliers;
+        }
     }
 
+    return best_line;
+}
 
+// Function to process the array and call RANSAC
+Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size) {
+    // Convert the array to vector of points
+    std::vector<Point> points;
+    for (int i = 0; i < size; ++i) {
+        Point p;
+        p.x = fire_gps_local_pos[i][0];
+        p.y = fire_gps_local_pos[i][1];
+        points.push_back(p);
+    }
 
+    // Fit a line using RANSAC
+    int num_iterations = 1000; // Adjust as needed
+    double threshold = 0.1;    // Adjust as needed
+    return fitLineRANSAC(points, num_iterations, threshold);
+}
+
+// Function to locate the point on the fitted line closest to the first sample
+Point closestPointOnLine(const Line& line, const Point& first_sample) {
+    // Calculate the point on the line closest to the first sample
+    Point closest_point;
+    closest_point.x = (first_sample.y - line.intercept + line.slope * first_sample.x) / (1 + std::pow(line.slope, 2));
+    closest_point.y = line.slope * closest_point.x + line.intercept;
+    return closest_point;
 }
 
 
@@ -1524,7 +1580,7 @@ int main(int argc, char **argv) {
     if (scenario == 'f') {
         // float homeGPS_posArray[3];
 
-cout<<"we are insided scenario's f if loop";  // for debug
+        cout<<"we are insided scenario's f if loop"<<endl;  // for debug
         //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
@@ -1565,6 +1621,40 @@ cout<<"we are insided scenario's f if loop";  // for debug
 
                 ros::spinOnce();
 
+                // Clear the vector if needed
+                nodes_vec.clear();
+
+                // Create and initialize node objects
+                node n1;
+                n1.x = 45.459209212306355;
+                n1.y = -73.91904076800327;
+                n1.z = 0;
+                n1.id = 1;
+
+                node n2;
+                n2.x = 45.45923743249868;
+                n2.y = -73.91904210910772;
+                n2.z = 0;
+                n2.id = 2;
+
+                node n3;
+                n3.x = 45.459243546871804;
+                n3.y = -73.91907295451003;
+                n3.z = 0;
+                n3.id = 3;
+
+                node n4;
+                n4.x = 45.45927694074417;
+                n4.y = -73.91904210910772;
+                n4.z = 0;
+                n4.id = 4;
+
+                // Push nodes into the vector
+                nodes_vec.push_back(n1);
+                nodes_vec.push_back(n2);
+                nodes_vec.push_back(n3);
+                nodes_vec.push_back(n4);
+
                 float current_GPS_posArray[3];
 
                 float fire_gps_local_pos[nodes_vec.size()][3];
@@ -1582,8 +1672,6 @@ cout<<"we are insided scenario's f if loop";  // for debug
                     FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
                     std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
                     std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
-
-
 
 
                 }
