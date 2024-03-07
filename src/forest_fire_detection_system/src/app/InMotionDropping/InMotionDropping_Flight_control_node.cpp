@@ -379,7 +379,7 @@ char in_or_out;  // this variable tells whether you are doing indoor experiment 
 void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS)
 {
 
-
+cout<<"LineOfFireCallback called";
 
     if (in_or_out == 'a'){
 // Clear the vector if needed
@@ -1528,6 +1528,9 @@ int main(int argc, char **argv) {
         //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
+        float yaw_const;
+        std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
+        std::cin >> yaw_const;
 
         // Some copied codes from Erfan's about M300 functions (including some new codes)
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
@@ -1539,9 +1542,7 @@ int main(int argc, char **argv) {
         if (control_task.response.result == true) {
             ROS_INFO_STREAM("Takeoff task successful");
 
-            float yaw_const;
-            std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
-            std::cin >> yaw_const;
+
 
             if (in_or_out=='a') {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
@@ -1570,7 +1571,7 @@ int main(int argc, char **argv) {
 
                 float fire_GPS_posArray[nodes_vec.size()][3];
 
-cout<<nodes_vec.size()<<std::endl;
+                cout<<nodes_vec.size()<<std::endl;
 
                 for (int i = 0; i < nodes_vec.size(); ++i) {
 
