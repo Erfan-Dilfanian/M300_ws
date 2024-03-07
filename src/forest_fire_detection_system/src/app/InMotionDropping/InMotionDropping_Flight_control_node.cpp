@@ -1212,8 +1212,8 @@ int main(int argc, char **argv) {
                                 3);
 
 
-                fire_gps.latitude = 45.45842238198102;
-                fire_gps.longitude = -73.93238311980387;
+                fire_gps.latitude = 45.45936158153436;
+                fire_gps.longitude = -73.91910071573902;
                 fire_gps.altitude = 111.356392;
 
 
@@ -1583,6 +1583,8 @@ int main(int argc, char **argv) {
 
                     std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
                     std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
+
+
 
                 }
 
