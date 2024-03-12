@@ -36,8 +36,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/pcl-1.10"
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
+  "/usr/include/python3.8"
   "/home/erfan/M300_ws/src/cv_bridge/cv_bridge/include"
   "/home/erfan/M300_ws/src/forest_fire_detection_system/ThirdParty/stereo_camera_vo/include"
+  "/home/erfan/M300_ws/src/forest_fire_detection_system/matplotlib-cpp"
   "/usr/include/opencv4"
   )
 

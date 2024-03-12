@@ -29,6 +29,7 @@ find_package(
 include_directories(
         include
         ${catkin_INCLUDE_DIRS}
+            /usr/include/python3.8
 )
 
 # yaml
@@ -109,6 +110,9 @@ set(VO_THIRD_PARTY_LIBS
         stereo_camera_vo_module
         stereo_camera_vo_tool
 )
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/matplotlib-cpp)
+
 
 ###########
 ## Build ##

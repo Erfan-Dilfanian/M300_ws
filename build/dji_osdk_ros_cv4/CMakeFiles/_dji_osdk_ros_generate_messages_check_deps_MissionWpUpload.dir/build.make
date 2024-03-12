@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 include dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/progress.make
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload:
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv dji_osdk_ros/MissionWaypointAction:dji_osdk_ros/MissionWaypoint:dji_osdk_ros/MissionWaypointTask
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv dji_osdk_ros/MissionWaypointTask:dji_osdk_ros/MissionWaypointAction:dji_osdk_ros/MissionWaypoint
 
 _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload
 _dji_osdk_ros_generate_messages_check_deps_MissionWpUpload: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_MissionWpUpload.dir/build.make

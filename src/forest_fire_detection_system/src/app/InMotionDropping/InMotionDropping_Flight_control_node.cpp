@@ -7,6 +7,8 @@ author: Erfan Dilfanian, Huajun Dong
 #include <dji_osdk_ros/common_type.h>
 #include <iostream>
 
+#include "matplotlibcpp.h"
+
 #include <vector>
 #include <random>
 #include <cmath>
@@ -1677,6 +1679,7 @@ int main(int argc, char **argv) {
                 }
 
                 int size = 4; // # number of rows in fire_gps_local
+
                 // Process the array and fit the line
                 Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
 

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 include dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/progress.make
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission:
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv dji_osdk_ros/WaypointV2:dji_osdk_ros/WaypointV2Config
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv dji_osdk_ros/WaypointV2Config:dji_osdk_ros/WaypointV2
 
 _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission
 _dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_DownloadWaypointV2Mission.dir/build.make
