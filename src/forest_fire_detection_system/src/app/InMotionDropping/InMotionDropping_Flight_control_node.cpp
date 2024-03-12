@@ -8,6 +8,7 @@ author: Erfan Dilfanian, Huajun Dong
 #include <iostream>
 
 #include "matplotlibcpp.h"
+namespace plt = matplotlibcpp;
 
 #include <vector>
 #include <random>
@@ -1677,6 +1678,25 @@ int main(int argc, char **argv) {
 
 
                 }
+
+                // Extract x and y coordinates into vectors
+                std::vector<float> x, y;
+                for (size_t i = 0; i < sizeof(fire_gps_local_pos) / sizeof(fire_gps_local_pos[0]); ++i) {
+                    x.push_back(fire_gps_local_pos[i][1]);
+                    y.push_back(fire_gps_local_pos[i][2]);
+                }
+
+                // Plot the points
+                plt::plot(x, y, "o");
+
+                // Set labels and title
+                plt::xlabel("X");
+                plt::ylabel("Y");
+                plt::title("Scatter Plot of Points");
+
+                // Show plot
+                plt::show();
+
 
                 int size = 4; // # number of rows in fire_gps_local
 
