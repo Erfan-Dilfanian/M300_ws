@@ -4,3 +4,9 @@
 [submodule "matplotlib_cpp"]
 	path = matplotlib_cpp
 	url = git@github.com:lava/matplotlib-cpp.git
+[submodule "src/forest_fire_detection_system/matplotlib_cpp"]
+	path = src/forest_fire_detection_system/matplotlib_cpp
+	url = git@github.com:lava/matplotlib-cpp.git
+[submodule "src/forest_fire_detection_system/matplotlib-cpp"]
+	path = src/forest_fire_detection_system/matplotlib-cpp
+	url = git@github.com:lava/matplotlib-cpp.git
