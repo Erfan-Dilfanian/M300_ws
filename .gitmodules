@@ -1,3 +1,6 @@
 [submodule "src/forest_fire_detection_system/nested_repo"]
 	path = src/forest_fire_detection_system/nested_repo
 	url = git@github.com:lava/matplotlib-cpp.git
+[submodule "matplotlib_cpp"]
+	path = matplotlib_cpp
+	url = git@github.com:lava/matplotlib-cpp.git
