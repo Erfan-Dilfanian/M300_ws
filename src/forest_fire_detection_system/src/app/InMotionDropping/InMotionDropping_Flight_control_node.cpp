@@ -438,12 +438,16 @@ double distance(const Point& p1, const Point& p2) {
 
 // Function to fit a line to a set of 2D points using RANSAC
 Line fitLineRANSAC(const std::vector<Point>& points, int num_iterations, double threshold) {
+cout<<"We are in fitLineRANSAC function"<<endl;
     // Initialize variables to store the best-fitting line parameters
     Line best_line = {0.0, 0.0, 0};
 
     // Random number generator for sampling points
     std::random_device rd;
+std::cout << "Random device seed: " << rd() << std::endl; // Print random device seed
     std::mt19937 gen(rd());
+    std::cout << "Initial value of gen: " << gen() << std::endl; // Print initial value of gen
+
 
     for (int i = 0; i < num_iterations; ++i) {
         // Randomly sample two points
@@ -457,6 +461,9 @@ Line fitLineRANSAC(const std::vector<Point>& points, int num_iterations, double 
         double slope = (y2 - y1) / (x2 - x1);
         double intercept = y1 - slope * x1;
 
+	// Print the slope and intercept of the current line
+        std::cout << "Iteration " << i << ": Slope = " << slope << ", Intercept = " << intercept << std::endl;
+        
         // Count the number of inliers
         int inliers = 0;
         for (const Point& p : points) {
@@ -478,7 +485,12 @@ Line fitLineRANSAC(const std::vector<Point>& points, int num_iterations, double 
 }
 
 // Function to process the array and call RANSAC
-Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size) {
+// Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size) {
+
+Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size, float threshold) {
+
+
+cout<<"We are in ProcessArrayAndFitLine function";
     // Convert the array to vector of points
     std::vector<Point> points;
     for (int i = 0; i < size; ++i) {
@@ -486,12 +498,17 @@ Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size) {
         p.x = fire_gps_local_pos[i][0];
         p.y = fire_gps_local_pos[i][1];
         points.push_back(p);
+        
+        // Print the x and y values
+        std::cout << "Point " << i + 1 << ": x = " << p.x << ", y = " << p.y << std::endl;
+
+        
     }
 
     // Fit a line using RANSAC
-    int num_iterations = 1000; // Adjust as needed
-    double threshold = 0.1;    // Adjust as needed
-    return fitLineRANSAC(points, num_iterations, threshold);
+    int num_iterations = 100; // Adjust as needed
+
+    // return fitLineRANSAC(points, num_iterations, threshold);
 }
 
 // Function to locate the point on the fitted line closest to the first sample
@@ -1590,7 +1607,10 @@ int main(int argc, char **argv) {
         float yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
         std::cin >> yaw_const;
-
+        
+        		float threshold;
+        		cout<<"please enter threshold for RANSAC";
+        		cin>>threshold;
         // Some copied codes from Erfan's about M300 functions (including some new codes)
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
         ROS_INFO_STREAM("Takeoff request sending ...");
@@ -1713,27 +1733,47 @@ int main(int argc, char **argv) {
 
                 // Extract x and y coordinates into vectors
                 std::vector<float> x, y;
-                for (size_t i = 0; i < sizeof(fire_gps_local_pos) / sizeof(fire_gps_local_pos[0]); ++i) {
-                    x.push_back(fire_gps_local_pos[i][1]);
-                    y.push_back(fire_gps_local_pos[i][2]);
-                }
+    for (size_t i = 0; i < nodes_vec.size(); ++i) {
+        x.push_back(fire_gps_local_pos[i][0]);
+        y.push_back(fire_gps_local_pos[i][1]);
+    }
+    
+    
+    // Print x and y before plotting
+    std::cout << "X coordinates: ";
+    for (auto val : x) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
 
-                // Plot the points
-                plt::plot(x, y, "o");
+    std::cout << "Y coordinates: ";
+    for (auto val : y) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
 
-                // Set labels and title
-                plt::xlabel("X");
-                plt::ylabel("Y");
-                plt::title("Scatter Plot of Points");
+                    // Plot the points with x and y switched
+    plt::plot(y, x, "o"); // Switched x and y
+
+    // Set labels and title with switched axes
+    plt::xlabel("Y"); // Y-axis now represents X-coordinate
+    plt::ylabel("X"); // X-axis now represents Y-coordinate
+    plt::title("Scatter Plot of Points");
 
                 // Show plot
-                plt::show();
+           //     plt::show();
+                
+                
+                cout<<"now we have gps position of fire spots, we go ahead and find optimum line for approach";
+  
 
 
                 int size = 4; // # number of rows in fire_gps_local
 
                 // Process the array and fit the line
-                Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
+                // Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
+		Line best_line = processArrayAndFitLine(fire_gps_local_pos, size, threshold);
+
 
                 // Print the parameters of the best-fitting line
                 std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;

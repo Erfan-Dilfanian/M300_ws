@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/InMotionDropping_Flight_control_node"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/InMotionDropping_Flight_control_node.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/InMotionDropping_Flight_control_node"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/InMotionDropping_Flight_control_node.pdb"
   "CMakeFiles/InMotionDropping_Flight_control_node.dir/InMotionDropping/InMotionDropping_Flight_control_node.cpp.o"
 )
 

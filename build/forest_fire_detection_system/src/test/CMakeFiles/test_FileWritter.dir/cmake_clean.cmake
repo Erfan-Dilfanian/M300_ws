@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_FileWritter"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_FileWritter.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_FileWritter"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_FileWritter.pdb"
   "CMakeFiles/test_FileWritter.dir/test_FileWritter.cpp.o"
 )
 

@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py"
-  "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py"
+  "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py"
   "CMakeFiles/forest_fire_detection_system_generate_messages_py"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/cv_bridge/cv_bridge-utest"
-  "/home/erfan/M300_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
+  "/home/qin/M300_ws/devel/lib/cv_bridge/cv_bridge-utest"
+  "/home/qin/M300_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
   "CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o"

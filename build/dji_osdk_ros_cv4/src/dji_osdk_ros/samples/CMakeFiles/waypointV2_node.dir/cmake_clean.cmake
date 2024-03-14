@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/waypointV2_node"
-  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/waypointV2_node.pdb"
+  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/waypointV2_node"
+  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/waypointV2_node.pdb"
   "CMakeFiles/waypointV2_node.dir/waypointV2_node.cpp.o"
 )
 
