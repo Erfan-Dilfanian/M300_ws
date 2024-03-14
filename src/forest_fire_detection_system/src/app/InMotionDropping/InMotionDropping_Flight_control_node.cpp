@@ -1627,6 +1627,7 @@ int main(int argc, char **argv) {
                 // Clear the vector if needed
                 nodes_vec.clear();
 
+                /* for parking lot:
                 // Create and initialize node objects
                 node n1;
                 n1.x = 45.459209212306355;
@@ -1651,6 +1652,35 @@ int main(int argc, char **argv) {
                 n4.y = -73.91904210910772;
                 n4.z = 0;
                 n4.id = 4;
+                */
+
+                // for P7 area:
+                // Create and initialize node objects
+                node n1;
+                n1.x = 45.45836575506897;
+                n1.y = -73.93233197405084;
+                n1.z = 0;
+                n1.id = 1;
+
+                node n2;
+                n2.x = 45.458375161942016;
+                n2.y = -73.93236483111184;
+                n2.z = 0;
+                n2.id = 2;
+
+                node n3;
+                n3.x = 45.45840855632869;
+                n3.y = -73.93236214890278;
+                n3.z = 0;
+                n3.id = 3;
+
+                node n4;
+                n4.x = 45.458413259761834;
+                n4.y = -73.93241042866589;
+                n4.z = 0;
+                n4.id = 4;
+
+
 
                 // Push nodes into the vector
                 nodes_vec.push_back(n1);
@@ -1664,7 +1694,9 @@ int main(int argc, char **argv) {
 
                 float fire_GPS_posArray[nodes_vec.size()][3];
 
-                cout<<nodes_vec.size()<<std::endl;
+                cout<<"number of fire spots are: "<<nodes_vec.size()<<std::endl;
+
+                cout<<"Home GPS position: latitude  "<<homeGPS_posArray[0]<<"longitude  "<<homeGPS_posArray[1];
 
                 for (int i = 0; i < nodes_vec.size(); ++i) {
 
@@ -1673,7 +1705,7 @@ int main(int argc, char **argv) {
                     fire_GPS_posArray[i][2] = nodes_vec[i].z;
 
                     FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
-                    std::cout << "Node ID: " << nodes_vec[i].id << ", x: " << nodes_vec[i].x << ", y: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
+                    std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x << ", longitude: " << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
                     std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position " << fire_gps_local_pos[i][1] << std::endl;
 
 
