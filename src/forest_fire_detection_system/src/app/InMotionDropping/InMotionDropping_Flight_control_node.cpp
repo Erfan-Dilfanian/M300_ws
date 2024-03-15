@@ -508,16 +508,70 @@ cout<<"We are in ProcessArrayAndFitLine function";
     // Fit a line using RANSAC
     int num_iterations = 100; // Adjust as needed
 
-    // return fitLineRANSAC(points, num_iterations, threshold);
+     return fitLineRANSAC(points, num_iterations, threshold);
 }
 
 // Function to locate the point on the fitted line closest to the first sample
+/*
 Point closestPointOnLine(const Line& line, const Point& first_sample) {
     // Calculate the point on the line closest to the first sample
     Point closest_point;
     closest_point.x = (first_sample.y - line.intercept + line.slope * first_sample.x) / (1 + std::pow(line.slope, 2));
     closest_point.y = line.slope * closest_point.x + line.intercept;
     return closest_point;
+}
+*/
+// Function to calculate the point on the line closest to the given sample point
+Point closestPointOnLine(const Line& line, const Point& sample_point) {
+    Point closest_point;
+    double slope_inverse = -1 / line.slope; // Slope of the line perpendicular to the given line
+
+    // Calculate x-coordinate of the closest point using perpendicular distance formula
+    closest_point.x = (sample_point.x + slope_inverse * sample_point.y - line.intercept + line.slope * line.intercept) / (line.slope + slope_inverse);
+
+    // Calculate y-coordinate of the closest point using the equation of the given line
+    closest_point.y = line.slope * closest_point.x + line.intercept;
+
+    return closest_point;
+}
+
+// Function to find the intersection point of two lines
+Point intersectionPoint(const Line& best_line, const Point& first_sample) {
+    Point intersection;
+
+    // Calculate the slope of the line perpendicular to the best-fitting line
+    double perpendicular_slope = -1.0 / best_line.slope;
+
+    // Calculate the y-intercept of the line passing through the first sample
+    double perpendicular_intercept = first_sample.y - perpendicular_slope * first_sample.x;
+
+    // Calculate the x-coordinate of the intersection point
+    intersection.x = (perpendicular_intercept - best_line.intercept) / (best_line.slope - perpendicular_slope);
+
+    // Calculate the y-coordinate of the intersection point
+    intersection.y = best_line.slope * intersection.x + best_line.intercept;
+
+    return intersection;
+}
+
+// Function to traverse on the best-fitting line from a given point for a certain distance
+Point traverseOnLine(const Line& best_line, const Point& starting_point, double distance) {
+    Point new_point;
+
+    // Calculate the change in x and y based on the slope of the best-fitting line
+    double delta_x = distance / std::sqrt(1 + std::pow(best_line.slope, 2));
+    double delta_y = best_line.slope * delta_x;
+
+    // Determine the direction of traversal based on the slope of the line
+    if (best_line.slope >= 0) {
+        new_point.x = starting_point.x + delta_x;
+        new_point.y = starting_point.y + delta_y;
+    } else {
+        new_point.x = starting_point.x - delta_x;
+        new_point.y = starting_point.y - delta_y;
+    }
+
+    return new_point;
 }
 
 
@@ -1626,8 +1680,8 @@ int main(int argc, char **argv) {
             if (in_or_out=='a') {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
-                float zz_l = 8;  //zigzag_length
-                float zz_w = 4;   //zigzag_width
+                float zz_l = 12;  //zigzag_length
+                float zz_w = 6;   //zigzag_width
 
                 moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1,
                                 3);
@@ -1753,7 +1807,7 @@ int main(int argc, char **argv) {
     std::cout << std::endl;
 
                     // Plot the points with x and y switched
-    plt::plot(y, x, "o"); // Switched x and y
+    plt::plot(y, x, "bo"); // Switched x and y
 
     // Set labels and title with switched axes
     plt::xlabel("Y"); // Y-axis now represents X-coordinate
@@ -1781,10 +1835,67 @@ int main(int argc, char **argv) {
 
                 // Calculate the point on the fitted line closest to the first sample
                 Point first_sample = {fire_gps_local_pos[0][0], fire_gps_local_pos[0][1]};
+                cout<<"first sample x is:"<<first_sample.x<<"and first sample y is:"<<first_sample.y<<endl;
                 Point closest_point = closestPointOnLine(best_line, first_sample);
 
+
+Point intersecPoint=intersectionPoint(best_line, first_sample);
+cout<<"intersection_point_x is:"<<intersecPoint.x<<"and its y is:"<<intersecPoint.y<<endl;
+;
                 // Print the coordinates of the closest point
                 std::cout << "Closest point on the line to the first sample: (" << closest_point.x << ", " << closest_point.y << ")" << std::endl;
+                
+                // Plot the line
+std::vector<float> line_x, line_y;
+for (float x_val = -10; x_val <= 30; x_val += 0.1) { // Adjust the range as needed
+    float y_val = best_line.slope * x_val + best_line.intercept;
+    line_x.push_back(y_val);  // Note: Switched x and y
+    line_y.push_back(x_val);  // Note: Switched x and y
+}
+plt::plot(line_x, line_y, "r"); // Plot the line in blue
+
+Point starting_point = traverseOnLine(best_line, intersecPoint, 5);
+                std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")" << std::endl;
+                
+               plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
+                                // Show plot
+               plt::show();
+                
+                 ros::spinOnce();
+                 
+
+
+                            current_GPS_posArray[0] = gps_position_.latitude;
+                            current_GPS_posArray[1] = gps_position_.longitude;
+                            current_GPS_posArray[2] = gps_position_.altitude;
+
+                            float recent_local_pos[3];
+
+                            FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
+
+                            float yaw_adjustment; // yaw adjustment before approach
+
+cout<<"recent x :"<<starting_point.x<<"recent y :" <<starting_point.y<<endl;                           // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
+                            // note that tan2 output is in radian
+                            // Also I added 90 as we want the yaw angle from x axis which is in Y direction
+                            ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
+
+
+                            moveByPosOffset(control_task, {starting_point.x-recent_local_pos[0], starting_point.y-recent_local_pos[1], 0, 0}, 1,3);  // note that x y z goes into this funciton
+                            
+yaw_adjustment = atan(best_line.slope)* 180.0 / M_PI;
+cout<<"yaw_adjustment is"<<yaw_adjustment<<endl;
+                            moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,3);  // note that x y z goes into this funciton
+                // velocity mission
+
+                
+
+                float abs_vel = 5; // absolute velocity that needs to be projected
+
+
+
+                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
+                                          abs_vel, 5, height, release_delay);
 
             }
 
