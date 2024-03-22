@@ -43,79 +43,79 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for forest_fire_detection_system_generate_messages_py.
 
 # Include the progress variables for this target.
 include forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/progress.make
 
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py
-forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py
+forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py
 
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG forest_fire_detection_system/SingleFireFuse"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg -Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG forest_fire_detection_system/SingleFireFuse"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg -Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG forest_fire_detection_system/SingleFireIR"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg -Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG forest_fire_detection_system/SingleFireIR"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg -Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG forest_fire_detection_system/SingleFireRGB"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg -Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG forest_fire_detection_system/SingleFireRGB"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg -Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py: /home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV forest_fire_detection_system/SegmentSmoke"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv -Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py: /home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV forest_fire_detection_system/SegmentSmoke"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv -Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py: /home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV forest_fire_detection_system/ToggleGrabDataDepthEstimation"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv -Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py: /home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV forest_fire_detection_system/ToggleGrabDataDepthEstimation"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv -Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p forest_fire_detection_system -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for forest_fire_detection_system"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg --initpy
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for forest_fire_detection_system"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg --initpy
 
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
-/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python srv __init__.py for forest_fire_detection_system"
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv --initpy
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
+/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python srv __init__.py for forest_fire_detection_system"
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv --initpy
 
 forest_fire_detection_system_generate_messages_py: forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py
-forest_fire_detection_system_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireFuse.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireIR.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/_SingleFireRGB.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_SegmentSmoke.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/_ToggleGrabDataDepthEstimation.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/msg/__init__.py
+forest_fire_detection_system_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system/srv/__init__.py
 forest_fire_detection_system_generate_messages_py: forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/build.make
 
 .PHONY : forest_fire_detection_system_generate_messages_py
@@ -126,10 +126,10 @@ forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_me
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/build
 
 forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/clean:
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/clean
 
 forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/forest_fire_detection_system /home/qin/M300_ws/build /home/qin/M300_ws/build/forest_fire_detection_system /home/qin/M300_ws/build/forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/forest_fire_detection_system /home/erfan/M300_ws/build /home/erfan/M300_ws/build/forest_fire_detection_system /home/erfan/M300_ws/build/forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_generate_messages_py.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/forest_fire_geopositioning/geo_positioning"
-  "/home/qin/M300_ws/devel/lib/forest_fire_geopositioning/geo_positioning.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/geo_positioning"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_geopositioning/geo_positioning.pdb"
   "CMakeFiles/geo_positioning.dir/src/geo_positioning.cpp.o"
 )
 

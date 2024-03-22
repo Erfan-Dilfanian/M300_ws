@@ -67,14 +67,14 @@ set(cv_bridge_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(cv_bridge_SOURCE_PREFIX /home/qin/M300_ws/src/cv_bridge/cv_bridge)
-  set(cv_bridge_DEVEL_PREFIX /home/qin/M300_ws/devel)
+  set(cv_bridge_SOURCE_PREFIX /home/erfan/M300_ws/src/cv_bridge/cv_bridge)
+  set(cv_bridge_DEVEL_PREFIX /home/erfan/M300_ws/devel)
   set(cv_bridge_INSTALL_PREFIX "")
   set(cv_bridge_PREFIX ${cv_bridge_DEVEL_PREFIX})
 else()
   set(cv_bridge_SOURCE_PREFIX "")
   set(cv_bridge_DEVEL_PREFIX "")
-  set(cv_bridge_INSTALL_PREFIX /home/qin/M300_ws/install)
+  set(cv_bridge_INSTALL_PREFIX /home/erfan/M300_ws/install)
   set(cv_bridge_PREFIX ${cv_bridge_INSTALL_PREFIX})
 endif()
 
@@ -116,7 +116,7 @@ if(NOT "include;/usr/include/opencv4 " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "cv_bridge;/usr/lib/aarch64-linux-gnu/libopencv_core.so.4.5.4;/usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.5.4;/usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.5.4")
+set(libraries "cv_bridge;/usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/qin/M300_ws/install/lib;/home/qin/M300_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/erfan/M300_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

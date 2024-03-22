@@ -1,8 +1,8 @@
-# Install script for directory: /home/qin/M300_ws/src/forest_fire_detection_system
+# Install script for directory: /home/erfan/M300_ws/src/forest_fire_detection_system
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,69 +39,69 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/msg" TYPE FILE FILES
-    "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
-    "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
-    "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+    "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+    "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+    "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/srv" TYPE FILE FILES
-    "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
-    "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+    "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+    "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/cmake" TYPE FILE FILES "/home/qin/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/cmake" TYPE FILE FILES "/home/erfan/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/include/forest_fire_detection_system")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/include/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/roseus/ros/forest_fire_detection_system")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/roseus/ros/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/common-lisp/ros/forest_fire_detection_system")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/common-lisp/ros/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/gennodejs/ros/forest_fire_detection_system")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/gennodejs/ros/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/lib/python3/dist-packages/forest_fire_detection_system")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/qin/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/cmake" TYPE FILE FILES "/home/qin/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/cmake" TYPE FILE FILES "/home/erfan/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_system-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system/cmake" TYPE FILE FILES
-    "/home/qin/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_systemConfig.cmake"
-    "/home/qin/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_systemConfig-version.cmake"
+    "/home/erfan/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_systemConfig.cmake"
+    "/home/erfan/M300_ws/build/forest_fire_detection_system/catkin_generated/installspace/forest_fire_detection_systemConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system" TYPE FILE FILES "/home/qin/M300_ws/src/forest_fire_detection_system/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forest_fire_detection_system" TYPE FILE FILES "/home/erfan/M300_ws/src/forest_fire_detection_system/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/qin/M300_ws/build/forest_fire_detection_system/src/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/forest_fire_detection_system/src/cmake_install.cmake")
 
 endif()
 

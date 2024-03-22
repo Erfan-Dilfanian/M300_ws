@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qin/M300_ws/src/forest_fire_geopositioning/src/fire_subscriber.cpp
+/home/erfan/M300_ws/src/forest_fire_geopositioning/src/fire_subscriber.cpp
 iostream
 -
 ros/ros.h

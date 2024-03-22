@@ -1,8 +1,8 @@
-# Install script for directory: /home/qin/M300_ws/src/arduino_actuator
+# Install script for directory: /home/erfan/M300_ws/src/arduino_actuator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/qin/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuator.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_actuator/cmake" TYPE FILE FILES
-    "/home/qin/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuatorConfig.cmake"
-    "/home/qin/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuatorConfig-version.cmake"
+    "/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuatorConfig.cmake"
+    "/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/installspace/arduino_actuatorConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_actuator" TYPE FILE FILES "/home/qin/M300_ws/src/arduino_actuator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arduino_actuator" TYPE FILE FILES "/home/erfan/M300_ws/src/arduino_actuator/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/qin/M300_ws/build/arduino_actuator/catkin_generated/safe_execute_install.cmake")
+  include("/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arduino_actuator" TYPE PROGRAM FILES "/home/qin/M300_ws/build/arduino_actuator/catkin_generated/installspace/message_info_service.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arduino_actuator" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/installspace/message_info_service.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arduino_actuator" TYPE PROGRAM FILES "/home/qin/M300_ws/build/arduino_actuator/catkin_generated/installspace/serial_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/arduino_actuator" TYPE PROGRAM FILES "/home/erfan/M300_ws/build/arduino_actuator/catkin_generated/installspace/serial_node.py")
 endif()
 

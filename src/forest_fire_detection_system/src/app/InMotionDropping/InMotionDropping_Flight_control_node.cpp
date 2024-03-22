@@ -1705,7 +1705,7 @@ int main(int argc, char **argv) {
                 Vx = radius*theta_dot*cosd(theta);
                 Vy = radius*theta_dot*sind(theta);
                 cout<<"Vx is:"<<Vx<<" Vy is:"<<Vy<<"time step in ms is:"<<time_step*1000<<endl;
-                CircularPlanner({Vx,Vy , 0}, time_step*1000);
+                CircularPlanner({Vx,Vy , 0,theta_dot}, time_step*1000);
 
                      }
 
@@ -1759,6 +1759,7 @@ int main(int argc, char **argv) {
 
                 // for P7 area:
                 // Create and initialize node objects
+                /*
                 node n1;
                 n1.x = 45.45836575506897;
                 n1.y = -73.93233197405084;
@@ -1784,7 +1785,7 @@ int main(int argc, char **argv) {
                 n4.z = 0;
                 n4.id = 1;
 
-/*
+
                 node n5;
                 n2.x = 45.458375161942016;
                 n2.y = -73.93236483111184;
@@ -1834,12 +1835,44 @@ int main(int argc, char **argv) {
                 n4.id = 4;
 */
 
+                node n1;
+                n1.x = 45.45836575506897;
+                n1.y = -73.93233197405084;
+                n1.z = 0;
+                n1.id = 1;
+
+
+
+
+
+                node n2;
+                n2.x = 45.458375161942016;
+                n2.y = -73.93236483111184;
+                n2.z = 0;
+                n2.id = 2;
+
+
+
+                node n3;
+                n3.x = 45.45840855632869;
+                n3.y = -73.93236214890278;
+                n3.z = 0;
+                n3.id = 3;
+
+
+
+                node n4;
+                n4.x = 45.458413259761834;
+                n4.y = -73.93241042866589;
+                n4.z = 0;
+                n4.id = 4;
 
                 // Push nodes into the vector
                 nodes_vec.push_back(n1);
                 nodes_vec.push_back(n2);
                 nodes_vec.push_back(n3);
                 nodes_vec.push_back(n4);
+                /*
                 nodes_vec.push_back(n5);
                 nodes_vec.push_back(n6);
                 nodes_vec.push_back(n7);
@@ -1848,7 +1881,7 @@ int main(int argc, char **argv) {
                 nodes_vec.push_back(n10);
                 nodes_vec.push_back(n11);
                 nodes_vec.push_back(n12);
-
+*/
 
 
                 float current_GPS_posArray[3];
