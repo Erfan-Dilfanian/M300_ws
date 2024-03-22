@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for forest_fire_detection_system_gennodejs.
 
@@ -63,10 +63,10 @@ forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.d
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/build
 
 forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/clean:
-	cd /home/qin/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/forest_fire_detection_system_gennodejs.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/forest_fire_detection_system && $(CMAKE_COMMAND) -P CMakeFiles/forest_fire_detection_system_gennodejs.dir/cmake_clean.cmake
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/clean
 
 forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/forest_fire_detection_system /home/qin/M300_ws/build /home/qin/M300_ws/build/forest_fire_detection_system /home/qin/M300_ws/build/forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/forest_fire_detection_system /home/erfan/M300_ws/build /home/erfan/M300_ws/build/forest_fire_detection_system /home/erfan/M300_ws/build/forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : forest_fire_detection_system/CMakeFiles/forest_fire_detection_system_gennodejs.dir/depend
 

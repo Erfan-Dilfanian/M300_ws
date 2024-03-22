@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles /home/qin/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/progress.marks
-	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles /home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/progress.marks
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erfan/M300_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/clean
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/preinstall
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/rule:
-	cd /home/qin/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/rule
+	cd /home/erfan/M300_ws/build && $(MAKE) -f CMakeFiles/Makefile2 dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/rule
 .PHONY : dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ dji_sdk_node: dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_nod
 
 # fast build rule for target.
 dji_sdk_node/fast:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build
 .PHONY : dji_sdk_node/fast
 
 __/dji_osdk_ros/modules/osdkhal_linux.o: __/dji_osdk_ros/modules/osdkhal_linux.c.o
@@ -188,7 +188,7 @@ __/dji_osdk_ros/modules/osdkhal_linux.o: __/dji_osdk_ros/modules/osdkhal_linux.c
 
 # target to build an object file
 __/dji_osdk_ros/modules/osdkhal_linux.c.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.o
 .PHONY : __/dji_osdk_ros/modules/osdkhal_linux.c.o
 
 __/dji_osdk_ros/modules/osdkhal_linux.i: __/dji_osdk_ros/modules/osdkhal_linux.c.i
@@ -197,7 +197,7 @@ __/dji_osdk_ros/modules/osdkhal_linux.i: __/dji_osdk_ros/modules/osdkhal_linux.c
 
 # target to preprocess a source file
 __/dji_osdk_ros/modules/osdkhal_linux.c.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.i
 .PHONY : __/dji_osdk_ros/modules/osdkhal_linux.c.i
 
 __/dji_osdk_ros/modules/osdkhal_linux.s: __/dji_osdk_ros/modules/osdkhal_linux.c.s
@@ -206,7 +206,7 @@ __/dji_osdk_ros/modules/osdkhal_linux.s: __/dji_osdk_ros/modules/osdkhal_linux.c
 
 # target to generate assembly for a file
 __/dji_osdk_ros/modules/osdkhal_linux.c.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkhal_linux.c.s
 .PHONY : __/dji_osdk_ros/modules/osdkhal_linux.c.s
 
 __/dji_osdk_ros/modules/osdkosal_linux.o: __/dji_osdk_ros/modules/osdkosal_linux.c.o
@@ -215,7 +215,7 @@ __/dji_osdk_ros/modules/osdkosal_linux.o: __/dji_osdk_ros/modules/osdkosal_linux
 
 # target to build an object file
 __/dji_osdk_ros/modules/osdkosal_linux.c.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.o
 .PHONY : __/dji_osdk_ros/modules/osdkosal_linux.c.o
 
 __/dji_osdk_ros/modules/osdkosal_linux.i: __/dji_osdk_ros/modules/osdkosal_linux.c.i
@@ -224,7 +224,7 @@ __/dji_osdk_ros/modules/osdkosal_linux.i: __/dji_osdk_ros/modules/osdkosal_linux
 
 # target to preprocess a source file
 __/dji_osdk_ros/modules/osdkosal_linux.c.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.i
 .PHONY : __/dji_osdk_ros/modules/osdkosal_linux.c.i
 
 __/dji_osdk_ros/modules/osdkosal_linux.s: __/dji_osdk_ros/modules/osdkosal_linux.c.s
@@ -233,7 +233,7 @@ __/dji_osdk_ros/modules/osdkosal_linux.s: __/dji_osdk_ros/modules/osdkosal_linux
 
 # target to generate assembly for a file
 __/dji_osdk_ros/modules/osdkosal_linux.c.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/__/dji_osdk_ros/modules/osdkosal_linux.c.s
 .PHONY : __/dji_osdk_ros/modules/osdkosal_linux.c.s
 
 dji_linux_environment.o: dji_linux_environment.cpp.o
@@ -242,7 +242,7 @@ dji_linux_environment.o: dji_linux_environment.cpp.o
 
 # target to build an object file
 dji_linux_environment.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.o
 .PHONY : dji_linux_environment.cpp.o
 
 dji_linux_environment.i: dji_linux_environment.cpp.i
@@ -251,7 +251,7 @@ dji_linux_environment.i: dji_linux_environment.cpp.i
 
 # target to preprocess a source file
 dji_linux_environment.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.i
 .PHONY : dji_linux_environment.cpp.i
 
 dji_linux_environment.s: dji_linux_environment.cpp.s
@@ -260,7 +260,7 @@ dji_linux_environment.s: dji_linux_environment.cpp.s
 
 # target to generate assembly for a file
 dji_linux_environment.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_environment.cpp.s
 .PHONY : dji_linux_environment.cpp.s
 
 dji_linux_helpers.o: dji_linux_helpers.cpp.o
@@ -269,7 +269,7 @@ dji_linux_helpers.o: dji_linux_helpers.cpp.o
 
 # target to build an object file
 dji_linux_helpers.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.o
 .PHONY : dji_linux_helpers.cpp.o
 
 dji_linux_helpers.i: dji_linux_helpers.cpp.i
@@ -278,7 +278,7 @@ dji_linux_helpers.i: dji_linux_helpers.cpp.i
 
 # target to preprocess a source file
 dji_linux_helpers.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.i
 .PHONY : dji_linux_helpers.cpp.i
 
 dji_linux_helpers.s: dji_linux_helpers.cpp.s
@@ -287,7 +287,7 @@ dji_linux_helpers.s: dji_linux_helpers.cpp.s
 
 # target to generate assembly for a file
 dji_linux_helpers.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/dji_linux_helpers.cpp.s
 .PHONY : dji_linux_helpers.cpp.s
 
 main.o: main.cpp.o
@@ -296,7 +296,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -305,7 +305,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -314,7 +314,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 modules/dji_sdk_node.o: modules/dji_sdk_node.cpp.o
@@ -323,7 +323,7 @@ modules/dji_sdk_node.o: modules/dji_sdk_node.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.o
 .PHONY : modules/dji_sdk_node.cpp.o
 
 modules/dji_sdk_node.i: modules/dji_sdk_node.cpp.i
@@ -332,7 +332,7 @@ modules/dji_sdk_node.i: modules/dji_sdk_node.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.i
 .PHONY : modules/dji_sdk_node.cpp.i
 
 modules/dji_sdk_node.s: modules/dji_sdk_node.cpp.s
@@ -341,7 +341,7 @@ modules/dji_sdk_node.s: modules/dji_sdk_node.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node.cpp.s
 .PHONY : modules/dji_sdk_node.cpp.s
 
 modules/dji_sdk_node_control.o: modules/dji_sdk_node_control.cpp.o
@@ -350,7 +350,7 @@ modules/dji_sdk_node_control.o: modules/dji_sdk_node_control.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_control.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.o
 .PHONY : modules/dji_sdk_node_control.cpp.o
 
 modules/dji_sdk_node_control.i: modules/dji_sdk_node_control.cpp.i
@@ -359,7 +359,7 @@ modules/dji_sdk_node_control.i: modules/dji_sdk_node_control.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_control.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.i
 .PHONY : modules/dji_sdk_node_control.cpp.i
 
 modules/dji_sdk_node_control.s: modules/dji_sdk_node_control.cpp.s
@@ -368,7 +368,7 @@ modules/dji_sdk_node_control.s: modules/dji_sdk_node_control.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_control.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_control.cpp.s
 .PHONY : modules/dji_sdk_node_control.cpp.s
 
 modules/dji_sdk_node_mission_services.o: modules/dji_sdk_node_mission_services.cpp.o
@@ -377,7 +377,7 @@ modules/dji_sdk_node_mission_services.o: modules/dji_sdk_node_mission_services.c
 
 # target to build an object file
 modules/dji_sdk_node_mission_services.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.o
 .PHONY : modules/dji_sdk_node_mission_services.cpp.o
 
 modules/dji_sdk_node_mission_services.i: modules/dji_sdk_node_mission_services.cpp.i
@@ -386,7 +386,7 @@ modules/dji_sdk_node_mission_services.i: modules/dji_sdk_node_mission_services.c
 
 # target to preprocess a source file
 modules/dji_sdk_node_mission_services.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.i
 .PHONY : modules/dji_sdk_node_mission_services.cpp.i
 
 modules/dji_sdk_node_mission_services.s: modules/dji_sdk_node_mission_services.cpp.s
@@ -395,7 +395,7 @@ modules/dji_sdk_node_mission_services.s: modules/dji_sdk_node_mission_services.c
 
 # target to generate assembly for a file
 modules/dji_sdk_node_mission_services.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mission_services.cpp.s
 .PHONY : modules/dji_sdk_node_mission_services.cpp.s
 
 modules/dji_sdk_node_mobile_comm.o: modules/dji_sdk_node_mobile_comm.cpp.o
@@ -404,7 +404,7 @@ modules/dji_sdk_node_mobile_comm.o: modules/dji_sdk_node_mobile_comm.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_mobile_comm.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.o
 .PHONY : modules/dji_sdk_node_mobile_comm.cpp.o
 
 modules/dji_sdk_node_mobile_comm.i: modules/dji_sdk_node_mobile_comm.cpp.i
@@ -413,7 +413,7 @@ modules/dji_sdk_node_mobile_comm.i: modules/dji_sdk_node_mobile_comm.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_mobile_comm.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.i
 .PHONY : modules/dji_sdk_node_mobile_comm.cpp.i
 
 modules/dji_sdk_node_mobile_comm.s: modules/dji_sdk_node_mobile_comm.cpp.s
@@ -422,7 +422,7 @@ modules/dji_sdk_node_mobile_comm.s: modules/dji_sdk_node_mobile_comm.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_mobile_comm.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_mobile_comm.cpp.s
 .PHONY : modules/dji_sdk_node_mobile_comm.cpp.s
 
 modules/dji_sdk_node_payload_comm.o: modules/dji_sdk_node_payload_comm.cpp.o
@@ -431,7 +431,7 @@ modules/dji_sdk_node_payload_comm.o: modules/dji_sdk_node_payload_comm.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_payload_comm.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.o
 .PHONY : modules/dji_sdk_node_payload_comm.cpp.o
 
 modules/dji_sdk_node_payload_comm.i: modules/dji_sdk_node_payload_comm.cpp.i
@@ -440,7 +440,7 @@ modules/dji_sdk_node_payload_comm.i: modules/dji_sdk_node_payload_comm.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_payload_comm.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.i
 .PHONY : modules/dji_sdk_node_payload_comm.cpp.i
 
 modules/dji_sdk_node_payload_comm.s: modules/dji_sdk_node_payload_comm.cpp.s
@@ -449,7 +449,7 @@ modules/dji_sdk_node_payload_comm.s: modules/dji_sdk_node_payload_comm.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_payload_comm.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_payload_comm.cpp.s
 .PHONY : modules/dji_sdk_node_payload_comm.cpp.s
 
 modules/dji_sdk_node_publisher.o: modules/dji_sdk_node_publisher.cpp.o
@@ -458,7 +458,7 @@ modules/dji_sdk_node_publisher.o: modules/dji_sdk_node_publisher.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_publisher.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.o
 .PHONY : modules/dji_sdk_node_publisher.cpp.o
 
 modules/dji_sdk_node_publisher.i: modules/dji_sdk_node_publisher.cpp.i
@@ -467,7 +467,7 @@ modules/dji_sdk_node_publisher.i: modules/dji_sdk_node_publisher.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_publisher.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.i
 .PHONY : modules/dji_sdk_node_publisher.cpp.i
 
 modules/dji_sdk_node_publisher.s: modules/dji_sdk_node_publisher.cpp.s
@@ -476,7 +476,7 @@ modules/dji_sdk_node_publisher.s: modules/dji_sdk_node_publisher.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_publisher.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_publisher.cpp.s
 .PHONY : modules/dji_sdk_node_publisher.cpp.s
 
 modules/dji_sdk_node_services.o: modules/dji_sdk_node_services.cpp.o
@@ -485,7 +485,7 @@ modules/dji_sdk_node_services.o: modules/dji_sdk_node_services.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_services.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.o
 .PHONY : modules/dji_sdk_node_services.cpp.o
 
 modules/dji_sdk_node_services.i: modules/dji_sdk_node_services.cpp.i
@@ -494,7 +494,7 @@ modules/dji_sdk_node_services.i: modules/dji_sdk_node_services.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_services.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.i
 .PHONY : modules/dji_sdk_node_services.cpp.i
 
 modules/dji_sdk_node_services.s: modules/dji_sdk_node_services.cpp.s
@@ -503,7 +503,7 @@ modules/dji_sdk_node_services.s: modules/dji_sdk_node_services.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_services.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_services.cpp.s
 .PHONY : modules/dji_sdk_node_services.cpp.s
 
 modules/dji_sdk_node_subscriber.o: modules/dji_sdk_node_subscriber.cpp.o
@@ -512,7 +512,7 @@ modules/dji_sdk_node_subscriber.o: modules/dji_sdk_node_subscriber.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_subscriber.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.o
 .PHONY : modules/dji_sdk_node_subscriber.cpp.o
 
 modules/dji_sdk_node_subscriber.i: modules/dji_sdk_node_subscriber.cpp.i
@@ -521,7 +521,7 @@ modules/dji_sdk_node_subscriber.i: modules/dji_sdk_node_subscriber.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_subscriber.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.i
 .PHONY : modules/dji_sdk_node_subscriber.cpp.i
 
 modules/dji_sdk_node_subscriber.s: modules/dji_sdk_node_subscriber.cpp.s
@@ -530,7 +530,7 @@ modules/dji_sdk_node_subscriber.s: modules/dji_sdk_node_subscriber.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_subscriber.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_subscriber.cpp.s
 .PHONY : modules/dji_sdk_node_subscriber.cpp.s
 
 modules/dji_sdk_node_time_sync.o: modules/dji_sdk_node_time_sync.cpp.o
@@ -539,7 +539,7 @@ modules/dji_sdk_node_time_sync.o: modules/dji_sdk_node_time_sync.cpp.o
 
 # target to build an object file
 modules/dji_sdk_node_time_sync.cpp.o:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.o
 .PHONY : modules/dji_sdk_node_time_sync.cpp.o
 
 modules/dji_sdk_node_time_sync.i: modules/dji_sdk_node_time_sync.cpp.i
@@ -548,7 +548,7 @@ modules/dji_sdk_node_time_sync.i: modules/dji_sdk_node_time_sync.cpp.i
 
 # target to preprocess a source file
 modules/dji_sdk_node_time_sync.cpp.i:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.i
 .PHONY : modules/dji_sdk_node_time_sync.cpp.i
 
 modules/dji_sdk_node_time_sync.s: modules/dji_sdk_node_time_sync.cpp.s
@@ -557,7 +557,7 @@ modules/dji_sdk_node_time_sync.s: modules/dji_sdk_node_time_sync.cpp.s
 
 # target to generate assembly for a file
 modules/dji_sdk_node_time_sync.cpp.s:
-	cd /home/qin/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s
+	cd /home/erfan/M300_ws/build && $(MAKE) -f dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/build.make dji_osdk_ros_cv4/src/dji_osdk_ros_obsoleted/CMakeFiles/dji_sdk_node.dir/modules/dji_sdk_node_time_sync.cpp.s
 .PHONY : modules/dji_sdk_node_time_sync.cpp.s
 
 # Help Target
@@ -627,6 +627,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -67,14 +67,14 @@ set(opencv_tests_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(opencv_tests_SOURCE_PREFIX /home/qin/M300_ws/src/cv_bridge/opencv_tests)
-  set(opencv_tests_DEVEL_PREFIX /home/qin/M300_ws/devel)
+  set(opencv_tests_SOURCE_PREFIX /home/erfan/M300_ws/src/cv_bridge/opencv_tests)
+  set(opencv_tests_DEVEL_PREFIX /home/erfan/M300_ws/devel)
   set(opencv_tests_INSTALL_PREFIX "")
   set(opencv_tests_PREFIX ${opencv_tests_DEVEL_PREFIX})
 else()
   set(opencv_tests_SOURCE_PREFIX "")
   set(opencv_tests_DEVEL_PREFIX "")
-  set(opencv_tests_INSTALL_PREFIX /home/qin/M300_ws/install)
+  set(opencv_tests_INSTALL_PREFIX /home/erfan/M300_ws/install)
   set(opencv_tests_PREFIX ${opencv_tests_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/qin/M300_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/erfan/M300_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
