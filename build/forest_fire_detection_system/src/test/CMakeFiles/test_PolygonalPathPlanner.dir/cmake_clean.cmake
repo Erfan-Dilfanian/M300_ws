@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_PolygonalPathPlanner"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_PolygonalPathPlanner.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_PolygonalPathPlanner"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_PolygonalPathPlanner.pdb"
   "CMakeFiles/test_PolygonalPathPlanner.dir/test_PolygonalPathPlanner.cpp.o"
 )
 

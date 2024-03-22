@@ -2,7 +2,7 @@
 
 message(STATUS "forest_fire_detection_system: 3 messages, 2 services")
 
-set(MSG_I_FLAGS "-Iforest_fire_detection_system:/home/erfan/M300_ws/src/forest_fire_detection_system/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iforest_fire_detection_system:/home/qin/M300_ws/src/forest_fire_detection_system/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,29 +17,29 @@ add_custom_target(forest_fire_detection_system_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" ""
 )
 
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "forest_fire_detection_system" "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" ""
 )
 
 #
@@ -49,19 +49,19 @@ add_custom_target(_forest_fire_detection_system_generate_messages_check_deps_${_
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_cpp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_cpp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/forest_fire_detection_system
@@ -69,13 +69,13 @@ _generate_msg_cpp(forest_fire_detection_system
 
 ### Generating Services
 _generate_srv_cpp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_srv_cpp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/forest_fire_detection_system
@@ -93,15 +93,15 @@ add_custom_target(forest_fire_detection_system_generate_messages_cpp
 add_dependencies(forest_fire_detection_system_generate_messages forest_fire_detection_system_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_cpp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_cpp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_cpp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_cpp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_cpp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -114,19 +114,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS forest_fire_detection_system_genera
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_eus(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_eus(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/forest_fire_detection_system
@@ -134,13 +134,13 @@ _generate_msg_eus(forest_fire_detection_system
 
 ### Generating Services
 _generate_srv_eus(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_srv_eus(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/forest_fire_detection_system
@@ -158,15 +158,15 @@ add_custom_target(forest_fire_detection_system_generate_messages_eus
 add_dependencies(forest_fire_detection_system_generate_messages forest_fire_detection_system_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_eus _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_eus _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_eus _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_eus _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_eus _forest_fire_detection_system_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -179,19 +179,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS forest_fire_detection_system_genera
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_lisp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_lisp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/forest_fire_detection_system
@@ -199,13 +199,13 @@ _generate_msg_lisp(forest_fire_detection_system
 
 ### Generating Services
 _generate_srv_lisp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_srv_lisp(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/forest_fire_detection_system
@@ -223,15 +223,15 @@ add_custom_target(forest_fire_detection_system_generate_messages_lisp
 add_dependencies(forest_fire_detection_system_generate_messages forest_fire_detection_system_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_lisp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_lisp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_lisp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_lisp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_lisp _forest_fire_detection_system_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -244,19 +244,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS forest_fire_detection_system_genera
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_nodejs(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_nodejs(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/forest_fire_detection_system
@@ -264,13 +264,13 @@ _generate_msg_nodejs(forest_fire_detection_system
 
 ### Generating Services
 _generate_srv_nodejs(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_srv_nodejs(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/forest_fire_detection_system
@@ -288,15 +288,15 @@ add_custom_target(forest_fire_detection_system_generate_messages_nodejs
 add_dependencies(forest_fire_detection_system_generate_messages forest_fire_detection_system_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_nodejs _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_nodejs _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_nodejs _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_nodejs _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_nodejs _forest_fire_detection_system_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -309,19 +309,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS forest_fire_detection_system_genera
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_py(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_msg_py(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/forest_fire_detection_system
@@ -329,13 +329,13 @@ _generate_msg_py(forest_fire_detection_system
 
 ### Generating Services
 _generate_srv_py(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/forest_fire_detection_system
 )
 _generate_srv_py(forest_fire_detection_system
-  "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
+  "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/forest_fire_detection_system
@@ -353,15 +353,15 @@ add_custom_target(forest_fire_detection_system_generate_messages_py
 add_dependencies(forest_fire_detection_system_generate_messages forest_fire_detection_system_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireFuse.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_py _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireIR.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_py _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/msg/SingleFireRGB.msg" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_py _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/SegmentSmoke.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_py _forest_fire_detection_system_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/erfan/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
+get_filename_component(_filename "/home/qin/M300_ws/src/forest_fire_detection_system/srv/ToggleGrabDataDepthEstimation.srv" NAME_WE)
 add_dependencies(forest_fire_detection_system_generate_messages_py _forest_fire_detection_system_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_PrintControl"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_PrintControl.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_PrintControl"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_PrintControl.pdb"
   "CMakeFiles/test_PrintControl.dir/test_PrintControl.cpp.o"
 )
 

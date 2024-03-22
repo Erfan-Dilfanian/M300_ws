@@ -67,14 +67,14 @@ set(dji_osdk_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(dji_osdk_ros_SOURCE_PREFIX /home/erfan/M300_ws/src/dji_osdk_ros_cv4)
-  set(dji_osdk_ros_DEVEL_PREFIX /home/erfan/M300_ws/devel)
+  set(dji_osdk_ros_SOURCE_PREFIX /home/qin/M300_ws/src/dji_osdk_ros_cv4)
+  set(dji_osdk_ros_DEVEL_PREFIX /home/qin/M300_ws/devel)
   set(dji_osdk_ros_INSTALL_PREFIX "")
   set(dji_osdk_ros_PREFIX ${dji_osdk_ros_DEVEL_PREFIX})
 else()
   set(dji_osdk_ros_SOURCE_PREFIX "")
   set(dji_osdk_ros_DEVEL_PREFIX "")
-  set(dji_osdk_ros_INSTALL_PREFIX /home/erfan/M300_ws/install)
+  set(dji_osdk_ros_INSTALL_PREFIX /home/qin/M300_ws/install)
   set(dji_osdk_ros_PREFIX ${dji_osdk_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dji_osdk_ros_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/erfan/M300_ws/devel/include;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include " STREQUAL " ")
+if(NOT "/home/qin/M300_ws/devel/include;/home/qin/M300_ws/src/dji_osdk_ros_cv4/include " STREQUAL " ")
   set(dji_osdk_ros_INCLUDE_DIRS "")
-  set(_include_dirs "/home/erfan/M300_ws/devel/include;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include")
+  set(_include_dirs "/home/qin/M300_ws/devel/include;/home/qin/M300_ws/src/dji_osdk_ros_cv4/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://developer.dji.com/onboard-sdk/documentation/github-platform-docs/ROS/README.html " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/erfan/M300_ws/devel/include;/home/erfan/M300_ws/src/dji_osdk_ros_c
         message(FATAL_ERROR "Project 'dji_osdk_ros' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'dji_osdk_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/erfan/M300_ws/src/dji_osdk_ros_cv4/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'dji_osdk_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/qin/M300_ws/src/dji_osdk_ros_cv4/${idir}'.  ${_report}")
     endif()
     _list_append_unique(dji_osdk_ros_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/erfan/M300_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/qin/M300_ws/devel/lib;/home/qin/M300_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

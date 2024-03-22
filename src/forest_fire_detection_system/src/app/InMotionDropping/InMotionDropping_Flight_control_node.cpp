@@ -1518,21 +1518,7 @@ int main(int argc, char **argv) {
             std::cin >> yaw_const;
 
 
-            moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
-
-            float theta_dot = 1;
-            float radius = 5;
-            float theta_step_degrees=1;
-            float theta_step_radians = theta_step_degrees * M_PI / 180.0;
-            float time_step = theta_step_radians / theta_dot;
-
-
-            for(float theta = 0; theta < 360; theta = theta + theta_step_degrees)
-            {
-                // time_step = (M_PI/theta_dot)/theta_step;
-                CircularPlanner({-radius*theta_dot*sind(theta), radius*theta_dot*sind(theta), 0}, time_step*1000);
-
-                     }
+ 
 
 
             float zz_l = 8;  //zigzag_length
@@ -1698,6 +1684,30 @@ int main(int argc, char **argv) {
 
             if (in_or_out == 'a') {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
+                
+
+
+            float theta_dot = 0.1;
+            float radius = 7;
+            float theta_step_degrees=10;
+            float theta_step_radians = theta_step_degrees * M_PI / 180.0;
+            float total_time = (2*M_PI)/0.1;
+            float number_of_divisions = 360/theta_step_degrees;
+            float time_step = total_time/number_of_divisions;
+            // float time_step = theta_step_radians / theta_dot;
+            float Vx;
+            float Vy;
+
+
+            for(float theta = 0; theta < 360; theta = theta + theta_step_degrees)
+            {
+                // time_step = (M_PI/theta_dot)/theta_step;
+                Vx = radius*theta_dot*cosd(theta);
+                Vy = radius*theta_dot*sind(theta);
+                cout<<"Vx is:"<<Vx<<" Vy is:"<<Vy<<"time step in ms is:"<<time_step*1000<<endl;
+                CircularPlanner({Vx,Vy , 0}, time_step*1000);
+
+                     }
 
                 float zz_l = 12;  //zigzag_length
                 float zz_w = 6;   //zigzag_width
@@ -1774,7 +1784,7 @@ int main(int argc, char **argv) {
                 n4.z = 0;
                 n4.id = 1;
 
-
+/*
                 node n5;
                 n2.x = 45.458375161942016;
                 n2.y = -73.93236483111184;
@@ -1822,7 +1832,7 @@ int main(int argc, char **argv) {
                 n4.y = -73.93241042866589;
                 n4.z = 0;
                 n4.id = 4;
-
+*/
 
 
                 // Push nodes into the vector

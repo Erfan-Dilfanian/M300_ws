@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_locate_boundary"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_locate_boundary.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_locate_boundary"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_locate_boundary.pdb"
   "CMakeFiles/test_locate_boundary.dir/test_locate_boundary.cpp.o"
 )
 

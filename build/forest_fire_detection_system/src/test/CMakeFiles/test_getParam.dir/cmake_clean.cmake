@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_getParam"
-  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/test_getParam.pdb"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_getParam"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_getParam.pdb"
   "CMakeFiles/test_getParam.dir/test_getParam.cpp.o"
 )
 

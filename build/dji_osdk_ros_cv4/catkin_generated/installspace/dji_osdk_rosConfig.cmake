@@ -67,14 +67,14 @@ set(dji_osdk_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(dji_osdk_ros_SOURCE_PREFIX /home/erfan/M300_ws/src/dji_osdk_ros_cv4)
-  set(dji_osdk_ros_DEVEL_PREFIX /home/erfan/M300_ws/devel)
+  set(dji_osdk_ros_SOURCE_PREFIX /home/qin/M300_ws/src/dji_osdk_ros_cv4)
+  set(dji_osdk_ros_DEVEL_PREFIX /home/qin/M300_ws/devel)
   set(dji_osdk_ros_INSTALL_PREFIX "")
   set(dji_osdk_ros_PREFIX ${dji_osdk_ros_DEVEL_PREFIX})
 else()
   set(dji_osdk_ros_SOURCE_PREFIX "")
   set(dji_osdk_ros_DEVEL_PREFIX "")
-  set(dji_osdk_ros_INSTALL_PREFIX /home/erfan/M300_ws/install)
+  set(dji_osdk_ros_INSTALL_PREFIX /home/qin/M300_ws/install)
   set(dji_osdk_ros_PREFIX ${dji_osdk_ros_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/erfan/M300_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/qin/M300_ws/install/lib;/home/qin/M300_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

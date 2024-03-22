@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPoint.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraFocusPoint.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraFocusPointRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/CameraFocusPointRequest.h
 dji_osdk_ros/CameraFocusPointResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraFocusPointResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomPara.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomPara.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraSetZoomParaRequest.h
@@ -54,7 +54,7 @@ dji_osdk_ros/CameraSetZoomParaRequest.h
 dji_osdk_ros/CameraSetZoomParaResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraSetZoomParaResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPoint.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPoint.h
 ros/service_traits.h
 -
 dji_osdk_ros/CameraTapZoomPointRequest.h
@@ -94,7 +94,7 @@ dji_osdk_ros/CameraTapZoomPointRequest.h
 dji_osdk_ros/CameraTapZoomPointResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointRequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/CameraTapZoomPointResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalAction.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GimbalAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/GimbalActionRequest.h
@@ -134,7 +134,7 @@ dji_osdk_ros/GimbalActionRequest.h
 dji_osdk_ros/GimbalActionResponse.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalActionRequest.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GimbalActionRequest.h
 string
 -
 vector
@@ -152,7 +152,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/M300_ws/devel/include/dji_osdk_ros/GimbalActionResponse.h
+/home/qin/M300_ws/devel/include/dji_osdk_ros/GimbalActionResponse.h
 string
 -
 vector
@@ -168,7 +168,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/erfan/M300_ws/devel/include/forest_fire_detection_system/SingleFireIR.h
+/home/qin/M300_ws/devel/include/forest_fire_detection_system/SingleFireIR.h
 string
 -
 vector
@@ -186,13 +186,13 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
+/home/qin/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
 dji_type.hpp
 -
 vector
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/common/CommonTypes.hpp
 cmath
 -
 iostream
@@ -202,9 +202,9 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/PIDController.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/PIDController.hpp
 iostream
 -
 tools/MathLib.hpp
@@ -212,9 +212,9 @@ tools/MathLib.hpp
 tools/SystemLib.hpp
 -
 ControllerBase.hpp
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/modules/BasicController/ControllerBase.hpp
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/modules/GimbalCameraOperator/GimbalCameraOperator.hpp
 Eigen/Core
 -
 dji_osdk_ros/CameraFocusPoint.h
@@ -246,13 +246,13 @@ tools/PrintControl/FileWritter.hpp
 tools/SystemLib.hpp
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/MathLib.hpp
 cmath
 -
 common/CommonTypes.hpp
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/FileWritter.hpp
 tools/PrintControl/PrintCtrlMacro.h
 -
 iostream
@@ -262,7 +262,7 @@ string
 tools/SystemLib.hpp
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -272,7 +272,7 @@ cstdlib
 cstring
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
+/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/SystemLib.hpp
 ros/ros.h
 -
 sys/time.h
@@ -304,7 +304,7 @@ string
 glog/logging.h
 -
 
-/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_GimbalCameraOperator.cpp
+/home/qin/M300_ws/src/forest_fire_detection_system/src/test/test_GimbalCameraOperator.cpp
 modules/GimbalCameraOperator/GimbalCameraOperator.hpp
 -
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/image_geometry/image_geometry-utest"
-  "/home/erfan/M300_ws/devel/lib/image_geometry/image_geometry-utest.pdb"
+  "/home/qin/M300_ws/devel/lib/image_geometry/image_geometry-utest"
+  "/home/qin/M300_ws/devel/lib/image_geometry/image_geometry-utest.pdb"
   "CMakeFiles/image_geometry-utest.dir/utest.cpp.o"
 )
 
