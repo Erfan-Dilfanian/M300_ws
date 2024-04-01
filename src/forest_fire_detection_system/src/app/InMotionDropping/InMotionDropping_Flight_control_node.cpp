@@ -1999,7 +1999,7 @@ int main(int argc, char **argv) {
                                 {starting_point.x - recent_local_pos[0], starting_point.y - recent_local_pos[1], 0, 0},
                                 1, 3);  // note that x y z goes into this funciton
 
-                yaw_adjustment = Rad2Deg(tan(best_line.slope));
+                yaw_adjustment = Rad2Deg(atan(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
