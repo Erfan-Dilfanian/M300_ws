@@ -1518,9 +1518,6 @@ int main(int argc, char **argv) {
             std::cin >> yaw_const;
 
 
- 
-
-
             float zz_l = 8;  //zigzag_length
             float zz_w = 4;   //zigzag_width
 
@@ -1684,30 +1681,28 @@ int main(int argc, char **argv) {
 
             if (in_or_out == 'a') {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
-                
 
 
-            float theta_dot = 0.1;
-            float radius = 7;
-            float theta_step_degrees=10;
-            float theta_step_radians = theta_step_degrees * M_PI / 180.0;
-            float total_time = (2*M_PI)/0.1;
-            float number_of_divisions = 360/theta_step_degrees;
-            float time_step = total_time/number_of_divisions;
-            // float time_step = theta_step_radians / theta_dot;
-            float Vx;
-            float Vy;
+                float theta_dot = 0.1;
+                float radius = 7;
+                float theta_step_degrees = 10;
+                float theta_step_radians = theta_step_degrees * M_PI / 180.0;
+                float total_time = (2 * M_PI) / 0.1;
+                float number_of_divisions = 360 / theta_step_degrees;
+                float time_step = total_time / number_of_divisions;
+                // float time_step = theta_step_radians / theta_dot;
+                float Vx;
+                float Vy;
 
 
-            for(float theta = 0; theta < 360; theta = theta + theta_step_degrees)
-            {
-                // time_step = (M_PI/theta_dot)/theta_step;
-                Vx = radius*theta_dot*cosd(theta);
-                Vy = radius*theta_dot*sind(theta);
-                cout<<"Vx is:"<<Vx<<" Vy is:"<<Vy<<"time step in ms is:"<<time_step*1000<<endl;
-                CircularPlanner({Vx,Vy , 0,theta_dot}, time_step*1000);
+                for (float theta = 0; theta < 360; theta = theta + theta_step_degrees) {
+                    // time_step = (M_PI/theta_dot)/theta_step;
+                    Vx = radius * theta_dot * cosd(theta);
+                    Vy = radius * theta_dot * sind(theta);
+                    cout << "Vx is:" << Vx << " Vy is:" << Vy << "time step in ms is:" << time_step * 1000 << endl;
+                    CircularPlanner({Vx, Vy, 0, theta_dot}, time_step * 1000);
 
-                     }
+                }
 
                 float zz_l = 12;  //zigzag_length
                 float zz_w = 6;   //zigzag_width
@@ -1842,9 +1837,6 @@ int main(int argc, char **argv) {
                 n1.id = 1;
 
 
-
-
-
                 node n2;
                 n2.x = 45.458375161942016;
                 n2.y = -73.93236483111184;
@@ -1852,13 +1844,11 @@ int main(int argc, char **argv) {
                 n2.id = 2;
 
 
-
                 node n3;
                 n3.x = 45.45840855632869;
                 n3.y = -73.93236214890278;
                 n3.z = 0;
                 n3.id = 3;
-
 
 
                 node n4;
@@ -2155,10 +2145,8 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 }
 
 
-
-void CircularPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs)
-{
-    double originTime  = 0;
+void CircularPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs) {
+    double originTime = 0;
     double currentTime = 0;
     uint64_t elapsedTimeInMs = 0;
 
@@ -2177,12 +2165,11 @@ void CircularPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs)
     joystickAction.request.joystickCommand.z = offsetDesired.z;
     joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;
 
-    originTime  = ros::Time::now().toSec();
+    originTime = ros::Time::now().toSec();
     currentTime = originTime;
-    elapsedTimeInMs = (currentTime - originTime)*1000;
+    elapsedTimeInMs = (currentTime - originTime) * 1000;
 
-    while(elapsedTimeInMs <= timeMs)
-    {
+    while (elapsedTimeInMs <= timeMs) {
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         joystick_action_client.call(joystickAction);
