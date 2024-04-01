@@ -1989,23 +1989,23 @@ int main(int argc, char **argv) {
                 float yaw_adjustment; // yaw adjustment before approach
 
                 cout << "recent x :" << starting_point.x << "recent y :" << starting_point.y
-                     << endl;                           // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
+                     << endl;
+                // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
                 // note that tan2 output is in radian
                 // Also I added 90 as we want the yaw angle from x axis which is in Y direction
-                ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
 
 
                 moveByPosOffset(control_task,
                                 {starting_point.x - recent_local_pos[0], starting_point.y - recent_local_pos[1], 0, 0},
                                 1, 3);  // note that x y z goes into this funciton
 
-                yaw_adjustment = atan(best_line.slope) * 180.0 / M_PI;
+                yaw_adjustment = Rad2Deg(atan2(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
                 // velocity mission
 
-
+                cout<<"rotated and ready for approaching fire!"<<endl;
 
                 float abs_vel = 5; // absolute velocity that needs to be projected
 
