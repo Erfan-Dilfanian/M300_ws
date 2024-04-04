@@ -573,6 +573,26 @@ Point traverseOnLine(const Line &best_line, const Point &starting_point, double 
     return new_point;
 }
 
+class ZigZagParams {  // A class for ZigZag pattern parameters
+public:
+    float length; //zigzag length
+    float width;  //zigzag width
+    int number;   //number of zigzag
+    int split;  //division in each branch of the zigzag
+    float orientation; //orientation of the zigzag
+/*
+    ZigZagParams(float l, float w, float o, int n, int s) {
+        length = l;
+        width = w;
+        number = n;
+        split = s;
+        orientation = o;
+    }
+*/
+
+};
+
+void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params);
 
 int main(int argc, char **argv) {
 
@@ -1706,18 +1726,14 @@ int main(int argc, char **argv) {
 
                 float zz_l = 12;  //zigzag_length
                 float zz_w = 6;   //zigzag_width
-
-                moveByPosOffset(control_task, {-zz_l * sind(yaw_const), zz_l * cosd(yaw_const), 0, yaw_const}, 1,
-                                3);
-
-                moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0, yaw_const}, 1, 3);
-
-                moveByPosOffset(control_task, {zz_l * sind(yaw_const), -zz_l * cosd(yaw_const), 0.0, yaw_const},
-                                0.8,
-                                3);
-
-                moveByPosOffset(control_task, {zz_w * cosd(yaw_const), zz_w * sind(yaw_const), 0.0, yaw_const}, 1,
-                                3);
+                int n_zz = 2;
+                ZigZagParams zigzag_params;
+                zigzag_params.length = 12;
+                zigzag_params.width = 6;
+                zigzag_params.number = 1;
+                zigzag_params.split = 1;
+                zigzag_params.orientation = yaw_const;
+                ZigZagPlanner(control_task, zigzag_params);
 
 
                 ros::spinOnce();
@@ -2005,7 +2021,7 @@ int main(int argc, char **argv) {
                                 3);  // note that x y z goes into this funciton
                 // velocity mission
 
-                cout<<"rotated and ready for approaching fire!"<<endl;
+                cout << "rotated and ready for approaching fire!" << endl;
 
                 float abs_vel = 5; // absolute velocity that needs to be projected
 
@@ -2207,3 +2223,109 @@ sensor_msgs::NavSatFix getAverageGPS(
     return homeGPos;
 }
 
+void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
+
+
+    ros::spinOnce();
+
+    float lengths_steps[5][2] = {
+            {-zz_params.length * sind(zz_params.orientation) / zz_params.split,
+                                                                                zz_params.length *
+                                                                                cosd(zz_params.orientation) /
+                                                                                zz_params.split},
+            {zz_params.width * cosd(zz_params.orientation) / zz_params.split,   zz_params.width *
+                                                                                sind(zz_params.orientation) /
+                                                                                zz_params.split},
+            {zz_params.length * sind(zz_params.orientation) / zz_params.split,  -zz_params.length *
+                                                                                cosd(zz_params.orientation) /
+                                                                                zz_params.split},
+            {zz_params.width * cosd(zz_params.orientation) / zz_params.split,   zz_params.width *
+                                                                                sind(zz_params.orientation) /
+                                                                                zz_params.split},
+            {-zz_params.length * sind(zz_params.orientation) / zz_params.split, zz_params.length *
+                                                                                cosd(zz_params.orientation) /
+                                                                                zz_params.split}};
+    double frequency = 30; // 30 Hz
+    ros::Rate rate(frequency);
+
+
+
+    for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
+        for (int i = 0; i < zz_params.split; i++) {
+            moveByPosOffset(task, {lengths_steps[0][0], lengths_steps[0][1], 0, zz_params.orientation}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+        }
+
+        /* ROS_INFO("x is [%f]",local_position_.point.x);
+         ROS_INFO("y is [%f]",local_position_.point.y);
+         ROS_INFO("z is [%f]",local_position_.point.z);*/
+        //ROS_INFO("latitude is [%f]",gps_position_.latitude);
+        //ROS_INFO("longitude is [%f]",gps_position_.longitude);
+        //ros::spin(); //here is good?
+        ROS_INFO_STREAM("first zigzag line completed!");
+
+
+        for (int i = 0; i < zz_params.split; i++) {
+            moveByPosOffset(task, {lengths_steps[1][0], lengths_steps[1][1], 0, zz_params.orientation}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+
+
+        }
+
+        ros::spinOnce();
+
+
+        ROS_INFO_STREAM("Second zigzag line completed!");
+
+
+        for (int i = 0; i < zz_params.split; i++) {
+            moveByPosOffset(task, {lengths_steps[2][0], lengths_steps[2][1], 0, zz_params.orientation}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+        }
+
+        ros::spinOnce();
+
+        ROS_INFO_STREAM("Third zigzag line completed!");
+
+
+        for (int i = 0; i < zz_params.split; i++) {
+            moveByPosOffset(task, {lengths_steps[3][0], lengths_steps[3][1], 0, zz_params.orientation}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+
+        }
+
+        ros::spinOnce();
+
+
+        ROS_INFO_STREAM("Fourth zigzag line completed!");
+
+        for (int i = 0; i < zz_params.split; i++) {
+            moveByPosOffset(task, {lengths_steps[4][0], lengths_steps[4][1], 0, zz_params.orientation}, 1, 3);
+
+            ros::spinOnce();
+            rate.sleep();
+            cout << "ROS spinned" << endl;
+
+        }
+
+        ros::spinOnce();
+    }
+
+    // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);
+    // moveByPosOffset(control_task, {-3*sind(yaw_const), static_cast<DJI::OSDK::float32_t>(-6.5*cosd(yaw_const)), 0.0, yaw_const}, 1, 3);
+
+// the more generous you are in threshold, the more agile your drone would be
+
+}
