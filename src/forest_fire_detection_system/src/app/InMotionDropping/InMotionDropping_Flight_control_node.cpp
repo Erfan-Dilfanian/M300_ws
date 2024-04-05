@@ -222,6 +222,7 @@ public:
     int id; // id of the node
 };
 
+
 //Define vector to store all the nodes
 std::vector <node> nodes_vec;
 
@@ -389,22 +390,17 @@ void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) 
 
     cout << "LineOfFireCallback called";
 
-
-
-
-
     // Print number of fire spots
     LOG(INFO) << "The number of fire spots: " << fire_spots_GPS->poses.size() << ".";
 
     //Put subscribed fire spots number to N
     N = fire_spots_GPS->poses.size();
 
-    //Define array to store all the nodes
-    node nodes[N];
+    // Define array to store all the nodes
+    std::vector<node> nodes(fire_spots_GPS->poses.size());
 
-    //Put fire spots GPS into “nodes”， array of node class
+    // Put fire spots GPS into “nodes”， array of node class
     int i = 0;
-
     for (const geometry_msgs::Pose &fire_spot: fire_spots_GPS->poses) {
         nodes[i].id = i;                   // fire index
         nodes[i].x = fire_spot.position.x; // fire latitude
@@ -413,7 +409,8 @@ void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) 
         i++;
     }
 
-
+    // Copy nodes to nodes_vec
+    nodes_vec = nodes;
 }
 
 
@@ -594,6 +591,37 @@ public:
 
 void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params);
 
+Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GPS){
+    Point coordinates;
+    float homeGPS_posArray[3] = {homeGPos.latitude, homeGPos.longitude, homeGPos.altitude};
+
+    float current_GPS_posArray[3] = {gps_position_.latitude, gps_position_.longitude, gps_position_.altitude};
+
+    ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
+    ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
+    ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
+
+    ROS_INFO("currentpos latitude is [%f]", current_GPS_posArray[0]);
+    ROS_INFO("currentgpos longitude is [%f]", current_GPS_posArray[1]);
+    ROS_INFO("currentgpos attitude is [%f]", current_GPS_posArray[2]);
+
+    // ros::Duration(2).sleep();
+
+    float m[3];
+
+
+    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+
+    ROS_INFO("x is [%f]", m[0]);
+    ROS_INFO("y is [%f]", m[1]);
+
+    m[0] = coordinates.x;
+    m[1] = coordinates.y;
+
+    return coordinates;
+
+}
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -606,7 +634,7 @@ int main(int argc, char **argv) {
     //}
 
     float release_delay;
-
+/*
     std::string filename;
     std::cout << "Enter the name of the file: ";
     std::cin >> filename;
@@ -623,7 +651,7 @@ int main(int argc, char **argv) {
     // Write header
     outputFile
             << "M300_position: (s)\tM300.lat \tM300.long \tM300.alt \t fire.lat \t fire.long\t fire.alt \t fire_gps_expected.lat \t fire_gps_expected.long \tfire_gps_expected.alt \n  ";
-
+*/
     ros::init(argc, argv, "flight_control_node");
     ros::NodeHandle nh;
     task_control_client = nh.serviceClient<FlightTaskControl>("/flight_task_control");
@@ -803,7 +831,7 @@ int main(int argc, char **argv) {
 
 
 
-
+    Point recent_drone_coord; // recent drone coordinates
 
 
 
@@ -1072,7 +1100,7 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                        outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
                                    << std::setprecision(10)
@@ -1081,7 +1109,7 @@ int main(int argc, char **argv) {
                                    << std::setprecision(10)
                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
                                    << fire_gps_expected.altitude << "\n";
-
+*/
                     }
 
 
@@ -1104,6 +1132,8 @@ int main(int argc, char **argv) {
 
                     ROS_INFO("x is [%f]", m[0]);
                     ROS_INFO("y is [%f]", m[1]);
+
+
 
 
 
@@ -1141,7 +1171,7 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                        outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
                                    << std::setprecision(10)
@@ -1150,7 +1180,7 @@ int main(int argc, char **argv) {
                                    << std::setprecision(10)
                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
                                    << fire_gps_expected.altitude << "\n";
-
+*/
 
                     }
 
@@ -1193,7 +1223,7 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                        outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                      /*  outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
                                    << std::setprecision(10)
@@ -1202,7 +1232,7 @@ int main(int argc, char **argv) {
                                    << std::setprecision(10)
                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
                                    << fire_gps_expected.altitude << "\n";
-
+*/
                     }
 
                     ros::spinOnce();
@@ -1235,7 +1265,7 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                        outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                   /*     outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
                                    << std::setprecision(10)
@@ -1244,7 +1274,7 @@ int main(int argc, char **argv) {
                                    << std::setprecision(10)
                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
                                    << fire_gps_expected.altitude << "\n";
-
+*/
                     }
 
                     ros::spinOnce();
@@ -1277,7 +1307,7 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                        outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
                                    << std::setprecision(10)
@@ -1286,7 +1316,7 @@ int main(int argc, char **argv) {
                                    << std::setprecision(10)
                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
                                    << fire_gps_expected.altitude << "\n";
-
+*/
                     }
 
                     ros::spinOnce();
@@ -1677,8 +1707,8 @@ int main(int argc, char **argv) {
     if (scenario == 'f') {
         // float homeGPS_posArray[3];
 
-        cout << "we are inside scenario's f if loop" << endl;  // for debug
-        //Get fire GPS position and use callback function to put all the deteced fire spots GPS info and sequence to nodes_vec, a global vector
+        cout << "we are inside scenario's f code" << endl;  // for debug
+        //Get fire GPS position and use callback function to put all the detected fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
         float yaw_const;
@@ -1699,7 +1729,6 @@ int main(int argc, char **argv) {
             ROS_INFO_STREAM("Takeoff task successful");
 
 
-            if (in_or_out == 'a') {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
 
@@ -1732,7 +1761,7 @@ int main(int argc, char **argv) {
                 zigzag_params.width = 6;
                 zigzag_params.number = 1;
                 zigzag_params.split = 1;
-                zigzag_params.orientation = yaw_const;
+                zigzag_params.orientation = yaw_const; // next time read it from a yaml file
                 ZigZagPlanner(control_task, zigzag_params);
 
 
@@ -1740,6 +1769,16 @@ int main(int argc, char **argv) {
 
                 // Clear the vector if needed
                 nodes_vec.clear();
+            int detect_index;//detection_starter_indicator
+            if (in_or_out == 'b') {
+                bool SLAM_flag = 0;
+                while (SLAM_flag == 0) {
+                    cout << "please rosrun detection and SLAM nodes. Then press 1" << endl;
+                    cin >> detect_index;
+                    if (detect_index == 1) { SLAM_flag = 1; }
+                    else { cout << "Please press 1 if SLAM is initiated"; }
+                }
+            }
 
                 /* for parking lot:
                 // Create and initialize node objects
@@ -1845,7 +1884,7 @@ int main(int argc, char **argv) {
                 n4.z = 0;
                 n4.id = 4;
 */
-
+/*
                 node n1;
                 n1.x = 45.45836575506897;
                 n1.y = -73.93233197405084;
@@ -1878,6 +1917,31 @@ int main(int argc, char **argv) {
                 nodes_vec.push_back(n2);
                 nodes_vec.push_back(n3);
                 nodes_vec.push_back(n4);
+                */
+
+            if (in_or_out == 'a') {
+
+                // Load YAML file
+                YAML::Node config = YAML::LoadFile("nodes.yaml");
+
+                // Check if "nodes" key exists
+                if (config["nodes"]) {
+                    for (const auto &n: config["nodes"]) {
+                        node temp;
+                        temp.id = n["id"].as<int>();
+                        temp.x = n["x"].as<float>();
+                        temp.y = n["y"].as<float>();
+                        temp.z = n["z"].as<float>();
+                        nodes_vec.push_back(temp);
+                    }
+                }
+
+                // Print loaded nodes
+                for (const auto &n: nodes_vec) {
+                    std::cout << "Node ID: " << n.id << ", X: " << n.x << ", Y: " << n.y << ", Z: " << n.z << std::endl;
+                }
+            }
+
                 /*
                 nodes_vec.push_back(n5);
                 nodes_vec.push_back(n6);
@@ -1994,13 +2058,17 @@ int main(int argc, char **argv) {
                 ros::spinOnce();
 
 
+/*
                 current_GPS_posArray[0] = gps_position_.latitude;
                 current_GPS_posArray[1] = gps_position_.longitude;
                 current_GPS_posArray[2] = gps_position_.altitude;
 
                 float recent_local_pos[3];
+*/
+                recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
 
-                FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
+                // FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
+
 
                 float yaw_adjustment; // yaw adjustment before approach
 
@@ -2012,8 +2080,8 @@ int main(int argc, char **argv) {
 
 
                 moveByPosOffset(control_task,
-                                {starting_point.x - recent_local_pos[0], starting_point.y - recent_local_pos[1], 0, 0},
-                                1, 3);  // note that x y z goes into this funciton
+                                {starting_point.x - recent_drone_coord.x, starting_point.y - recent_drone_coord.y, 0, 0},
+                                1, 3);  // note that x y z goes into this function
 
                 yaw_adjustment = Rad2Deg(atan(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
@@ -2030,7 +2098,6 @@ int main(int argc, char **argv) {
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
                                           abs_vel, 5, height, release_delay);
 
-            }
 
         }
     }
@@ -2059,7 +2126,7 @@ int main(int argc, char **argv) {
 
 
     ROS_INFO_STREAM("Finished. Press CTRL-C to terminate the node");
-    outputFile.close();
+   // outputFile.close();
     ros::spin();
     return 0;
 }
