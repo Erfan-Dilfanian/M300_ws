@@ -121,6 +121,7 @@ forest_fire_detection_system/src/app/CMakeFiles/InMotionDropping_Flight_control_
  /opt/ros/noetic/include/ros/message_traits.h
  /opt/ros/noetic/include/ros/names.h
  /opt/ros/noetic/include/ros/node_handle.h
+ /opt/ros/noetic/include/ros/package.h
  /opt/ros/noetic/include/ros/param.h
  /opt/ros/noetic/include/ros/parameter_adapter.h
  /opt/ros/noetic/include/ros/platform.h

@@ -4,6 +4,7 @@ author: Erfan Dilfanian, Huajun Dong
 
 //INCLUDE
 #include <ros/ros.h>
+#include <ros/package.h>
 #include <dji_osdk_ros/common_type.h>
 #include <iostream>
 
