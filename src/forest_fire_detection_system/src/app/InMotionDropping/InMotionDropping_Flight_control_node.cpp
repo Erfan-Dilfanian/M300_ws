@@ -1747,7 +1747,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
 
-                float theta_dot = 0.5;
+                float theta_dot = 0.1;
                 float radius = 7;
                 float theta_step_degrees = 10;
                 float theta_step_radians = theta_step_degrees * M_PI / 180.0;
