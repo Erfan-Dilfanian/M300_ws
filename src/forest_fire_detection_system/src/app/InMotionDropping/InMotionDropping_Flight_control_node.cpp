@@ -622,6 +622,8 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 
 }
 
+void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[]);
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -1956,9 +1958,9 @@ int main(int argc, char **argv) {
 
                 float current_GPS_posArray[3];
 
-                float fire_gps_local_pos[nodes_vec.size()][3];
+                float fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
 
-                float fire_GPS_posArray[nodes_vec.size()][3];
+                float fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
 
                 cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
@@ -2014,46 +2016,11 @@ int main(int argc, char **argv) {
 
                 cout << "now we have gps position of fire spots, we go ahead and find optimum line for approach";
 
-
-                int size = 4; // # number of rows in fire_gps_local
-
-                // Process the array and fit the line
-                // Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
-                Line best_line = processArrayAndFitLine(fire_gps_local_pos, size, threshold);
+            doRANSAC(nodes_vec, fire_gps_local_pos);
 
 
-                // Print the parameters of the best-fitting line
-                std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
-                std::cout << "Number of inliers: " << best_line.num_inliers << std::endl;
-
-                // Calculate the point on the fitted line closest to the first sample
-                Point first_sample = {fire_gps_local_pos[0][0], fire_gps_local_pos[0][1]};
-                cout << "first sample x is:" << first_sample.x << "and first sample y is:" << first_sample.y << endl;
-                Point closest_point = closestPointOnLine(best_line, first_sample);
 
 
-                Point intersecPoint = intersectionPoint(best_line, first_sample);
-                cout << "intersection_point_x is:" << intersecPoint.x << "and its y is:" << intersecPoint.y << endl;;
-                // Print the coordinates of the closest point
-                std::cout << "Closest point on the line to the first sample: (" << closest_point.x << ", "
-                          << closest_point.y << ")" << std::endl;
-
-                // Plot the line
-                std::vector<float> line_x, line_y;
-                for (float x_val = -10; x_val <= 30; x_val += 0.1) { // Adjust the range as needed
-                    float y_val = best_line.slope * x_val + best_line.intercept;
-                    line_x.push_back(y_val);  // Note: Switched x and y
-                    line_y.push_back(x_val);  // Note: Switched x and y
-                }
-                plt::plot(line_x, line_y, "r"); // Plot the line in blue
-
-                Point starting_point = traverseOnLine(best_line, intersecPoint, 5);
-                std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")"
-                          << std::endl;
-
-                plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
-                // Show plot
-                plt::show();
 
                 ros::spinOnce();
 
@@ -2092,7 +2059,6 @@ int main(int argc, char **argv) {
                 cout << "rotated and ready for approaching fire!" << endl;
 
                 float abs_vel = 5; // absolute velocity that needs to be projected
-
 
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
@@ -2395,4 +2361,44 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
 // the more generous you are in threshold, the more agile your drone would be
 
+}
+
+void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[]){
+    int size = nodes_vector.size(); // # number of rows in fire_gps_local
+
+    // Process the array and fit the line
+    // Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
+    Line best_line = processArrayAndFitLine(fire_coordinates, size, threshold);
+
+    // Print the parameters of the best-fitting line
+    std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
+    std::cout << "Number of inliers: " << best_line.num_inliers << std::endl;
+
+    // Calculate the point on the fitted line closest to the first sample
+    Point first_sample = {fire_coordinates[0][0], fire_coordinates[0][1]};
+    cout << "first sample x is:" << first_sample.x << "and first sample y is:" << first_sample.y << endl;
+    Point closest_point = closestPointOnLine(best_line, first_sample);
+
+    Point intersecPoint = intersectionPoint(best_line, first_sample);
+    cout << "intersection_point_x is:" << intersecPoint.x << "and its y is:" << intersecPoint.y << endl;;
+    // Print the coordinates of the closest point
+    std::cout << "Closest point on the line to the first sample: (" << closest_point.x << ", "
+              << closest_point.y << ")" << std::endl;
+
+    // Plot the line
+    std::vector<float> line_x, line_y;
+    for (float x_val = -10; x_val <= 30; x_val += 0.1) { // Adjust the range as needed
+        float y_val = best_line.slope * x_val + best_line.intercept;
+        line_x.push_back(y_val);  // Note: Switched x and y
+        line_y.push_back(x_val);  // Note: Switched x and y
+    }
+    plt::plot(line_x, line_y, "r"); // Plot the line in blue
+
+    Point starting_point = traverseOnLine(best_line, intersecPoint, 5);
+    std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")"
+              << std::endl;
+
+    plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
+    // Show plot
+    plt::show();
 }
