@@ -622,7 +622,8 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 
 }
 
-void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[]);
+
+void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold);
 
 int main(int argc, char **argv) {
 
@@ -2016,7 +2017,9 @@ int main(int argc, char **argv) {
 
                 cout << "now we have gps position of fire spots, we go ahead and find optimum line for approach";
 
-            doRANSAC(nodes_vec, fire_gps_local_pos);
+            Line best_line;
+            Point starting_point;
+            doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold);
 
 
 
@@ -2363,12 +2366,12 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
 }
 
-void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[]){
+void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line& best_line, Point& starting_point, float threshold){
     int size = nodes_vector.size(); // # number of rows in fire_gps_local
 
     // Process the array and fit the line
     // Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
-    Line best_line = processArrayAndFitLine(fire_coordinates, size, threshold);
+    best_line = processArrayAndFitLine(fire_coordinates, size, threshold);
 
     // Print the parameters of the best-fitting line
     std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
@@ -2394,7 +2397,7 @@ void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[]){
     }
     plt::plot(line_x, line_y, "r"); // Plot the line in blue
 
-    Point starting_point = traverseOnLine(best_line, intersecPoint, 5);
+    starting_point = traverseOnLine(best_line, intersecPoint, 5);
     std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")"
               << std::endl;
 
