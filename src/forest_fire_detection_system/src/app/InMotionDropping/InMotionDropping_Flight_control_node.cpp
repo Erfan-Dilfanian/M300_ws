@@ -637,7 +637,6 @@ int main(int argc, char **argv) {
     //   PRINT_WARN("reset camera and gimbal failed!")
     //}
 
-    float release_delay;
 /*
     std::string filename;
     std::cout << "Enter the name of the file: ";
@@ -715,12 +714,15 @@ int main(int argc, char **argv) {
     char scenario;
     cin >> scenario;
 
+    cout << "indoor test or outdoor test?" << endl << "[a] indoor" << endl << "[b] outdoor" << endl;
+    cin >> in_or_out;
+
+    /*
     cout << "please enter camera pitch angle in degree (no f at end please)" << endl;
     float camera_pitch;
     cin >> camera_pitch;
 
-    cout << "indoor test or outdoor test?" << endl << "[a] indoor" << endl << "[b] outdoor" << endl;
-    cin >> in_or_out;
+
 
     cout << "please enter valve delay in miliseconds" << endl;
     cin >> release_delay;
@@ -728,6 +730,27 @@ int main(int argc, char **argv) {
     float height;
     cout << "please enter altitude to reach" << endl;
     cin >> height;
+     */
+
+    const std::string package_path =
+            ros::package::getPath("dji_osdk_ros");
+    const std::string config_path = package_path + "/config/general_params.yaml";
+    PRINT_INFO("Load parameters from:%s", config_path.c_str());
+    YAML::Node GeneralConfig = YAML::LoadFile(config_path);
+
+    float camera_pitch = GeneralConfig["general_params"]["camera_pitch"].as<float>();
+    int release_delay = GeneralConfig["general_params"]["release_delay"].as<int>();
+    float height = GeneralConfig["general_params"]["height"].as<float>();
+    float lateral_adjustment = GeneralConfig["general_params"]["lateral_adjustment"].as<float>();
+    float gimbal_yaw_adjustment = GeneralConfig["general_params"]["gimbal_yaw_adjustment"].as<float>();
+    float threshold = GeneralConfig["general_params"]["threshold"].as<float>();
+
+    std::cout << "Camera Pitch: " << camera_pitch << std::endl;
+    std::cout << "Release Delay: " << release_delay << std::endl;
+    std::cout << "Height: " << height << std::endl;
+    std::cout << "Lateral Adjustment: " << lateral_adjustment << std::endl;
+    std::cout << "Gimbal Yaw Adjustment: " << gimbal_yaw_adjustment << std::endl;
+    std::cout << "Threshold: " << threshold << std::endl;
 
 
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
