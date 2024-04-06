@@ -1715,7 +1715,12 @@ int main(int argc, char **argv) {
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
 
-
+// Load YAML file
+        const std::string package_path =
+                ros::package::getPath("dji_osdk_ros");
+        const std::string config_path = package_path + "/config/nodes.yaml";
+        PRINT_INFO("Load parameters from:%s", config_path.c_str());
+        YAML::Node config = YAML::LoadFile(config_path);
 
         float gimbal_yaw_adjustment;
         cout << "please enter gimbal yaw adjustment" << endl;
@@ -1741,7 +1746,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
 
-                float theta_dot = 0.1;
+                float theta_dot = 0.5;
                 float radius = 7;
                 float theta_step_degrees = 10;
                 float theta_step_radians = theta_step_degrees * M_PI / 180.0;
@@ -1939,9 +1944,16 @@ int main(int argc, char **argv) {
 
             if (in_or_out == 'a') {
 
-                // Load YAML file
-                YAML::Node config = YAML::LoadFile("nodes.yaml");
+/*
+ *                 // Load YAML file
+                const std::string package_path =
+                        ros::package::getPath("dji_osdk_ros");
+                const std::string config_path = package_path + "/config/nodes.yaml";
+                PRINT_INFO("Load parameters from:%s", config_path.c_str());
+                YAML::Node config = YAML::LoadFile(config_path);
 
+
+ */
                 // Check if "nodes" key exists
                 if (config["nodes"]) {
                     for (const auto &n: config["nodes"]) {
