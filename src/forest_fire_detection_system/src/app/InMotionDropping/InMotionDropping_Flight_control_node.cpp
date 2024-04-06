@@ -1716,12 +1716,7 @@ int main(int argc, char **argv) {
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
 
-// Load YAML file
-        const std::string package_path =
-                ros::package::getPath("dji_osdk_ros");
-        const std::string config_path = package_path + "/config/nodes.yaml";
-        PRINT_INFO("Load parameters from:%s", config_path.c_str());
-        YAML::Node config = YAML::LoadFile(config_path);
+
 
         float gimbal_yaw_adjustment;
         cout << "please enter gimbal yaw adjustment" << endl;
@@ -1731,7 +1726,7 @@ int main(int argc, char **argv) {
         std::cin >> yaw_const;
 
         float threshold;
-        cout << "please enter threshold for RANSAC";
+        cout << "please enter threshold for RANSAC"<<endl;
         cin >> threshold;
         // Some copied codes from Erfan's about M300 functions (including some new codes)
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
@@ -1747,7 +1742,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
 
-                float theta_dot = 0.1;
+                float theta_dot = 0.15;
                 float radius = 7;
                 float theta_step_degrees = 10;
                 float theta_step_radians = theta_step_degrees * M_PI / 180.0;
@@ -1777,17 +1772,33 @@ int main(int argc, char **argv) {
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
-                float zz_l = 12;  //zigzag_length
-                float zz_w = 6;   //zigzag_width
-                int n_zz = 2;
-                ZigZagParams zigzag_params;
-                zigzag_params.length = 12;
+
+            ZigZagParams zigzag_params;
+                /* zigzag_params.length = 12;
                 zigzag_params.width = 6;
                 zigzag_params.number = 1;
-                zigzag_params.split = 1;
-                zigzag_params.orientation = yaw_const; // next time read it from a yaml file
-                ZigZagPlanner(control_task, zigzag_params);
+                zigzag_params.split = split;*/
 
+            const std::string package_path =
+                    ros::package::getPath("dji_osdk_ros");
+            const std::string config_path = package_path + "/config/zigzag_params.yaml";
+            PRINT_INFO("Load parameters from:%s", config_path.c_str());
+            YAML::Node ZigZagconfig = YAML::LoadFile(config_path);
+
+
+            zigzag_params.length = ZigZagconfig["zigzag_params"]["length"].as<float>();
+            zigzag_params.width = ZigZagconfig["zigzag_params"]["width"].as<float>();
+            zigzag_params.number = ZigZagconfig["zigzag_params"]["number"].as<int>();
+            zigzag_params.split = ZigZagconfig["zigzag_params"]["split"].as<int>();
+            zigzag_params.orientation = yaw_const; // next time read it from a yaml file
+
+            std::cout << "ZigZag Parameters:" << std::endl;
+            std::cout << "Length: " << zigzag_params.length << std::endl;
+            std::cout << "Width: " << zigzag_params.width << std::endl;
+            std::cout << "Number: " << zigzag_params.number << std::endl;
+            std::cout << "Split: " << zigzag_params.split << std::endl;
+
+            ZigZagPlanner(control_task, zigzag_params);
 
                 ros::spinOnce();
 
@@ -1945,16 +1956,14 @@ int main(int argc, char **argv) {
 
             if (in_or_out == 'a') {
 
-/*
- *                 // Load YAML file
-                const std::string package_path =
-                        ros::package::getPath("dji_osdk_ros");
-                const std::string config_path = package_path + "/config/nodes.yaml";
-                PRINT_INFO("Load parameters from:%s", config_path.c_str());
-                YAML::Node config = YAML::LoadFile(config_path);
+         // Load YAML file
+        const std::string package_path =
+                ros::package::getPath("dji_osdk_ros");
+        const std::string config_path = package_path + "/config/nodes.yaml";
+        PRINT_INFO("Load parameters from:%s", config_path.c_str());
+        YAML::Node config = YAML::LoadFile(config_path);
 
 
- */
                 // Check if "nodes" key exists
                 if (config["nodes"]) {
                     for (const auto &n: config["nodes"]) {
@@ -2184,7 +2193,7 @@ int main(int argc, char **argv) {
 
                 cout << "rotated and ready for approaching fire!" << endl;
 
-                float abs_vel = 5; // absolute velocity that needs to be projected
+                float abs_vel = 4; // absolute velocity that needs to be projected
 
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
@@ -2289,7 +2298,8 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 
         float g = 9.81;
 
-        float release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
+        double release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
+        cout<<"release_time is:"<<release_time<<endl;
 
         if (elapsedTimeInMs > release_time) {
             // controlServo(angle);
@@ -2413,9 +2423,6 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
                                                                                 zz_params.split},
             {zz_params.width * cosd(zz_params.orientation) / zz_params.split,   zz_params.width *
                                                                                 sind(zz_params.orientation) /
-                                                                                zz_params.split},
-            {-zz_params.length * sind(zz_params.orientation) / zz_params.split, zz_params.length *
-                                                                                cosd(zz_params.orientation) /
                                                                                 zz_params.split}};
     double frequency = 30; // 30 Hz
     ros::Rate rate(frequency);

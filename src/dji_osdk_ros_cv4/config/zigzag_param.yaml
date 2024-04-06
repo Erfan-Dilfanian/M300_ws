@@ -1,0 +1,5 @@
+zigzag_params:
+  length: 12
+  width: 6
+  number: 1
+  split: 12
