@@ -593,24 +593,24 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params);
 
 Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GPS){
     Point coordinates;
-    float homeGPS_posArray[3] = {homeGPos.latitude, homeGPos.longitude, homeGPos.altitude};
+    double homeGPS_posArray[3] = {homeGPos.latitude, homeGPos.longitude, homeGPos.altitude};
 
-    float current_GPS_posArray[3] = {gps_position_.latitude, gps_position_.longitude, gps_position_.altitude};
+    double GPS_posArray[3] = {GPS.latitude, GPS.longitude, GPS.altitude};
 
     ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
     ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
     ROS_INFO("homegpos attitude is [%f]", homeGPS_posArray[2]);
 
-    ROS_INFO("currentpos latitude is [%f]", current_GPS_posArray[0]);
-    ROS_INFO("currentgpos longitude is [%f]", current_GPS_posArray[1]);
-    ROS_INFO("currentgpos attitude is [%f]", current_GPS_posArray[2]);
+    ROS_INFO("currentpos latitude is [%f]", GPS_posArray[0]);
+    ROS_INFO("currentgpos longitude is [%f]", GPS_posArray[1]);
+    ROS_INFO("currentgpos attitude is [%f]", GPS_posArray[2]);
 
     // ros::Duration(2).sleep();
 
-    float m[3];
+    double m[3];
 
 
-    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, m);
+    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, GPS_posArray, m);
 
     ROS_INFO("x is [%f]", m[0]);
     ROS_INFO("y is [%f]", m[1]);
@@ -1714,6 +1714,12 @@ int main(int argc, char **argv) {
         //Get fire GPS position and use callback function to put all the detected fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
+
+
+
+        float gimbal_yaw_adjustment;
+        cout << "please enter gimbal yaw adjustment" << endl;
+        cin >> gimbal_yaw_adjustment;
         float yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
         std::cin >> yaw_const;
@@ -1755,6 +1761,15 @@ int main(int argc, char **argv) {
                     CircularPlanner({Vx, Vy, 0, theta_dot}, time_step * 1000);
 
                 }
+
+            GimbalAction gimbalAction;
+            gimbalAction.request.rotationMode = 0;
+            gimbalAction.request.pitch = camera_pitch;
+            gimbalAction.request.roll = 0.0f;
+            // gimbalAction.request.yaw = -yaw_const+90;
+            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            gimbalAction.request.time = 0.5;
+            gimbal_control_client.call(gimbalAction);
 
                 float zz_l = 12;  //zigzag_length
                 float zz_w = 6;   //zigzag_width
@@ -2019,7 +2034,102 @@ int main(int argc, char **argv) {
 
             Line best_line;
             Point starting_point;
-            doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold);
+            bool flag = 1;
+            char approach_confirm;
+            char ground_truth_gps_aprch_cmnd;
+            while(flag == 1) {
+                doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold);
+            cout<<"confirm approach? [y/n]";
+            cin>> approach_confirm;
+            if (approach_confirm == 'y'){
+                flag = 0;
+            }
+            else{
+                cout<<"approach ground truth gps? [y/n]";
+                    cin>>ground_truth_gps_aprch_cmnd;
+                    if (ground_truth_gps_aprch_cmnd == 'y'){
+                        nodes_vec.clear();
+                        // Load YAML file
+                        YAML::Node config = YAML::LoadFile("nodes.yaml");
+
+                        // Check if "nodes" key exists
+                        if (config["nodes"]) {
+                            for (const auto &n: config["nodes"]) {
+                                node temp;
+                                temp.id = n["id"].as<int>();
+                                temp.x = n["x"].as<float>();
+                                temp.y = n["y"].as<float>();
+                                temp.z = n["z"].as<float>();
+                                nodes_vec.push_back(temp);
+
+                                float current_GPS_posArray[3];
+
+                                float fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
+
+                                float fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
+
+                                cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
+
+                                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1];
+
+                                for (int i = 0; i < nodes_vec.size(); ++i) {
+
+                                    fire_GPS_posArray[i][0] = nodes_vec[i].x;
+                                    fire_GPS_posArray[i][1] = nodes_vec[i].y;
+                                    fire_GPS_posArray[i][2] = nodes_vec[i].z;
+
+                                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
+                                    std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x << ", longitude: "
+                                              << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
+                                    std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position "
+                                              << fire_gps_local_pos[i][1] << std::endl;
+
+
+                                }
+
+                                // Extract x and y coordinates into vectors
+                                std::vector<float> x, y;
+                                for (size_t i = 0; i < nodes_vec.size(); ++i) {
+                                    x.push_back(fire_gps_local_pos[i][0]);
+                                    y.push_back(fire_gps_local_pos[i][1]);
+                                }
+
+
+                                // Print x and y before plotting
+                                std::cout << "X coordinates: ";
+                                for (auto val: x) {
+                                    std::cout << val << " ";
+                                }
+                                std::cout << std::endl;
+
+                                std::cout << "Y coordinates: ";
+                                for (auto val: y) {
+                                    std::cout << val << " ";
+                                }
+                                std::cout << std::endl;
+
+                                // Plot the points with x and y switched
+                                plt::plot(y, x, "bo"); // Switched x and y
+
+                                // Set labels and title with switched axes
+                                plt::xlabel("Y"); // Y-axis now represents X-coordinate
+                                plt::ylabel("X"); // X-axis now represents Y-coordinate
+                                plt::title("Scatter Plot of Points");
+
+                            }
+                        }
+
+                    }
+                    else{
+                        cout<<"calculating RANSAC again";
+
+                    }
+
+            }
+
+
+
+            }
 
 
 
@@ -2066,7 +2176,20 @@ int main(int argc, char **argv) {
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
                                           abs_vel, 5, height, release_delay);
+                ros::spinOnce();
+            recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
+            moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,
+                            3);
+            gimbalAction.request.rotationMode = 0;
+            gimbalAction.request.pitch = -90.0f;
+            gimbalAction.request.roll = 0.0f;
+            // gimbalAction.request.yaw = -yaw_const+90;
+            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            gimbalAction.request.time = 0.5;
+            gimbal_control_client.call(gimbalAction);
 
+            moveByPosOffset(control_task, {0, 0, 15, 0}, 1,
+                            3);
 
         }
     }
