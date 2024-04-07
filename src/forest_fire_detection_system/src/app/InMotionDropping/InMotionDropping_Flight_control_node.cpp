@@ -2226,12 +2226,12 @@ int main(int argc, char **argv) {
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
                                           abs_vel, run_up_distance, height, release_delay);
-            emergency_brake_client.call(emergency_brake);
+            // emergency_brake_client.call(emergency_brake);
             ros::Duration(4).sleep();
 
             ros::spinOnce();
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
-            cout<<"nodes_vec[0].x:"<<nodes_vec[0].x<<" and nodes_vec[0]"<<nodes_vec[0].y<<endl;
+            cout<<"nodes_vec[0].x:"<<fire_GPS_posArray[0][0]<<" and nodes_vec[0]"<<fire_GPS_posArray[0][1]<<endl;
             cout<<"recent drone coordinates: x:"<<recent_drone_coord.x<<"y :"<<recent_drone_coord.y<<endl;
             // go above the first fire point
             moveByPosOffset(control_task, {fire_GPS_posArray[0][0]-recent_drone_coord.x, fire_GPS_posArray[0][1]-recent_drone_coord.y, 0, 0}, 1,3);
