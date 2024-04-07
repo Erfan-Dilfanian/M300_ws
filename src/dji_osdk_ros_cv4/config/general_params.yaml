@@ -1,9 +1,8 @@
 general_params:
-  camera_pitch: 45.0
-  in_or_out: "indoor"
-  release_delay: 100
-  height: 10.5
-  lateral_adjustment: 2.0
-  gimbal_yaw_adjustment: 30.0
-  threshold: 0.1
+  camera_pitch: -45.0
+  release_delay: -1000
+  height: 7
+  lateral_adjustment: 0
+  gimbal_yaw_adjustment: 0
+  threshold: 1.5
 

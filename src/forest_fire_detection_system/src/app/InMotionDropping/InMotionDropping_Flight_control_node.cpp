@@ -1741,16 +1741,16 @@ int main(int argc, char **argv) {
 
 
 
-        float gimbal_yaw_adjustment;
+        /*float gimbal_yaw_adjustment;
         cout << "please enter gimbal yaw adjustment" << endl;
-        cin >> gimbal_yaw_adjustment;
+        cin >> gimbal_yaw_adjustment;*/
         float yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
         std::cin >> yaw_const;
 
-        float threshold;
+        /*float threshold;
         cout << "please enter threshold for RANSAC"<<endl;
-        cin >> threshold;
+        cin >> threshold;*/
         // Some copied codes from Erfan's about M300 functions (including some new codes)
         control_task.request.task = FlightTaskControl::Request::TASK_TAKEOFF;
         ROS_INFO_STREAM("Takeoff request sending ...");
@@ -1765,7 +1765,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
 
 
-                float theta_dot = 0.15;
+                float theta_dot = 0.1;
                 float radius = 7;
                 float theta_step_degrees = 10;
                 float theta_step_radians = theta_step_degrees * M_PI / 180.0;
