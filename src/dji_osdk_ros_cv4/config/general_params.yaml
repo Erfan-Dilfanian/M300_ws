@@ -5,4 +5,5 @@ general_params:
   lateral_adjustment: 0
   gimbal_yaw_adjustment: 0
   threshold: 1.5
+  run_up_distance: 10
 

@@ -624,7 +624,7 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 }
 
 
-void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold);
+void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
 
 int main(int argc, char **argv) {
 
@@ -744,6 +744,7 @@ int main(int argc, char **argv) {
     float lateral_adjustment = GeneralConfig["general_params"]["lateral_adjustment"].as<float>();
     float gimbal_yaw_adjustment = GeneralConfig["general_params"]["gimbal_yaw_adjustment"].as<float>();
     float threshold = GeneralConfig["general_params"]["threshold"].as<float>();
+    double run_up_distance = GeneralConfig["general_params"]["run_up_distance"].as<float>();
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
     std::cout << "Release Delay: " << release_delay << std::endl;
@@ -751,6 +752,8 @@ int main(int argc, char **argv) {
     std::cout << "Lateral Adjustment: " << lateral_adjustment << std::endl;
     std::cout << "Gimbal Yaw Adjustment: " << gimbal_yaw_adjustment << std::endl;
     std::cout << "Threshold: " << threshold << std::endl;
+    std::cout << "run up distance: " << run_up_distance << std::endl;
+
 
 
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
@@ -2083,7 +2086,7 @@ int main(int argc, char **argv) {
             char approach_confirm;
             char ground_truth_gps_aprch_cmnd;
             while(flag == 1) {
-                doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold);
+                doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold, run_up_distance);
             cout<<"confirm approach? [y/n]";
             cin>> approach_confirm;
             if (approach_confirm == 'y'){
@@ -2178,8 +2181,6 @@ int main(int argc, char **argv) {
 
 
 
-
-
                 ros::spinOnce();
 
 
@@ -2197,7 +2198,10 @@ int main(int argc, char **argv) {
 
                 float yaw_adjustment; // yaw adjustment before approach
 
-                cout << "recent x :" << starting_point.x << "recent y :" << starting_point.y
+            cout << "starting point x :" << starting_point.x << "recent y :" << starting_point.y
+                 << endl;
+
+                cout << "recent x :" << recent_drone_coord.x << "recent y :" << recent_drone_coord.y
                      << endl;
                 // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
                 // note that tan2 output is in radian
@@ -2207,7 +2211,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task,
                                 {starting_point.x - recent_drone_coord.x, starting_point.y - recent_drone_coord.y, 0, 0},
                                 1, 3);  // note that x y z goes into this function
-
+                cout<< "moved to the starting point"<<endl;
                 yaw_adjustment = Rad2Deg(atan(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
@@ -2220,7 +2224,7 @@ int main(int argc, char **argv) {
 
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
-                                          abs_vel, 5, height, release_delay);
+                                          abs_vel, run_up_distance, height, release_delay);
                 ros::spinOnce();
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
             moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,
@@ -2513,14 +2517,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
         ROS_INFO_STREAM("Fourth zigzag line completed!");
 
-        for (int i = 0; i < zz_params.split; i++) {
-            moveByPosOffset(task, {lengths_steps[4][0], lengths_steps[4][1], 0, zz_params.orientation}, 1, 3);
 
-            ros::spinOnce();
-            rate.sleep();
-            cout << "ROS spinned" << endl;
-
-        }
 
         ros::spinOnce();
     }
@@ -2532,7 +2529,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
 }
 
-void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line& best_line, Point& starting_point, float threshold){
+void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line& best_line, Point& starting_point, float threshold, double run_up_distance){
     int size = nodes_vector.size(); // # number of rows in fire_gps_local
 
     // Process the array and fit the line
@@ -2563,7 +2560,7 @@ void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line
     }
     plt::plot(line_x, line_y, "r"); // Plot the line in blue
 
-    starting_point = traverseOnLine(best_line, intersecPoint, 5);
+    starting_point = traverseOnLine(best_line, intersecPoint, run_up_distance);
     std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")"
               << std::endl;
 
