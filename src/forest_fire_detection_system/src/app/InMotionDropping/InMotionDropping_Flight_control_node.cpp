@@ -1077,7 +1077,7 @@ int main(int argc, char **argv) {
             gimbalAction.request.roll = 0.0f;
             // gimbalAction.request.yaw = -yaw_const+90;
             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-            gimbalAction.request.yaw = gimbal_yaw_adjustment;
+            gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
@@ -2233,7 +2233,8 @@ int main(int argc, char **argv) {
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
             cout<<"nodes_vec[0].x:"<<nodes_vec[0].x<<" and nodes_vec[0]"<<nodes_vec[0].y<<endl;
             cout<<"recent drone coordinates: x:"<<recent_drone_coord.x<<"y :"<<recent_drone_coord.y<<endl;
-            moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,3);
+            // go above the first fire point
+            moveByPosOffset(control_task, {fire_GPS_posArray[0][0]-recent_drone_coord.x, fire_GPS_posArray[0][1]-recent_drone_coord.y, 0, 0}, 1,3);
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = -90.0f;
             gimbalAction.request.roll = 0.0f;
