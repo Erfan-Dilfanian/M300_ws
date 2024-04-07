@@ -616,8 +616,8 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
     ROS_INFO("x is [%f]", m[0]);
     ROS_INFO("y is [%f]", m[1]);
 
-    m[0] = coordinates.x;
-    m[1] = coordinates.y;
+    coordinates.x = m[0];
+    coordinates.y = m[1];
 
     return coordinates;
 
