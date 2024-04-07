@@ -1076,7 +1076,8 @@ int main(int argc, char **argv) {
             gimbalAction.request.pitch = camera_pitch;
             gimbalAction.request.roll = 0.0f;
             // gimbalAction.request.yaw = -yaw_const+90;
-            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            gimbalAction.request.yaw = gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
@@ -2225,21 +2226,21 @@ int main(int argc, char **argv) {
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
                                           abs_vel, run_up_distance, height, release_delay);
-                ros::spinOnce();
+            ros::Duration(4).sleep();
+
+            ros::spinOnce();
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
-            moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,
-                            3);
+            cout<<"nodes_vec[0].x:"<<nodes_vec[0].x<<" and nodes_vec[0]"<<nodes_vec[0].y<<endl;
+            moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,3);
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = -90.0f;
             gimbalAction.request.roll = 0.0f;
             // gimbalAction.request.yaw = -yaw_const+90;
-            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
             moveByPosOffset(control_task, {0, 0, 15, 0}, 1,
                             3);
-
         }
     }
 
