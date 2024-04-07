@@ -2226,11 +2226,13 @@ int main(int argc, char **argv) {
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
                                           abs_vel, run_up_distance, height, release_delay);
+            emergency_brake_client.call(emergency_brake);
             ros::Duration(4).sleep();
 
             ros::spinOnce();
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
             cout<<"nodes_vec[0].x:"<<nodes_vec[0].x<<" and nodes_vec[0]"<<nodes_vec[0].y<<endl;
+            cout<<"recent drone coordinates: x:"<<recent_drone_coord.x<<"y :"<<recent_drone_coord.y<<endl;
             moveByPosOffset(control_task, {nodes_vec[0].x-recent_drone_coord.x, nodes_vec[0].y-recent_drone_coord.y, 0, 0}, 1,3);
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = -90.0f;
