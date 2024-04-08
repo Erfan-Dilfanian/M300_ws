@@ -212,8 +212,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg
 
@@ -234,8 +234,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2CameraActuator.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2CameraActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2CameraActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2CameraActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2CameraActuator.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Javascript code from dji_osdk_ros/WaypointV2CameraActuator.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg
 
@@ -257,8 +257,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2InitSetting.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2InitSetting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2InitSetting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2InitSetting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2InitSetting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Javascript code from dji_osdk_ros/WaypointV2InitSetting.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg
 
@@ -284,17 +284,17 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/WaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Javascript code from dji_osdk_ros/WaypointV2Action.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg
@@ -338,8 +338,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/MissionWaypointTask.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/MissionWaypointTask.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/MissionWaypointTask.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/MissionWaypointTask.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg/MissionWaypointTask.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Javascript code from dji_osdk_ros/MissionWaypointTask.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/msg
 
@@ -506,8 +506,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GetWholeBatteryInfo.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GetWholeBatteryInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GetWholeBatteryInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GetWholeBatteryInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GetWholeBatteryInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating Javascript code from dji_osdk_ros/GetWholeBatteryInfo.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
 
@@ -561,8 +561,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/InitWaypointV2Setting.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating Javascript code from dji_osdk_ros/InitWaypointV2Setting.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
 
@@ -578,8 +578,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating Javascript code from dji_osdk_ros/DownloadWaypointV2Mission.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
 
@@ -605,18 +605,18 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Generating Javascript code from dji_osdk_ros/GenerateWaypointV2Action.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
@@ -704,9 +704,9 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpUpload.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Generating Javascript code from dji_osdk_ros/MissionWpUpload.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
 
@@ -722,9 +722,9 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_nodejs: /home/erfan/M
 
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv
-/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
 /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv/MissionWpGetInfo.js: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Generating Javascript code from dji_osdk_ros/MissionWpGetInfo.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros/srv
 

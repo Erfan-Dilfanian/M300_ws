@@ -46,6 +46,8 @@ you need to run the following node in the stationay machine. (directly run themi
 rosrun forest_fire_geopositioning fire_detection_v8.py
 ```
 
+**note:** you need to git clone M300_Ws respository on the ground station laptop as well
+
 ### To visualize the fire bounding boxes (optional)
 rosrun forest_fire_geopositioning fire_spots_visualization
 
@@ -78,8 +80,11 @@ Then, whenever you were ready, release the retardant with the following node:
 rosrun arduino_actuator servo_pub.py
 ```
 
+
+
 ## Dateset available
 https://drive.google.com/file/d/1YPX3RgdjjUx_tRMU9sRcODnS2XP0VS_U/view?usp=sharing
+
 
 ## create your own dataset
 rosbag record -O m300_dataset /bounding_boxes/fire_spots /clock /dji_osdk_ros/gps_position /dji_osdk_ros/main_wide_RGB /position/camera_pose /position/fire_spots /position/fire_spots_GPS /position/real_scale

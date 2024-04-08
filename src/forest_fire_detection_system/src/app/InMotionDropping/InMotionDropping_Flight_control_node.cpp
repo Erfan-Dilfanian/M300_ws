@@ -970,6 +970,11 @@ int main(int argc, char **argv) {
             yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX)); // note that tan2 output is in radian
             // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
+            moveByPosOffset(control_task,
+                            {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
+                             0}, 1,
+                            3);
+
             ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
             moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                             3);  // note that x y z goes into this funciton
@@ -984,10 +989,7 @@ int main(int argc, char **argv) {
 
 
 
-            moveByPosOffset(control_task,
-                            {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
-                             yaw_adjustment}, 1,
-                            3);
+
 
 
             velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
@@ -2446,6 +2448,16 @@ sensor_msgs::NavSatFix getAverageGPS(
 
 void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
+    const std::string package_path =
+            ros::package::getPath("dji_osdk_ros");
+    const std::string config_path = package_path + "/config/geopositioning_params.yaml";
+    PRINT_INFO("Load parameters from:%s", config_path.c_str());
+    YAML::Node GeoPosConfig = YAML::LoadFile(config_path);
+
+    // Accessing the integer value from the YAML file
+    int number_of_fire_spots_criterion = GeoPosConfig["number_of_fire_spots_criterion"].as<int>(); // after this number zigzag would cut off
+
+
 
     ros::spinOnce();
 
@@ -2475,6 +2487,10 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
             ros::spinOnce();
             rate.sleep();
             cout << "ROS spinned" << endl;
+            cout<<"number of found fire spots are:"<<nodes_vec.size();
+            if (nodes_vec.size()>number_of_fire_spots_criterion){
+                return;
+            }
         }
 
         /* ROS_INFO("x is [%f]",local_position_.point.x);
