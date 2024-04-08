@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
+CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
+CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 
 # Utility rule file for _run_tests_cv_bridge_nosetests_enumerants.py.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 include cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/progress.make
 
 cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py:
-	cd /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/erfan/M300_ws/build/test_results/cv_bridge/nosetests-enumerants.py.xml "\"/usr/bin/cmake\" -E make_directory /home/erfan/M300_ws/build/test_results/cv_bridge" "/usr/bin/nosetests3 -P --process-timeout=60 /home/erfan/M300_ws/src/cv_bridge/cv_bridge/test/enumerants.py --with-xunit --xunit-file=/home/erfan/M300_ws/build/test_results/cv_bridge/nosetests-enumerants.py.xml"
+	cd /home/qin/M300_ws/build/cv_bridge/cv_bridge/test && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/qin/M300_ws/build/test_results/cv_bridge/nosetests-enumerants.py.xml "\"/usr/bin/cmake\" -E make_directory /home/qin/M300_ws/build/test_results/cv_bridge" "/usr/bin/nosetests3 -P --process-timeout=60 /home/qin/M300_ws/src/cv_bridge/cv_bridge/test/enumerants.py --with-xunit --xunit-file=/home/qin/M300_ws/build/test_results/cv_bridge/nosetests-enumerants.py.xml"
 
 _run_tests_cv_bridge_nosetests_enumerants.py: cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py
 _run_tests_cv_bridge_nosetests_enumerants.py: cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/build.make
@@ -67,10 +67,10 @@ cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/build
 
 cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/clean:
-	cd /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/cmake_clean.cmake
+	cd /home/qin/M300_ws/build/cv_bridge/cv_bridge/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/cmake_clean.cmake
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/clean
 
 cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/depend:
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/cv_bridge/cv_bridge/test /home/erfan/M300_ws/build /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test /home/erfan/M300_ws/build/cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/cv_bridge/cv_bridge/test /home/qin/M300_ws/build /home/qin/M300_ws/build/cv_bridge/cv_bridge/test /home/qin/M300_ws/build/cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cv_bridge/cv_bridge/test/CMakeFiles/_run_tests_cv_bridge_nosetests_enumerants.py.dir/depend
 

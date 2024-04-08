@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/gimbal_camera_control_node"
-  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/gimbal_camera_control_node.pdb"
+  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/gimbal_camera_control_node"
+  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/gimbal_camera_control_node.pdb"
   "CMakeFiles/gimbal_camera_control_node.dir/gimbal_camera_control_node.cpp.o"
 )
 

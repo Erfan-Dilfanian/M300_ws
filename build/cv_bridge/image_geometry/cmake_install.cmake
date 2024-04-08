@@ -1,8 +1,8 @@
-# Install script for directory: /home/erfan/M300_ws/src/cv_bridge/image_geometry
+# Install script for directory: /home/qin/M300_ws/src/cv_bridge/image_geometry
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometry.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/qin/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometry.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/image_geometry/cmake" TYPE FILE FILES
-    "/home/erfan/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometryConfig.cmake"
-    "/home/erfan/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometryConfig-version.cmake"
+    "/home/qin/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometryConfig.cmake"
+    "/home/qin/M300_ws/build/cv_bridge/image_geometry/catkin_generated/installspace/image_geometryConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/image_geometry" TYPE FILE FILES "/home/erfan/M300_ws/src/cv_bridge/image_geometry/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/image_geometry" TYPE FILE FILES "/home/qin/M300_ws/src/cv_bridge/image_geometry/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/erfan/M300_ws/build/cv_bridge/image_geometry/catkin_generated/safe_execute_install.cmake")
+  include("/home/qin/M300_ws/build/cv_bridge/image_geometry/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/image_geometry/" TYPE DIRECTORY FILES "/home/erfan/M300_ws/src/cv_bridge/image_geometry/include/image_geometry/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/image_geometry/" TYPE DIRECTORY FILES "/home/qin/M300_ws/src/cv_bridge/image_geometry/include/image_geometry/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,7 +67,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_geometry.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/erfan/M300_ws/devel/lib/libimage_geometry.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/qin/M300_ws/devel/lib/libimage_geometry.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_geometry.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_geometry.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -81,7 +81,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/erfan/M300_ws/build/cv_bridge/image_geometry/test/cmake_install.cmake")
+  include("/home/qin/M300_ws/build/cv_bridge/image_geometry/test/cmake_install.cmake")
 
 endif()
 

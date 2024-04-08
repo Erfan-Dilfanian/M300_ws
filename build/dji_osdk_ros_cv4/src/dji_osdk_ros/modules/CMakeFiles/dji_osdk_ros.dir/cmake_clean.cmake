@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/erfan/M300_ws/devel/lib/libdji_osdk_ros.pdb"
-  "/home/erfan/M300_ws/devel/lib/libdji_osdk_ros.so"
+  "/home/qin/M300_ws/devel/lib/libdji_osdk_ros.pdb"
+  "/home/qin/M300_ws/devel/lib/libdji_osdk_ros.so"
   "CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_mission_services.cpp.o"
   "CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_mobile_comm.cpp.o"
   "CMakeFiles/dji_osdk_ros.dir/dji_vehicle_node_payload_comm.cpp.o"

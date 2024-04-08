@@ -2224,10 +2224,10 @@ int main(int argc, char **argv) {
                 float abs_vel = 4; // absolute velocity that needs to be projected
 
 
-                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 4000,
+                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
                                           abs_vel, run_up_distance, height, release_delay);
             // emergency_brake_client.call(emergency_brake);
-            ros::Duration(4).sleep();
+            // ros::Duration(4).sleep();
 
             ros::spinOnce();
             recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
