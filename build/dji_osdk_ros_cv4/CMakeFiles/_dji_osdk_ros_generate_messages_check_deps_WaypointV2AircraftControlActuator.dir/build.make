@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 include dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/progress.make
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator:
-	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2AircraftControlActuatorFlying
 
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator
 _dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_WaypointV2AircraftControlActuator.dir/build.make

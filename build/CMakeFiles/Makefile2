@@ -10245,6 +10245,7 @@ forest_fire_geopositioning/CMakeFiles/fire_subscriber.dir/clean:
 # Target rules for target forest_fire_geopositioning/CMakeFiles/compress_video_node.dir
 
 # All Build rule for target.
+forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/all: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_cpp.dir/all
 forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/all: cv_bridge/cv_bridge/src/CMakeFiles/cv_bridge.dir/all
 	$(MAKE) -f forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/build.make forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/depend
 	$(MAKE) -f forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/build.make forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/build
@@ -10253,7 +10254,7 @@ forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/all: cv_bridge/cv_
 
 # Build rule for subdir invocation for target.
 forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/qin/M300_ws/build/CMakeFiles 0
 .PHONY : forest_fire_geopositioning/CMakeFiles/compress_video_node.dir/rule

@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStream.h
+ros/service_traits.h
+-
+dji_osdk_ros/SetupCameraStreamRequest.h
+-
+dji_osdk_ros/SetupCameraStreamResponse.h
+-
+
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamRequest.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/qin/M300_ws/devel/include/dji_osdk_ros/SetupCameraStreamResponse.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/qin/M300_ws/src/cv_bridge/cv_bridge/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
 -
@@ -40,6 +80,10 @@ opencv2/opencv.hpp
 opencv2/highgui/highgui.hpp
 -
 iostream
+-
+dji_camera_image.hpp
+-
+dji_osdk_ros/SetupCameraStream.h
 -
 
 /opt/ros/noetic/include/image_transport/camera_publisher.h

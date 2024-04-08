@@ -412,6 +412,12 @@ void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) 
 
     // Copy nodes to nodes_vec
     nodes_vec = nodes;
+    /*
+    for (int j = 0; j<nodes_vec.size(); j++){
+    cout<<"nodes_vec: x:"<<nodes_vec[j].x<<"nodes_vec: y:"<<nodes_vec[j].y<<"nodes_vec: z:"<<nodes_vec[j].z<<endl;
+    }
+    cout<<"next attemp";
+    */
 }
 
 
@@ -425,6 +431,7 @@ struct Line {
     double slope;
     double intercept;
     int num_inliers;
+    std::vector<Point> inlier_points; // Store inliers
 };
 
 // Function to calculate the distance between two points
@@ -433,17 +440,13 @@ double distance(const Point &p1, const Point &p2) {
 }
 
 // Function to fit a line to a set of 2D points using RANSAC
-Line fitLineRANSAC(const std::vector <Point> &points, int num_iterations, double threshold) {
-    cout << "We are in fitLineRANSAC function" << endl;
+Line fitLineRANSAC(const std::vector<Point> &points, int num_iterations, double threshold) {
     // Initialize variables to store the best-fitting line parameters
-    Line best_line = {0.0, 0.0, 0};
+    Line best_line = {0.0, 0.0, 0, {}};
 
     // Random number generator for sampling points
     std::random_device rd;
-    std::cout << "Random device seed: " << rd() << std::endl; // Print random device seed
     std::mt19937 gen(rd());
-    std::cout << "Initial value of gen: " << gen() << std::endl; // Print initial value of gen
-
 
     for (int i = 0; i < num_iterations; ++i) {
         // Randomly sample two points
@@ -457,15 +460,14 @@ Line fitLineRANSAC(const std::vector <Point> &points, int num_iterations, double
         double slope = (y2 - y1) / (x2 - x1);
         double intercept = y1 - slope * x1;
 
-        // Print the slope and intercept of the current line
-        std::cout << "Iteration " << i << ": Slope = " << slope << ", Intercept = " << intercept << std::endl;
-
-        // Count the number of inliers
+        // Count the number of inliers and store them
         int inliers = 0;
-        for (const Point &p: points) {
+        std::vector<Point> current_inliers;
+        for (const Point &p : points) {
             double d = std::abs(p.y - (slope * p.x + intercept));
             if (d < threshold) {
                 inliers++;
+                current_inliers.push_back(p);
             }
         }
 
@@ -474,6 +476,7 @@ Line fitLineRANSAC(const std::vector <Point> &points, int num_iterations, double
             best_line.slope = slope;
             best_line.intercept = intercept;
             best_line.num_inliers = inliers;
+            best_line.inlier_points = current_inliers;
         }
     }
 
@@ -502,7 +505,7 @@ Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size, float
     }
 
     // Fit a line using RANSAC
-    int num_iterations = 100; // Adjust as needed
+    int num_iterations = 100000000; // Adjust as needed
 
     return fitLineRANSAC(points, num_iterations, threshold);
 }
@@ -1077,7 +1080,8 @@ int main(int argc, char **argv) {
             gimbalAction.request.roll = 0.0f;
             // gimbalAction.request.yaw = -yaw_const+90;
             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-            gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
+            // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
+            gimbalAction.request.yaw = gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
@@ -1766,8 +1770,8 @@ int main(int argc, char **argv) {
             ROS_INFO_STREAM("Takeoff task successful");
 
 
-                moveByPosOffset(control_task, {0, 0, height - 1, yaw_const}, 1, 3);
-
+                moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
+                moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3);
 
                 float theta_dot = 0.1;
                 float radius = 7;
@@ -1786,7 +1790,7 @@ int main(int argc, char **argv) {
                     Vx = radius * theta_dot * cosd(theta);
                     Vy = radius * theta_dot * sind(theta);
                     cout << "Vx is:" << Vx << " Vy is:" << Vy << "time step in ms is:" << time_step * 1000 << endl;
-                    CircularPlanner({Vx, Vy, 0, theta_dot}, time_step * 1000);
+                    CircularPlanner({Vx, Vy, 0, theta_dot*(180/M_PI)}, time_step * 1000);
 
                 }
 
@@ -1824,12 +1828,8 @@ int main(int argc, char **argv) {
             std::cout << "Width: " << zigzag_params.width << std::endl;
             std::cout << "Number: " << zigzag_params.number << std::endl;
             std::cout << "Split: " << zigzag_params.split << std::endl;
-
-            ZigZagPlanner(control_task, zigzag_params);
-
-                ros::spinOnce();
-
-                // Clear the vector if needed
+            
+                            // Clear the vector if needed
                 nodes_vec.clear();
             int detect_index;//detection_starter_indicator
             if (in_or_out == 'b') {
@@ -1841,6 +1841,12 @@ int main(int argc, char **argv) {
                     else { cout << "Please press 1 if SLAM is initiated"; }
                 }
             }
+
+            moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
+            ZigZagPlanner(control_task, zigzag_params);
+
+                ros::spinOnce();
+
 
                 /* for parking lot:
                 // Create and initialize node objects
@@ -2029,7 +2035,7 @@ int main(int argc, char **argv) {
 
                 cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
-                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1];
+                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1]<<endl;
 
                 for (int i = 0; i < nodes_vec.size(); ++i) {
 
@@ -2223,7 +2229,9 @@ int main(int argc, char **argv) {
 
                 float abs_vel = 4; // absolute velocity that needs to be projected
 
-
+		 moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_const), lateral_adjustment*cosd(yaw_const), 0, 0}, 1,3);
+	
+		            
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
                                           abs_vel, run_up_distance, height, release_delay);
             // emergency_brake_client.call(emergency_brake);
@@ -2234,7 +2242,7 @@ int main(int argc, char **argv) {
             cout<<"nodes_vec[0].x:"<<fire_GPS_posArray[0][0]<<" and nodes_vec[0]"<<fire_GPS_posArray[0][1]<<endl;
             cout<<"recent drone coordinates: x:"<<recent_drone_coord.x<<"y :"<<recent_drone_coord.y<<endl;
             // go above the first fire point
-            moveByPosOffset(control_task, {fire_GPS_posArray[0][0]-recent_drone_coord.x, fire_GPS_posArray[0][1]-recent_drone_coord.y, 0, 0}, 1,3);
+            moveByPosOffset(control_task, {fire_gps_local_pos[0][0]-recent_drone_coord.x, fire_gps_local_pos[0][1]-recent_drone_coord.y, 0, 0}, 1,3);
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = -90.0f;
             gimbalAction.request.roll = 0.0f;
@@ -2544,12 +2552,12 @@ void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line
     std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
     std::cout << "Number of inliers: " << best_line.num_inliers << std::endl;
 
-    // Calculate the point on the fitted line closest to the first sample
-    Point first_sample = {fire_coordinates[0][0], fire_coordinates[0][1]};
-    cout << "first sample x is:" << first_sample.x << "and first sample y is:" << first_sample.y << endl;
-    Point closest_point = closestPointOnLine(best_line, first_sample);
+    // Calculate the point on the fitted line closest to the first "real" inlier (not false alarm)
+    Point first_inlier = best_line.inlier_points[0];
+        std::cout << "First inlier: x = " << first_inlier.x << ", y = " << first_inlier.y << std::endl;
+    Point closest_point = closestPointOnLine(best_line, first_inlier);
 
-    Point intersecPoint = intersectionPoint(best_line, first_sample);
+    Point intersecPoint = intersectionPoint(best_line, first_inlier);
     cout << "intersection_point_x is:" << intersecPoint.x << "and its y is:" << intersecPoint.y << endl;;
     // Print the coordinates of the closest point
     std::cout << "Closest point on the line to the first sample: (" << closest_point.x << ", "

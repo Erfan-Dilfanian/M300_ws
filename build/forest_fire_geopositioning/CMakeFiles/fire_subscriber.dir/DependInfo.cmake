@@ -17,6 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/qin/M300_ws/src/forest_fire_geopositioning/include"
+  "/usr/include/libusb-1.0"
   "/home/qin/M300_ws/devel/include"
   "/home/qin/M300_ws/src/cv_bridge/cv_bridge/include"
   "/home/qin/M300_ws/src/dji_osdk_ros_cv4/include"
