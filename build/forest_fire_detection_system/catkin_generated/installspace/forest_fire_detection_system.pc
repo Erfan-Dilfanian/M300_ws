@@ -1,4 +1,4 @@
-prefix=/home/qin/M300_ws/install
+prefix=/home/erfan/M300_ws/install
 
 Name: forest_fire_detection_system
 Description: Description of forest_fire_detection_system

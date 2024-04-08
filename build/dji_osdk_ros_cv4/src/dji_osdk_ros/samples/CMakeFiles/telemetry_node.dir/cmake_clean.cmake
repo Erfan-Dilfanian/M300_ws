@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/telemetry_node"
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/telemetry_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/telemetry_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/telemetry_node.pdb"
   "CMakeFiles/telemetry_node.dir/telemetry_node.cpp.o"
 )
 

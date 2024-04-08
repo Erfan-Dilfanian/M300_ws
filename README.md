@@ -14,7 +14,7 @@ Place the M300 toward the north.
 ### ssh into the iCrest 2.0
 
 ```bash
-ssh erfan@192.168.1.26
+ssh - X erfan@192.168.1.26
 ```
 
 ### main launch file
@@ -24,7 +24,49 @@ cd M300_ws
 source devel/setup.bash
 ```
 
-### Retardant-releasing nodes
+
+### Detection launch file
+
+There is is a second launch file that you need to launch. It consists of compress_video_node (in which we also have main_and_fpv_node), the geopositioing node, and one of the arduino nodes.
+Open a new terminal.
+
+```bash
+roslaunch forest_fire_geopositioning fire_detection.launch 
+```
+
+you can also open this one:
+```bash
+rqt_image_view
+```
+
+
+### To run the fire detection (on ground station laptop)
+you need to run the following node in the stationay machine. (directly run themin the stationay PC not in the iCrest)
+```bash
+rosrun forest_fire_geopositioning fire_detection_v8.py
+```
+
+### To visualize the fire bounding boxes (optional)
+rosrun forest_fire_geopositioning fire_spots_visualization
+
+### To run the fire localization and SLAM (on groundstation laptop)
+To run the SLAM manually:
+```bash
+rosrun ORB_SLAM3 fire_localization /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Vocabulary/ORBvoc.txt /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Examples_old/Monocular/GoPro.yaml
+```
+note that this node is in the ground station PC
+
+
+### Fighting nodes
+```bash
+rosrun forest_fire_detection_system InMotionDropping_Flight_control_node
+```
+
+*note:* after each flight test, Ctrl+C this node and the second launch file, and replug the arduino power cable so that you make arduino ready for the next flight.
+
+### To individually test Retardant-releasing nodes
+The first node is in the fire _geopositioning launch file, and the second one would be called form the code, so these are just for testing the arduino. 
+
 Open a new terminal
 
 First, you need to run the following node:
@@ -35,54 +77,12 @@ Then, whenever you were ready, release the retardant with the following node:
 ```bash
 rosrun arduino_actuator servo_pub.py
 ```
-### To activate H20T camera
-Open a new terminal.
-```bash
-rosrun dji_osdk_ros main_and_fpv_node
-```
-
-Then, for H20T usage, enter `1`.
-
-Then, you can see the images from :
-```bash
-rqt_image_view
-```
-
-### To compress video images
-
-```bash
-rosrun dji_osdk_ros compress_video_node
-```
-
-### To run the fire detection
-```bash
-rosrun forest_fire_geopositioning fire_detection_v8.py
-```
-
-### To visualize the fire bounding boxes
-rosrun forest_fire_geopositioning fire_spots_visualization
-
-### To run the fire localization and SLAM
-To run the SLAM manually:
-```bash
-rosrun ORB_SLAM3 fire_localization /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Vocabulary/ORBvoc.txt /home/qin/Downloads/ORB_SLAM3_Ubuntu_20/Examples_old/Monocular/GoPro.yaml
-```
-### To run the geopositioning
-```bash
-rosrun forest_fire_geopositioning geo_positioning
-```
-
-### Fighting nodes
-```bash
-rosrun forest_fire_detection_system InMotionDropping_Flight_control_node
-```
-
-### To launch all nodes
-roslaunch forest_fire_geopositioning fire_geopositioning.launch
-
 
 ## Dateset available
 https://drive.google.com/file/d/1YPX3RgdjjUx_tRMU9sRcODnS2XP0VS_U/view?usp=sharing
+
+## create your own dataset
+rosbag record -O m300_dataset /bounding_boxes/fire_spots /clock /dji_osdk_ros/gps_position /dji_osdk_ros/main_wide_RGB /position/camera_pose /position/fire_spots /position/fire_spots_GPS /position/real_scale
 
 ### Topics
 ```

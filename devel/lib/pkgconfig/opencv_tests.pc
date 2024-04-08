@@ -1,4 +1,4 @@
-prefix=/home/qin/M300_ws/devel
+prefix=/home/erfan/M300_ws/devel
 
 Name: opencv_tests
 Description: Description of opencv_tests

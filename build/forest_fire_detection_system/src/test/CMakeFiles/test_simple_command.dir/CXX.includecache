@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControl.h
 ros/service_traits.h
 -
 dji_osdk_ros/FlightTaskControlRequest.h
@@ -14,7 +14,7 @@ dji_osdk_ros/FlightTaskControlRequest.h
 dji_osdk_ros/FlightTaskControlResponse.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlRequest.h
 string
 -
 vector
@@ -32,7 +32,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/FlightTaskControlResponse.h
 string
 -
 vector
@@ -48,7 +48,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickAction.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickAction.h
 ros/service_traits.h
 -
 dji_osdk_ros/JoystickActionRequest.h
@@ -56,7 +56,7 @@ dji_osdk_ros/JoystickActionRequest.h
 dji_osdk_ros/JoystickActionResponse.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionRequest.h
 string
 -
 vector
@@ -74,7 +74,7 @@ ros/message_operations.h
 dji_osdk_ros/JoystickParams.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickActionResponse.h
 string
 -
 vector
@@ -90,7 +90,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/JoystickParams.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/JoystickParams.h
 string
 -
 vector
@@ -106,7 +106,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthority.h
 ros/service_traits.h
 -
 dji_osdk_ros/ObtainControlAuthorityRequest.h
@@ -114,7 +114,7 @@ dji_osdk_ros/ObtainControlAuthorityRequest.h
 dji_osdk_ros/ObtainControlAuthorityResponse.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityRequest.h
 string
 -
 vector
@@ -130,7 +130,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/ObtainControlAuthorityResponse.h
 string
 -
 vector
@@ -146,7 +146,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickMode.h
 ros/service_traits.h
 -
 dji_osdk_ros/SetJoystickModeRequest.h
@@ -154,7 +154,7 @@ dji_osdk_ros/SetJoystickModeRequest.h
 dji_osdk_ros/SetJoystickModeResponse.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeRequest.h
 string
 -
 vector
@@ -170,7 +170,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
+/home/erfan/M300_ws/devel/include/dji_osdk_ros/SetJoystickModeResponse.h
 string
 -
 vector
@@ -186,13 +186,13 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/qin/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
+/home/erfan/M300_ws/src/dji_osdk_ros_cv4/include/dji_osdk_ros/common_type.h
 dji_type.hpp
 -
 vector
 -
 
-/home/qin/M300_ws/src/forest_fire_detection_system/include/test/test_simple_command.hpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/test/test_simple_command.hpp
 dji_osdk_ros/FlightTaskControl.h
 -
 dji_osdk_ros/JoystickAction.h
@@ -220,7 +220,7 @@ iostream
 vector
 -
 
-/home/qin/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/include/tools/PrintControl/PrintCtrlMacro.h
 cstdarg
 -
 cstdio
@@ -230,11 +230,11 @@ cstdlib
 cstring
 -
 
-/home/qin/M300_ws/src/forest_fire_detection_system/src/test/test_simple_command.cpp
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/test_simple_command.cpp
 test/test_simple_command.hpp
 -
 tools/PrintControl/PrintCtrlMacro.h
-/home/qin/M300_ws/src/forest_fire_detection_system/src/test/tools/PrintControl/PrintCtrlMacro.h
+/home/erfan/M300_ws/src/forest_fire_detection_system/src/test/tools/PrintControl/PrintCtrlMacro.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

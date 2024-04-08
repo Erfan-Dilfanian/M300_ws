@@ -1,10 +1,10 @@
 
 "use strict";
 
-let ToggleGrabDataDepthEstimation = require('./ToggleGrabDataDepthEstimation.js')
 let SegmentSmoke = require('./SegmentSmoke.js')
+let ToggleGrabDataDepthEstimation = require('./ToggleGrabDataDepthEstimation.js')
 
 module.exports = {
-  ToggleGrabDataDepthEstimation: ToggleGrabDataDepthEstimation,
   SegmentSmoke: SegmentSmoke,
+  ToggleGrabDataDepthEstimation: ToggleGrabDataDepthEstimation,
 };

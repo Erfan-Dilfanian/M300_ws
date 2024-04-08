@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/mission_node"
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/mission_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/mission_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/mission_node.pdb"
   "CMakeFiles/mission_node.dir/mission_node.cpp.o"
 )
 

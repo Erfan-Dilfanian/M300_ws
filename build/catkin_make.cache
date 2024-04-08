@@ -1,2 +1,2 @@
 arduino_actuator:cv_bridge/cv_bridge:cv_bridge/image_geometry:cv_bridge/opencv_tests:cv_bridge/vision_opencv:dji_osdk_ros_cv4:forest_fire_detection_system:forest_fire_geopositioning
--DCATKIN_DEVEL_PREFIX=/home/qin/M300_ws/devel -DCMAKE_INSTALL_PREFIX=/home/qin/M300_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/erfan/M300_ws/devel -DCMAKE_INSTALL_PREFIX=/home/erfan/M300_ws/install -G Unix Makefiles

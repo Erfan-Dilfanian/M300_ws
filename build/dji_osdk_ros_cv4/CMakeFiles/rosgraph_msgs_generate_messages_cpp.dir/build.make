@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build: rosgr
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/dji_osdk_ros_cv4 /home/qin/M300_ws/build /home/qin/M300_ws/build/dji_osdk_ros_cv4 /home/qin/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/dji_osdk_ros_cv4 /home/erfan/M300_ws/build /home/erfan/M300_ws/build/dji_osdk_ros_cv4 /home/erfan/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 

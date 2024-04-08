@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/GrabInfoForReconstruction"
-  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/GrabInfoForReconstruction.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/GrabInfoForReconstruction"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/GrabInfoForReconstruction.pdb"
   "CMakeFiles/GrabInfoForReconstruction.dir/single_fire_point_reconstruction/GrabInfoForReconstruction.cpp.o"
 )
 
