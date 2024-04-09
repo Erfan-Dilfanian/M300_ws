@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_getParam"
+  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/test_getParam.pdb"
+  "CMakeFiles/test_getParam.dir/test_getParam.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/test_getParam.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

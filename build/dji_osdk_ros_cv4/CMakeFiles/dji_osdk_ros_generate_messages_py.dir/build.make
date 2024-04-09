@@ -43,1110 +43,1110 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
+CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
+CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 
 # Utility rule file for dji_osdk_ros_generate_messages_py.
 
 # Include the progress variables for this target.
 include dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/progress.make
 
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py
-dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py
-
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG dji_osdk_ros/FCTimeInUTC"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG dji_osdk_ros/JoystickParams"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG dji_osdk_ros/GPSUTC"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG dji_osdk_ros/Gimbal"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG dji_osdk_ros/Waypoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG dji_osdk_ros/WaypointList"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorFlying"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuator"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG dji_osdk_ros/WaypointV2AssociateTrigger"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocusParam"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuator"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python from MSG dji_osdk_ros/WaypointV2Config"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python from MSG dji_osdk_ros/WaypointV2GimbalActuatorRotationParam"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python from MSG dji_osdk_ros/WaypointV2GimbalActuator"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python from MSG dji_osdk_ros/WaypointV2InitSetting"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Python from MSG dji_osdk_ros/WaypointV2IntervalTrigger"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Python from MSG dji_osdk_ros/WaypointV2ReachpointTrigger"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Python from MSG dji_osdk_ros/WaypointV2SampleReachPointTrigger"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Python from MSG dji_osdk_ros/WaypointV2TrajectoryTrigger"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Python from MSG dji_osdk_ros/WaypointV2Action"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Python from MSG dji_osdk_ros/WaypointV2"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Python from MSG dji_osdk_ros/WaypointV2MissionEventPush"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Python from MSG dji_osdk_ros/WaypointV2MissionStatePush"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Python from MSG dji_osdk_ros/MobileData"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Python from MSG dji_osdk_ros/PayloadData"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Python from MSG dji_osdk_ros/MissionWaypointAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Python from MSG dji_osdk_ros/MissionWaypoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Python from MSG dji_osdk_ros/MissionWaypointTask"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Python from MSG dji_osdk_ros/MissionHotpointTask"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Python from MSG dji_osdk_ros/FlightAnomaly"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Python from MSG dji_osdk_ros/VOPosition"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Python from MSG dji_osdk_ros/BatteryState"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Python from MSG dji_osdk_ros/BatteryWholeInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Python from MSG dji_osdk_ros/SmartBatteryState"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Python from MSG dji_osdk_ros/SmartBatteryDynamicInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating Python from MSG dji_osdk_ros/HMSPushInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating Python code from SRV dji_osdk_ros/GetDroneType"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating Python code from SRV dji_osdk_ros/GetM300StereoParams"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating Python code from SRV dji_osdk_ros/FlightTaskControl"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating Python code from SRV dji_osdk_ros/SetJoystickMode"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating Python code from SRV dji_osdk_ros/JoystickAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating Python code from SRV dji_osdk_ros/ObtainControlAuthority"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating Python code from SRV dji_osdk_ros/KillSwitch"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating Python code from SRV dji_osdk_ros/EmergencyBrake"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating Python code from SRV dji_osdk_ros/GimbalAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating Python code from SRV dji_osdk_ros/CameraEV"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating Python code from SRV dji_osdk_ros/CameraShutterSpeed"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Generating Python code from SRV dji_osdk_ros/CameraAperture"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Generating Python code from SRV dji_osdk_ros/CameraISO"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Generating Python code from SRV dji_osdk_ros/CameraFocusPoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Generating Python code from SRV dji_osdk_ros/CameraTapZoomPoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Generating Python code from SRV dji_osdk_ros/CameraSetZoomPara"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Generating Python code from SRV dji_osdk_ros/CameraZoomCtrl"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating Python code from SRV dji_osdk_ros/CameraStartShootSinglePhoto"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating Python code from SRV dji_osdk_ros/CameraStartShootBurstPhoto"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Generating Python code from SRV dji_osdk_ros/CameraStartShootAEBPhoto"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Generating Python code from SRV dji_osdk_ros/CameraStartShootIntervalPhoto"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Generating Python code from SRV dji_osdk_ros/CameraStopShootPhoto"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Generating Python code from SRV dji_osdk_ros/CameraRecordVideoAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating Python code from SRV dji_osdk_ros/GetWholeBatteryInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Generating Python code from SRV dji_osdk_ros/GetSingleBatteryDynamicInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Generating Python code from SRV dji_osdk_ros/MFIO"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Generating Python code from SRV dji_osdk_ros/SetGoHomeAltitude"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Generating Python code from SRV dji_osdk_ros/GetGoHomeAltitude"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Generating Python code from SRV dji_osdk_ros/SetCurrentAircraftLocAsHomePoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Generating Python code from SRV dji_osdk_ros/SetHomePoint"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Generating Python code from SRV dji_osdk_ros/SetupCameraH264"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Generating Python code from SRV dji_osdk_ros/SetAvoidEnable"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Generating Python code from SRV dji_osdk_ros/GetAvoidEnable"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating Python code from SRV dji_osdk_ros/InitWaypointV2Setting"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Generating Python code from SRV dji_osdk_ros/UploadWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Generating Python code from SRV dji_osdk_ros/UploadWaypointV2Action"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating Python code from SRV dji_osdk_ros/DownloadWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Generating Python code from SRV dji_osdk_ros/StartWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Generating Python code from SRV dji_osdk_ros/StopWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Generating Python code from SRV dji_osdk_ros/PauseWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Generating Python code from SRV dji_osdk_ros/ResumeWaypointV2Mission"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Generating Python code from SRV dji_osdk_ros/GenerateWaypointV2Action"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Generating Python code from SRV dji_osdk_ros/SetGlobalCruisespeed"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Generating Python code from SRV dji_osdk_ros/GetGlobalCruisespeed"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Generating Python code from SRV dji_osdk_ros/GetHMSData"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Generating Python code from SRV dji_osdk_ros/SubscribeWaypointV2Event"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Generating Python code from SRV dji_osdk_ros/SubscribeWaypointV2State"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Generating Python code from SRV dji_osdk_ros/Activation"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Generating Python code from SRV dji_osdk_ros/CameraAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Generating Python code from SRV dji_osdk_ros/DroneTaskControl"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Generating Python code from SRV dji_osdk_ros/SDKControlAuthority"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Generating Python code from SRV dji_osdk_ros/SetLocalPosRef"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Generating Python code from SRV dji_osdk_ros/MFIOConfig"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Generating Python code from SRV dji_osdk_ros/MFIOSetValue"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Generating Python code from SRV dji_osdk_ros/DroneArmControl"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Generating Python code from SRV dji_osdk_ros/MissionStatus"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Generating Python code from SRV dji_osdk_ros/MissionWpAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Generating Python code from SRV dji_osdk_ros/MissionHpAction"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Generating Python code from SRV dji_osdk_ros/MissionWpUpload"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Generating Python code from SRV dji_osdk_ros/MissionWpSetSpeed"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Generating Python code from SRV dji_osdk_ros/MissionWpGetSpeed"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Generating Python code from SRV dji_osdk_ros/MissionWpGetInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Generating Python code from SRV dji_osdk_ros/MissionHpUpload"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Generating Python code from SRV dji_osdk_ros/MissionHpGetInfo"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Generating Python code from SRV dji_osdk_ros/MissionHpUpdateYawRate"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Generating Python code from SRV dji_osdk_ros/MissionHpUpdateRadius"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Generating Python code from SRV dji_osdk_ros/MissionHpResetYaw"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Generating Python code from SRV dji_osdk_ros/SendMobileData"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Generating Python code from SRV dji_osdk_ros/SendPayloadData"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Generating Python code from SRV dji_osdk_ros/SetHardSync"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Generating Python code from SRV dji_osdk_ros/QueryDroneVersion"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Generating Python code from SRV dji_osdk_ros/Stereo240pSubscription"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Generating Python code from SRV dji_osdk_ros/StereoVGASubscription"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Generating Python code from SRV dji_osdk_ros/StereoDepthSubscription"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Generating Python code from SRV dji_osdk_ros/SetupCameraStream"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Generating Python msg __init__.py for dji_osdk_ros"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg --initpy
-
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
-/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Generating Python srv __init__.py for dji_osdk_ros"
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv --initpy
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py
+dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py
+
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG dji_osdk_ros/FCTimeInUTC"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG dji_osdk_ros/JoystickParams"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG dji_osdk_ros/GPSUTC"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG dji_osdk_ros/Gimbal"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG dji_osdk_ros/Waypoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG dji_osdk_ros/WaypointList"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorFlying"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG dji_osdk_ros/WaypointV2AircraftControlActuator"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG dji_osdk_ros/WaypointV2AssociateTrigger"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuatorFocusParam"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python from MSG dji_osdk_ros/WaypointV2CameraActuator"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python from MSG dji_osdk_ros/WaypointV2Config"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python from MSG dji_osdk_ros/WaypointV2GimbalActuatorRotationParam"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python from MSG dji_osdk_ros/WaypointV2GimbalActuator"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python from MSG dji_osdk_ros/WaypointV2InitSetting"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Python from MSG dji_osdk_ros/WaypointV2IntervalTrigger"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Python from MSG dji_osdk_ros/WaypointV2ReachpointTrigger"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Python from MSG dji_osdk_ros/WaypointV2SampleReachPointTrigger"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Python from MSG dji_osdk_ros/WaypointV2TrajectoryTrigger"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Python from MSG dji_osdk_ros/WaypointV2Action"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Python from MSG dji_osdk_ros/WaypointV2"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Python from MSG dji_osdk_ros/WaypointV2MissionEventPush"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Python from MSG dji_osdk_ros/WaypointV2MissionStatePush"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating Python from MSG dji_osdk_ros/MobileData"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Python from MSG dji_osdk_ros/PayloadData"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Python from MSG dji_osdk_ros/MissionWaypointAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Python from MSG dji_osdk_ros/MissionWaypoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Python from MSG dji_osdk_ros/MissionWaypointTask"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Python from MSG dji_osdk_ros/MissionHotpointTask"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Python from MSG dji_osdk_ros/FlightAnomaly"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating Python from MSG dji_osdk_ros/VOPosition"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Python from MSG dji_osdk_ros/BatteryState"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating Python from MSG dji_osdk_ros/BatteryWholeInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating Python from MSG dji_osdk_ros/SmartBatteryState"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating Python from MSG dji_osdk_ros/SmartBatteryDynamicInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating Python from MSG dji_osdk_ros/HMSPushInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating Python code from SRV dji_osdk_ros/GetDroneType"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating Python code from SRV dji_osdk_ros/GetM300StereoParams"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating Python code from SRV dji_osdk_ros/FlightTaskControl"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating Python code from SRV dji_osdk_ros/SetJoystickMode"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating Python code from SRV dji_osdk_ros/JoystickAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating Python code from SRV dji_osdk_ros/ObtainControlAuthority"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating Python code from SRV dji_osdk_ros/KillSwitch"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Generating Python code from SRV dji_osdk_ros/EmergencyBrake"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Generating Python code from SRV dji_osdk_ros/GimbalAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Generating Python code from SRV dji_osdk_ros/CameraEV"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Generating Python code from SRV dji_osdk_ros/CameraShutterSpeed"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Generating Python code from SRV dji_osdk_ros/CameraAperture"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Generating Python code from SRV dji_osdk_ros/CameraISO"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Generating Python code from SRV dji_osdk_ros/CameraFocusPoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Generating Python code from SRV dji_osdk_ros/CameraTapZoomPoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Generating Python code from SRV dji_osdk_ros/CameraSetZoomPara"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Generating Python code from SRV dji_osdk_ros/CameraZoomCtrl"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Generating Python code from SRV dji_osdk_ros/CameraStartShootSinglePhoto"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Generating Python code from SRV dji_osdk_ros/CameraStartShootBurstPhoto"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Generating Python code from SRV dji_osdk_ros/CameraStartShootAEBPhoto"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Generating Python code from SRV dji_osdk_ros/CameraStartShootIntervalPhoto"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Generating Python code from SRV dji_osdk_ros/CameraStopShootPhoto"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Generating Python code from SRV dji_osdk_ros/CameraRecordVideoAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Generating Python code from SRV dji_osdk_ros/GetWholeBatteryInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Generating Python code from SRV dji_osdk_ros/GetSingleBatteryDynamicInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Generating Python code from SRV dji_osdk_ros/MFIO"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Generating Python code from SRV dji_osdk_ros/SetGoHomeAltitude"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Generating Python code from SRV dji_osdk_ros/GetGoHomeAltitude"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Generating Python code from SRV dji_osdk_ros/SetCurrentAircraftLocAsHomePoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Generating Python code from SRV dji_osdk_ros/SetHomePoint"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Generating Python code from SRV dji_osdk_ros/SetupCameraH264"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Generating Python code from SRV dji_osdk_ros/SetAvoidEnable"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Generating Python code from SRV dji_osdk_ros/GetAvoidEnable"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating Python code from SRV dji_osdk_ros/InitWaypointV2Setting"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Generating Python code from SRV dji_osdk_ros/UploadWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Generating Python code from SRV dji_osdk_ros/UploadWaypointV2Action"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating Python code from SRV dji_osdk_ros/DownloadWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Generating Python code from SRV dji_osdk_ros/StartWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Generating Python code from SRV dji_osdk_ros/StopWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Generating Python code from SRV dji_osdk_ros/PauseWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Generating Python code from SRV dji_osdk_ros/ResumeWaypointV2Mission"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Generating Python code from SRV dji_osdk_ros/GenerateWaypointV2Action"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Generating Python code from SRV dji_osdk_ros/SetGlobalCruisespeed"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Generating Python code from SRV dji_osdk_ros/GetGlobalCruisespeed"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Generating Python code from SRV dji_osdk_ros/GetHMSData"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Generating Python code from SRV dji_osdk_ros/SubscribeWaypointV2Event"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Generating Python code from SRV dji_osdk_ros/SubscribeWaypointV2State"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Generating Python code from SRV dji_osdk_ros/Activation"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Generating Python code from SRV dji_osdk_ros/CameraAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Generating Python code from SRV dji_osdk_ros/DroneTaskControl"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Generating Python code from SRV dji_osdk_ros/SDKControlAuthority"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Generating Python code from SRV dji_osdk_ros/SetLocalPosRef"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Generating Python code from SRV dji_osdk_ros/MFIOConfig"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Generating Python code from SRV dji_osdk_ros/MFIOSetValue"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Generating Python code from SRV dji_osdk_ros/DroneArmControl"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Generating Python code from SRV dji_osdk_ros/MissionStatus"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Generating Python code from SRV dji_osdk_ros/MissionWpAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Generating Python code from SRV dji_osdk_ros/MissionHpAction"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Generating Python code from SRV dji_osdk_ros/MissionWpUpload"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Generating Python code from SRV dji_osdk_ros/MissionWpSetSpeed"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Generating Python code from SRV dji_osdk_ros/MissionWpGetSpeed"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Generating Python code from SRV dji_osdk_ros/MissionWpGetInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Generating Python code from SRV dji_osdk_ros/MissionHpUpload"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Generating Python code from SRV dji_osdk_ros/MissionHpGetInfo"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Generating Python code from SRV dji_osdk_ros/MissionHpUpdateYawRate"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Generating Python code from SRV dji_osdk_ros/MissionHpUpdateRadius"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Generating Python code from SRV dji_osdk_ros/MissionHpResetYaw"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Generating Python code from SRV dji_osdk_ros/SendMobileData"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Generating Python code from SRV dji_osdk_ros/SendPayloadData"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Generating Python code from SRV dji_osdk_ros/SetHardSync"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Generating Python code from SRV dji_osdk_ros/QueryDroneVersion"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Generating Python code from SRV dji_osdk_ros/Stereo240pSubscription"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Generating Python code from SRV dji_osdk_ros/StereoVGASubscription"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Generating Python code from SRV dji_osdk_ros/StereoDepthSubscription"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py: /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Generating Python code from SRV dji_osdk_ros/SetupCameraStream"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv -Idji_osdk_ros:/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Generating Python msg __init__.py for dji_osdk_ros"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg --initpy
+
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
+/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qin/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Generating Python srv __init__.py for dji_osdk_ros"
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv --initpy
 
 dji_osdk_ros_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py
-dji_osdk_ros_generate_messages_py: /home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FCTimeInUTC.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_JoystickParams.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_GPSUTC.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Gimbal.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_Waypoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointList.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorFlying.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuatorRotateHeading.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AircraftControlActuator.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2AssociateTrigger.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocalLengthParam.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuatorFocusParam.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2CameraActuator.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Config.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuatorRotationParam.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2GimbalActuator.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2InitSetting.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2IntervalTrigger.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2ReachpointTrigger.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2SampleReachPointTrigger.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2TrajectoryTrigger.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2Action.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionEventPush.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_WaypointV2MissionStatePush.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MobileData.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_PayloadData.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionWaypointTask.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_MissionHotpointTask.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_FlightAnomaly.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_VOPosition.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryState.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_BatteryWholeInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryState.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_SmartBatteryDynamicInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/_HMSPushInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetDroneType.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetM300StereoParams.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_FlightTaskControl.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetJoystickMode.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_JoystickAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ObtainControlAuthority.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_KillSwitch.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_EmergencyBrake.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GimbalAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraEV.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraShutterSpeed.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAperture.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraISO.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraFocusPoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraTapZoomPoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraSetZoomPara.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraZoomCtrl.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootSinglePhoto.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootBurstPhoto.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootAEBPhoto.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStartShootIntervalPhoto.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraStopShootPhoto.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraRecordVideoAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetWholeBatteryInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetSingleBatteryDynamicInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIO.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGoHomeAltitude.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGoHomeAltitude.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetCurrentAircraftLocAsHomePoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHomePoint.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraH264.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetAvoidEnable.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetAvoidEnable.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_InitWaypointV2Setting.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_UploadWaypointV2Action.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DownloadWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StartWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StopWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_PauseWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_ResumeWaypointV2Mission.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GenerateWaypointV2Action.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetGlobalCruisespeed.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetGlobalCruisespeed.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_GetHMSData.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2Event.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SubscribeWaypointV2State.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Activation.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_CameraAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneTaskControl.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SDKControlAuthority.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetLocalPosRef.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOConfig.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MFIOSetValue.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_DroneArmControl.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionStatus.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpAction.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpUpload.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpSetSpeed.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetSpeed.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionWpGetInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpload.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpGetInfo.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateYawRate.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpUpdateRadius.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_MissionHpResetYaw.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendMobileData.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SendPayloadData.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetHardSync.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_QueryDroneVersion.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_Stereo240pSubscription.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoVGASubscription.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_StereoDepthSubscription.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/_SetupCameraStream.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/msg/__init__.py
+dji_osdk_ros_generate_messages_py: /home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros/srv/__init__.py
 dji_osdk_ros_generate_messages_py: dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build.make
 
 .PHONY : dji_osdk_ros_generate_messages_py
@@ -1157,10 +1157,10 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build: dji_osd
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/build
 
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/clean:
-	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/dji_osdk_ros_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/dji_osdk_ros_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/clean
 
 dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/depend:
-	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/dji_osdk_ros_cv4 /home/erfan/M300_ws/build /home/erfan/M300_ws/build/dji_osdk_ros_cv4 /home/erfan/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/dji_osdk_ros_cv4 /home/qin/M300_ws/build /home/qin/M300_ws/build/dji_osdk_ros_cv4 /home/qin/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_py.dir/depend
 

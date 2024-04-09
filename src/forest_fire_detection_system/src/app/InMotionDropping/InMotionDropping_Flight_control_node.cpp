@@ -505,7 +505,7 @@ Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size, float
     }
 
     // Fit a line using RANSAC
-    int num_iterations = 100000000; // Adjust as needed
+    int num_iterations = 100000; // Adjust as needed
 
     return fitLineRANSAC(points, num_iterations, threshold);
 }
@@ -1774,6 +1774,15 @@ int main(int argc, char **argv) {
 
                 moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
                 moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3);
+                
+                            GimbalAction gimbalAction;
+            gimbalAction.request.rotationMode = 0;
+            gimbalAction.request.pitch = camera_pitch;
+            gimbalAction.request.roll = 0.0f;
+            // gimbalAction.request.yaw = -yaw_const+90;
+            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            gimbalAction.request.time = 0.5;
+            gimbal_control_client.call(gimbalAction);
 
                 float theta_dot = 0.1;
                 float radius = 7;
@@ -1796,14 +1805,7 @@ int main(int argc, char **argv) {
 
                 }
 
-            GimbalAction gimbalAction;
-            gimbalAction.request.rotationMode = 0;
-            gimbalAction.request.pitch = camera_pitch;
-            gimbalAction.request.roll = 0.0f;
-            // gimbalAction.request.yaw = -yaw_const+90;
-            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-            gimbalAction.request.time = 0.5;
-            gimbal_control_client.call(gimbalAction);
+
 
 
             ZigZagParams zigzag_params;
@@ -2107,7 +2109,11 @@ int main(int argc, char **argv) {
                     if (ground_truth_gps_aprch_cmnd == 'y'){
                         nodes_vec.clear();
                         // Load YAML file
-                        YAML::Node config = YAML::LoadFile("nodes.yaml");
+                               const std::string package_path =
+                ros::package::getPath("dji_osdk_ros");
+        const std::string config_path = package_path + "/config/nodes.yaml";
+        PRINT_INFO("Load parameters from:%s", config_path.c_str());
+        YAML::Node config = YAML::LoadFile(config_path);
 
                         // Check if "nodes" key exists
                         if (config["nodes"]) {
@@ -2223,6 +2229,8 @@ int main(int argc, char **argv) {
                 cout<< "moved to the starting point"<<endl;
                 yaw_adjustment = Rad2Deg(atan(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
+                		 moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_const), lateral_adjustment*cosd(yaw_const), 0, 0}, 1,3);
+                		 
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
                 // velocity mission
@@ -2231,7 +2239,7 @@ int main(int argc, char **argv) {
 
                 float abs_vel = 4; // absolute velocity that needs to be projected
 
-		 moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_const), lateral_adjustment*cosd(yaw_const), 0, 0}, 1,3);
+
 	
 		            
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
@@ -2489,6 +2497,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
             cout << "ROS spinned" << endl;
             cout<<"number of found fire spots are:"<<nodes_vec.size();
             if (nodes_vec.size()>number_of_fire_spots_criterion){
+            cout<<"cutting ZigZag to reduce SLAM error";
                 return;
             }
         }
