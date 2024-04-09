@@ -2517,6 +2517,12 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
             ros::spinOnce();
             rate.sleep();
             cout << "ROS spinned" << endl;
+                        cout<<"number of found fire spots are:"<<nodes_vec.size();
+            if (nodes_vec.size()>number_of_fire_spots_criterion){
+            cout<<"cutting ZigZag to reduce SLAM error";
+                return;
+            }
+            
 
 
         }
@@ -2533,6 +2539,11 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
             ros::spinOnce();
             rate.sleep();
             cout << "ROS spinned" << endl;
+                        cout<<"number of found fire spots are:"<<nodes_vec.size();
+            if (nodes_vec.size()>number_of_fire_spots_criterion){
+            cout<<"cutting ZigZag to reduce SLAM error";
+                return;
+            }
         }
 
         ros::spinOnce();
@@ -2546,6 +2557,11 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
             ros::spinOnce();
             rate.sleep();
             cout << "ROS spinned" << endl;
+                        cout<<"number of found fire spots are:"<<nodes_vec.size();
+            if (nodes_vec.size()>number_of_fire_spots_criterion){
+            cout<<"cutting ZigZag to reduce SLAM error"<<endl;
+                return;
+            }
 
         }
 
