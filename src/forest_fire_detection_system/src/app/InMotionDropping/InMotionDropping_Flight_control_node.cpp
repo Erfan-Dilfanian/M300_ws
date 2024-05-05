@@ -239,11 +239,11 @@ public:
     // float time_step = theta_step_radians / theta_dot;
 
     void CalculateParams() {
-        theta_step_radians = theta_step_degrees * M_PI / 180.0;
+        theta_step_radians = deg2Rad(theta_step_degrees);
         total_time = (2 * M_PI * radius) / theta_dot;         // total time drone traverse in the circular path
         number_of_divisions = 360 / theta_step_degrees;     // number of division the velocity function would be called
         time_step = total_time / number_of_divisions;
-        yawRate = theta_dot*(180/M_PI);
+        yawRate = Rad2Deg(theta_dot);
 
     }
 
