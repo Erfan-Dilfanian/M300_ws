@@ -135,7 +135,7 @@ bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesir
                      float posThresholdInM,
                      float yawThresholdInDeg);
 
-void CircularPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs);
+void CircularDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs);
 
 
 sensor_msgs::NavSatFix gps_position_;
@@ -205,7 +205,9 @@ float sind(float angleDegrees) {
     return sin(angleRadians);
 }
 
-float Rad2Deg(float Rad) { return Rad * (180 / M_PI); }
+double Rad2Deg(double Rad) { return Rad * (180 / M_PI); }
+
+double Deg2Rad(double Deg) { return Deg * (M_PI / 180); }
 
 sensor_msgs::NavSatFix fire_gps;
 
@@ -223,6 +225,31 @@ public:
     int id; // id of the node
 };
 
+class CircularPathParams {
+public:
+    double Vx, Vy;                        // Velocity components in x and y axes while traversing on the circular path
+    double theta_dot;                     // circular path angular velocity
+    float radius;                         // Radius of the circle
+    float theta_step_degrees;                     // theta step in degrees
+    float theta_step_radians;
+    float total_time;
+    float number_of_divisions;
+    float time_step;
+    float yawRate;
+    // float time_step = theta_step_radians / theta_dot;
+
+    void CalculateParams() {
+        theta_step_radians = theta_step_degrees * M_PI / 180.0;
+        total_time = (2 * M_PI * radius) / theta_dot;         // total time drone traverse in the circular path
+        number_of_divisions = 360 / theta_step_degrees;     // number of division the velocity function would be called
+        time_step = total_time / number_of_divisions;
+        yawRate = theta_dot*(180/M_PI);
+
+    }
+
+    // float time_step = theta_step_radians / theta_dot;
+
+};
 
 //Define vector to store all the nodes
 std::vector <node> nodes_vec;
@@ -707,7 +734,7 @@ int main(int argc, char **argv) {
    }
 
 */
-
+// scenarios
     cout << "please select case (all cases are for single fire point): " << std::endl
          << "[a] In-motion-dropping without geo-positioning" << std::endl
          << "[b] Hovering dropping after geo-positioning" << std::endl << "[c] In-motion-dropping after geo-positioning"
@@ -735,6 +762,7 @@ int main(int argc, char **argv) {
     cin >> height;
      */
 
+    // load yaml parameters
     const std::string package_path =
             ros::package::getPath("dji_osdk_ros");
     const std::string config_path = package_path + "/config/general_params.yaml";
@@ -855,7 +883,7 @@ int main(int argc, char **argv) {
 
 
     sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
-    float homeGPS_posArray[3];
+    double homeGPS_posArray[3]; // note that double holds more digits comapred to float
     homeGPS_posArray[0] = homeGPos.latitude;
     homeGPS_posArray[1] = homeGPos.longitude;
     homeGPS_posArray[2] = homeGPos.altitude;
@@ -863,8 +891,7 @@ int main(int argc, char **argv) {
     // FFDS::TOOLS::T a_pos[2];
 
 
-
-    Point recent_drone_coord; // recent drone coordinates
+    Point recent_drone_coord; // recent drone coordinates as a Point class
 
 
 
@@ -1749,12 +1776,10 @@ int main(int argc, char **argv) {
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
 
 
-
-
         /*float gimbal_yaw_adjustment;
         cout << "please enter gimbal yaw adjustment" << endl;
         cin >> gimbal_yaw_adjustment;*/
-        float yaw_const;
+        double yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
         std::cin >> yaw_const;
 
@@ -1773,7 +1798,7 @@ int main(int argc, char **argv) {
 
 
                 moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
-                moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3);
+                moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3); // note that north is x axis, east is y, and down axis is the z
                 
                             GimbalAction gimbalAction;
             gimbalAction.request.rotationMode = 0;
@@ -1784,24 +1809,20 @@ int main(int argc, char **argv) {
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
-                float theta_dot = 0.1;
-                float radius = 7;
-                float theta_step_degrees = 10;
-                float theta_step_radians = theta_step_degrees * M_PI / 180.0;
-                float total_time = (2 * M_PI) / 0.1;
-                float number_of_divisions = 360 / theta_step_degrees;
-                float time_step = total_time / number_of_divisions;
-                // float time_step = theta_step_radians / theta_dot;
-                float Vx;
-                float Vy;
+            CircularPathParams circular_params;
+
+            circular_params.theta_dot = 0.1;
+            circular_params.radius = 7;
+            circular_params.theta_step_degrees = 10;
+            circular_params.CalculateParams();
 
 
                 for (float theta = 0; theta < 360; theta = theta + theta_step_degrees) {
                     // time_step = (M_PI/theta_dot)/theta_step;
-                    Vx = radius * theta_dot * cosd(theta);
-                    Vy = radius * theta_dot * sind(theta);
+                    circular_params.Vx = radius * theta_dot * cosd(theta);
+                    circular_params.Vy = radius * theta_dot * sind(theta);
                     cout << "Vx is:" << Vx << " Vy is:" << Vy << "time step in ms is:" << time_step * 1000 << endl;
-                    CircularPlanner({Vx, Vy, 0, theta_dot*(180/M_PI)}, time_step * 1000);
+                    CircularDivisionPlanner({circular_params.Vx, circular_params.Vy, 0, circular_params.yawRate}, time_step * 1000);
 
                 }
 
@@ -1851,145 +1872,6 @@ int main(int argc, char **argv) {
 
                 ros::spinOnce();
 
-
-                /* for parking lot:
-                // Create and initialize node objects
-                node n1;
-                n1.x = 45.459209212306355;
-                n1.y = -73.91904076800327;
-                n1.z = 0;
-                n1.id = 1;
-
-                node n2;
-                n2.x = 45.45923743249868;
-                n2.y = -73.91904210910772;
-                n2.z = 0;
-                n2.id = 2;
-
-                node n3;
-                n3.x = 45.459243546871804;
-                n3.y = -73.91907295451003;
-                n3.z = 0;
-                n3.id = 3;
-
-                node n4;
-                n4.x = 45.45927694074417;
-                n4.y = -73.91904210910772;
-                n4.z = 0;
-                n4.id = 4;
-                */
-
-                // for P7 area:
-                // Create and initialize node objects
-                /*
-                node n1;
-                n1.x = 45.45836575506897;
-                n1.y = -73.93233197405084;
-                n1.z = 0;
-                n1.id = 1;
-
-                node n2;
-                n2.x = 45.45836575503348;
-                n2.y = -73.93233197404479;
-                n2.z = 0;
-                n2.id = 1;
-
-
-                node n3;
-                n3.x = 45.45836575508932;
-                n3.y = -73.93233197401255;
-                n3.z = 0;
-                n3.id = 1;
-
-                node n4;
-                n4.x = 45.45836575507632;
-                n4.y = -73.93233197400416;
-                n4.z = 0;
-                n4.id = 1;
-
-
-                node n5;
-                n2.x = 45.458375161942016;
-                n2.y = -73.93236483111184;
-                n2.z = 0;
-                n2.id = 2;
-
-                node n6;
-                n2.x = 45.458375161943359;
-                n2.y = -73.93236483114390;
-                n2.z = 0;
-                n2.id = 2;
-
-                node n7;
-                n2.x = 45.458375161945590;
-                n2.y = -73.93236483119482;
-                n2.z = 0;
-                n2.id = 2;
-
-                node n8;
-                n2.x = 45.458375161948811;
-                n2.y = -73.93236483110022;
-                n2.z = 0;
-                n2.id = 2;
-
-                node n9;
-                n3.x = 45.45840855632869;
-                n3.y = -73.93236214890278;
-                n3.z = 0;
-                n3.id = 3;
-
-                node n10;
-                n3.x = 45.45840855633733;
-                n3.y = -73.93236214896590;
-                n3.z = 0;
-                n3.id = 3;
-
-                node n11;
-                n3.x = 45.45840855632869;
-                n3.y = -73.93236214890278;
-                n3.z = 0;
-                n3.id = 3;
-
-                node n12;
-                n4.x = 45.458413259761834;
-                n4.y = -73.93241042866589;
-                n4.z = 0;
-                n4.id = 4;
-*/
-/*
-                node n1;
-                n1.x = 45.45836575506897;
-                n1.y = -73.93233197405084;
-                n1.z = 0;
-                n1.id = 1;
-
-
-                node n2;
-                n2.x = 45.458375161942016;
-                n2.y = -73.93236483111184;
-                n2.z = 0;
-                n2.id = 2;
-
-
-                node n3;
-                n3.x = 45.45840855632869;
-                n3.y = -73.93236214890278;
-                n3.z = 0;
-                n3.id = 3;
-
-
-                node n4;
-                n4.x = 45.458413259761834;
-                n4.y = -73.93241042866589;
-                n4.z = 0;
-                n4.id = 4;
-
-                // Push nodes into the vector
-                nodes_vec.push_back(n1);
-                nodes_vec.push_back(n2);
-                nodes_vec.push_back(n3);
-                nodes_vec.push_back(n4);
-                */
 
             if (in_or_out == 'a') {
 
@@ -2392,7 +2274,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
 }
 
 
-void CircularPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs) {
+void CircularDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs) {
     double originTime = 0;
     double currentTime = 0;
     uint64_t elapsedTimeInMs = 0;
