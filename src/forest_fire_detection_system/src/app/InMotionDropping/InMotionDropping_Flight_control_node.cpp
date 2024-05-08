@@ -66,6 +66,7 @@ namespace plt = matplotlibcpp;
 
 
 #include <tools/MathLib.hpp>
+// #include <tools/MathLib_1.hpp>
 
 // #include <dji_sdk_ros/SetLocalPosRef.h>
 
@@ -629,8 +630,9 @@ public:
     float length; //zigzag length
     float width;  //zigzag width
     int number;   //number of zigzag
-    int split;  //division in each branch of the zigzag
+    // int split;  //division in each branch of the zigzag
     float orientation; //orientation of the zigzag
+    double velocity;
 /*
     ZigZagParams(float l, float w, float o, int n, int s) {
         length = l;

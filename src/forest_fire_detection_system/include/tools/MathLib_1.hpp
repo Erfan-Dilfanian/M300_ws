@@ -177,28 +177,71 @@ void Meter2LatLongAlt(const T ref[3], const COMMON::LocalPosition<T>& local_pos,
   /* 高度 */
   result[2] = ref[2] + local_pos.z;
 }
-
+ 
 /**
  * a: reference point in deg: lat, lon, alt
  * m: NED
  * FIXME: need to change the order...
  * */
 
+// template <typename T>
+// void LatLong2Meter(const T a_pos[2], const T b_pos[2], T m[2]) {
+//   T lat1 = a_pos[0];
+//   T lon1 = a_pos[1];
+
+//   T lat2 = b_pos[0];
+//   T lon2 = b_pos[1];
+
+//   /* 涉及到ned是向北增加，且纬度向北也增加 */
+//   T n_distance = Deg2Rad(lat2 - lat1) * EARTH_R;
+
+//   T r_at_ref1 = cos(Deg2Rad(lat1)) * EARTH_R;
+
+//   /* 涉及到ned是向东增加，但是经度向东减少 */
+//   T e_distance = Deg2Rad(lon2 - lon1) * r_at_ref1;
+
+//   m[0] = n_distance;
+//   m[1] = e_distance;
+// }
+
+// Haversine formular for LatLong2Meter function
 template <typename T>
-void LatLong2Meter(const T a_pos[3], const T b_pos[3], T m[3]) {
+T haversine(T lat1, T lon1, T lat2, T lon2) {
+    // 将经纬度转换为弧度
+    lat1 = deg2rad(lat1);
+    lon1 = deg2rad(lon1);
+    lat2 = deg2rad(lat2);
+    lon2 = deg2rad(lon2);
+
+    // 计算经纬度差异
+    T dLat = lat2 - lat1;
+    T dLon = lon2 - lon1;
+
+    // 应用Haversine公式
+    T a = sin(dLat / 2) * sin(dLat / 2) +
+           cos(lat1) * cos(lat2) *
+           sin(dLon / 2) * sin(dLon / 2);
+    T c = 2 * atan2(sqrt(a), sqrt(static_cast<T>(1) - a));
+    T distance = EARTH_RADIUS<T> * c; // 得到直线距离
+
+    return distance;
+}
+
+void LatLong2Meter(const T a_pos[2], const T b_pos[2], T m[2]) {
   T lat1 = a_pos[0];
   T lon1 = a_pos[1];
 
   T lat2 = b_pos[0];
   T lon2 = b_pos[1];
 
- // 涉及到ned是向北增加，且纬度向北也增加
-  T n_distance = Deg2Rad(lat2 - lat1) * EARTH_R;
+  T distance = haversine(lat1, lon1, lat2, lon2);
 
-  T r_at_ref1 = cos(Deg2Rad(lat1)) * EARTH_R;
-
- // /* 涉及到ned是向东增加，但是经度向东减少
-  T e_distance = Deg2Rad(lon2 - lon1) * r_at_ref1;
+  // 计算Y分量（北方向）
+  T northAngle = haversine(lat1, lon1, lat2, lon1);
+  T n_distance = (lat2 > lat1) ? northAngle : -northAngle;
+  // 计算X分量（东方向）
+  T eastAngle = haversine(lat1, lon1, lat1, lon2);
+  T e_distance = (lon2 > lon1) ? eastAngle : -eastAngle;
 
   m[0] = n_distance;
   m[1] = e_distance;
@@ -206,6 +249,5 @@ void LatLong2Meter(const T a_pos[3], const T b_pos[3], T m[3]) {
 
 }  // namespace TOOLS
 }  // namespace FFDS
-
 
 #endif  // INCLUDE_TOOLS_MATHLIB_HPP_
