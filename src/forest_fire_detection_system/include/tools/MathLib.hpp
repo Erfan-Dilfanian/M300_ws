@@ -184,7 +184,7 @@ void Meter2LatLongAlt(const T ref[3], const COMMON::LocalPosition<T>& local_pos,
  * FIXME: need to change the order...
  * */
 template <typename T>
-void LatLong2Meter(const T a_pos[2], const T b_pos[2], T m[2]) {
+void LatLong2Meter(const T a_pos[3], const T b_pos[3], T m[3]) {
   T lat1 = a_pos[0];
   T lon1 = a_pos[1];
 

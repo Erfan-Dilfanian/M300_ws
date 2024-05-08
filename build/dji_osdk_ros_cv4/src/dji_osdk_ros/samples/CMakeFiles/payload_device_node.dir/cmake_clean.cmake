@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/payload_device_node"
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/payload_device_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/payload_device_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/payload_device_node.pdb"
   "CMakeFiles/payload_device_node.dir/payload_device_node.cpp.o"
 )
 

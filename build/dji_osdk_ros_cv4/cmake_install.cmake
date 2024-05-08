@@ -1,8 +1,8 @@
-# Install script for directory: /home/qin/M300_ws/src/dji_osdk_ros_cv4
+# Install script for directory: /home/erfan/M300_ws/src/dji_osdk_ros_cv4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/qin/M300_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/erfan/M300_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,177 +39,177 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/msg" TYPE FILE FILES
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FCTimeInUTC.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/JoystickParams.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/GPSUTC.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Gimbal.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/Waypoint.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointList.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2ReachpointTrigger.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionEventPush.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2MissionStatePush.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MobileData.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/PayloadData.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionHotpointTask.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/FlightAnomaly.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/VOPosition.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryState.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/BatteryWholeInfo.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/HMSPushInfo.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/srv" TYPE FILE FILES
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv"
-    "/home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetDroneType.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetM300StereoParams.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/FlightTaskControl.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetJoystickMode.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/JoystickAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ObtainControlAuthority.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/KillSwitch.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/EmergencyBrake.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GimbalAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraEV.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraShutterSpeed.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAperture.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraISO.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraFocusPoint.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraTapZoomPoint.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraSetZoomPara.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraZoomCtrl.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootSinglePhoto.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootBurstPhoto.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootAEBPhoto.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStartShootIntervalPhoto.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraStopShootPhoto.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraRecordVideoAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetWholeBatteryInfo.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGoHomeAltitude.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGoHomeAltitude.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetCurrentAircraftLocAsHomePoint.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHomePoint.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraH264.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetAvoidEnable.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetAvoidEnable.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Action.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StopWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/PauseWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/ResumeWaypointV2Mission.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetGlobalCruisespeed.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetHMSData.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2Event.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SubscribeWaypointV2State.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Activation.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/CameraAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneTaskControl.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SDKControlAuthority.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetLocalPosRef.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOConfig.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIOSetValue.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DroneArmControl.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionStatus.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpAction.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpSetSpeed.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetSpeed.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpload.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpGetInfo.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateYawRate.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpUpdateRadius.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionHpResetYaw.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendMobileData.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SendPayloadData.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetHardSync.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/QueryDroneVersion.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/Stereo240pSubscription.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoVGASubscription.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StereoDepthSubscription.srv"
+    "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetupCameraStream.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/cmake" TYPE FILE FILES "/home/qin/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/cmake" TYPE FILE FILES "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/include/dji_osdk_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/include/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/roseus/ros/dji_osdk_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/common-lisp/ros/dji_osdk_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/common-lisp/ros/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/share/gennodejs/ros/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/qin/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/erfan/M300_ws/devel/lib/python3/dist-packages/dji_osdk_ros")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/qin/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/cmake" TYPE FILE FILES "/home/qin/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/cmake" TYPE FILE FILES "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_ros-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros/cmake" TYPE FILE FILES
-    "/home/qin/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_rosConfig.cmake"
-    "/home/qin/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_rosConfig-version.cmake"
+    "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_rosConfig.cmake"
+    "/home/erfan/M300_ws/build/dji_osdk_ros_cv4/catkin_generated/installspace/dji_osdk_rosConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros" TYPE FILE FILES "/home/qin/M300_ws/src/dji_osdk_ros_cv4/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_osdk_ros" TYPE FILE FILES "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/qin/M300_ws/build/dji_osdk_ros_cv4/src/cmake_install.cmake")
+  include("/home/erfan/M300_ws/build/dji_osdk_ros_cv4/src/cmake_install.cmake")
 
 endif()
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/RangerFinderBasedLocator"
-  "/home/qin/M300_ws/devel/lib/forest_fire_detection_system/RangerFinderBasedLocator.pdb"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/RangerFinderBasedLocator"
+  "/home/erfan/M300_ws/devel/lib/forest_fire_detection_system/RangerFinderBasedLocator.pdb"
   "CMakeFiles/RangerFinderBasedLocator.dir/RangerFinderBasedLocator.cpp.o"
 )
 

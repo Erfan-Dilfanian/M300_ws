@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/qin/M300_ws/src
+CMAKE_SOURCE_DIR = /home/erfan/M300_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/qin/M300_ws/build
+CMAKE_BINARY_DIR = /home/erfan/M300_ws/build
 
 # Utility rule file for _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/qin/M300_ws/build
 include dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/progress.make
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action:
-	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/qin/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2SampleReachPointTrigger:dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2AircraftControlActuator:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2Action:dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2IntervalTrigger:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_osdk_ros /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2Action:dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam:dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2IntervalTrigger:dji_osdk_ros/WaypointV2SampleReachPointTrigger:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2AircraftControlActuator
 
 _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action
 _dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action: dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build.make
@@ -67,10 +67,10 @@ dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateW
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/build
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/clean:
-	cd /home/qin/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/cmake_clean.cmake
+	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && $(CMAKE_COMMAND) -P CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/cmake_clean.cmake
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/clean
 
 dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/depend:
-	cd /home/qin/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qin/M300_ws/src /home/qin/M300_ws/src/dji_osdk_ros_cv4 /home/qin/M300_ws/build /home/qin/M300_ws/build/dji_osdk_ros_cv4 /home/qin/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erfan/M300_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erfan/M300_ws/src /home/erfan/M300_ws/src/dji_osdk_ros_cv4 /home/erfan/M300_ws/build /home/erfan/M300_ws/build/dji_osdk_ros_cv4 /home/erfan/M300_ws/build/dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dji_osdk_ros_cv4/CMakeFiles/_dji_osdk_ros_generate_messages_check_deps_GenerateWaypointV2Action.dir/depend
 

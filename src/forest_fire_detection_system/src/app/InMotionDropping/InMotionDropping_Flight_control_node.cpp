@@ -1,5 +1,5 @@
 /** @file advanced_sensing_node.cpp
-author: Erfan Dilfanian, Huajun Dong
+authors: Erfan Dilfanian, Huajun Dong
  */
 
 //INCLUDE
@@ -225,12 +225,26 @@ public:
     int id; // id of the node
 };
 
+class Velocity {
+public:
+    double Vx;
+    double Vy;
+
+    // Constructor
+    Velocity(double vx, double vy) : Vx(vx), Vy(vy) {}
+
+    void displayVelocity() const {
+        cout << "Velocity (Vx, Vy): (" << Vx << ", " << Vy << ")" << endl;
+    }
+};
+
+
 class CircularPathParams {
 public:
-    double Vx, Vy;                        // Velocity components in x and y axes while traversing on the circular path
-    double theta_dot;                     // circular path angular velocity
     float radius;                         // Radius of the circle
+    double theta_dot;                     // circular path angular velocity
     float theta_step_degrees;                     // theta step in degrees
+    Velocity CircularVelocity;                        // Velocity components in x and y axes while traversing on the circular path
     float theta_step_radians;
     float total_time;
     float number_of_divisions;
@@ -239,13 +253,22 @@ public:
     // float time_step = theta_step_radians / theta_dot;
 
     void CalculateParams() {
-        theta_step_radians = deg2Rad(theta_step_degrees);
+        theta_step_radians = Deg2Rad(theta_step_degrees);
         total_time = (2 * M_PI * radius) / theta_dot;         // total time drone traverse in the circular path
         number_of_divisions = 360 / theta_step_degrees;     // number of division the velocity function would be called
         time_step = total_time / number_of_divisions;
         yawRate = Rad2Deg(theta_dot);
 
+    } // semicolon is not necessary here
+
+    // Constructor with initialization list
+    CircularPathParams(float r, double theta_dot_, float theta_step_degrees_, double vx = 0, double vy = 0)
+            : radius(r), theta_dot(theta_dot_), theta_step_degrees(theta_step_degrees_), CircularVelocity(vx, vy) {
+        CalculateParams();  // Call CalculateParams method to compute additional parameters
     }
+
+    // note: it's important to initialize member variables in the initialization list in the same order as they are
+    // declared in the class definition to avoid potential issues with member initialization order.
 
     // float time_step = theta_step_radians / theta_dot;
 
@@ -513,7 +536,7 @@ Line fitLineRANSAC(const std::vector<Point> &points, int num_iterations, double 
 // Function to process the array and call RANSAC
 // Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size) {
 
-Line processArrayAndFitLine(const float fire_gps_local_pos[][3], int size, float threshold) {
+Line processArrayAndFitLine(const double fire_gps_local_pos[][3], int size, float threshold) {
 
 
     cout << "We are in ProcessArrayAndFitLine function";
@@ -654,7 +677,7 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 }
 
 
-void doRANSAC(std::vector <node> nodes_vec, float fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
+void doRANSAC(std::vector <node> nodes_vec, double fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
 
 int main(int argc, char **argv) {
 
@@ -883,10 +906,9 @@ int main(int argc, char **argv) {
 
 
     sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
-    double homeGPS_posArray[3]; // note that double holds more digits comapred to float
+    double homeGPS_posArray[2]; // note that double holds more digits comapred to float
     homeGPS_posArray[0] = homeGPos.latitude;
     homeGPS_posArray[1] = homeGPos.longitude;
-    homeGPS_posArray[2] = homeGPos.altitude;
 
     // FFDS::TOOLS::T a_pos[2];
 
@@ -938,20 +960,18 @@ int main(int argc, char **argv) {
             fire_gps.altitude = 111.356392;
 */
 
-            float fire_GPS_posArray[3]; // posArray :  Position Array
+            double fire_GPS_posArray[2]; // posArray :  Position Array
 
             fire_GPS_posArray[0] = fire_gps.latitude;
             fire_GPS_posArray[1] = fire_gps.longitude;
-            fire_GPS_posArray[2] = fire_gps.altitude;
 
             ros::spinOnce();
 
 
             ROS_INFO("fire_GPS_posArray[0] Is [%f]", fire_GPS_posArray[0]);
             ROS_INFO("fire_GPS_posArray[1] Is [%f]", fire_GPS_posArray[1]);
-            ROS_INFO("fire_GPS_posArray[2] Is [%f]", fire_GPS_posArray[2]);
 
-            float fire_gps_local_pos[3];
+            double fire_gps_local_pos[2];
 
             FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
 
@@ -963,7 +983,7 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
 
-            float mission_start_pos[3] = {fire_gps_local_pos[0] - 10, fire_gps_local_pos[1] + 8,
+            double mission_start_pos[3] = {fire_gps_local_pos[0] - 10, fire_gps_local_pos[1] + 8,
                                           9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
@@ -978,7 +998,7 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            float current_GPS_posArray[3];
+            double current_GPS_posArray[3];
             current_GPS_posArray[0] = gps_position_.latitude;
             current_GPS_posArray[1] = gps_position_.longitude;
             current_GPS_posArray[2] = gps_position_.altitude;
@@ -1032,7 +1052,7 @@ int main(int argc, char **argv) {
     if (scenario == 'b' || scenario == 'c' || scenario == 'd') {
 
 
-        float fire_GPS_posArray[3]; // posArray :  Position Array
+        double fire_GPS_posArray[3]; // posArray :  Position Array
 
 
         sensor_msgs::NavSatFix fire_gps_expected;
@@ -1067,9 +1087,9 @@ int main(int argc, char **argv) {
         cin >> epsilon;
 
         //note that inputs shoudl be before take off!
-        float m[3];
+        double m[3];
 
-        float current_GPS_posArray[3];
+        double current_GPS_posArray[3];
 
         float yaw_const;
         std::cout << " please enter initial yaw angle in degree-Z axes downward" << std::endl;
@@ -1490,7 +1510,7 @@ int main(int argc, char **argv) {
             ROS_INFO("current position's y is [%f]", m[1]);
             ROS_INFO("current position's z is [%f]", m[2]); //m[2] is incorrect
 
-            float fire_gps_local_pos[3];
+            double fire_gps_local_pos[3];
 
             FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray, fire_gps_local_pos);
 
@@ -1650,12 +1670,12 @@ int main(int argc, char **argv) {
 
             ros::spinOnce();
 
-            float current_GPS_posArray[3];
+            double current_GPS_posArray[3];
 
 
             for (int i = 0; i < nodes_vec.size(); i++) {
-                float fire_GPS_posArray[nodes_vec.size()][3];
-                float fire_gps_local_pos[nodes_vec.size() - 1][3];
+                double fire_GPS_posArray[nodes_vec.size()][3];
+                double fire_gps_local_pos[nodes_vec.size() - 1][3];
                 if (i = 0) {
                     //Define fire_GPS_posArray[i][3] for relative distance transformation
                     fire_GPS_posArray[i][0] = nodes_vec[1].x;
@@ -1670,7 +1690,7 @@ int main(int argc, char **argv) {
                     moveByPosOffset(control_task, {0, 0, 7, 0}, 1, 3);
 
                     //Define mission start position
-                    float mission_start_pos[3] = {fire_gps_local_pos[i][0] - 7, fire_gps_local_pos[i][1] + 4,
+                    double mission_start_pos[3] = {fire_gps_local_pos[i][0] - 7, fire_gps_local_pos[i][1] + 4,
                                                   0}; // it also can be current x y z
 
                     //Fly to the mission start position with fixed yaw angle
@@ -1730,7 +1750,7 @@ int main(int argc, char **argv) {
                     current_GPS_posArray[1] = gps_position_.longitude;
                     current_GPS_posArray[2] = gps_position_.altitude;
 
-                    float recent_local_pos[3];
+                    double recent_local_pos[3];
 
                     FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
 
@@ -1809,20 +1829,20 @@ int main(int argc, char **argv) {
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
-            CircularPathParams circular_params;
+            CircularPathParams circular_params(7, 0.1, 1);
 
             circular_params.theta_dot = 0.1;
             circular_params.radius = 7;
-            circular_params.theta_step_degrees = 10;
+            circular_params.theta_step_degrees = 1;
             circular_params.CalculateParams();
 
 
-                for (float theta = 0; theta < 360; theta = theta + theta_step_degrees) {
+                for (float theta = 0; theta < 360; theta = theta + circular_params.theta_step_degrees) {
                     // time_step = (M_PI/theta_dot)/theta_step;
-                    circular_params.Vx = radius * theta_dot * cosd(theta);
-                    circular_params.Vy = radius * theta_dot * sind(theta);
-                    cout << "Vx is:" << Vx << " Vy is:" << Vy << "time step in ms is:" << time_step * 1000 << endl;
-                    CircularDivisionPlanner({circular_params.Vx, circular_params.Vy, 0, circular_params.yawRate}, time_step * 1000);
+                    circular_params.CircularVelocity.Vx = circular_params.radius * circular_params.theta_dot * cosd(theta); // this is not instantaneous
+                    circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
+                    cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
+                    CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
 
                 }
 
@@ -1913,11 +1933,11 @@ int main(int argc, char **argv) {
 */
 
 
-                float current_GPS_posArray[3];
+                double current_GPS_posArray[3];
 
-                float fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
+                double fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
 
-                float fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
+                double fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
 
                 cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
@@ -2007,11 +2027,11 @@ int main(int argc, char **argv) {
                                 temp.z = n["z"].as<float>();
                                 nodes_vec.push_back(temp);
 
-                                float current_GPS_posArray[3];
+                                double current_GPS_posArray[3];
 
-                                float fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
+                                double fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
 
-                                float fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
+                                double fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
 
                                 cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
@@ -2464,7 +2484,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
 }
 
-void doRANSAC(std::vector <node> nodes_vector, float fire_coordinates[][3], Line& best_line, Point& starting_point, float threshold, double run_up_distance){
+void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Line& best_line, Point& starting_point, float threshold, double run_up_distance){
     int size = nodes_vector.size(); // # number of rows in fire_gps_local
 
     // Process the array and fit the line

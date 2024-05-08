@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/flight_control_node"
-  "/home/qin/M300_ws/devel/lib/dji_osdk_ros/flight_control_node.pdb"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/flight_control_node"
+  "/home/erfan/M300_ws/devel/lib/dji_osdk_ros/flight_control_node.pdb"
   "CMakeFiles/flight_control_node.dir/flight_control_node.cpp.o"
 )
 
