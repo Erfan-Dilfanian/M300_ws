@@ -50,6 +50,8 @@ namespace plt = matplotlibcpp;
 
 #include <fstream>
 
+# include <thread> // we need this header for multi thread programming
+
 // #include <app/single_fire_point_task/SingleFirePointTaskManager.hpp>
 #include <sensor_msgs/NavSatFix.h>
 
@@ -135,6 +137,8 @@ ros::ServiceClient joystick_action_client;
 bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesired,
                      float posThresholdInM,
                      float yawThresholdInDeg);
+
+bool GeoPositioningFlag;
 
 void CircularDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs);
 
@@ -228,8 +232,8 @@ public:
 
 class Velocity {
 public:
-    double Vx;
-    double Vy;
+    float Vx;
+    float Vy;
 
     // Constructor
     Velocity(double vx, double vy) : Vx(vx), Vy(vy) {}
@@ -437,6 +441,8 @@ void FireCallback2(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
 }
 
 char in_or_out;  // this variable tells whether you are doing indoor experiment or outdoor experiment
+
+void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs);
 
 void LineOfFireCallback(const geometry_msgs::PoseArrayConstPtr &fire_spots_GPS) {
 
@@ -680,6 +686,31 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 
 
 void doRANSAC(std::vector <node> nodes_vec, double fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
+
+bool stopSLAM = 0;
+
+void FireSpotCounter()
+        {
+cout<< "FireSpotCounter thread is running";
+            const std::string package_path =
+                    ros::package::getPath("dji_osdk_ros");
+            const std::string config_path = package_path + "/config/geopositioning_params.yaml";
+            PRINT_INFO("Load parameters from:%s", config_path.c_str());
+            YAML::Node GeoPosConfig = YAML::LoadFile(config_path);
+
+            // Accessing the integer value from the YAML file
+            int number_of_fire_spots_criterion = GeoPosConfig["number_of_fire_spots_criterion"].as<int>(); // after this number zigzag would cut off
+    while(stopSLAM == 0){
+        ros::spinOnce();
+        if (nodes_vec.size()>number_of_fire_spots_criterion){
+            cout<<"cutting ZigZag to reduce SLAM error";
+            stopSLAM = 1;
+            return;
+        }
+cout<<"the FireSPotCounter thread finished working";
+    }
+
+        };
 
 int main(int argc, char **argv) {
 
@@ -1822,7 +1853,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
                 moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3); // note that north is x axis, east is y, and down axis is the z
                 
-                            GimbalAction gimbalAction;
+            GimbalAction gimbalAction;
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = camera_pitch;
             gimbalAction.request.roll = 0.0f;
@@ -1845,7 +1876,17 @@ int main(int argc, char **argv) {
                     circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                     cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
-
+                    /*if (theta % 10.0f == 0)
+                    {
+                        for (float pitch == 0; pitch < 20; pitch+=5){
+                        gimbalAction.request.pitch = pitch;
+                        // gimbalAction.request.yaw = -yaw_const+90;
+                        // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+                        // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
+                        // gimbalAction.request.time = 0.5;
+                        gimbal_control_client.call(gimbalAction);
+                    }
+*/
                 }
 
 
@@ -1867,17 +1908,15 @@ int main(int argc, char **argv) {
             zigzag_params.length = ZigZagconfig["zigzag_params"]["length"].as<float>();
             zigzag_params.width = ZigZagconfig["zigzag_params"]["width"].as<float>();
             zigzag_params.number = ZigZagconfig["zigzag_params"]["number"].as<int>();
-            zigzag_params.split = ZigZagconfig["zigzag_params"]["split"].as<int>();
             zigzag_params.orientation = yaw_const; // next time read it from a yaml file
 
             std::cout << "ZigZag Parameters:" << std::endl;
             std::cout << "Length: " << zigzag_params.length << std::endl;
             std::cout << "Width: " << zigzag_params.width << std::endl;
             std::cout << "Number: " << zigzag_params.number << std::endl;
-            std::cout << "Split: " << zigzag_params.split << std::endl;
-            
-                            // Clear the vector if needed
-                nodes_vec.clear();
+
+            // Clear the vector if needed
+            nodes_vec.clear();
             int detect_index;//detection_starter_indicator
             if (in_or_out == 'b') {
                 bool SLAM_flag = 0;
@@ -1890,7 +1929,10 @@ int main(int argc, char **argv) {
             }
 
             moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
+            GeoPositioningFlag = 0;
+            std::thread FireSpotCounter_thread(FireSpotCounter);
             ZigZagPlanner(control_task, zigzag_params);
+
 
                 ros::spinOnce();
 
@@ -2295,6 +2337,37 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
     }
 }
 
+void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs) {
+
+    double originTime = 0;
+    double currentTime = 0;
+    uint64_t elapsedTimeInMs = 0;
+
+    SetJoystickMode joystickMode;
+    JoystickAction joystickAction;
+
+    joystickMode.request.horizontal_mode = joystickMode.request.HORIZONTAL_VELOCITY;
+    joystickMode.request.vertical_mode = joystickMode.request.VERTICAL_VELOCITY;
+    joystickMode.request.yaw_mode = joystickMode.request.YAW_RATE;
+    joystickMode.request.horizontal_coordinate = joystickMode.request.HORIZONTAL_GROUND;
+    joystickMode.request.stable_mode = joystickMode.request.STABLE_ENABLE;
+    set_joystick_mode_client.call(joystickMode);
+
+    joystickAction.request.joystickCommand.x = offsetDesired.x;
+    joystickAction.request.joystickCommand.y = offsetDesired.y;
+    joystickAction.request.joystickCommand.z = offsetDesired.z;
+    joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;
+
+    originTime = ros::Time::now().toSec();
+    currentTime = originTime;
+    elapsedTimeInMs = (currentTime - originTime) * 1000;
+
+    while (elapsedTimeInMs <= timeMs && stopSLAM != 0) {
+        currentTime = ros::Time::now().toSec();
+        elapsedTimeInMs = (currentTime - originTime) * 1000;
+        joystick_action_client.call(joystickAction);
+    }
+}
 
 void CircularDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs) {
     double originTime = 0;
@@ -2360,39 +2433,40 @@ sensor_msgs::NavSatFix getAverageGPS(
 
 void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
-    const std::string package_path =
-            ros::package::getPath("dji_osdk_ros");
-    const std::string config_path = package_path + "/config/geopositioning_params.yaml";
-    PRINT_INFO("Load parameters from:%s", config_path.c_str());
-    YAML::Node GeoPosConfig = YAML::LoadFile(config_path);
 
-    // Accessing the integer value from the YAML file
-    int number_of_fire_spots_criterion = GeoPosConfig["number_of_fire_spots_criterion"].as<int>(); // after this number zigzag would cut off
 
 
 
     ros::spinOnce();
 
-    float lengths_steps[5][2] = {
-            {-zz_params.length * sind(zz_params.orientation) / zz_params.split,
-                                                                                zz_params.length *
-                                                                                cosd(zz_params.orientation) /
-                                                                                zz_params.split},
-            {zz_params.width * cosd(zz_params.orientation) / zz_params.split,   zz_params.width *
-                                                                                sind(zz_params.orientation) /
-                                                                                zz_params.split},
-            {zz_params.length * sind(zz_params.orientation) / zz_params.split,  -zz_params.length *
-                                                                                cosd(zz_params.orientation) /
-                                                                                zz_params.split},
-            {zz_params.width * cosd(zz_params.orientation) / zz_params.split,   zz_params.width *
-                                                                                sind(zz_params.orientation) /
-                                                                                zz_params.split}};
+    float velocities[4][2] = {
+            {-zz_params.velocity * sind(zz_params.orientation),
+                                                                                zz_params.velocity *
+                                                                                cosd(zz_params.orientation)},
+            {zz_params.velocity * cosd(zz_params.orientation),   zz_params.velocity *
+                                                                                sind(zz_params.orientation)},
+            {zz_params.velocity * sind(zz_params.orientation),  -zz_params.velocity *
+                                                                                cosd(zz_params.orientation)},
+            {zz_params.velocity * cosd(zz_params.orientation),   zz_params.velocity *
+                                                                                sind(zz_params.orientation)}};
     double frequency = 30; // 30 Hz
     ros::Rate rate(frequency);
 
 
-
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
+        ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, zz_params.length/zz_params.velocity);
+        if(stopSLAM == 1) {return;}
+        ros::spinOnce();
+        ZigZagDivisionPlanner({velocities[1][1], velocities[1][2], 0}, zz_params.length/zz_params.velocity);
+        if(stopSLAM == 1) {return;}
+        ros::spinOnce();
+        ZigZagDivisionPlanner({velocities[2][1], velocities[2][2], 0}, zz_params.length/zz_params.velocity);
+        if(stopSLAM == 1) {return;}
+        ros::spinOnce();
+        ZigZagDivisionPlanner({velocities[3][1], velocities[3][2], 0}, zz_params.length/zz_params.velocity);
+        if(stopSLAM == 1) {return;}
+
+/*
         for (int i = 0; i < zz_params.split; i++) {
             moveByPosOffset(task, {lengths_steps[0][0], lengths_steps[0][1], 0, zz_params.orientation}, 1, 3);
 
@@ -2405,36 +2479,24 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
                 return;
             }
         }
-
-        /* ROS_INFO("x is [%f]",local_position_.point.x);
-         ROS_INFO("y is [%f]",local_position_.point.y);
-         ROS_INFO("z is [%f]",local_position_.point.z);*/
+*/
+        //ROS_INFO("x is [%f]",local_position_.point.x);
+        // ROS_INFO("y is [%f]",local_position_.point.y);
+        // ROS_INFO("z is [%f]",local_position_.point.z);*/
         //ROS_INFO("latitude is [%f]",gps_position_.latitude);
         //ROS_INFO("longitude is [%f]",gps_position_.longitude);
         //ros::spin(); //here is good?
-        ROS_INFO_STREAM("first zigzag line completed!");
+        //ROS_INFO_STREAM("first zigzag line completed!");
 
 
-        for (int i = 0; i < zz_params.split; i++) {
-            moveByPosOffset(task, {lengths_steps[1][0], lengths_steps[1][1], 0, zz_params.orientation}, 1, 3);
-
-            ros::spinOnce();
-            rate.sleep();
-            cout << "ROS spinned" << endl;
-                        cout<<"number of found fire spots are:"<<nodes_vec.size();
-            if (nodes_vec.size()>number_of_fire_spots_criterion){
-            cout<<"cutting ZigZag to reduce SLAM error";
-                return;
-            }
             
+/*
 
 
-        }
 
         ros::spinOnce();
 
 
-        ROS_INFO_STREAM("Second zigzag line completed!");
 
 
         for (int i = 0; i < zz_params.split; i++) {
@@ -2455,19 +2517,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
         ROS_INFO_STREAM("Third zigzag line completed!");
 
 
-        for (int i = 0; i < zz_params.split; i++) {
-            moveByPosOffset(task, {lengths_steps[3][0], lengths_steps[3][1], 0, zz_params.orientation}, 1, 3);
 
-            ros::spinOnce();
-            rate.sleep();
-            cout << "ROS spinned" << endl;
-                        cout<<"number of found fire spots are:"<<nodes_vec.size();
-            if (nodes_vec.size()>number_of_fire_spots_criterion){
-            cout<<"cutting ZigZag to reduce SLAM error"<<endl;
-                return;
-            }
-
-        }
 
         ros::spinOnce();
 
@@ -2477,6 +2527,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
 
         ros::spinOnce();
+        */
     }
 
     // moveByPosOffset(control_task, {zz_w*cosd(yaw_const), zz_w*sind(yaw_const), 0.0, yaw_const}, 1, 3);

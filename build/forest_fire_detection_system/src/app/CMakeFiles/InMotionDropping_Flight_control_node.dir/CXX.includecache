@@ -1193,6 +1193,8 @@ dji_osdk_ros/CameraRecordVideoAction.h
 -
 fstream
 -
+thread
+-
 sensor_msgs/NavSatFix.h
 -
 geometry_msgs/PointStamped.h
