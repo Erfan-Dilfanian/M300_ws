@@ -687,7 +687,7 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 
 void doRANSAC(std::vector <node> nodes_vec, double fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
 
-bool stopSLAM = 0;
+bool stopSLAM = false;
 
 void FireSpotCounter()
         {
@@ -700,13 +700,19 @@ cout<< "FireSpotCounter thread is running";
 
             // Accessing the integer value from the YAML file
             int number_of_fire_spots_criterion = GeoPosConfig["number_of_fire_spots_criterion"].as<int>(); // after this number zigzag would cut off
-    while(stopSLAM == 0){
+    char ManualSLAMstopper;
+            while(stopSLAM == false){
         ros::spinOnce();
+        cout<<"checking the number of Fire spots identified"<<endl;
         if (nodes_vec.size()>number_of_fire_spots_criterion){
             cout<<"cutting ZigZag to reduce SLAM error";
-            stopSLAM = 1;
+            stopSLAM = true;
             return;
         }
+        cout<<"if YOu want the SLAM to stop, please enter y:"<<endl;
+        cin>>ManualSLAMstopper;
+        if(ManualSLAMstopper == 'y') {stopSLAM == true;};
+
 cout<<"the FireSPotCounter thread finished working";
     }
 
@@ -2455,16 +2461,16 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
         ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, zz_params.length/zz_params.velocity);
-        if(stopSLAM == 1) {return;}
+        if(stopSLAM == true) {return;}
         ros::spinOnce();
         ZigZagDivisionPlanner({velocities[1][1], velocities[1][2], 0}, zz_params.length/zz_params.velocity);
-        if(stopSLAM == 1) {return;}
+        if(stopSLAM == true) {return;}
         ros::spinOnce();
         ZigZagDivisionPlanner({velocities[2][1], velocities[2][2], 0}, zz_params.length/zz_params.velocity);
-        if(stopSLAM == 1) {return;}
+        if(stopSLAM == true) {return;}
         ros::spinOnce();
         ZigZagDivisionPlanner({velocities[3][1], velocities[3][2], 0}, zz_params.length/zz_params.velocity);
-        if(stopSLAM == 1) {return;}
+        if(stopSLAM == true) {return;}
 
 /*
         for (int i = 0; i < zz_params.split; i++) {
