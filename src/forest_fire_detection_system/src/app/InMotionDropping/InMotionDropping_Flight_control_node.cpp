@@ -1882,7 +1882,8 @@ int main(int argc, char **argv) {
                     circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                     cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
-                    if (static_cast<int>(theta) % 10 == 0)
+                    cout<<endl<<"theta is"<<theta;
+                    if (theta == 40)
                     {
                         for (float pitch = 0; pitch < 20; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
