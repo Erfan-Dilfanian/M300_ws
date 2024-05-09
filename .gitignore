@@ -1,2 +1,2 @@
-echo '/build/' >> .gitignore
-echo '/devel/'>>.gitignore
+/build
+/devel

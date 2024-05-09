@@ -213,8 +213,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2AircraftControlActuator.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from dji_osdk_ros/WaypointV2AircraftControlActuator.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg
 
@@ -258,8 +258,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2InitSetting.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2InitSetting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2InitSetting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2InitSetting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2InitSetting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating EusLisp code from dji_osdk_ros/WaypointV2InitSetting.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg
 
@@ -285,18 +285,18 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg/WaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating EusLisp code from dji_osdk_ros/WaypointV2Action.msg"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/msg
 
@@ -561,9 +561,9 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/InitWaypointV2Setting.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Generating EusLisp code from dji_osdk_ros/InitWaypointV2Setting.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv
 
@@ -579,8 +579,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/DownloadWaypointV2Mission.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Generating EusLisp code from dji_osdk_ros/DownloadWaypointV2Mission.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv
 
@@ -606,19 +606,19 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/GenerateWaypointV2Action.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Generating EusLisp code from dji_osdk_ros/GenerateWaypointV2Action.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv
 
@@ -706,8 +706,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpUpload.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Generating EusLisp code from dji_osdk_ros/MissionWpUpload.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpUpload.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv
 
@@ -724,8 +724,8 @@ dji_osdk_ros_cv4/CMakeFiles/dji_osdk_ros_generate_messages_eus: /home/erfan/M300
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointAction.msg
-/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypointTask.msg
+/home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv/MissionWpGetInfo.l: /home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/MissionWaypoint.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erfan/M300_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Generating EusLisp code from dji_osdk_ros/MissionWpGetInfo.srv"
 	cd /home/erfan/M300_ws/build/dji_osdk_ros_cv4 && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MissionWpGetInfo.srv -Idji_osdk_ros:/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p dji_osdk_ros -o /home/erfan/M300_ws/devel/share/roseus/ros/dji_osdk_ros/srv
 

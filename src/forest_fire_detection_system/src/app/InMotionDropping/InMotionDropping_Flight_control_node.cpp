@@ -1882,17 +1882,18 @@ int main(int argc, char **argv) {
                     circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                     cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
-                    /*if (theta % 10.0f == 0)
+                    if (static_cast<int>(theta) % 10 == 0)
                     {
-                        for (float pitch == 0; pitch < 20; pitch+=5){
-                        gimbalAction.request.pitch = pitch;
-                        // gimbalAction.request.yaw = -yaw_const+90;
-                        // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-                        // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
-                        // gimbalAction.request.time = 0.5;
-                        gimbal_control_client.call(gimbalAction);
+                        for (float pitch = 0; pitch < 20; pitch+=5) {
+                            gimbalAction.request.pitch = pitch;
+                            // gimbalAction.request.yaw = -yaw_const+90;
+                            // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+                            // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
+                            // gimbalAction.request.time = 0.5;
+                            gimbal_control_client.call(gimbalAction);
+                        }
                     }
-*/
+
                 }
 
 
