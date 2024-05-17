@@ -3,7 +3,8 @@ general_params:
   release_delay: -1900
   height: 7
   lateral_adjustment: -0.5
-  gimbal_yaw_adjustment: -80
+  # gimbal_yaw_adjustment: -80
+  gimbal_yaw_adjustment: 0
   threshold: 2
   run_up_distance: 14
   velocity: 0.5

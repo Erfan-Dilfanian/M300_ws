@@ -1893,7 +1893,7 @@ int main(int argc, char **argv) {
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
                     if (theta == 40)
                     {
-                        for (float pitch = 0; pitch < 20; pitch+=5) {
+                        for (float pitch = 20; pitch < 70; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
@@ -1901,6 +1901,10 @@ int main(int argc, char **argv) {
                             // gimbalAction.request.time = 0.5;
                             gimbal_control_client.call(gimbalAction);
                         }
+                        gimbalAction.request.pitch = camera_pitch;
+                        gimbal_control_client.call(gimbalAction);
+
+
                     }
 
                 }
@@ -2375,7 +2379,7 @@ void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs
     originTime = ros::Time::now().toSec();
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
-
+cout<<"stopSLAM is"<<stopSLAM<<endl;
     while (elapsedTimeInMs <= timeMs && stopSLAM != 0) {
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
@@ -2446,7 +2450,7 @@ sensor_msgs::NavSatFix getAverageGPS(
 }
 
 void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
-
+    cout<<"Starting zigzag"<<endl;
     ros::spinOnce();
 
     float velocities[4][2] = {
@@ -2459,9 +2463,11 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
                                                                                 cosd(zz_params.orientation)},
             {zz_params.velocity * cosd(zz_params.orientation),   zz_params.velocity *
                                                                                 sind(zz_params.orientation)}};
-    double frequency = 30; // 30 Hz
+    /*
+     * double frequency = 30; // 30 Hz
     ros::Rate rate(frequency);
-
+*/
+    cout<<"velocities[0][1] is"<<velocities[0][1]<<endl;
 
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
         ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, zz_params.length/zz_params.velocity);
