@@ -1881,7 +1881,7 @@ int main(int argc, char **argv) {
 
             circular_params.theta_dot = 0.1;
             circular_params.radius = 7;
-            circular_params.theta_step_degrees = 1;
+            circular_params.theta_step_degrees = 0.5;
             circular_params.CalculateParams();
 
 
@@ -1893,11 +1893,11 @@ int main(int argc, char **argv) {
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
                     if (theta == 40)
                     {
-                        float initial_pitch = 20.0f;
-                        float final_pitch = 70.0f;
+                        float initial_pitch = -50.0f;
+                        float final_pitch = -10.0f;
                         for (float pitch = initial_pitch; pitch < final_pitch; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
-                            cout<<"pitch: "<<endl;
+                            cout<<"pitch: "<<pitch<<endl;
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
                             // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
@@ -2383,10 +2383,14 @@ void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
 cout<<"stopSLAM is"<<stopSLAM<<endl;
-    while (elapsedTimeInMs <= timeMs && stopSLAM == false) {
+    while (elapsedTimeInMs <= timeMs) {
+
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
-        joystick_action_client.call(joystickAction);
+        if (stopSLAM ==0) {
+            joystick_action_client.call(joystickAction);
+        }
+        else{ break;}
     }
 }
 
