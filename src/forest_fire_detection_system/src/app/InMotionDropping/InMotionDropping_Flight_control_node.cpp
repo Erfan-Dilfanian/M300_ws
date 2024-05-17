@@ -700,6 +700,7 @@ cout<< "FireSpotCounter thread is running";
 
             // Accessing the integer value from the YAML file
             int number_of_fire_spots_criterion = GeoPosConfig["number_of_fire_spots_criterion"].as<int>(); // after this number zigzag would cut off
+   /*
     char ManualSLAMstopper;
             while(stopSLAM == false){
         ros::spinOnce();
@@ -715,7 +716,15 @@ cout<< "FireSpotCounter thread is running";
 
 cout<<"the FireSPotCounter thread finished working";
     }
+*/
+   int counter;
+   while(stopSLAM == false)
+   {
+       counter++;
+       std::this_thread::sleep_for(std::chrono::milliseconds(2));
+       cout<<"counter is:"<<counter<<endl;
 
+   }
         };
 
 int main(int argc, char **argv) {
