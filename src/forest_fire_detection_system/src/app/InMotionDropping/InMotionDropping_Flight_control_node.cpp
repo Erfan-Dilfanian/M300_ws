@@ -1937,7 +1937,7 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
             GeoPositioningFlag = 0;
-            std::thread FireSpotCounter_thread(FireSpotCounter);
+            // std::thread FireSpotCounter_thread(FireSpotCounter);
             ZigZagPlanner(control_task, zigzag_params);
 
 
@@ -2192,8 +2192,6 @@ int main(int argc, char **argv) {
 
                 float abs_vel = 4; // absolute velocity that needs to be projected
 
-
-	
 		            
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
                                           abs_vel, run_up_distance, height, release_delay);
@@ -2439,10 +2437,6 @@ sensor_msgs::NavSatFix getAverageGPS(
 }
 
 void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
-
-
-
-
 
     ros::spinOnce();
 
