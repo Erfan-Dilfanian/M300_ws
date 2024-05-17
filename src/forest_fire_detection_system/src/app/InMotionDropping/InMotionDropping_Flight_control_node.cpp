@@ -1897,6 +1897,7 @@ int main(int argc, char **argv) {
                         float final_pitch = 70.0f;
                         for (float pitch = initial_pitch; pitch < final_pitch; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
+                            cout<<"pitch: "<<endl;
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
                             // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
