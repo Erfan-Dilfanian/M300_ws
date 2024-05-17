@@ -1871,9 +1871,9 @@ int main(int argc, char **argv) {
             GimbalAction gimbalAction;
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = camera_pitch;
-            gimbalAction.request.roll = 30.0f;
+            gimbalAction.request.roll = 0;
             // gimbalAction.request.yaw = -yaw_const+90;
-            gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+            // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
             gimbalAction.request.time = 0.5;
             gimbal_control_client.call(gimbalAction);
 
@@ -1893,7 +1893,9 @@ int main(int argc, char **argv) {
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
                     if (theta == 40)
                     {
-                        for (float pitch = 20; pitch < 70; pitch+=5) {
+                        float initial_pitch = 20.0f;
+                        float final_pitch = 70.0f;
+                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
@@ -2380,7 +2382,7 @@ void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
 cout<<"stopSLAM is"<<stopSLAM<<endl;
-    while (elapsedTimeInMs <= timeMs && stopSLAM != 0) {
+    while (elapsedTimeInMs <= timeMs && stopSLAM == false) {
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         joystick_action_client.call(joystickAction);
