@@ -3,3 +3,4 @@ zigzag_params:
   width: 6
   number: 1
   split: 3
+  velocity: 0.5

@@ -1931,6 +1931,7 @@ int main(int argc, char **argv) {
             zigzag_params.length = ZigZagconfig["zigzag_params"]["length"].as<float>();
             zigzag_params.width = ZigZagconfig["zigzag_params"]["width"].as<float>();
             zigzag_params.number = ZigZagconfig["zigzag_params"]["number"].as<int>();
+            zigzag_params.velocity = ZigZagconfig["zigzag_params"]["velocity"].as<float>();
             zigzag_params.orientation = yaw_const; // next time read it from a yaml file
 
             std::cout << "ZigZag Parameters:" << std::endl;
@@ -2383,14 +2384,12 @@ void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
 cout<<"stopSLAM is"<<stopSLAM<<endl;
-    while (elapsedTimeInMs <= timeMs) {
+    while (elapsedTimeInMs <= timeMs && stopSLAM == false) {
 
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
-        if (stopSLAM ==0) {
-            joystick_action_client.call(joystickAction);
-        }
-        else{ break;}
+        joystick_action_client.call(joystickAction);
+        
     }
 }
 
