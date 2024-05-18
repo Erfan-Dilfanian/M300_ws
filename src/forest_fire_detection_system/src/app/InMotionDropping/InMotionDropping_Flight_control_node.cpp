@@ -1903,9 +1903,9 @@ int main(int argc, char **argv) {
                         gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
-                        gimbalAction.request.time = 5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 7; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
-                        gimbalAction.request.pitch = final_pitch;
+                        gimbalAction.request.pitch = camera_pitch;
                         gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
 
@@ -2215,11 +2215,14 @@ int main(int argc, char **argv) {
                 cout<< "moved to the starting point"<<endl;
                 yaw_adjustment = Rad2Deg(atan(best_line.slope));
                 cout << "yaw_adjustment is" << yaw_adjustment << endl;
-                		 moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_const), lateral_adjustment*cosd(yaw_const), 0, 0}, 1,3);
-                		 
+
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
-                // velocity mission
+
+            moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_adjustment), lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
+
+
+            // velocity mission
 
                 cout << "rotated and ready for approaching fire!" << endl;
 
@@ -2334,7 +2337,7 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
         double release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
         cout<<"release_time is:"<<release_time<<endl;
 
-        if (elapsedTimeInMs > release_time) {
+        if (elapsedTimeInMs > release_time || release_time<=0) {
             // controlServo(angle);
 
 
