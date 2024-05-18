@@ -1880,7 +1880,7 @@ int main(int argc, char **argv) {
             gimbalAction.request.time = 0;
             gimbal_control_client.call(gimbalAction);
 
-            CircularPathParams circular_params(7, 0.1, 1);
+            CircularPathParams circular_params(7, 0.08, 0.5);
 /*
             circular_params.theta_dot = 0.1;
             circular_params.radius = 7;
@@ -1903,7 +1903,7 @@ int main(int argc, char **argv) {
                         gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
-                        gimbalAction.request.time = 7; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 6; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = camera_pitch;
                         gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?

@@ -2,7 +2,7 @@ general_params:
   camera_pitch: -30
   release_delay: -1900
   height: 7
-  lateral_adjustment: -1
+  lateral_adjustment: -5
   # gimbal_yaw_adjustment: -80
   gimbal_yaw_adjustment: -30.5
   threshold: 2
