@@ -1905,7 +1905,7 @@ int main(int argc, char **argv) {
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
                             // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
-                            gimbalAction.request.time = 5;
+                            gimbalAction.request.time = 0.3; // Dont knwo th efunction exactly. make pitch movement smoother?
                             gimbal_control_client.call(gimbalAction);
                         }
                         gimbalAction.request.pitch = camera_pitch;
