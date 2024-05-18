@@ -718,13 +718,15 @@ cout<<"the FireSPotCounter thread finished working";
     }
 */
    int counter;
-   while(stopSLAM == false)
+   while(counter<number_of_fire_spots_criterion)
    {
        counter++;
-       std::this_thread::sleep_for(std::chrono::milliseconds(2));
+       std::this_thread::sleep_for(std::chrono::milliseconds(5));
        cout<<"counter is:"<<counter<<endl;
 
+
    }
+   stopSLAM = true;
         };
 
 int main(int argc, char **argv) {
@@ -1897,7 +1899,7 @@ int main(int argc, char **argv) {
                     {
                         float initial_pitch = -55.0f;
                         float final_pitch = -10.0f;
-                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=5) {
+                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=1) {
                             gimbalAction.request.pitch = pitch;
                             cout<<"pitch: "<<pitch<<endl;
                             // gimbalAction.request.yaw = -yaw_const+90;
@@ -1956,7 +1958,7 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
             GeoPositioningFlag = 0;
-            std::thread FireSpotCounter_thread(FireSpotCounter);
+            std::thread FireSpotCounter_thread(FireSpotCounter, number_of_fire_spots_criterion);
             ZigZagPlanner(control_task, zigzag_params);
             FireSpotCounter_thread.join();
 
