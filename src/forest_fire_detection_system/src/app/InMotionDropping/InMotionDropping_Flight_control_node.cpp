@@ -2390,7 +2390,6 @@ cout<<"stopSLAM is"<<stopSLAM<<endl;
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         joystick_action_client.call(joystickAction);
-        cout<<"while iteration stopped";
     }
 }
 
@@ -2474,22 +2473,22 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
      * double frequency = 30; // 30 Hz
     ros::Rate rate(frequency);
 */
-    cout<<"velocities[0][1] is"<<velocities[0][1]<<endl;
+    cout<<"velocities[0][0] is"<<velocities[0][1]<<endl;
     cout<<"time in division"<<zz_params.length/zz_params.velocity<<endl;
     float length_time = (zz_params.length/zz_params.velocity)*1000; // time it takes to traverse the length of ZigZag
     float width_time = (zz_params.width/zz_params.velocity)*1000; // time it takes to traverse the width of ZigZag;
 
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
-        ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, length_time); // note that time should be in Ms
+        ZigZagDivisionPlanner({velocities[0][0], velocities[0][1], 0}, length_time); // note that time should be in Ms
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[1][1], velocities[1][2], 0}, width_time);
+        ZigZagDivisionPlanner({velocities[1][0], velocities[1][1], 0}, width_time); // note that indexing starts form 0 in C++
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[2][1], velocities[2][2], 0}, length_time);
+        ZigZagDivisionPlanner({velocities[2][0], velocities[2][1], 0}, length_time);
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[3][1], velocities[3][2], 0}, width_time);
+        ZigZagDivisionPlanner({velocities[3][0], velocities[3][1], 0}, width_time);
         if(stopSLAM == true) {return;}
 
 /*
