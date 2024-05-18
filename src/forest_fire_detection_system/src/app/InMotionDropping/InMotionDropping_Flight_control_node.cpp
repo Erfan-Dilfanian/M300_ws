@@ -2476,18 +2476,20 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
 */
     cout<<"velocities[0][1] is"<<velocities[0][1]<<endl;
     cout<<"time in division"<<zz_params.length/zz_params.velocity<<endl;
+    float length_time = (zz_params.length/zz_params.velocity)*1000; // time it takes to traverse the length of ZigZag
+    float width_time = (zz_params.width/zz_params.velocity)*1000; // time it takes to traverse the width of ZigZag;
 
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
-        ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, zz_params.length/zz_params.velocity);
+        ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, length_time); // note that time should be in Ms
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[1][1], velocities[1][2], 0}, zz_params.length/zz_params.velocity);
+        ZigZagDivisionPlanner({velocities[1][1], velocities[1][2], 0}, width_time);
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[2][1], velocities[2][2], 0}, zz_params.length/zz_params.velocity);
+        ZigZagDivisionPlanner({velocities[2][1], velocities[2][2], 0}, length_time);
         if(stopSLAM == true) {return;}
         ros::spinOnce();
-        ZigZagDivisionPlanner({velocities[3][1], velocities[3][2], 0}, zz_params.length/zz_params.velocity);
+        ZigZagDivisionPlanner({velocities[3][1], velocities[3][2], 0}, width_time);
         if(stopSLAM == true) {return;}
 
 /*
