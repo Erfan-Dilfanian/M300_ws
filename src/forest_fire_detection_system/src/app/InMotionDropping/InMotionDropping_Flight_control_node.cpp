@@ -1900,14 +1900,17 @@ int main(int argc, char **argv) {
                         float initial_pitch = -60.0f;
                         float final_pitch = -10.0f;
                         gimbalAction.request.pitch = initial_pitch;
-                        gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 2; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
-                        gimbalAction.request.time = 6; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        std::this_thread::sleep_for(std::chrono::seconds(1));
+                        gimbalAction.request.time = 5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
+                        std::this_thread::sleep_for(std::chrono::seconds(1));
                         gimbalAction.request.pitch = camera_pitch;
-                        gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 2; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
+                        std::this_thread::sleep_for(std::chrono::seconds(1));
 
                         /*
                         for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
@@ -2219,7 +2222,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
 
-            moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_adjustment), lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
+            moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_adjustment), -lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
 
 
             // velocity mission
