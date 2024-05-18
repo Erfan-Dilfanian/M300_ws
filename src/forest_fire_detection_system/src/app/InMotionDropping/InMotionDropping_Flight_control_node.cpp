@@ -1874,14 +1874,16 @@ int main(int argc, char **argv) {
             gimbalAction.request.roll = 0;
             // gimbalAction.request.yaw = -yaw_const+90;
             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-            gimbalAction.request.time = 0.5;
+            gimbalAction.request.yaw = gimbal_yaw_adjustment;
+            gimbalAction.request.time = 0;
             gimbal_control_client.call(gimbalAction);
 
             CircularPathParams circular_params(7, 0.1, 1);
-
+/*
             circular_params.theta_dot = 0.1;
             circular_params.radius = 7;
-            circular_params.theta_step_degrees = 0.5;
+            circular_params.theta_step_degrees = 1;*/
+
             circular_params.CalculateParams();
 
 
@@ -1893,7 +1895,7 @@ int main(int argc, char **argv) {
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
                     if (theta == 40)
                     {
-                        float initial_pitch = -50.0f;
+                        float initial_pitch = -55.0f;
                         float final_pitch = -10.0f;
                         for (float pitch = initial_pitch; pitch < final_pitch; pitch+=5) {
                             gimbalAction.request.pitch = pitch;
@@ -1901,7 +1903,7 @@ int main(int argc, char **argv) {
                             // gimbalAction.request.yaw = -yaw_const+90;
                             // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
                             // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
-                            // gimbalAction.request.time = 0.5;
+                            gimbalAction.request.time = 0;
                             gimbal_control_client.call(gimbalAction);
                         }
                         gimbalAction.request.pitch = camera_pitch;
@@ -2385,11 +2387,10 @@ void ZigZagDivisionPlanner(const JoystickCommand &offsetDesired, uint32_t timeMs
     elapsedTimeInMs = (currentTime - originTime) * 1000;
 cout<<"stopSLAM is"<<stopSLAM<<endl;
     while (elapsedTimeInMs <= timeMs && stopSLAM == false) {
-
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         joystick_action_client.call(joystickAction);
-        
+        cout<<"while iteration stopped";
     }
 }
 
@@ -2474,6 +2475,7 @@ void ZigZagPlanner(FlightTaskControl &task, ZigZagParams zz_params) {
     ros::Rate rate(frequency);
 */
     cout<<"velocities[0][1] is"<<velocities[0][1]<<endl;
+    cout<<"time in division"<<zz_params.length/zz_params.velocity<<endl;
 
     for (int n = 0; n < zz_params.number; n++) { // loop for the number of zigzags
         ZigZagDivisionPlanner({velocities[0][1], velocities[0][2], 0}, zz_params.length/zz_params.velocity);
