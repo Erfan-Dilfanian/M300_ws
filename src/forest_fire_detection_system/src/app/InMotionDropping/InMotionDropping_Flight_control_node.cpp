@@ -1897,9 +1897,9 @@ int main(int argc, char **argv) {
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
                     if (theta == 40)
                     {
-                        float initial_pitch = -55.0f;
+                        float initial_pitch = -60.0f;
                         float final_pitch = -10.0f;
-                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=1) {
+                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
                             gimbalAction.request.pitch = pitch;
                             cout<<"pitch: "<<pitch<<endl;
                             // gimbalAction.request.yaw = -yaw_const+90;
