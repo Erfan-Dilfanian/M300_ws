@@ -1958,7 +1958,7 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
             GeoPositioningFlag = 0;
-            std::thread FireSpotCounter_thread(FireSpotCounter, number_of_fire_spots_criterion);
+            std::thread FireSpotCounter_thread(FireSpotCounter);
             ZigZagPlanner(control_task, zigzag_params);
             FireSpotCounter_thread.join();
 
