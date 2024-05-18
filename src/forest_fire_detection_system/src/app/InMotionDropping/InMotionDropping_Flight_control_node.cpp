@@ -1899,6 +1899,17 @@ int main(int argc, char **argv) {
                     {
                         float initial_pitch = -60.0f;
                         float final_pitch = -10.0f;
+                        gimbalAction.request.pitch = initial_pitch;
+                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+                        gimbalAction.request.pitch = final_pitch;
+                        gimbalAction.request.time = 2; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+                        gimbalAction.request.pitch = final_pitch;
+                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+
+                        /*
                         for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
                             gimbalAction.request.pitch = pitch;
                             cout<<"pitch: "<<pitch<<endl;
@@ -1910,6 +1921,7 @@ int main(int argc, char **argv) {
                         }
                         gimbalAction.request.pitch = camera_pitch;
                         gimbal_control_client.call(gimbalAction);
+                         */
 
 
                     }
