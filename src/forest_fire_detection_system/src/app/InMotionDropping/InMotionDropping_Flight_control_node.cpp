@@ -1900,13 +1900,13 @@ int main(int argc, char **argv) {
                         float initial_pitch = -60.0f;
                         float final_pitch = -10.0f;
                         gimbalAction.request.pitch = initial_pitch;
-                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
-                        gimbalAction.request.time = 2; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
-                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 4; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
 
                         /*
