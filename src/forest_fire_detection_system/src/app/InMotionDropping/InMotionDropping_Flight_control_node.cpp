@@ -74,6 +74,8 @@ namespace plt = matplotlibcpp;
 
 #include "std_msgs/UInt16.h"
 
+
+
 //CODE
 
 using namespace dji_osdk_ros;
@@ -1906,7 +1908,7 @@ int main(int argc, char **argv) {
                         std::this_thread::sleep_for(std::chrono::seconds(1));
                         gimbalAction.request.time = 5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
-                        std::this_thread::sleep_for(std::chrono::seconds(1));
+                        std::this_thread::sleep_for(std::chrono::seconds(5));
                         gimbalAction.request.pitch = camera_pitch;
                         gimbalAction.request.time = 2; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
@@ -2222,7 +2224,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
                                 3);  // note that x y z goes into this funciton
 
-            moveByPosOffset(control_task, {lateral_adjustment* sind(yaw_adjustment), -lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
+            moveByPosOffset(control_task, {- lateral_adjustment* sind(yaw_adjustment), - lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
 
 
             // velocity mission
