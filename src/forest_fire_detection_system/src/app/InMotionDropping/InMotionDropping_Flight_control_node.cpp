@@ -76,6 +76,9 @@ namespace plt = matplotlibcpp;
 
 #include <fl/Headers.h>
 
+// #include "vision_msgs/Detection2DArray.h" //as I need it for fuzzy control
+
+#include <std_msgs/Float32.h> // need it for pixel error percentage
 
 //CODE
 
@@ -735,6 +738,16 @@ cout<<"the FireSPotCounter thread finished working";
 // Function to create and configure the fuzzy logic engine
 fl::Engine* createFuzzyEngine();
 
+// Function to perform fuzzy inference
+double fuzzyInference(fl::Engine* engine, double inputError);
+
+float Pixel_Error_Percentage;
+void pixelErrorCallback(const std_msgs::Float32::ConstPtr& msg) {
+    // Process the received pixel error percentage message
+    Pixel_Error_Percentage = msg->data;
+    ROS_INFO("Received PixelError Percentage: %.2f%%", Pixel_Error_Percentage);
+    // Add your processing logic here
+}
 
 int main(int argc, char **argv) {
 
@@ -856,6 +869,7 @@ int main(int argc, char **argv) {
     float gimbal_yaw_adjustment = GeneralConfig["general_params"]["gimbal_yaw_adjustment"].as<float>();
     float threshold = GeneralConfig["general_params"]["threshold"].as<float>();
     double run_up_distance = GeneralConfig["general_params"]["run_up_distance"].as<float>();
+    bool apply_fuzzy_control = GeneralConfig["general_params"]["Apply_Fuzzy_Control"].as<float>();
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
     std::cout << "Release Delay: " << release_delay << std::endl;
@@ -864,6 +878,8 @@ int main(int argc, char **argv) {
     std::cout << "Gimbal Yaw Adjustment: " << gimbal_yaw_adjustment << std::endl;
     std::cout << "Threshold: " << threshold << std::endl;
     std::cout << "run up distance: " << run_up_distance << std::endl;
+    std::cout << "apply_fuzzy_control: " << apply_fuzzy_control << std::endl;
+
 
 
 
@@ -954,6 +970,7 @@ int main(int argc, char **argv) {
     QuaternionSub =
             nh.subscribe("dji_osdk_ros/attitude", 10,
                          QuaternionSubCallback);
+
 
 
     servoPub = nh.advertise<std_msgs::UInt16>("servo", 10); // Initialize servoPub
@@ -2232,13 +2249,24 @@ int main(int argc, char **argv) {
                                 3);  // note that x y z goes into this funciton
 
             moveByPosOffset(control_task, {- lateral_adjustment* sind(yaw_adjustment), - lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
+            // Negative lateral adjustment in yaml file is toward left
 
             // Create the fuzzy engine
             fl::Engine* engine = createFuzzyEngine();
             if (!engine) {
                 return 1;
             }
-            
+            if(apply_fuzzy_control == true){
+            double PixelErrorPercentage;
+            if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
+                std::cout << "Error value out of range" << std::endl;
+
+            }
+            // Perform fuzzy inference and print the output value
+            double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
+            std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: " << AdjustingVelocity << std::endl;
+}
+            // Applying adjusting velocity
 
             // velocity mission
 
@@ -2696,4 +2724,22 @@ fl::Engine* createFuzzyEngine() {
     }
 
     return engine;
+}
+
+// Function to perform fuzzy inference
+double fuzzyInference(fl::Engine* engine, double inputError) {
+    if (!engine) {
+        std::cerr << "Engine is not initialized." << std::endl;
+        return fl::nan;
+    }
+
+    fl::InputVariable* error = engine->getInputVariable("Error");
+    fl::OutputVariable* velocity = engine->getOutputVariable("Velocity");
+
+    // Set the input value and process the engine
+    error->setValue(inputError);
+    engine->process();
+
+    // Get and return the output value
+    return velocity->getValue();
 }

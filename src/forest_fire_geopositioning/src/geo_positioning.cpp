@@ -16,6 +16,9 @@
 std::vector<geometry_msgs::PoseStamped> camera_poses_SLAM;
 std::vector<sensor_msgs::NavSatFix> camera_poses_GPS;
 
+
+
+
 void callback(ros::Publisher *real_scale_pub,
                 ros::Publisher *fire_spots_GPS_pub,
               const geometry_msgs::PoseArrayConstPtr &fire_spots_msg,
