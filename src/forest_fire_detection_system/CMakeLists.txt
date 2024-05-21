@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.16.3)
 project(forest_fire_detection_system)
 
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -std=c++11 -O0 -Wall -ggdb -fopenmp")
@@ -111,8 +111,18 @@ set(VO_THIRD_PARTY_LIBS
         stereo_camera_vo_tool
 )
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/matplotlib-cpp)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/matplotlib-cpp)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/fuzzylite)
+link_directories(
+    ${PROJECT_SOURCE_DIR}/ThirdParty/fuzzylite/lib
+)
+
+
+# Fuzzylite
+find_package(Fuzzylite REQUIRED)
+include_directories(${FUZZYLITE_INCLUDE_DIRS})
+link_directories(${FUZZYLITE_LIBRARY_DIRS})
 
 ###########
 ## Build ##

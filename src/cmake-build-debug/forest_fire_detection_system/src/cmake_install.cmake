@@ -43,12 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/common/cmake_install.cmake")
-  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/modules/cmake_install.cmake")
-  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/cmake_install.cmake")
-  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/test/cmake_install.cmake")
-  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/modules/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/app/cmake_install.cmake")
 endif()
 

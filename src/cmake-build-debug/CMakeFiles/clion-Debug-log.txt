@@ -200,14 +200,6 @@ CMake Deprecation Warning at cv_bridge/image_geometry/CMakeLists.txt:1 (cmake_mi
 -- Found OpenCV: /usr (found version "4.2.0") 
 -- +++ processing catkin package: 'forest_fire_detection_system'
 -- ==> add_subdirectory(forest_fire_detection_system)
-CMake Deprecation Warning at forest_fire_detection_system/CMakeLists.txt:1 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
 -- forest_fire_detection_system: 3 messages, 2 services
@@ -225,6 +217,6 @@ CMake Deprecation Warning at forest_fire_geopositioning/CMakeLists.txt:1 (cmake_
 -- Found OpenCV: /usr (found version "4.2.0") 
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v8.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v5.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
--- Configuring done (4.0s)
--- Generating done (0.7s)
+-- Configuring done (5.0s)
+-- Generating done (0.9s)
 -- Build files have been written to: /home/erfan/M300_ws/src/cmake-build-debug

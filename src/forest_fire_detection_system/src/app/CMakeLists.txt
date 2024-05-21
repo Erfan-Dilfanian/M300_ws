@@ -26,6 +26,7 @@ foreach(EACH_SRC ${SRC_LIST})
     ${EACH_EXE}
     ${catkin_LIBRARIES}
     ${PROJECT_NAME}_module
+    fuzzylite
   )
 
 endforeach()

@@ -74,6 +74,7 @@ namespace plt = matplotlibcpp;
 
 #include "std_msgs/UInt16.h"
 
+#include <fl/Headers.h>
 
 
 //CODE
@@ -731,6 +732,10 @@ cout<<"the FireSPotCounter thread finished working";
    stopSLAM = true;
         };
 
+// Function to create and configure the fuzzy logic engine
+fl::Engine* createFuzzyEngine();
+
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -1068,6 +1073,8 @@ int main(int argc, char **argv) {
 
             yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX)); // note that tan2 output is in radian
             // Also I added 90 as we want the yaw angle from x axis which is in Y direction
+
+            fl::Engine* engine = new fl::Engine;
 
             moveByPosOffset(control_task,
                             {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
@@ -2226,6 +2233,12 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task, {- lateral_adjustment* sind(yaw_adjustment), - lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
 
+            // Create the fuzzy engine
+            fl::Engine* engine = createFuzzyEngine();
+            if (!engine) {
+                return 1;
+            }
+            
 
             // velocity mission
 
@@ -2622,4 +2635,65 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
     plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
     // Show plot
     plt::show();
+}
+
+// Function to create and configure the fuzzy logic engine
+fl::Engine* createFuzzyEngine() {
+    // Create a fuzzy logic engine
+    fl::Engine* engine = new fl::Engine;
+    engine->setName("VelocityControl");
+
+    // Define the input variable 'Error'
+    fl::InputVariable* error = new fl::InputVariable;
+    error->setName("Error");
+    error->setRange(-100.0, 100.0);
+    error->addTerm(new fl::Triangle("VeryNegative", -100.0, -100.0, -50.0));
+    error->addTerm(new fl::Triangle("Negative", -100.0, -50.0, 0.0));
+    error->addTerm(new fl::Triangle("Zero", -25.0, 0.0, 25.0));
+    error->addTerm(new fl::Triangle("Positive", 0.0, 50.0, 100.0));
+    error->addTerm(new fl::Triangle("VeryPositive", 50.0, 100.0, 100.0));
+    engine->addInputVariable(error);
+
+    // Define the output variable 'Velocity'
+    fl::OutputVariable* velocity = new fl::OutputVariable;
+    velocity->setName("Velocity");
+    velocity->setRange(-0.5, 0.5);
+    velocity->setDefaultValue(fl::nan);
+    velocity->addTerm(new fl::Triangle("VeryNegative", -0.5, -0.5, -0.25));
+    velocity->addTerm(new fl::Triangle("Negative", -0.5, -0.25, 0.0));
+    velocity->addTerm(new fl::Triangle("Zero", -0.1, 0.0, 0.1));
+    velocity->addTerm(new fl::Triangle("Positive", 0.0, 0.25, 0.5));
+    velocity->addTerm(new fl::Triangle("VeryPositive", 0.25, 0.5, 0.5));
+    velocity->setAggregation(new fl::Maximum());  // Set aggregation operator to Maximum
+    velocity->setDefuzzifier(new fl::Centroid());
+    engine->addOutputVariable(velocity);
+
+    // Define the rule block
+    fl::RuleBlock* ruleBlock = new fl::RuleBlock;
+    ruleBlock->setName("RuleBlock1");
+    ruleBlock->setConjunction(new fl::AlgebraicProduct());
+    ruleBlock->setDisjunction(new fl::Maximum());
+    ruleBlock->setActivation(new fl::General());
+
+    // Define each rule individually
+    ruleBlock->addRule(fl::Rule::parse("if Error is VeryNegative then Velocity is VeryNegative", engine));
+    ruleBlock->addRule(fl::Rule::parse("if Error is Negative then Velocity is Negative", engine));
+    ruleBlock->addRule(fl::Rule::parse("if Error is Zero then Velocity is Zero", engine));
+    ruleBlock->addRule(fl::Rule::parse("if Error is Positive then Velocity is Positive", engine));
+    ruleBlock->addRule(fl::Rule::parse("if Error is VeryPositive then Velocity is VeryPositive", engine));
+
+    engine->addRuleBlock(ruleBlock);
+
+    // Set implication operator explicitly
+    ruleBlock->setImplication(new fl::AlgebraicProduct());
+
+    // Check if the engine is valid
+    std::string status;
+    if (!engine->isReady(&status)) {
+        std::cout << "Engine is not ready: " << status << std::endl;
+        delete engine;
+        return nullptr;
+    }
+
+    return engine;
 }
