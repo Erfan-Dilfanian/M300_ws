@@ -65,3 +65,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v5.py")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/forest_fire_geopositioning" TYPE PROGRAM FILES "/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_geopositioning/catkin_generated/installspace/fire_detection_v8_test.py")
+endif()
+
