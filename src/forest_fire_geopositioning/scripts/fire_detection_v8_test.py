@@ -22,6 +22,15 @@ import datetime
 
 import rospy
 
+
+from sensor_msgs.msg import Image as RosImage
+from vision_msgs.msg import Detection2D, Detection2DArray
+from cv_bridge import CvBridge, CvBridgeError
+
+
+
+
+
 # Check Python version
 print("Python version: " + sys.version)
 
