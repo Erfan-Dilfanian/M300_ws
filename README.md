@@ -7,6 +7,10 @@ sudo apt install ros-noetic-rosserial-msgs
 pip3 install pyserial
 ```
 
+fuzzylite
+
+note: please change the path to weights in the M300_ws/src/forest_fire_geopositioning/sctipts/fire_detection_v8.py
+
 ## Usage
 
 Place the M300 toward the north.
