@@ -9,6 +9,10 @@ pip3 install pyserial
 
 fuzzylite
 
+after installing fuzzylite:
+
+export LD_LIBRARY_PATH=/home/qin/fuzzylite/build/bin:$LD_LIBRARY_PATH
+
 note: please change the path to weights in the M300_ws/src/forest_fire_geopositioning/sctipts/fire_detection_v8.py
 
 ## Usage

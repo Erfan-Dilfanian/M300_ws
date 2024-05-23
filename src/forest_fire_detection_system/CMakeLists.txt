@@ -114,9 +114,9 @@ set(VO_THIRD_PARTY_LIBS
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/matplotlib-cpp)
 
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/fuzzylite)
-# link_directories(
-#     ${PROJECT_SOURCE_DIR}/ThirdParty/fuzzylite/lib
-# )
+link_directories(
+     ${PROJECT_SOURCE_DIR}/ThirdParty/fuzzylite/lib
+ )
 
 
 # Fuzzylite
