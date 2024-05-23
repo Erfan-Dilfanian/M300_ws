@@ -85,8 +85,8 @@ def process_image_and_publish():
         print("======> Number of boxes detected: ", len(ros_boxes.detections))
 
         # Optionally display the processed image
-        cv2.imshow('Processed Image', frame)
-        cv2.waitKey(1)
+        # cv2.imshow('Processed Image', frame)
+        # cv2.waitKey(1)
 
     except CvBridgeError as e:
         print(e)
