@@ -1932,9 +1932,9 @@ int main(int argc, char **argv) {
                         std::this_thread::sleep_for(std::chrono::milliseconds(250));
                         gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
-                        std::this_thread::sleep_for(std::chrono::milliseconds(250));
+                        std::this_thread::sleep_for(std::chrono::milliseconds(600));
                         gimbalAction.request.pitch = camera_pitch;
-                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         std::this_thread::sleep_for(std::chrono::milliseconds(250));
 
