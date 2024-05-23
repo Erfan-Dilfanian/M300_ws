@@ -1930,7 +1930,7 @@ int main(int argc, char **argv) {
                         gimbal_control_client.call(gimbalAction);
                         gimbalAction.request.pitch = final_pitch;
                         std::this_thread::sleep_for(std::chrono::seconds(1));
-                        gimbalAction.request.time = 3; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
                         std::this_thread::sleep_for(std::chrono::seconds(5));
                         gimbalAction.request.pitch = camera_pitch;
