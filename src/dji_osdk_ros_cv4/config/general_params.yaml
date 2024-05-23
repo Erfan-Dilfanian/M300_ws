@@ -2,11 +2,11 @@ general_params:
   camera_pitch: -30
   release_delay: -1900
   height: 7
-  lateral_adjustment: -5
+  lateral_adjustment: 0  # minus is toward left
   # gimbal_yaw_adjustment: -80
-  gimbal_yaw_adjustment: -30.5
+  gimbal_yaw_adjustment: -24
   threshold: 2
   run_up_distance: 14
   velocity: 0.5
-  apply_fuzzy_control: false
+  apply_fuzzy_control: False
 
