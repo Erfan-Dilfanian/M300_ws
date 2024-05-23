@@ -869,7 +869,7 @@ int main(int argc, char **argv) {
     float gimbal_yaw_adjustment = GeneralConfig["general_params"]["gimbal_yaw_adjustment"].as<float>();
     float threshold = GeneralConfig["general_params"]["threshold"].as<float>();
     double run_up_distance = GeneralConfig["general_params"]["run_up_distance"].as<float>();
-    bool apply_fuzzy_control = GeneralConfig["general_params"]["apply_fuzzy_control"].as<float>();
+    bool apply_fuzzy_control = GeneralConfig["general_params"]["apply_fuzzy_control"].as<bool>();
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
     std::cout << "Release Delay: " << release_delay << std::endl;
