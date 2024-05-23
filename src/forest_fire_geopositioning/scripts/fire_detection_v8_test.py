@@ -39,7 +39,7 @@ get_path = pathlib.Path.cwd()
 date = datetime.datetime.now().strftime("%Y%m%d")
 
 classNames = ["Wildfire Spot"]
-model = YOLO("/home/qin/Downloads/YoloWeights/v8l.pt")
+model = YOLO("/home/uav/Downloads/YoloWeights/best.pt")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Initialize ROS node
@@ -48,7 +48,7 @@ pub = rospy.Publisher('/bounding_boxes/fire_spots', Detection2DArray, queue_size
 cv_bridge = CvBridge()
 
 # Path to the image file
-image_path = '/path/to/your/image.jpg'  # Replace with the path to your image
+image_path = '/home/uav/M300_ws/src/forest_fire_geopositioning/scripts/Wide_sample.jpg'  # Replace with the path to your image
 
 def process_image_and_publish():
     try:
