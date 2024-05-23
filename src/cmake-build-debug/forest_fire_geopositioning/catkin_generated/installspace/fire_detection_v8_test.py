@@ -22,6 +22,15 @@ import datetime
 
 import rospy
 
+
+from sensor_msgs.msg import Image as RosImage
+from vision_msgs.msg import Detection2D, Detection2DArray
+from cv_bridge import CvBridge, CvBridgeError
+
+
+
+
+
 # Check Python version
 print("Python version: " + sys.version)
 
@@ -30,7 +39,7 @@ get_path = pathlib.Path.cwd()
 date = datetime.datetime.now().strftime("%Y%m%d")
 
 classNames = ["Wildfire Spot"]
-model = YOLO("/home/qin/Downloads/YoloWeights/v8l.pt")
+model = YOLO("/home/uav/Downloads/YoloWeights/best.pt")
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Initialize ROS node
@@ -39,7 +48,7 @@ pub = rospy.Publisher('/bounding_boxes/fire_spots', Detection2DArray, queue_size
 cv_bridge = CvBridge()
 
 # Path to the image file
-image_path = '/path/to/your/image.jpg'  # Replace with the path to your image
+image_path = '/home/uav/M300_ws/src/forest_fire_geopositioning/scripts/Wide_sample.jpg'  # Replace with the path to your image
 
 def process_image_and_publish():
     try:
@@ -76,8 +85,8 @@ def process_image_and_publish():
         print("======> Number of boxes detected: ", len(ros_boxes.detections))
 
         # Optionally display the processed image
-        cv2.imshow('Processed Image', frame)
-        cv2.waitKey(1)
+        # cv2.imshow('Processed Image', frame)
+        # cv2.waitKey(1)
 
     except CvBridgeError as e:
         print(e)

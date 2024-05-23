@@ -1921,7 +1921,7 @@ int main(int argc, char **argv) {
                     circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                     cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
                     CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
-                    if (theta == 40)
+                    if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 || theta == 315 || theta == 360)
                     {
                         float initial_pitch = -60.0f;
                         float final_pitch = -10.0f;
