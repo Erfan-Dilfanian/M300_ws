@@ -76,9 +76,11 @@ namespace plt = matplotlibcpp;
 
 #include <fl/Headers.h>
 
-// #include "vision_msgs/Detection2DArray.h" //as I need it for fuzzy control
+#include "vision_msgs/Detection2DArray.h" //as I need it for fuzzy control
 
 #include <std_msgs/Float32.h> // need it for pixel error percentage
+
+#include <geometry_msgs/Point.h>
 
 //CODE
 
@@ -749,6 +751,28 @@ void pixelErrorCallback(const std_msgs::Float32::ConstPtr& msg) {
     // Add your processing logic here
 }
 
+// Global variable to store centers of bounding boxes
+std::vector<geometry_msgs::Point> fire_bbx_centers;
+
+// Callback function to process the incoming Detection2DArray messages
+void boundingBoxCallback(const vision_msgs::Detection2DArray::ConstPtr& msg)
+{
+    // Clear the previous centers
+    fire_bbx_centers.clear();
+
+    // Iterate through the detections in the message
+    for (const auto& detection : msg->detections)
+    {
+        geometry_msgs::Point center;
+        center.x = detection.bbox.center.x;
+        center.y = detection.bbox.center.y;
+        center.z = 0; // Assuming a 2D scenario, z can be set to 0
+
+        // Store the center point
+        fire_bbx_centers.push_back(center);
+    }
+}
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -881,8 +905,6 @@ int main(int argc, char **argv) {
     std::cout << "apply_fuzzy_control: " << apply_fuzzy_control << std::endl;
 
 
-
-
     auto gimbal_control_client = nh.serviceClient<GimbalAction>("gimbal_task_control");
     auto camera_set_EV_client = nh.serviceClient<CameraEV>("camera_task_set_EV");
     auto camera_set_shutter_speed_client = nh.serviceClient<CameraShutterSpeed>("camera_task_set_shutter_speed");
@@ -972,12 +994,13 @@ int main(int argc, char **argv) {
                          QuaternionSubCallback);
 
 
-
     servoPub = nh.advertise<std_msgs::UInt16>("servo", 10); // Initialize servoPub
 
     // subscribe to the fire GPS
     ros::Subscriber fire_spots_GPS_sub = nh.subscribe("/position/fire_spots_GPS", 1, FireCallback);
 
+    // Subscribe to the bounding boxes topic
+    ros::Subscriber bbx_sub = nh.subscribe("/bounding_boxes/fire_spots", 10, boundingBoxCallback);
 
     sensor_msgs::NavSatFix homeGPos = getAverageGPS(50);
     double homeGPS_posArray[2]; // note that double holds more digits comapred to float
@@ -1058,7 +1081,7 @@ int main(int argc, char **argv) {
             moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
 
             double mission_start_pos[3] = {fire_gps_local_pos[0] - 10, fire_gps_local_pos[1] + 8,
-                                          9}; // it also can be current x y z
+                                           9}; // it also can be current x y z
 
             ROS_INFO("homegpos latitude is [%f]", homeGPS_posArray[0]);
             ROS_INFO("homegpos longitude is [%f]", homeGPS_posArray[1]);
@@ -1091,7 +1114,7 @@ int main(int argc, char **argv) {
             yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX)); // note that tan2 output is in radian
             // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
-            fl::Engine* engine = new fl::Engine;
+            // fl::Engine* engine = new fl::Engine;
 
             moveByPosOffset(control_task,
                             {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
@@ -1260,16 +1283,16 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
-                                   << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
-                                   << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
-                                   << std::setprecision(10) << fire_gps_expected.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps_expected.longitude << "\t" << std::setprecision(10)
-                                   << fire_gps_expected.altitude << "\n";
-*/
+                        /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
+                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
+                                    << std::setprecision(10) << fire_gps_expected.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
+                                    << fire_gps_expected.altitude << "\n";
+ */
                     }
 
 
@@ -1331,16 +1354,16 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
-                                   << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
-                                   << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
-                                   << std::setprecision(10) << fire_gps_expected.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps_expected.longitude << "\t" << std::setprecision(10)
-                                   << fire_gps_expected.altitude << "\n";
-*/
+                        /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
+                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
+                                    << std::setprecision(10) << fire_gps_expected.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
+                                    << fire_gps_expected.altitude << "\n";
+ */
 
                     }
 
@@ -1383,16 +1406,16 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                      /*  outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
-                                   << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
-                                   << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
-                                   << std::setprecision(10) << fire_gps_expected.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps_expected.longitude << "\t" << std::setprecision(10)
-                                   << fire_gps_expected.altitude << "\n";
-*/
+                        /*  outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                                     << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
+                                     << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
+                                     << std::setprecision(10)
+                                     << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
+                                     << std::setprecision(10) << fire_gps_expected.latitude << "\t"
+                                     << std::setprecision(10)
+                                     << fire_gps_expected.longitude << "\t" << std::setprecision(10)
+                                     << fire_gps_expected.altitude << "\n";
+  */
                     }
 
                     ros::spinOnce();
@@ -1425,16 +1448,16 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                   /*     outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
-                                   << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
-                                   << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
-                                   << std::setprecision(10) << fire_gps_expected.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps_expected.longitude << "\t" << std::setprecision(10)
-                                   << fire_gps_expected.altitude << "\n";
-*/
+                        /*     outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                                        << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
+                                        << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
+                                        << std::setprecision(10)
+                                        << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
+                                        << std::setprecision(10) << fire_gps_expected.latitude << "\t"
+                                        << std::setprecision(10)
+                                        << fire_gps_expected.longitude << "\t" << std::setprecision(10)
+                                        << fire_gps_expected.altitude << "\n";
+     */
                     }
 
                     ros::spinOnce();
@@ -1467,16 +1490,16 @@ int main(int argc, char **argv) {
                         ros::spinOnce();
                         rate.sleep();
                         cout << "ROS spinned" << endl;
-                       /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
-                                   << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
-                                   << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
-                                   << std::setprecision(10) << fire_gps_expected.latitude << "\t"
-                                   << std::setprecision(10)
-                                   << fire_gps_expected.longitude << "\t" << std::setprecision(10)
-                                   << fire_gps_expected.altitude << "\n";
-*/
+                        /* outputFile << std::setprecision(10) << gps_position_.latitude << "\t" << std::setprecision(10)
+                                    << gps_position_.longitude << "\t" << std::setprecision(10) << gps_position_.altitude
+                                    << "\t" << std::setprecision(10) << fire_gps.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps.longitude << "\t" << std::setprecision(10) << fire_gps.altitude << "\t"
+                                    << std::setprecision(10) << fire_gps_expected.latitude << "\t"
+                                    << std::setprecision(10)
+                                    << fire_gps_expected.longitude << "\t" << std::setprecision(10)
+                                    << fire_gps_expected.altitude << "\n";
+ */
                     }
 
                     ros::spinOnce();
@@ -1767,7 +1790,7 @@ int main(int argc, char **argv) {
 
                     //Define mission start position
                     double mission_start_pos[3] = {fire_gps_local_pos[i][0] - 7, fire_gps_local_pos[i][1] + 4,
-                                                  0}; // it also can be current x y z
+                                                   0}; // it also can be current x y z
 
                     //Fly to the mission start position with fixed yaw angle
                     moveByPosOffset(control_task, {mission_start_pos[0], mission_start_pos[1], 0, yaw_const}, 1,
@@ -1893,9 +1916,10 @@ int main(int argc, char **argv) {
             ROS_INFO_STREAM("Takeoff task successful");
 
 
-                moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
-                moveByPosOffset(control_task, {0, 0, 0, 90}, 1, 3); // note that north is x axis, east is y, and down axis is the z
-                
+            moveByPosOffset(control_task, {0, 0, height - 1, 0}, 1, 3);
+            moveByPosOffset(control_task, {0, 0, 0, 90}, 1,
+                            3); // note that north is x axis, east is y, and down axis is the z
+
             GimbalAction gimbalAction;
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = camera_pitch;
@@ -1915,56 +1939,58 @@ int main(int argc, char **argv) {
             circular_params.CalculateParams();
 
 
-                for (float theta = 0; theta < 360; theta = theta + circular_params.theta_step_degrees) {
-                    // time_step = (M_PI/theta_dot)/theta_step;
-                    circular_params.CircularVelocity.Vx = circular_params.radius * circular_params.theta_dot * cosd(theta); // this is not instantaneous
-                    circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
-                    cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:" << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000 << endl;
-                    CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0, circular_params.yawRate}, circular_params.time_step * 1000);
-                    if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 || theta == 315 || theta == 360)
-                    {
-                        float initial_pitch = -60.0f;
-                        float final_pitch = -10.0f;
-                        gimbalAction.request.pitch = initial_pitch;
-                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
-                        gimbal_control_client.call(gimbalAction);
-                        gimbalAction.request.pitch = final_pitch;
-                        std::this_thread::sleep_for(std::chrono::milliseconds(250));
-                        gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
-                        gimbal_control_client.call(gimbalAction);
-                        std::this_thread::sleep_for(std::chrono::milliseconds(600));
-                        gimbalAction.request.pitch = camera_pitch;
-                        gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
-                        gimbal_control_client.call(gimbalAction);
-                        std::this_thread::sleep_for(std::chrono::milliseconds(250));
+            for (float theta = 0; theta < 360; theta = theta + circular_params.theta_step_degrees) {
+                // time_step = (M_PI/theta_dot)/theta_step;
+                circular_params.CircularVelocity.Vx =
+                        circular_params.radius * circular_params.theta_dot * cosd(theta); // this is not instantaneous
+                circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
+                cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:"
+                     << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
+                     << endl;
+                CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
+                                         circular_params.yawRate}, circular_params.time_step * 1000);
+                if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
+                    theta == 315 || theta == 360) {
+                    float initial_pitch = -60.0f;
+                    float final_pitch = -10.0f;
+                    gimbalAction.request.pitch = initial_pitch;
+                    gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
+                    gimbalAction.request.pitch = final_pitch;
+                    std::this_thread::sleep_for(std::chrono::milliseconds(250));
+                    gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(600));
+                    gimbalAction.request.pitch = camera_pitch;
+                    gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(250));
 
-                        /*
-                        for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
-                            gimbalAction.request.pitch = pitch;
-                            cout<<"pitch: "<<pitch<<endl;
-                            // gimbalAction.request.yaw = -yaw_const+90;
-                            // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
-                            // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
-                            gimbalAction.request.time = 0.3; // Dont knwo th efunction exactly. make pitch movement smoother?
-                            gimbal_control_client.call(gimbalAction);
-                        }
-                        gimbalAction.request.pitch = camera_pitch;
+                    /*
+                    for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
+                        gimbalAction.request.pitch = pitch;
+                        cout<<"pitch: "<<pitch<<endl;
+                        // gimbalAction.request.yaw = -yaw_const+90;
+                        // gimbalAction.request.yaw = 180.0f + gimbal_yaw_adjustment;
+                        // gimbalAction.request.yaw = -180.0f+gimbal_yaw_adjustment;
+                        gimbalAction.request.time = 0.3; // Dont knwo th efunction exactly. make pitch movement smoother?
                         gimbal_control_client.call(gimbalAction);
-                         */
-
-
                     }
+                    gimbalAction.request.pitch = camera_pitch;
+                    gimbal_control_client.call(gimbalAction);
+                     */
+
 
                 }
 
-
+            }
 
 
             ZigZagParams zigzag_params;
-                /* zigzag_params.length = 12;
-                zigzag_params.width = 6;
-                zigzag_params.number = 1;
-                zigzag_params.split = split;*/
+            /* zigzag_params.length = 12;
+            zigzag_params.width = 6;
+            zigzag_params.number = 1;
+            zigzag_params.split = split;*/
 
             const std::string package_path =
                     ros::package::getPath("dji_osdk_ros");
@@ -2003,17 +2029,17 @@ int main(int argc, char **argv) {
             ZigZagPlanner(control_task, zigzag_params);
             FireSpotCounter_thread.join();
 
-                ros::spinOnce();
+            ros::spinOnce();
 
 
             if (in_or_out == 'a') {
 
-         // Load YAML file
-        const std::string package_path =
-                ros::package::getPath("dji_osdk_ros");
-        const std::string config_path = package_path + "/config/nodes.yaml";
-        PRINT_INFO("Load parameters from:%s", config_path.c_str());
-        YAML::Node config = YAML::LoadFile(config_path);
+                // Load YAML file
+                const std::string package_path =
+                        ros::package::getPath("dji_osdk_ros");
+                const std::string config_path = package_path + "/config/nodes.yaml";
+                PRINT_INFO("Load parameters from:%s", config_path.c_str());
+                YAML::Node config = YAML::LoadFile(config_path);
 
 
                 // Check if "nodes" key exists
@@ -2034,101 +2060,101 @@ int main(int argc, char **argv) {
                 }
             }
 
-                /*
-                nodes_vec.push_back(n5);
-                nodes_vec.push_back(n6);
-                nodes_vec.push_back(n7);
-                nodes_vec.push_back(n8);
-                nodes_vec.push_back(n9);
-                nodes_vec.push_back(n10);
-                nodes_vec.push_back(n11);
-                nodes_vec.push_back(n12);
+            /*
+            nodes_vec.push_back(n5);
+            nodes_vec.push_back(n6);
+            nodes_vec.push_back(n7);
+            nodes_vec.push_back(n8);
+            nodes_vec.push_back(n9);
+            nodes_vec.push_back(n10);
+            nodes_vec.push_back(n11);
+            nodes_vec.push_back(n12);
 */
 
 
-                double current_GPS_posArray[3];
+            double current_GPS_posArray[3];
 
-                double fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
+            double fire_gps_local_pos[nodes_vec.size()][3]; // coordinates of fire spots (x,y,z)
 
-                double fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
+            double fire_GPS_posArray[nodes_vec.size()][3];  // GPS of fire spots
 
-                cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
+            cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
-                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1]<<endl;
+            cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1]
+                 << endl;
 
-                for (int i = 0; i < nodes_vec.size(); ++i) {
+            for (int i = 0; i < nodes_vec.size(); ++i) {
 
-                    fire_GPS_posArray[i][0] = nodes_vec[i].x;
-                    fire_GPS_posArray[i][1] = nodes_vec[i].y;
-                    fire_GPS_posArray[i][2] = nodes_vec[i].z;
+                fire_GPS_posArray[i][0] = nodes_vec[i].x;
+                fire_GPS_posArray[i][1] = nodes_vec[i].y;
+                fire_GPS_posArray[i][2] = nodes_vec[i].z;
 
-                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
-                    std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x << ", longitude: "
-                              << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
-                    std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position "
-                              << fire_gps_local_pos[i][1] << std::endl;
-
-
-                }
-
-                // Extract x and y coordinates into vectors
-                std::vector<float> x, y;
-                for (size_t i = 0; i < nodes_vec.size(); ++i) {
-                    x.push_back(fire_gps_local_pos[i][0]);
-                    y.push_back(fire_gps_local_pos[i][1]);
-                }
+                FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
+                std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x << ", longitude: "
+                          << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
+                std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position "
+                          << fire_gps_local_pos[i][1] << std::endl;
 
 
-                // Print x and y before plotting
-                std::cout << "X coordinates: ";
-                for (auto val: x) {
-                    std::cout << val << " ";
-                }
-                std::cout << std::endl;
+            }
 
-                std::cout << "Y coordinates: ";
-                for (auto val: y) {
-                    std::cout << val << " ";
-                }
-                std::cout << std::endl;
-
-                // Plot the points with x and y switched
-                plt::plot(y, x, "bo"); // Switched x and y
-
-                // Set labels and title with switched axes
-                plt::xlabel("Y"); // Y-axis now represents X-coordinate
-                plt::ylabel("X"); // X-axis now represents Y-coordinate
-                plt::title("Scatter Plot of Points");
-
-                // Show plot
-                //     plt::show();
+            // Extract x and y coordinates into vectors
+            std::vector<float> x, y;
+            for (size_t i = 0; i < nodes_vec.size(); ++i) {
+                x.push_back(fire_gps_local_pos[i][0]);
+                y.push_back(fire_gps_local_pos[i][1]);
+            }
 
 
-                cout << "now we have gps position of fire spots, we go ahead and find optimum line for approach";
+            // Print x and y before plotting
+            std::cout << "X coordinates: ";
+            for (auto val: x) {
+                std::cout << val << " ";
+            }
+            std::cout << std::endl;
+
+            std::cout << "Y coordinates: ";
+            for (auto val: y) {
+                std::cout << val << " ";
+            }
+            std::cout << std::endl;
+
+            // Plot the points with x and y switched
+            plt::plot(y, x, "bo"); // Switched x and y
+
+            // Set labels and title with switched axes
+            plt::xlabel("Y"); // Y-axis now represents X-coordinate
+            plt::ylabel("X"); // X-axis now represents Y-coordinate
+            plt::title("Scatter Plot of Points");
+
+            // Show plot
+            //     plt::show();
+
+
+            cout << "now we have gps position of fire spots, we go ahead and find optimum line for approach";
 
             Line best_line;
             Point starting_point;
             bool flag = 1;
             char approach_confirm;
             char ground_truth_gps_aprch_cmnd;
-            while(flag == 1) {
+            while (flag == 1) {
                 doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold, run_up_distance);
-            cout<<"confirm approach? [y/n]";
-            cin>> approach_confirm;
-            if (approach_confirm == 'y'){
-                flag = 0;
-            }
-            else{
-                cout<<"approach ground truth gps? [y/n]";
-                    cin>>ground_truth_gps_aprch_cmnd;
-                    if (ground_truth_gps_aprch_cmnd == 'y'){
+                cout << "confirm approach? [y/n]";
+                cin >> approach_confirm;
+                if (approach_confirm == 'y') {
+                    flag = 0;
+                } else {
+                    cout << "approach ground truth gps? [y/n]";
+                    cin >> ground_truth_gps_aprch_cmnd;
+                    if (ground_truth_gps_aprch_cmnd == 'y') {
                         nodes_vec.clear();
                         // Load YAML file
-                               const std::string package_path =
-                ros::package::getPath("dji_osdk_ros");
-        const std::string config_path = package_path + "/config/nodes.yaml";
-        PRINT_INFO("Load parameters from:%s", config_path.c_str());
-        YAML::Node config = YAML::LoadFile(config_path);
+                        const std::string package_path =
+                                ros::package::getPath("dji_osdk_ros");
+                        const std::string config_path = package_path + "/config/nodes.yaml";
+                        PRINT_INFO("Load parameters from:%s", config_path.c_str());
+                        YAML::Node config = YAML::LoadFile(config_path);
 
                         // Check if "nodes" key exists
                         if (config["nodes"]) {
@@ -2148,7 +2174,8 @@ int main(int argc, char **argv) {
 
                                 cout << "number of fire spots are: " << nodes_vec.size() << std::endl;
 
-                                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  " << homeGPS_posArray[1];
+                                cout << "Home GPS position: latitude  " << homeGPS_posArray[0] << "longitude  "
+                                     << homeGPS_posArray[1];
 
                                 for (int i = 0; i < nodes_vec.size(); ++i) {
 
@@ -2156,10 +2183,13 @@ int main(int argc, char **argv) {
                                     fire_GPS_posArray[i][1] = nodes_vec[i].y;
                                     fire_GPS_posArray[i][2] = nodes_vec[i].z;
 
-                                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i], fire_gps_local_pos[i]);
-                                    std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x << ", longitude: "
+                                    FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, fire_GPS_posArray[i],
+                                                               fire_gps_local_pos[i]);
+                                    std::cout << "Node ID: " << nodes_vec[i].id << ", latitude: " << nodes_vec[i].x
+                                              << ", longitude: "
                                               << nodes_vec[i].y << ", z: " << nodes_vec[i].z << std::endl;
-                                    std::cout << "fire's x position " << fire_gps_local_pos[i][0] << ", fire's y position "
+                                    std::cout << "fire's x position " << fire_gps_local_pos[i][0]
+                                              << ", fire's y position "
                                               << fire_gps_local_pos[i][1] << std::endl;
 
 
@@ -2197,21 +2227,18 @@ int main(int argc, char **argv) {
                             }
                         }
 
-                    }
-                    else{
-                        cout<<"calculating RANSAC again";
+                    } else {
+                        cout << "calculating RANSAC again";
 
                     }
+
+                }
+
 
             }
 
 
-
-            }
-
-
-
-                ros::spinOnce();
+            ros::spinOnce();
 
 
 /*
@@ -2221,112 +2248,142 @@ int main(int argc, char **argv) {
 
                 float recent_local_pos[3];
 */
-                recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
+            recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
 
-                // FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
+            // FFDS::TOOLS::LatLong2Meter(homeGPS_posArray, current_GPS_posArray, recent_local_pos);
 
 
-                float yaw_adjustment; // yaw adjustment before approach
+            float yaw_adjustment; // yaw adjustment before approach
 
             cout << "starting point x :" << starting_point.x << "recent y :" << starting_point.y
                  << endl;
 
-                cout << "recent x :" << recent_drone_coord.x << "recent y :" << recent_drone_coord.y
-                     << endl;
-                // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
-                // note that tan2 output is in radian
-                // Also I added 90 as we want the yaw angle from x axis which is in Y direction
+            cout << "recent x :" << recent_drone_coord.x << "recent y :" << recent_drone_coord.y
+                 << endl;
+            // yaw_adjustment = Rad2Deg(atan2(deltaY, deltaX));
+            // note that tan2 output is in radian
+            // Also I added 90 as we want the yaw angle from x axis which is in Y direction
 
 
-                moveByPosOffset(control_task,
-                                {starting_point.x - recent_drone_coord.x, starting_point.y - recent_drone_coord.y, 0, 0},
-                                1, 3);  // note that x y z goes into this function
-                cout<< "moved to the starting point"<<endl;
-                yaw_adjustment = Rad2Deg(atan(best_line.slope));
-                cout << "yaw_adjustment is" << yaw_adjustment << endl;
+            moveByPosOffset(control_task,
+                            {starting_point.x - recent_drone_coord.x, starting_point.y - recent_drone_coord.y, 0, 0},
+                            1, 3);  // note that x y z goes into this function
+            cout << "moved to the starting point" << endl;
+            yaw_adjustment = Rad2Deg(atan(best_line.slope));
+            cout << "yaw_adjustment is" << yaw_adjustment << endl;
 
-                moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
-                                3);  // note that x y z goes into this funciton
+            moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
+                            3);  // note that x y z goes into this funciton
+
+            cout << "rotated and ready for approaching fire!" << endl;
 
 
-            moveByPosOffset(control_task, {- lateral_adjustment* sind(yaw_adjustment), lateral_adjustment*cosd(yaw_adjustment), 0, yaw_adjustment}, 1,3);
+            moveByPosOffset(control_task,
+                            {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
+                             yaw_adjustment}, 1, 3);
             // Negative lateral adjustment in yaml file is toward left
 
-            // Create the fuzzy engine
-            fl::Engine* engine = createFuzzyEngine();
-            if (!engine) {
-                return 1;
+
+
+            if (apply_fuzzy_control == true) {
+
+                // start fuzzy controlling
+
+                bool stopFuzzyControl = false;
+
+                // Wide_image_width = ;
+
+                // Check if user has entered 'y' or 'Y'
+                std::cout << "Enter 'y' to stop fuzzy control";
+
+                // Create the fuzzy engine
+                fl::Engine *engine = createFuzzyEngine();
+                if (!engine) {
+                    return 1;
+                }
+
+                while (stopFuzzyControl == false) {
+                    ros::spinOnce();
+
+                    // Access the centers
+                    for (const auto &center: fire_bbx_centers) {
+                        ROS_INFO("Center: x = %f, y = %f", center.x, center.y);
+                    }
+
+                    double PixelErrorPercentage;
+                    if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
+                        std::cout << "Error value out of range" << std::endl;
+
+                    }
+                    // Perform fuzzy inference and print the output value
+                    double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
+                    std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: "
+                              << AdjustingVelocity
+                              << std::endl;
+
+                    // Applying adjusting velocity
+
+                }
             }
-            if(apply_fuzzy_control == true){
-            double PixelErrorPercentage;
-            if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
-                std::cout << "Error value out of range" << std::endl;
+                // In Motion Dropping mission
 
-            }
-            // Perform fuzzy inference and print the output value
-            double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
-            std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: " << AdjustingVelocity << std::endl;
-}
-            // Applying adjusting velocity
 
-            // velocity mission
+                float abs_vel = 2; // absolute velocity that needs to be projected
 
-                cout << "rotated and ready for approaching fire!" << endl;
 
-                float abs_vel = 4; // absolute velocity that needs to be projected
-
-		            
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
                                           abs_vel, run_up_distance, height, release_delay);
-            // emergency_brake_client.call(emergency_brake);
-            // ros::Duration(4).sleep();
+                // emergency_brake_client.call(emergency_brake);
+                // ros::Duration(4).sleep();
 
-            ros::spinOnce();
-            recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
-            cout<<"nodes_vec[0].x:"<<fire_GPS_posArray[0][0]<<" and nodes_vec[0]"<<fire_GPS_posArray[0][1]<<endl;
-            cout<<"recent drone coordinates: x:"<<recent_drone_coord.x<<"y :"<<recent_drone_coord.y<<endl;
-            // go above the first fire point
-            moveByPosOffset(control_task, {fire_gps_local_pos[0][0]-recent_drone_coord.x, fire_gps_local_pos[0][1]-recent_drone_coord.y, 0, 0}, 1,3);
-            gimbalAction.request.rotationMode = 0;
-            gimbalAction.request.pitch = -90.0f;
-            gimbalAction.request.roll = 0.0f;
-            // gimbalAction.request.yaw = -yaw_const+90;
-            gimbalAction.request.time = 0.5;
-            gimbal_control_client.call(gimbalAction);
+                ros::spinOnce();
+                recent_drone_coord = GPS2Coordinates(homeGPos, gps_position_);
+                cout << "nodes_vec[0].x:" << fire_GPS_posArray[0][0] << " and nodes_vec[0]" << fire_GPS_posArray[0][1]
+                     << endl;
+                cout << "recent drone coordinates: x:" << recent_drone_coord.x << "y :" << recent_drone_coord.y << endl;
+                // go above the first fire point
+                moveByPosOffset(control_task, {fire_gps_local_pos[0][0] - recent_drone_coord.x,
+                                               fire_gps_local_pos[0][1] - recent_drone_coord.y, 0, 0}, 1, 3);
+                gimbalAction.request.rotationMode = 0;
+                gimbalAction.request.pitch = -90.0f;
+                gimbalAction.request.roll = 0.0f;
+                // gimbalAction.request.yaw = -yaw_const+90;
+                gimbalAction.request.time = 0.5;
+                gimbal_control_client.call(gimbalAction);
 
-            moveByPosOffset(control_task, {0, 0, 15, 0}, 1,
-                            3);
+                moveByPosOffset(control_task, {0, 0, 15, 0}, 1,
+                                3);
+            }
         }
+
+
+        PRINT_INFO("going home now");
+        control_task.request.task =
+                dji_osdk_ros::FlightTaskControl::Request::TASK_GOHOME;
+        task_control_client.call(control_task);
+        if (control_task.response.result == true) {
+            PRINT_INFO("go home successful");
+        } else {
+            PRINT_WARN("go home failed.");
+        }
+
+        control_task.request.task =
+                dji_osdk_ros::FlightTaskControl::Request::TASK_LAND;
+        PRINT_INFO(
+                "Landing request sending ... need your confirmation on the remoter!");
+        task_control_client.call(control_task);
+        if (control_task.response.result == true) {
+            PRINT_INFO("land task successful");
+        } else {
+            PRINT_ERROR("land task failed.");
+        }
+
+
+        ROS_INFO_STREAM("Finished. Press CTRL-C to terminate the node");
+        // outputFile.close();
+        ros::spin();
+        return 0;
     }
-
-
-    PRINT_INFO("going home now");
-    control_task.request.task =
-            dji_osdk_ros::FlightTaskControl::Request::TASK_GOHOME;
-    task_control_client.call(control_task);
-    if (control_task.response.result == true) {
-        PRINT_INFO("go home successful");
-    } else {
-        PRINT_WARN("go home failed.");
-    }
-
-    control_task.request.task =
-            dji_osdk_ros::FlightTaskControl::Request::TASK_LAND;
-    PRINT_INFO(
-            "Landing request sending ... need your confirmation on the remoter!");
-    task_control_client.call(control_task);
-    if (control_task.response.result == true) {
-        PRINT_INFO("land task successful");
-    } else {
-        PRINT_ERROR("land task failed.");
-    }
-
-
-    ROS_INFO_STREAM("Finished. Press CTRL-C to terminate the node");
-   // outputFile.close();
-    ros::spin();
-    return 0;
-}
 
 
 bool moveByPosOffset(FlightTaskControl &task, const JoystickCommand &offsetDesired,
