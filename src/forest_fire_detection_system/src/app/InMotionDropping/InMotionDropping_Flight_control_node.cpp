@@ -2326,11 +2326,7 @@ int main(int argc, char **argv) {
                     // Applying adjusting velocity
 
 
-                    // Convert input to lowercase for case-insensitive comparison
-                    FuzzyStopUserInput = std::tolower(FuzzyStopUserInput);
-
-
-                    // Check if user has entered 1
+                    // Check if user has entered y
                     if (std::cin >> FuzzyStopUserInput && FuzzyStopUserInput == 'y') {
                         std::cout << "Exiting..." << std::endl;
                         // stopFuzzyControl == true;
