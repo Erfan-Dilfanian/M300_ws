@@ -65,7 +65,9 @@ def callback(image, pub):
         # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # cv2.imshow("original", frame)
         # cv2.waitKey(1)
-        results = model(frame, stream=True)
+        # qiao: try tracker 20240524
+	# qiao: add the confidence 20240524
+        results = model.track(frame, stream=True, conf = 0.3)
         ros_boxes = Detection2DArray()
         ros_boxes.header = image.header
         for result in results:
@@ -77,8 +79,8 @@ def callback(image, pub):
                 # print(f"======> The Coordinate x_min y_min x_max y_x=max\n", x1, y1, x2, y2)
 
                 # # confidence
-                # confidence = math.ceil((box.conf[0] * 100)) / 100
-                # # print("======> Confidence", confidence)
+                confidence = math.ceil((box.conf[0] * 100)) / 100
+                print("======> Confidence", confidence)
                 #
                 # # class_name
                 # cls = int(box.cls[0])
