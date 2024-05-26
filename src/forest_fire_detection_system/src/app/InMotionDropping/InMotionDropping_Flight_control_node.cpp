@@ -738,7 +738,7 @@ cout<<"the FireSPotCounter thread finished working";
         };
 
 // Function to create and configure the fuzzy logic engine
-fl::Engine* createFuzzyEngine();
+fl::Engine* createFuzzyEngine(double velocitymax);
 
 // Function to perform fuzzy inference
 double fuzzyInference(fl::Engine* engine, double inputError);
@@ -894,6 +894,9 @@ int main(int argc, char **argv) {
     float threshold = GeneralConfig["general_params"]["threshold"].as<float>();
     double run_up_distance = GeneralConfig["general_params"]["run_up_distance"].as<float>();
     bool apply_fuzzy_control = GeneralConfig["general_params"]["apply_fuzzy_control"].as<bool>();
+    double VelocityMax = GeneralConfig["general_params"]["velocity_max"].as<double>(); // max velocity for fuzzy controller
+    double inputLateralAdjustment = GeneralConfig["general_params"]["user_input_lateral_adjustment"].as<bool>();
+
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
     std::cout << "Release Delay: " << release_delay << std::endl;
@@ -1123,7 +1126,7 @@ int main(int argc, char **argv) {
 
             ROS_INFO("yaw_adjustment_angle is [%f]", yaw_adjustment);
             moveByPosOffset(control_task, {0, 0, 0, yaw_adjustment}, 1,
-                            3);  // note that x y z goes into this funciton
+                            3);  // note that x y z goes into this function
 
             // velocity mission
 
@@ -2283,7 +2286,36 @@ int main(int argc, char **argv) {
                              yaw_adjustment}, 1, 3);
             // Negative lateral adjustment in yaml file is toward left
 
+            if(inputLateralAdjustment == true){
+                while (true) {
+                    cout << "Please enter lateral adjustment value: ";
+                    cin >> lateral_adjustment;
 
+                    moveByPosOffset(control_task,
+                                    {-lateral_adjustment * sind(yaw_adjustment),
+                                     lateral_adjustment * cosd(yaw_adjustment), 0,
+                                     yaw_adjustment}, 1, 3);
+
+                    char continue_adjustment;
+                    bool valid_input = false;
+                    while (!valid_input) {
+                        cout << "Do you want to continue lateral adjusting? (y/n): ";
+                        cin >> continue_adjustment;
+                        if (continue_adjustment == 'y' || continue_adjustment == 'Y') {
+                            valid_input = true;
+                        } else if (continue_adjustment == 'n' || continue_adjustment == 'N') {
+                            valid_input = true;
+                            break;
+                        } else {
+                            cout << "Invalid input. Please enter 'y' or 'n'." << endl;
+                        }
+                    }
+
+                    if (continue_adjustment == 'n' || continue_adjustment == 'N') {
+                        break;
+                    }
+                }
+            }
 
             if (apply_fuzzy_control == true) {
 
@@ -2299,7 +2331,7 @@ int main(int argc, char **argv) {
                 std::cout << "Enter 'y' to stop fuzzy control";
 
                 // Create the fuzzy engine
-                fl::Engine *engine = createFuzzyEngine();
+                fl::Engine *engine = createFuzzyEngine(VelocityMax);
                 if (!engine) {
                     return 1;
                 }
@@ -2734,7 +2766,7 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
 }
 
 // Function to create and configure the fuzzy logic engine
-fl::Engine* createFuzzyEngine() {
+fl::Engine* createFuzzyEngine(double velocityMax) {
     // Create a fuzzy logic engine
     fl::Engine* engine = new fl::Engine;
     engine->setName("VelocityControl");
@@ -2750,16 +2782,16 @@ fl::Engine* createFuzzyEngine() {
     error->addTerm(new fl::Triangle("VeryPositive", 50.0, 100.0, 100.0));
     engine->addInputVariable(error);
 
-    // Define the output variable 'Velocity'
+    // Define the output variable 'Velocity' with dynamic range
     fl::OutputVariable* velocity = new fl::OutputVariable;
     velocity->setName("Velocity");
-    velocity->setRange(-0.5, 0.5);
+    velocity->setRange(-velocityMax, velocityMax);
     velocity->setDefaultValue(fl::nan);
-    velocity->addTerm(new fl::Triangle("VeryNegative", -0.5, -0.5, -0.25));
-    velocity->addTerm(new fl::Triangle("Negative", -0.5, -0.25, 0.0));
-    velocity->addTerm(new fl::Triangle("Zero", -0.1, 0.0, 0.1));
-    velocity->addTerm(new fl::Triangle("Positive", 0.0, 0.25, 0.5));
-    velocity->addTerm(new fl::Triangle("VeryPositive", 0.25, 0.5, 0.5));
+    velocity->addTerm(new fl::Triangle("VeryNegative", -velocityMax, -velocityMax, -velocityMax / 2));
+    velocity->addTerm(new fl::Triangle("Negative", -velocityMax, -velocityMax / 2, 0.0));
+    velocity->addTerm(new fl::Triangle("Zero", -velocityMax / 10, 0.0, velocityMax / 10));
+    velocity->addTerm(new fl::Triangle("Positive", 0.0, velocityMax / 2, velocityMax));
+    velocity->addTerm(new fl::Triangle("VeryPositive", velocityMax / 2, velocityMax, velocityMax));
     velocity->setAggregation(new fl::Maximum());  // Set aggregation operator to Maximum
     velocity->setDefuzzifier(new fl::Centroid());
     engine->addOutputVariable(velocity);

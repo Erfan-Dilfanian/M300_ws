@@ -25,6 +25,7 @@ import rospy
 # callback function to show the image using opencv
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
+from vision_msgs.msg import Detection2D, Detection2DArray
 
 get_path = pathlib.Path.cwd()
 date = datetime.datetime.now().strftime("%Y%m%d")
@@ -58,15 +59,34 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 # import vision_msgs
 from vision_msgs.msg import Detection2D, Detection2DArray
 
+# a dash line to draw in the middle of the wide image
+def draw_dashed_line(image, start_point, end_point, color, thickness, dash_length=10):
+    line_type = 8  # line type for dashed line
+    for i in range(start_point[1], end_point[1], dash_length * 2):
+        cv2.line(image, (start_point[0], i), (start_point[0], i + dash_length), color, thickness, line_type)
+
+
+
 def callback(image, pub):
     try:
         frame = CvBridge().imgmsg_to_cv2(image, "bgr8")
+        
+        # Print the size of the image
+	    height, width, channels = frame.shape
+	    print(f"Image size: width={width}, height={height}, channels={channels}")
+
+
+	    # Draw a dashed line in the middle of the image
+        middle_x = width // 2
+        draw_dashed_line(frame, (middle_x, 0), (middle_x, height), (0, 255, 0), 2)
+
+
         # convert color
         # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # cv2.imshow("original", frame)
         # cv2.waitKey(1)
         # qiao: try tracker 20240524
-	# qiao: add the confidence 20240524
+	    # qiao: add the confidence 20240524
         results = model.track(frame, stream=True, conf = 0.3)
         ros_boxes = Detection2DArray()
         ros_boxes.header = image.header
@@ -81,6 +101,12 @@ def callback(image, pub):
                 # # confidence
                 confidence = math.ceil((box.conf[0] * 100)) / 100
                 print("======> Confidence", confidence)
+                
+                # Calculate and draw the center of the bounding box
+                center_x = (x1 + x2) // 2
+                center_y = (y1 + y2) // 2
+                cv2.circle(frame, (center_x, center_y), 3, (0, 0, 255), -1)  # Visualize the center
+
                 #
                 # # class_name
                 # cls = int(box.cls[0])
@@ -102,13 +128,19 @@ def callback(image, pub):
                 ros_box.header = image.header
                 ros_box.bbox.size_x = x2 - x1
                 ros_box.bbox.size_y = y2 - y1
-                ros_box.bbox.center.x = (x1 + x2) / 2
-                ros_box.bbox.center.y = (y1 + y2) / 2
+                ros_box.bbox.center.x = center_x
+                ros_box.bbox.center.y = center_y
                 ros_box.bbox.center.theta = 0
                 ros_boxes.detections.append(ros_box)
             pub.publish(ros_boxes)
             # print how many boxes are detected
             print("======> Number of boxes detected: ", len(boxes))
+            
+            
+        # Show the image with bounding boxes, centers, and the middle dashed line
+        cv2.imshow('processed', frame)
+        cv2.waitKey(1)
+            
     except CvBridgeError as e:
         print(e)
 

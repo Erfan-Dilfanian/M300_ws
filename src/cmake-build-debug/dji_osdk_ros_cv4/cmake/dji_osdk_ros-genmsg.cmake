@@ -99,7 +99,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg" "dji_osdk_ros/WaypointV2Config:dji_osdk_ros/WaypointV2"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg" "dji_osdk_ros/WaypointV2:dji_osdk_ros/WaypointV2Config"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg" NAME_WE)
@@ -124,7 +124,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg" "dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2AircraftControlActuator:dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2IntervalTrigger:dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam:dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2SampleReachPointTrigger"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg" "dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2AircraftControlActuator:dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2SampleReachPointTrigger:dji_osdk_ros/WaypointV2IntervalTrigger"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg" NAME_WE)
@@ -329,7 +329,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv" "dji_osdk_ros/SmartBatteryState:dji_osdk_ros/SmartBatteryDynamicInfo"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv" "dji_osdk_ros/SmartBatteryDynamicInfo:dji_osdk_ros/SmartBatteryState"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/MFIO.srv" NAME_WE)
@@ -374,7 +374,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv" "dji_osdk_ros/WaypointV2Config:dji_osdk_ros/WaypointV2:dji_osdk_ros/WaypointV2InitSetting"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv" "dji_osdk_ros/WaypointV2:dji_osdk_ros/WaypointV2InitSetting:dji_osdk_ros/WaypointV2Config"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/UploadWaypointV2Mission.srv" NAME_WE)
@@ -389,7 +389,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv" "dji_osdk_ros/WaypointV2Config:dji_osdk_ros/WaypointV2"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv" "dji_osdk_ros/WaypointV2:dji_osdk_ros/WaypointV2Config"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/StartWaypointV2Mission.srv" NAME_WE)
@@ -414,7 +414,7 @@ add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv" NAME_WE)
 add_custom_target(_dji_osdk_ros_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv" "dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2AircraftControlActuator:dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2IntervalTrigger:dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam:dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2SampleReachPointTrigger:dji_osdk_ros/WaypointV2Action"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dji_osdk_ros" "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv" "dji_osdk_ros/WaypointV2CameraActuatorFocusParam:dji_osdk_ros/WaypointV2AircraftControlActuator:dji_osdk_ros/WaypointV2Action:dji_osdk_ros/WaypointV2AssociateTrigger:dji_osdk_ros/WaypointV2GimbalActuatorRotationParam:dji_osdk_ros/WaypointV2GimbalActuator:dji_osdk_ros/WaypointV2CameraActuatorFocalLengthParam:dji_osdk_ros/WaypointV2AircraftControlActuatorRotateHeading:dji_osdk_ros/WaypointV2CameraActuator:dji_osdk_ros/WaypointV2TrajectoryTrigger:dji_osdk_ros/WaypointV2AircraftControlActuatorFlying:dji_osdk_ros/WaypointV2SampleReachPointTrigger:dji_osdk_ros/WaypointV2IntervalTrigger"
 )
 
 get_filename_component(_filename "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/SetGlobalCruisespeed.srv" NAME_WE)
@@ -687,7 +687,7 @@ _generate_msg_cpp(dji_osdk_ros
 _generate_msg_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_cpp(dji_osdk_ros
@@ -717,7 +717,7 @@ _generate_msg_cpp(dji_osdk_ros
 _generate_msg_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_cpp(dji_osdk_ros
@@ -965,7 +965,7 @@ _generate_srv_cpp(dji_osdk_ros
 _generate_srv_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_cpp(dji_osdk_ros
@@ -1019,7 +1019,7 @@ _generate_srv_cpp(dji_osdk_ros
 _generate_srv_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_cpp(dji_osdk_ros
@@ -1037,7 +1037,7 @@ _generate_srv_cpp(dji_osdk_ros
 _generate_srv_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_cpp(dji_osdk_ros
@@ -1067,7 +1067,7 @@ _generate_srv_cpp(dji_osdk_ros
 _generate_srv_cpp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_cpp(dji_osdk_ros
@@ -1616,7 +1616,7 @@ _generate_msg_eus(dji_osdk_ros
 _generate_msg_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_eus(dji_osdk_ros
@@ -1646,7 +1646,7 @@ _generate_msg_eus(dji_osdk_ros
 _generate_msg_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_eus(dji_osdk_ros
@@ -1894,7 +1894,7 @@ _generate_srv_eus(dji_osdk_ros
 _generate_srv_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_eus(dji_osdk_ros
@@ -1948,7 +1948,7 @@ _generate_srv_eus(dji_osdk_ros
 _generate_srv_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_eus(dji_osdk_ros
@@ -1966,7 +1966,7 @@ _generate_srv_eus(dji_osdk_ros
 _generate_srv_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_eus(dji_osdk_ros
@@ -1996,7 +1996,7 @@ _generate_srv_eus(dji_osdk_ros
 _generate_srv_eus(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_eus(dji_osdk_ros
@@ -2545,7 +2545,7 @@ _generate_msg_lisp(dji_osdk_ros
 _generate_msg_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_lisp(dji_osdk_ros
@@ -2575,7 +2575,7 @@ _generate_msg_lisp(dji_osdk_ros
 _generate_msg_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_lisp(dji_osdk_ros
@@ -2823,7 +2823,7 @@ _generate_srv_lisp(dji_osdk_ros
 _generate_srv_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_lisp(dji_osdk_ros
@@ -2877,7 +2877,7 @@ _generate_srv_lisp(dji_osdk_ros
 _generate_srv_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_lisp(dji_osdk_ros
@@ -2895,7 +2895,7 @@ _generate_srv_lisp(dji_osdk_ros
 _generate_srv_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_lisp(dji_osdk_ros
@@ -2925,7 +2925,7 @@ _generate_srv_lisp(dji_osdk_ros
 _generate_srv_lisp(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_lisp(dji_osdk_ros
@@ -3474,7 +3474,7 @@ _generate_msg_nodejs(dji_osdk_ros
 _generate_msg_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_nodejs(dji_osdk_ros
@@ -3504,7 +3504,7 @@ _generate_msg_nodejs(dji_osdk_ros
 _generate_msg_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_nodejs(dji_osdk_ros
@@ -3752,7 +3752,7 @@ _generate_srv_nodejs(dji_osdk_ros
 _generate_srv_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_nodejs(dji_osdk_ros
@@ -3806,7 +3806,7 @@ _generate_srv_nodejs(dji_osdk_ros
 _generate_srv_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_nodejs(dji_osdk_ros
@@ -3824,7 +3824,7 @@ _generate_srv_nodejs(dji_osdk_ros
 _generate_srv_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_nodejs(dji_osdk_ros
@@ -3854,7 +3854,7 @@ _generate_srv_nodejs(dji_osdk_ros
 _generate_srv_nodejs(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_nodejs(dji_osdk_ros
@@ -4403,7 +4403,7 @@ _generate_msg_py(dji_osdk_ros
 _generate_msg_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_py(dji_osdk_ros
@@ -4433,7 +4433,7 @@ _generate_msg_py(dji_osdk_ros
 _generate_msg_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_msg_py(dji_osdk_ros
@@ -4681,7 +4681,7 @@ _generate_srv_py(dji_osdk_ros
 _generate_srv_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GetSingleBatteryDynamicInfo.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryDynamicInfo.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/SmartBatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_py(dji_osdk_ros
@@ -4735,7 +4735,7 @@ _generate_srv_py(dji_osdk_ros
 _generate_srv_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/InitWaypointV2Setting.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2InitSetting.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_py(dji_osdk_ros
@@ -4753,7 +4753,7 @@ _generate_srv_py(dji_osdk_ros
 _generate_srv_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/DownloadWaypointV2Mission.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Config.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_py(dji_osdk_ros
@@ -4783,7 +4783,7 @@ _generate_srv_py(dji_osdk_ros
 _generate_srv_py(dji_osdk_ros
   "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/srv/GenerateWaypointV2Action.srv"
   "${MSG_I_FLAGS}"
-  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg"
+  "/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocusParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2Action.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AssociateTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuatorRotationParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2GimbalActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuatorFocalLengthParam.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorRotateHeading.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2CameraActuator.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2TrajectoryTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2AircraftControlActuatorFlying.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2SampleReachPointTrigger.msg;/home/erfan/M300_ws/src/dji_osdk_ros_cv4/msg/WaypointV2IntervalTrigger.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dji_osdk_ros
 )
 _generate_srv_py(dji_osdk_ros

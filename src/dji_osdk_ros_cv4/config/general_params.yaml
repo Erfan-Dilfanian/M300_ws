@@ -7,6 +7,7 @@ general_params:
   gimbal_yaw_adjustment: -12
   threshold: 2
   run_up_distance: 14
-  velocity: 0.5
-  apply_fuzzy_control: False
+  apply_fuzzy_control: false
+  velocity_max: 0.1 # fuzzy controller maximum velocity
+  user_input_lateral_adjustment: false 
 
