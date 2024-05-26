@@ -773,6 +773,39 @@ void boundingBoxCallback(const vision_msgs::Detection2DArray::ConstPtr& msg)
     }
 }
 
+
+// Function to calculate and print the average of the centers
+// Function to calculate and print the average of the centers
+geometry_msgs::Point calculateAndPrintAverageCenter() {
+    geometry_msgs::Point avg_center;
+
+    if (fire_bbx_centers.empty()) {
+        std::cout << "No bounding boxes to calculate average." << std::endl;
+        avg_center.x = 0;
+        avg_center.y = 0;
+        avg_center.z = 0;
+        return avg_center;
+    }
+
+    double sum_x = 0.0;
+    double sum_y = 0.0;
+
+    for (const auto& center : fire_bbx_centers) {
+        sum_x += center.x;
+        sum_y += center.y;
+    }
+
+    avg_center.x = sum_x / fire_bbx_centers.size();
+    avg_center.y = sum_y / fire_bbx_centers.size();
+    avg_center.z = 0;
+
+    std::cout << "Average Center: x = " << avg_center.x << ", y = " << avg_center.y << std::endl;
+
+    return avg_center;
+}
+
+void FuzzyVelocityTraversal(const JoystickCommand &offsetDesired, uint32_t timeMs);
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -2319,6 +2352,11 @@ int main(int argc, char **argv) {
 
             if (apply_fuzzy_control == true) {
 
+                geometry_msgs::Point avg_center;
+
+                double PixelErrorPercentage;
+
+
                 char FuzzyStopUserInput; // user input to stop fuzzy or not
 
                 // start fuzzy controlling
@@ -2344,11 +2382,20 @@ int main(int argc, char **argv) {
                         ROS_INFO("Center: x = %f, y = %f", center.x, center.y);
                     }
 
-                    double PixelErrorPercentage;
+                    avg_center = calculateAndPrintAverageCenter();
+                    std::cout << "Returned Average Center: x = " << avg_center.x << ", y = " << avg_center.y << std::endl;
+
+                    // PixelErrorPercentage = (avg_center.x - Wide_image_width)/Wide_image_width
+
                     if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
                         std::cout << "Error value out of range" << std::endl;
 
                     }
+
+                    // criterion to stop fuzzy
+                    if(abs(PixelErrorPercentage)<0.1)
+                    {break;}
+
                     // Perform fuzzy inference and print the output value
                     double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
                     std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: "
@@ -2356,6 +2403,7 @@ int main(int argc, char **argv) {
                               << std::endl;
 
                     // Applying adjusting velocity
+                    FuzzyVelocityTraversal({-AdjustingVelocity*sind(yaw_adjustment),AdjustingVelocity*cosd(yaw_adjustment),0}, 10);
 
 
                     // Check if user has entered y
@@ -2842,4 +2890,38 @@ double fuzzyInference(fl::Engine* engine, double inputError) {
 
     // Get and return the output value
     return velocity->getValue();
+}
+
+
+void FuzzyVelocityTraversal(const JoystickCommand &offsetDesired, uint32_t timeMs)
+{
+    double originTime  = 0;
+    double currentTime = 0;
+    uint64_t elapsedTimeInMs = 0;
+
+    SetJoystickMode joystickMode;
+    JoystickAction joystickAction;
+
+    joystickMode.request.horizontal_mode = joystickMode.request.HORIZONTAL_VELOCITY;
+    joystickMode.request.vertical_mode = joystickMode.request.VERTICAL_VELOCITY;
+    joystickMode.request.yaw_mode = joystickMode.request.YAW_RATE;
+    joystickMode.request.horizontal_coordinate = joystickMode.request.HORIZONTAL_GROUND;
+    joystickMode.request.stable_mode = joystickMode.request.STABLE_ENABLE;
+    set_joystick_mode_client.call(joystickMode);
+
+    joystickAction.request.joystickCommand.x = offsetDesired.x;
+    joystickAction.request.joystickCommand.y = offsetDesired.y;
+    joystickAction.request.joystickCommand.z = offsetDesired.z;
+    joystickAction.request.joystickCommand.yaw = offsetDesired.yaw;
+
+    originTime  = ros::Time::now().toSec();
+    currentTime = originTime;
+    elapsedTimeInMs = (currentTime - originTime)*1000;
+
+    while(elapsedTimeInMs <= timeMs)
+    {
+        currentTime = ros::Time::now().toSec();
+        elapsedTimeInMs = (currentTime - originTime) * 1000;
+        joystick_action_client.call(joystickAction);
+    }
 }

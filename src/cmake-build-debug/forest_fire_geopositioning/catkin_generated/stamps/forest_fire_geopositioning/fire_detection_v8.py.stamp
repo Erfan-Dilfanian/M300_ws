@@ -72,8 +72,8 @@ def callback(image, pub):
         frame = CvBridge().imgmsg_to_cv2(image, "bgr8")
         
         # Print the size of the image
-	    height, width, channels = frame.shape
-	    print(f"Image size: width={width}, height={height}, channels={channels}")
+        height, width, channels = frame.shape
+        print(f"Image size: width={width}, height={height}, channels={channels}")
 
 
 	    # Draw a dashed line in the middle of the image
