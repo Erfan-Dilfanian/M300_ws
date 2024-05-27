@@ -4,10 +4,10 @@ general_params:
   height: 7
   lateral_adjustment: 0  # minus is toward left
   # gimbal_yaw_adjustment: -80
-  gimbal_yaw_adjustment: -12
+  gimbal_yaw_adjustment: -15
   threshold: 2
   run_up_distance: 14
-  apply_fuzzy_control: false
+  apply_fuzzy_control: true
   velocity_max: 0.1 # fuzzy controller maximum velocity
   user_input_lateral_adjustment: false 
 

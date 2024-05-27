@@ -2431,7 +2431,10 @@ int main(int argc, char **argv) {
                         break; }
                 }
 
-
+                // Join the threads to the main thread
+                if (inputThread.joinable()) {
+                    inputThread.join();
+                }
                 }
 
                 // In Motion Dropping mission
