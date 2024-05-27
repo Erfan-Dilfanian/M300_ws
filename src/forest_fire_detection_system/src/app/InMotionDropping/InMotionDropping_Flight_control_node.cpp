@@ -2363,7 +2363,7 @@ int main(int argc, char **argv) {
 
                 bool stopFuzzyControl = false;
 
-                // Wide_image_width = ;
+                float Wide_image_width = 640/2;
 
                 // Check if user has entered 'y' or 'Y'
                 std::cout << "Enter 'y' to stop fuzzy control";
@@ -2385,7 +2385,7 @@ int main(int argc, char **argv) {
                     avg_center = calculateAndPrintAverageCenter();
                     std::cout << "Returned Average Center: x = " << avg_center.x << ", y = " << avg_center.y << std::endl;
 
-                    // PixelErrorPercentage = (avg_center.x - Wide_image_width)/Wide_image_width
+                    PixelErrorPercentage = ((avg_center.x - Wide_image_width)/Wide_image_width)*100;
 
                     if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
                         std::cout << "Error value out of range" << std::endl;
