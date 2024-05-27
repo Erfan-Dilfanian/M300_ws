@@ -2443,8 +2443,8 @@ int main(int argc, char **argv) {
                 float abs_vel = 2; // absolute velocity that needs to be projected
 
 
-                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
-                                          abs_vel, run_up_distance, height, release_delay);
+                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 9000,
+                                          abs_vel, run_up_distance, height, release_delay);   // make sure the approach time is long enough especiallly when the approach speed is low
                 // emergency_brake_client.call(emergency_brake);
                 // ros::Duration(4).sleep();
 
