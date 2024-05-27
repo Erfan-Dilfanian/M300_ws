@@ -82,6 +82,8 @@ namespace plt = matplotlibcpp;
 
 #include <geometry_msgs/Point.h>
 
+#include <atomic> // to define atomic variable
+
 //CODE
 
 using namespace dji_osdk_ros;
@@ -778,7 +780,7 @@ void boundingBoxCallback(const vision_msgs::Detection2DArray::ConstPtr& msg)
 // Function to calculate and print the average of the centers
 geometry_msgs::Point calculateAndPrintAverageCenter() {
     geometry_msgs::Point avg_center;
-
+/*
     if (fire_bbx_centers.empty()) {
         std::cout << "No bounding boxes to calculate average." << std::endl;
         avg_center.x = 0;
@@ -786,7 +788,7 @@ geometry_msgs::Point calculateAndPrintAverageCenter() {
         avg_center.z = 0;
         return avg_center;
     }
-
+*/
     double sum_x = 0.0;
     double sum_y = 0.0;
 
@@ -805,6 +807,21 @@ geometry_msgs::Point calculateAndPrintAverageCenter() {
 }
 
 void FuzzyVelocityTraversal(const JoystickCommand &offsetDesired, uint32_t timeMs);
+
+// Define a global atomic boolean variable
+std::atomic<bool> stopFuzzyControl(false);
+
+// Function for the first thread to ask the user to enter 'y'
+void askUserToStop() {
+    while (!stopFuzzyControl) {
+        std::cout << "Enter 'y' to stop fuzzy control: ";
+        char input;
+        std::cin >> input;
+        if (input == 'y') {
+            stopFuzzyControl = true;
+        }
+    }
+}
 
 int main(int argc, char **argv) {
 
@@ -1988,19 +2005,19 @@ int main(int argc, char **argv) {
                 if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
                     theta == 315 || theta == 360) {
                     float initial_pitch = -60.0f;
-                    float final_pitch = -10.0f;
+                    float final_pitch = -15.0f;
                     gimbalAction.request.pitch = initial_pitch;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     gimbalAction.request.pitch = final_pitch;
-                    std::this_thread::sleep_for(std::chrono::milliseconds(250));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(600));
                     gimbalAction.request.pitch = camera_pitch;
                     gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(250));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
                     /*
                     for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
@@ -2352,21 +2369,16 @@ int main(int argc, char **argv) {
 
             if (apply_fuzzy_control == true) {
 
+                // Create the first thread for manual stoppping of the fuzzy controller
+                std::thread inputThread(askUserToStop);
+
                 geometry_msgs::Point avg_center;
 
-                double PixelErrorPercentage;
-
-
-                char FuzzyStopUserInput; // user input to stop fuzzy or not
+                double PixelErrorPercentage = 200;  // something to make sure that it doesnt satisfy the if statement if no bounding boxes has been found
 
                 // start fuzzy controlling
 
-                bool stopFuzzyControl = false;
-
                 float Wide_image_width = 640/2;
-
-                // Check if user has entered 'y' or 'Y'
-                std::cout << "Enter 'y' to stop fuzzy control";
 
                 // Create the fuzzy engine
                 fl::Engine *engine = createFuzzyEngine(VelocityMax);
@@ -2375,46 +2387,53 @@ int main(int argc, char **argv) {
                 }
 
                 while (stopFuzzyControl == false) {
+
                     ros::spinOnce();
 
-                    // Access the centers
-                    for (const auto &center: fire_bbx_centers) {
-                        ROS_INFO("Center: x = %f, y = %f", center.x, center.y);
+                    if (!fire_bbx_centers.empty()) {
+
+                        // Access the centers
+                        for (const auto &center: fire_bbx_centers) {
+                            ROS_INFO("Center: x = %f, y = %f", center.x, center.y);
+                        }
+
+                        avg_center = calculateAndPrintAverageCenter();
+                        std::cout << "Returned Average Center: x = " << avg_center.x << ", y = " << avg_center.y
+                                  << std::endl;
+
+
+                        PixelErrorPercentage = ((avg_center.x - Wide_image_width) / Wide_image_width) * 100;
+
+                        if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
+                            std::cout << "Error value out of range" << std::endl;
+
+                        }
+
+                        // criterion to stop fuzzy
+                        if (abs(PixelErrorPercentage) < 0.1) {
+                            stopFuzzyControl = true;
+                            break; }
+
+                        // Perform fuzzy inference and print the output value
+                        double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
+                        std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: "
+                                  << AdjustingVelocity
+                                  << std::endl;
+
+                        // Applying adjusting velocity
+                        FuzzyVelocityTraversal(
+                                {-AdjustingVelocity * sind(yaw_adjustment), AdjustingVelocity * cosd(yaw_adjustment),
+                                 0},
+                                20);
                     }
+                    if (abs(PixelErrorPercentage) < 0.1) {
+                        stopFuzzyControl = true;
+                        break; }
+                }
 
-                    avg_center = calculateAndPrintAverageCenter();
-                    std::cout << "Returned Average Center: x = " << avg_center.x << ", y = " << avg_center.y << std::endl;
-
-                    PixelErrorPercentage = ((avg_center.x - Wide_image_width)/Wide_image_width)*100;
-
-                    if (PixelErrorPercentage < -100.0 || PixelErrorPercentage > 100.0) {
-                        std::cout << "Error value out of range" << std::endl;
-
-                    }
-
-                    // criterion to stop fuzzy
-                    if(abs(PixelErrorPercentage)<0.1)
-                    {break;}
-
-                    // Perform fuzzy inference and print the output value
-                    double AdjustingVelocity = fuzzyInference(engine, PixelErrorPercentage);
-                    std::cout << "Pixel Error Percentage: " << PixelErrorPercentage << ", Velocity: "
-                              << AdjustingVelocity
-                              << std::endl;
-
-                    // Applying adjusting velocity
-                    FuzzyVelocityTraversal({-AdjustingVelocity*sind(yaw_adjustment),AdjustingVelocity*cosd(yaw_adjustment),0}, 10);
-
-
-                    // Check if user has entered y
-                    if (std::cin >> FuzzyStopUserInput && FuzzyStopUserInput == 'y') {
-                        std::cout << "Exiting..." << std::endl;
-                        // stopFuzzyControl == true;
-                        break; // Exit the loop if user inputs 1
-                    }
 
                 }
-            }
+
                 // In Motion Dropping mission
 
 
