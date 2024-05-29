@@ -2006,14 +2006,18 @@ int main(int argc, char **argv) {
                     theta == 315 || theta == 360) {
                     float initial_pitch = -50.0f;
                     float final_pitch = -15.0f;
+                    gimbalAction.request.rotationMode = 0;
+                    gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = initial_pitch;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
+                    gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = final_pitch;
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                    gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = camera_pitch;
                     gimbalAction.request.time = 1.5; // Dont know th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
