@@ -1999,7 +1999,7 @@ int main(int argc, char **argv) {
                 circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                 cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:"
                      << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
-                     << endl;
+                     << "theta:"<<theta<<endl;
                 CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
                                          circular_params.yawRate}, circular_params.time_step * 1000);
 

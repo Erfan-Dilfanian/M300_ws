@@ -10,8 +10,6 @@ print("Python path:", sys.path)
 # print("Installed packages:")
 # subprocess.run([sys.executable, '-m', 'pip', 'list'])
 
-
-
 import torch
 import glob
 import os
@@ -71,8 +69,6 @@ def draw_dashed_line(image, start_point, end_point, color, thickness, dash_lengt
     for i in range(start_point[1], end_point[1], dash_length * 2):
         cv2.line(image, (start_point[0], i), (start_point[0], i + dash_length), color, thickness, line_type)
 
-
-
 def callback(image, pub):
     try:
         frame = CvBridge().imgmsg_to_cv2(image, "bgr8")
@@ -81,30 +77,22 @@ def callback(image, pub):
         height, width, channels = frame.shape
         print(f"Image size: width={width}, height={height}, channels={channels}")
 
-
-	    # Draw a dashed line in the middle of the image
+        # Draw a dashed line in the middle of the image
         middle_x = width // 2
         draw_dashed_line(frame, (middle_x, 0), (middle_x, height), (0, 255, 0), 2)
 
-
-        # convert color
-        # frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        # cv2.imshow("original", frame)
-        # cv2.waitKey(1)
-        # qiao: try tracker 20240524
-	    # qiao: add the confidence 20240524
-        results = model.track(frame, stream=True, conf = 0.3)
+        # Process frame with YOLO model
+        results = model.track(frame, stream=True, conf=0.3)
         ros_boxes = Detection2DArray()
         ros_boxes.header = image.header
+        
         for result in results:
             boxes = result.boxes
             for box in boxes:
                 x1, y1, x2, y2 = box.xyxy[0]
                 x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 255), 1)
-                # print(f"======> The Coordinate x_min y_min x_max y_x=max\n", x1, y1, x2, y2)
-
-                # # confidence
+                
                 confidence = math.ceil((box.conf[0] * 100)) / 100
                 print("======> Confidence", confidence)
                 
@@ -113,23 +101,7 @@ def callback(image, pub):
                 center_y = (y1 + y2) // 2
                 cv2.circle(frame, (center_x, center_y), 3, (0, 0, 255), -1)  # Visualize the center
 
-                #
-                # # class_name
-                # cls = int(box.cls[0])
-                # # print("======> Class Name", classNames[cls])
-                #
-                # # object detials
-                # org = [x1, y1]
-                # font = cv2.FONT_HERSHEY_SIMPLEX
-                # fontScale = 1
-                # color = (255, 0, 0)
-                # thickness = 1
-                #
-                # cv2.putText(frame, classNames[cls], org, font, fontScale, color, thickness)
-                # cv2.imshow('processed', frame)
-                # cv2.waitKey(1)
-
-                # add results to the Detection2DArray
+                # Add results to the Detection2DArray
                 ros_box = Detection2D()
                 ros_box.header = image.header
                 ros_box.bbox.size_x = x2 - x1
@@ -138,27 +110,24 @@ def callback(image, pub):
                 ros_box.bbox.center.y = center_y
                 ros_box.bbox.center.theta = 0
                 ros_boxes.detections.append(ros_box)
+        
+        # Publish Detection2DArray message
+        if ros_boxes.detections:
             pub.publish(ros_boxes)
-            # print how many boxes are detected
-            print("======> Number of boxes detected: ", len(boxes))
-            
-            
+            print("======> Published Detection2DArray with", len(ros_boxes.detections), "detections")
+
         # Show the image with bounding boxes, centers, and the middle dashed line
         cv2.imshow('processed', frame)
         cv2.waitKey(1)
-            
+
     except CvBridgeError as e:
         print(e)
 
-
 def listener():
     rospy.init_node('listener', anonymous=True)
-    # publish the detection bounding boxes using jsk_recognition_msgs/Detection2DArray
     pub = rospy.Publisher('/bounding_boxes/fire_spots', Detection2DArray, queue_size=10)
-    # rospy.Subscriber("/dji_osdk_ros/main_wide_RGB", Image, callback, pub)
     rospy.Subscriber("/dji_osdk_ros/main_wide_RGB", Image, callback, pub)
     rospy.spin()
-
 
 if __name__ == '__main__':
     listener()
