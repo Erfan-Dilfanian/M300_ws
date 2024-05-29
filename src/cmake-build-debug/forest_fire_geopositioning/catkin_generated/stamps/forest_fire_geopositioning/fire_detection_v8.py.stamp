@@ -4,7 +4,13 @@ import cv2
 
 # check python version
 import sys
-print("Python version: " + sys.version)
+import subprocess
+print("Python version:", sys.version)
+print("Python path:", sys.path)
+# print("Installed packages:")
+# subprocess.run([sys.executable, '-m', 'pip', 'list'])
+
+
 
 import torch
 import glob
@@ -46,7 +52,7 @@ date = datetime.datetime.now().strftime("%Y%m%d")
 # to get the parameter:
 # yolo task=detect mode=train model=yolov8n.pt data=AVITAGS_NAVLAB20230930-1/data.yaml epochs=30 imgsz=640
 classNames = ["Wildfire Spot"]
-model = YOLO("/home/uav/Downloads/YoloWeights/best.pt")
+model = YOLO("/home/erfan/Downloads/YoloWeights/best.pt")
 # model = YOLO("/home/qin/m300_ws/src/forest_fire_fighting/scripts/YoloWeights/yolov8n.pt")
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"

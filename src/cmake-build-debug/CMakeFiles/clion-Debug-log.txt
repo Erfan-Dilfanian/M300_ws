@@ -1,4 +1,4 @@
-/snap/clion/275/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/275/bin/ninja/linux/x64/ninja -G Ninja -S /home/erfan/M300_ws/src -B /home/erfan/M300_ws/src/cmake-build-debug
+/snap/clion/277/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/277/bin/ninja/linux/x64/ninja -G Ninja -S /home/erfan/M300_ws/src -B /home/erfan/M300_ws/src/cmake-build-debug
 CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -7,6 +7,18 @@ CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
   CMake that the project does not need compatibility with older versions.
 
 
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Using CATKIN_DEVEL_PREFIX: /home/erfan/M300_ws/src/cmake-build-debug/devel
 -- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
 -- This workspace overlays: /opt/ros/noetic
@@ -24,6 +36,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python3
 -- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
 -- Using empy: /usr/lib/python3/dist-packages/em.py
 -- Using CATKIN_ENABLE_TESTING: ON
 -- Call enable_testing()
@@ -65,6 +78,7 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
 -- Using Python nosetests: /usr/bin/nosetests3
 -- catkin 0.8.10
 -- BUILD_SHARED_LIBS is on
@@ -171,6 +185,7 @@ CMake Warning (dev) at cv_bridge/cv_bridge/CMakeLists.txt:7 (find_package):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found version "3.8.10") 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: python 
 -- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") found components: opencv_core opencv_imgproc opencv_imgcodecs 
 CMake Warning (dev) at cv_bridge/cv_bridge/src/CMakeLists.txt:11 (find_package):
   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
@@ -202,6 +217,7 @@ CMake Deprecation Warning at cv_bridge/image_geometry/CMakeLists.txt:1 (cmake_mi
 -- ==> add_subdirectory(forest_fire_detection_system)
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
+-- Found Glog: /usr/include  
 -- forest_fire_detection_system: 3 messages, 2 services
 -- +++ processing catkin package: 'forest_fire_geopositioning'
 -- ==> add_subdirectory(forest_fire_geopositioning)
@@ -218,6 +234,6 @@ CMake Deprecation Warning at forest_fire_geopositioning/CMakeLists.txt:1 (cmake_
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v8.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v5.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
 -- Installing devel-space wrapper /home/erfan/M300_ws/src/forest_fire_geopositioning/scripts/fire_detection_v8_test.py to /home/erfan/M300_ws/src/cmake-build-debug/devel/lib/forest_fire_geopositioning
--- Configuring done (4.2s)
--- Generating done (0.8s)
+-- Configuring done (6.3s)
+-- Generating done (1.1s)
 -- Build files have been written to: /home/erfan/M300_ws/src/cmake-build-debug

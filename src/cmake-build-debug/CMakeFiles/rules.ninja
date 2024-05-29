@@ -1069,7 +1069,7 @@ rule CXX_EXECUTABLE_LINKER__fire_subscriber_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/275/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/erfan/M300_ws/src -B/home/erfan/M300_ws/src/cmake-build-debug
+  command = /snap/clion/277/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/erfan/M300_ws/src -B/home/erfan/M300_ws/src/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -1078,7 +1078,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /snap/clion/275/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
+  command = /snap/clion/277/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -1086,6 +1086,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /snap/clion/275/bin/ninja/linux/x64/ninja -t targets
+  command = /snap/clion/277/bin/ninja/linux/x64/ninja -t targets
   description = All primary targets available:
 
