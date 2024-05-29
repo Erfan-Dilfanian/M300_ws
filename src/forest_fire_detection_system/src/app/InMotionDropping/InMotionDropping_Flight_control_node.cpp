@@ -2004,18 +2004,18 @@ int main(int argc, char **argv) {
                                          circular_params.yawRate}, circular_params.time_step * 1000);
                 if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
                     theta == 315 || theta == 360) {
-                    float initial_pitch = -60.0f;
+                    float initial_pitch = -50.0f;
                     float final_pitch = -15.0f;
                     gimbalAction.request.pitch = initial_pitch;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     gimbalAction.request.pitch = final_pitch;
-                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(600));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     gimbalAction.request.pitch = camera_pitch;
-                    gimbalAction.request.time = 1.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbalAction.request.time = 1.5; // Dont know th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
