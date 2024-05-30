@@ -111,10 +111,8 @@ def callback(image, pub):
                 ros_box.bbox.center.theta = 0
                 ros_boxes.detections.append(ros_box)
         
-        # Publish Detection2DArray message
-        if ros_boxes.detections:
+
             pub.publish(ros_boxes)
-            print("======> Published Detection2DArray with", len(ros_boxes.detections), "detections")
 
         # Show the image with bounding boxes, centers, and the middle dashed line
         cv2.imshow('processed', frame)
