@@ -1999,10 +1999,7 @@ int main(int argc, char **argv) {
                 circular_params.CircularVelocity.Vy = circular_params.radius * circular_params.theta_dot * sind(theta);
                 cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:"
                      << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
-                     << "theta:"<<theta<<endl;
-                CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
-                                         circular_params.yawRate}, circular_params.time_step * 1000);
-
+                     << ", theta:"<<theta<<endl;
                 if (theta == 45) {
                     float initial_pitch = -50.0f;
                     gimbalAction.request.rotationMode = 0;
@@ -2011,28 +2008,28 @@ int main(int argc, char **argv) {
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
 
 
-                /*
-                if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
-                    theta == 315 || theta == 360) {
-                    float initial_pitch = -50.0f;
-                    float final_pitch = -15.0f;
-                    gimbalAction.request.rotationMode = 0;
-                    gimbalAction.request.roll = 0;
-                    gimbalAction.request.pitch = initial_pitch;
-                    gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
-                    gimbal_control_client.call(gimbalAction);
-                    gimbalAction.request.roll = 0;
-                    gimbalAction.request.pitch = final_pitch;
-                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
-                    gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
-                    gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
-                    gimbalAction.request.roll = 0;
-                    gimbalAction.request.pitch = camera_pitch;
-                    gimbalAction.request.time = 1.5; // Dont know th efunction exactly. make pitch movement smoother?
-                    gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
-*/
+                    /*
+                    if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
+                        theta == 315 || theta == 360) {
+                        float initial_pitch = -50.0f;
+                        float final_pitch = -15.0f;
+                        gimbalAction.request.rotationMode = 0;
+                        gimbalAction.request.roll = 0;
+                        gimbalAction.request.pitch = initial_pitch;
+                        gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+                        gimbalAction.request.roll = 0;
+                        gimbalAction.request.pitch = final_pitch;
+                        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                        gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+                        std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                        gimbalAction.request.roll = 0;
+                        gimbalAction.request.pitch = camera_pitch;
+                        gimbalAction.request.time = 1.5; // Dont know th efunction exactly. make pitch movement smoother?
+                        gimbal_control_client.call(gimbalAction);
+                        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    */
                     /*
                     for (float pitch = initial_pitch; pitch < final_pitch; pitch+=10) {
                         gimbalAction.request.pitch = pitch;
@@ -2049,6 +2046,10 @@ int main(int argc, char **argv) {
 
 
                 }
+                CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
+                                         circular_params.yawRate}, circular_params.time_step * 1000);
+
+
 
             }
 
@@ -2557,15 +2558,16 @@ velocityAndYawRateControl(const JoystickCommand &offsetDesired, uint32_t timeMs,
     currentTime = originTime;
     elapsedTimeInMs = (currentTime - originTime) * 1000;
     bool flag = 0;
+    float g = 9.81;
+
+    double release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
+    cout<<"release_time is:"<<release_time<<endl;
     while (elapsedTimeInMs <= timeMs) {
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         // ROS_INFO("timeinMs [%f]",elapsedTimeInMs);
 
-        float g = 9.81;
 
-        double release_time = (((d / abs_vel) - sqrt((2 * height) / g)) * 1000) + delay; // release time in Ms
-        cout<<"release_time is:"<<release_time<<endl;
 
         if (elapsedTimeInMs > release_time || release_time<=0) {
             // controlServo(angle);
