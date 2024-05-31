@@ -2002,7 +2002,7 @@ int main(int argc, char **argv) {
             circular_params.theta_step_degrees = 1;*/
 
             circular_params.CalculateParams();
-
+            double yaw_rate_adjustment = 0.01;
 
             for (float theta = 0; theta < 360; theta = theta + circular_params.theta_step_degrees) {
                 // time_step = (M_PI/theta_dot)/theta_step;
@@ -2014,12 +2014,24 @@ int main(int argc, char **argv) {
                      << ", theta:"<<theta<<endl;
                 if (theta == 45) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
-                    float initial_pitch = -50.0f;
+                    float downward_sweep_change = -20.0f;  // it seems like its relateive to the previous pitch not absolute value
                     gimbalAction.request.rotationMode = 0;
                     gimbalAction.request.roll = 0;
-                    gimbalAction.request.pitch = initial_pitch;
+                    gimbalAction.request.pitch = downward_sweep_change;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                    float sweep_pitch = 50.0f;
+                    gimbalAction.request.roll = 0;
+                    gimbalAction.request.pitch = sweep_pitch;
+                    gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                    gimbalAction.request.roll = 0;
+                    gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
+                    gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
 
 
                     /*
@@ -2061,10 +2073,9 @@ int main(int argc, char **argv) {
 
                 }
                 CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
-                                         circular_params.yawRate}, circular_params.time_step * 1000);
+                                         circular_params.yawRate-yaw_rate_adjustment}, circular_params.time_step * 1000);
 
-
-
+                
             }
 
 
