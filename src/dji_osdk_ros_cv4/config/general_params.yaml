@@ -9,6 +9,6 @@ general_params:
   run_up_distance: 10
   apply_fuzzy_control: true
   velocity_max: 0.1 # fuzzy controller maximum velocity
-  user_input_lateral_adjustment: false 
+  user_input_lateral_adjustment: true
   fake_fire_spot_counter_mode: true
 
