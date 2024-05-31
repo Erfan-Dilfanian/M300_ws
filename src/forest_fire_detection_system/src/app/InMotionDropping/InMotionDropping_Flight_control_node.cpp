@@ -2001,6 +2001,7 @@ int main(int argc, char **argv) {
                      << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
                      << ", theta:"<<theta<<endl;
                 if (theta == 45) {
+                    cout<<endl<<"stop to sweep pitch angle for H20T camera";
                     float initial_pitch = -50.0f;
                     gimbalAction.request.rotationMode = 0;
                     gimbalAction.request.roll = 0;
