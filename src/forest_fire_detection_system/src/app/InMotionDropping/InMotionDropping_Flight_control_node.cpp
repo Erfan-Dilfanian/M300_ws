@@ -728,6 +728,8 @@ cout<<"the FireSPotCounter thread finished working";
     }
 */
    int counter;
+   // for debug:
+   /*
    while(counter<number_of_fire_spots_criterion)
    {
        counter++;
@@ -736,6 +738,15 @@ cout<<"the FireSPotCounter thread finished working";
 
 
    }
+     */
+       while(nodes_vec.size()<=number_of_fire_spots_criterion)
+   {
+
+       cout<<"number of found fire spots is:"<<nodes_vec.size()<<endl;
+
+
+   }
+
    stopSLAM = true;
         };
 
@@ -2007,6 +2018,7 @@ int main(int argc, char **argv) {
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = initial_pitch;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
+                    gimbal_control_client.call(gimbalAction);
 
 
                     /*
