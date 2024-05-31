@@ -698,6 +698,7 @@ Point GPS2Coordinates(sensor_msgs::NavSatFix homeGPos, sensor_msgs::NavSatFix GP
 void doRANSAC(std::vector <node> nodes_vec, double fire_coordinates[][3], Line& best_Line, Point& starting_point, float threshold, double run_up_distance);
 
 bool stopSLAM = false;
+bool FakeFireSpotCounterMode;
 
 void FireSpotCounter()
         {
@@ -729,22 +730,20 @@ cout<<"the FireSPotCounter thread finished working";
 */
    int counter;
    // for debug:
-   /*
-   while(counter<number_of_fire_spots_criterion)
-   {
-       counter++;
-       std::this_thread::sleep_for(std::chrono::milliseconds(5));
-       cout<<"counter is:"<<counter<<endl;
+   if(FakeFireSpotCounterMode==true) {
+       while (counter < number_of_fire_spots_criterion) {
+           counter++;
+           std::this_thread::sleep_for(std::chrono::milliseconds(5));
+           cout << "counter is:" << counter << endl;
 
 
+       }
    }
-     */
-       while(nodes_vec.size()<=number_of_fire_spots_criterion)
-   {
+   else {
+       while (nodes_vec.size() <= number_of_fire_spots_criterion) {
 
-       cout<<"number of found fire spots is:"<<nodes_vec.size()<<endl;
-
-
+           cout << "number of found fire spots is:" << nodes_vec.size() << endl;
+       }
    }
 
    stopSLAM = true;
@@ -957,6 +956,8 @@ int main(int argc, char **argv) {
     bool apply_fuzzy_control = GeneralConfig["general_params"]["apply_fuzzy_control"].as<bool>();
     double VelocityMax = GeneralConfig["general_params"]["velocity_max"].as<double>(); // max velocity for fuzzy controller
     double inputLateralAdjustment = GeneralConfig["general_params"]["user_input_lateral_adjustment"].as<bool>();
+    FakeFireSpotCounterMode = GeneralConfig["general_params"]["fake_fire_spot_counter_mode"].as<bool>();
+
 
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;

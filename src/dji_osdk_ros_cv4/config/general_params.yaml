@@ -10,4 +10,5 @@ general_params:
   apply_fuzzy_control: true
   velocity_max: 0.1 # fuzzy controller maximum velocity
   user_input_lateral_adjustment: false 
+  fake_fire_spot_counter_mode: true
 
