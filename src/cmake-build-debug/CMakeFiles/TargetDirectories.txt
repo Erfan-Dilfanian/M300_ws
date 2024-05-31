@@ -447,6 +447,7 @@
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/modules/CMakeFiles/install/strip.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/AlianRGB_IR.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/GetCurrentGPSPos.dir
+/home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/GetMultipleCurrentGPSPos.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/HandleImageTransport.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/NewFirePointGenerator.dir
 /home/erfan/M300_ws/src/cmake-build-debug/forest_fire_detection_system/src/tools/CMakeFiles/RangerFinderBasedLocator.dir
