@@ -2012,7 +2012,8 @@ int main(int argc, char **argv) {
                 cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:"
                      << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
                      << ", theta:"<<theta<<endl;
-                if (theta == 45) {
+                if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
+                    theta == 315 || theta == 360) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
                     float downward_sweep_change = -20.0f;  // it seems like its relateive to the previous pitch not absolute value
                     gimbalAction.request.rotationMode = 0;
@@ -2075,7 +2076,7 @@ int main(int argc, char **argv) {
                 CircularDivisionPlanner({circular_params.CircularVelocity.Vx, circular_params.CircularVelocity.Vy, 0,
                                          circular_params.yawRate-yaw_rate_adjustment}, circular_params.time_step * 1000);
 
-                
+
             }
 
 
