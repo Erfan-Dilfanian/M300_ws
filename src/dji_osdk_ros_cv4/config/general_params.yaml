@@ -1,6 +1,6 @@
 general_params:
   camera_pitch: -30
-  release_delay: -1900
+  release_delay: -3000
   height: 7
   lateral_adjustment: 0  # minus is toward left
   # gimbal_yaw_adjustment: -80
@@ -12,4 +12,6 @@ general_params:
   user_input_lateral_adjustment: true
   fake_fire_spot_counter_mode: true
   yaw_rate_adjustmnet_for_circular_path: 0.01
+  approach_absolute_velocity: 1
+  time_of_approach: 7000
 

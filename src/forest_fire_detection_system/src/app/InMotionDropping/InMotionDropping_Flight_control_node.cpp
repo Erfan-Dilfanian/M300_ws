@@ -961,7 +961,11 @@ int main(int argc, char **argv) {
     double VelocityMax = GeneralConfig["general_params"]["velocity_max"].as<double>(); // max velocity for fuzzy controller
     double inputLateralAdjustment = GeneralConfig["general_params"]["user_input_lateral_adjustment"].as<bool>();
     FakeFireSpotCounterMode = GeneralConfig["general_params"]["fake_fire_spot_counter_mode"].as<bool>();
-    double yaw_rate_adjustment = GeneralConfig["general_params"]["yaw_rate_adjustmnet_for_circular_path"].as<double>();;
+    double yaw_rate_adjustment = GeneralConfig["general_params"]["yaw_rate_adjustmnet_for_circular_path"].as<double>();
+    float abs_vel = GeneralConfig["general_params"]["approach_absolute_velocity"].as<double>(); // absolute velocity to approach line of fire
+    double time_of_approach = GeneralConfig["general_params"]["time_of_approach"].as<double>(); // time of in motion dropping in miliseconds
+
+
 
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
@@ -1207,7 +1211,7 @@ int main(int argc, char **argv) {
 
 
 
-            velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 5000,
+            velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, time_of_approach,
                                       abs_vel, d, height, release_delay);
 
 
@@ -1959,6 +1963,12 @@ int main(int argc, char **argv) {
     if (scenario == 'f') {
         // float homeGPS_posArray[3];
 
+        // reset gimbal
+        GimbalAction gimbalAction;
+        gimbalAction.request.is_reset = true;
+        gimbalAction.request.payload_index = static_cast<uint8_t>(dji_osdk_ros::PayloadIndex::PAYLOAD_INDEX_0);
+        gimbal_control_client.call(gimbalAction);
+
         cout << "we are inside scenario's f code" << endl;  // for debug
         //Get fire GPS position and use callback function to put all the detected fire spots GPS info and sequence to nodes_vec, a global vector
         ros::Subscriber line_of_fire_sub = nh.subscribe("/position/fire_spots_GPS", 1, LineOfFireCallback);
@@ -2035,6 +2045,8 @@ int main(int argc, char **argv) {
                     gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+
 
                     /*
                     if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
@@ -2319,6 +2331,18 @@ int main(int argc, char **argv) {
                                 plt::ylabel("X"); // X-axis now represents Y-coordinate
                                 plt::title("Scatter Plot of Points");
 
+                                // Mark the home position (0, 0) with a red point and label it 'H'
+                                plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
+                                plt::annotate("H", 0.0, 0.0);
+
+                                // Add grid to the plot
+                                plt::grid(true);
+
+                                // Set labels and title with switched axes
+                                plt::xlabel("Y"); // Y-axis now represents X-coordinate
+                                plt::ylabel("X"); // X-axis now represents Y-coordinate
+                                plt::title("Scatter Plot of Points");
+
                             }
                         }
 
@@ -2482,7 +2506,6 @@ int main(int argc, char **argv) {
                 // In Motion Dropping mission
 
 
-                float abs_vel = 2; // absolute velocity that needs to be projected
 
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 9000,
