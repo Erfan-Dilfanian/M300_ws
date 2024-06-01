@@ -2335,18 +2335,6 @@ int main(int argc, char **argv) {
                                 plt::ylabel("X"); // X-axis now represents Y-coordinate
                                 plt::title("Scatter Plot of Points");
 
-                                // Mark the home position (0, 0) with a red point and label it 'H'
-                                plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
-                                plt::annotate("H", 0.0, 0.0);
-
-                                // Add grid to the plot
-                                plt::grid(true);
-
-                                // Set labels and title with switched axes
-                                plt::xlabel("Y"); // Y-axis now represents X-coordinate
-                                plt::ylabel("X"); // X-axis now represents Y-coordinate
-                                plt::title("Scatter Plot of Points");
-
                             }
                         }
 
@@ -2901,6 +2889,20 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
               << std::endl;
 
     plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
+
+    // Set labels and title with switched axes
+    plt::xlabel("Y"); // Y-axis now represents X-coordinate
+    plt::ylabel("X"); // X-axis now represents Y-coordinate
+    plt::title("Scatter Plot of Points");
+
+    // Mark the home position (0, 0) with a red point and label it 'H'
+    plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
+    plt::annotate("H", 0.0, 0.0);
+
+    // Add grid to the plot
+    plt::grid(true);
+
+
     // Show plot
     plt::show();
 }
