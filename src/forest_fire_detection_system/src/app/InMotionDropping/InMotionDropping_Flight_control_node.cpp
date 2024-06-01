@@ -731,10 +731,14 @@ cout<<"the FireSPotCounter thread finished working";
    int counter;
    // for debug:
    if(FakeFireSpotCounterMode==true) {
+
        while (counter < number_of_fire_spots_criterion) {
            counter++;
            std::this_thread::sleep_for(std::chrono::milliseconds(5));
+           if(counter%1000 == 0){
            cout << "counter is:" << counter << endl;
+           // show every 1000 times
+           }
 
 
        }
@@ -957,7 +961,7 @@ int main(int argc, char **argv) {
     double VelocityMax = GeneralConfig["general_params"]["velocity_max"].as<double>(); // max velocity for fuzzy controller
     double inputLateralAdjustment = GeneralConfig["general_params"]["user_input_lateral_adjustment"].as<bool>();
     FakeFireSpotCounterMode = GeneralConfig["general_params"]["fake_fire_spot_counter_mode"].as<bool>();
-
+    double yaw_rate_adjustment = GeneralConfig["general_params"]["yaw_rate_adjustmnet_for_circular_path"].as<double>();;
 
 
     std::cout << "Camera Pitch: " << camera_pitch << std::endl;
@@ -2002,7 +2006,6 @@ int main(int argc, char **argv) {
             circular_params.theta_step_degrees = 1;*/
 
             circular_params.CalculateParams();
-            double yaw_rate_adjustment = 0.01;
 
             for (float theta = 0; theta < 360; theta = theta + circular_params.theta_step_degrees) {
                 // time_step = (M_PI/theta_dot)/theta_step;
@@ -2027,13 +2030,11 @@ int main(int argc, char **argv) {
                     gimbalAction.request.pitch = sweep_pitch;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(300));
-
 
                     /*
                     if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
