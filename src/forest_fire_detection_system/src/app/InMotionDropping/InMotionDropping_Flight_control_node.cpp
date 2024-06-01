@@ -1999,6 +1999,7 @@ int main(int argc, char **argv) {
             moveByPosOffset(control_task, {0, 0, 0, 90}, 1,
                             3); // note that north is x axis, east is y, and down axis is the z
 
+            GimbalAction gimbalAction;
             gimbalAction.request.rotationMode = 0;
             gimbalAction.request.pitch = camera_pitch;
             gimbalAction.request.roll = 0;
@@ -2024,7 +2025,7 @@ int main(int argc, char **argv) {
                 cout << "Vx is:" << circular_params.CircularVelocity.Vx << " Vy is:"
                      << circular_params.CircularVelocity.Vy << "time step in ms is:" << circular_params.time_step * 1000
                      << ", theta:"<<theta<<endl;
-                
+
                 if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
                     theta == 315 || theta == 360) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
