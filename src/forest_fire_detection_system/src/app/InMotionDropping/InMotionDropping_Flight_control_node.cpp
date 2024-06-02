@@ -26,7 +26,7 @@ namespace plt = matplotlibcpp;
 #include <dji_osdk_ros/EmergencyBrake.h>
 #include <dji_osdk_ros/GetAvoidEnable.h>
 
-#include <cstdlib>
+#include <cstdlib>  // from uses: for getenv
 
 #include<dji_osdk_ros/SetJoystickMode.h>
 #include<dji_osdk_ros/JoystickAction.h>
@@ -838,6 +838,24 @@ void askUserToStop() {
     }
 }
 
+void setupPlot(const std::vector<float>& x, const std::vector<float>& y) {
+    plt::plot(y, x, "bo"); // Switched x and y
+    plt::xlabel("Y"); // Y-axis now represents X-coordinate
+    plt::ylabel("X"); // X-axis now represents Y-coordinate
+    plt::title("Scatter Plot of Points");
+    plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
+    plt::annotate("H", 0.0, 0.0);
+    plt::grid(true);
+}
+
+std::string getHomeDirectory() {
+    const char* homedir;
+    if ((homedir = getenv("HOME")) == nullptr) {
+        homedir = getenv("USERPROFILE"); // Windows
+    }
+    return std::string(homedir);
+}
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -928,6 +946,10 @@ int main(int argc, char **argv) {
 
     cout << "indoor test or outdoor test?" << endl << "[a] indoor" << endl << "[b] outdoor" << endl;
     cin >> in_or_out;
+
+    char plotname;
+    cout<<"please enter plotname";
+    cin>>plotname;
 
     /*
     cout << "please enter camera pitch angle in degree (no f at end please)" << endl;
@@ -2234,24 +2256,8 @@ int main(int argc, char **argv) {
             }
             std::cout << std::endl;
 
-            // Plot the points with x and y switched
-            plt::plot(y, x, "bo"); // Switched x and y
-
-
-            // Set labels and title with switched axes
-            plt::xlabel("Y"); // Y-axis now represents X-coordinate
-            plt::ylabel("X"); // X-axis now represents Y-coordinate
-            plt::title("Scatter Plot of Points");
-
-            // Mark the home position (0, 0) with a red point and label it 'H'
-            plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
-            plt::annotate("H", 0.0, 0.0);
-
-            // Add grid to the plot
-            plt::grid(true);
-
-            // Show plot
-            //     plt::show();
+            // Call setupPlot to set up initial plot
+            setupPlot(x, y); // Setup initial plot
 
 
             cout << "now we have gps position of fire spots, we go ahead and find optimum line for approach";
@@ -2261,6 +2267,7 @@ int main(int argc, char **argv) {
             bool flag = 1;
             char approach_confirm;
             char ground_truth_gps_aprch_cmnd;
+
             while (flag == 1) {
                 doRANSAC(nodes_vec, fire_gps_local_pos, best_line, starting_point, threshold, run_up_distance);
                 cout << "confirm approach? [y/n]";
@@ -2319,7 +2326,9 @@ int main(int argc, char **argv) {
                                 }
 
                                 // Extract x and y coordinates into vectors
-                                std::vector<float> x, y;
+                                // Update x and y vectors
+                                x.clear();
+                                y.clear();
                                 for (size_t i = 0; i < nodes_vec.size(); ++i) {
                                     x.push_back(fire_gps_local_pos[i][0]);
                                     y.push_back(fire_gps_local_pos[i][1]);
@@ -2339,13 +2348,8 @@ int main(int argc, char **argv) {
                                 }
                                 std::cout << std::endl;
 
-                                // Plot the points with x and y switched
-                                plt::plot(y, x, "bo"); // Switched x and y
-
-                                // Set labels and title with switched axes
-                                plt::xlabel("Y"); // Y-axis now represents X-coordinate
-                                plt::ylabel("X"); // X-axis now represents Y-coordinate
-                                plt::title("Scatter Plot of Points");
+                                // Update plot with new data
+                                setupPlot(x, y); // Update plot with new data
 
                             }
                         }
@@ -2360,6 +2364,13 @@ int main(int argc, char **argv) {
 
             }
 
+
+
+            // Save the final plot in a specific path within the user's home directory
+            std::string homeDirectory = getHomeDirectory(); // Get home directory
+            std::string savePath = homeDirectory + "M300_ws/plots/"+plotname+".png"; // Adjust the relative path as needed
+            plt::save(savePath); // Save the plot
+            std::cout << "Plot saved to: " << savePath << std::endl;
 
             ros::spinOnce();
 
@@ -2909,7 +2920,7 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
 
     // Calculate the point on the fitted line closest to the first "real" inlier (not false alarm)
     Point first_inlier = best_line.inlier_points[0];
-        std::cout << "First inlier: x = " << first_inlier.x << ", y = " << first_inlier.y << std::endl;
+    std::cout << "First inlier: x = " << first_inlier.x << ", y = " << first_inlier.y << std::endl;
     Point closest_point = closestPointOnLine(best_line, first_inlier);
 
     Point intersecPoint = intersectionPoint(best_line, first_inlier);
@@ -2925,6 +2936,7 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
         line_x.push_back(y_val);  // Note: Switched x and y
         line_y.push_back(x_val);  // Note: Switched x and y
     }
+
     plt::plot(line_x, line_y, "r"); // Plot the line in blue
 
     starting_point = traverseOnLine(best_line, intersecPoint, run_up_distance);
@@ -2932,20 +2944,7 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
               << std::endl;
 
     plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
-
-    // Set labels and title with switched axes
-    plt::xlabel("Y"); // Y-axis now represents X-coordinate
-    plt::ylabel("X"); // X-axis now represents Y-coordinate
-    plt::title("Scatter Plot of Points");
-
-    // Mark the home position (0, 0) with a red point and label it 'H'
-    plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
-    plt::annotate("H", 0.0, 0.0);
-
-    // Add grid to the plot
-    plt::grid(true);
-
-
+    
     // Show plot
     plt::show();
 }
