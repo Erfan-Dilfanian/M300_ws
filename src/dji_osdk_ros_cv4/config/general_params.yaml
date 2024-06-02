@@ -11,7 +11,7 @@ general_params:
   velocity_max: 0.1 # fuzzy controller maximum velocity
   user_input_lateral_adjustment: true
   fake_fire_spot_counter_mode: true
-  yaw_rate_adjustmnet_for_circular_path: -0.06
+  yaw_rate_adjustmnet_for_circular_path: 0
   approach_absolute_velocity: 1
   time_of_approach: 12000
   extra_yaw_adjustment: true
