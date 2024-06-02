@@ -84,6 +84,8 @@ namespace plt = matplotlibcpp;
 
 #include <atomic> // to define atomic variable
 
+#include <filesystem> // for directory creation (C++17 and later)
+
 //CODE
 
 using namespace dji_osdk_ros;
@@ -856,6 +858,26 @@ std::string getHomeDirectory() {
     return std::string(homedir);
 }
 
+// Added function to create a directory
+void createDirectory(const std::string& path) {
+#if __cplusplus >= 201703L // C++17 or later
+    std::filesystem::create_directories(path);
+#else
+    mkdir(path.c_str(), 0777);
+#endif
+}
+
+
+void writeVectorsToCSV(const std::vector<float>& x, const std::vector<float>& y, const std::string& path); // write fire spots x and y to a file
+
+void writeLineToCSV(const Line& line, const std::string& path);
+
+void writePointToCSV(const Point& point, const std::string& path);
+
+std::string SaveAllPath; // to record stuff. Made it global to be recognizable by functions
+
+std::string record_index;
+
 int main(int argc, char **argv) {
 
     /*FFDS::MODULES::GimbalCameraOperator gcOperator;
@@ -947,9 +969,8 @@ int main(int argc, char **argv) {
     cout << "indoor test or outdoor test?" << endl << "[a] indoor" << endl << "[b] outdoor" << endl;
     cin >> in_or_out;
 
-    char plotname;
-    cout<<"please enter plotname";
-    cin>>plotname;
+    cout<<"please enter record index";
+    cin>>record_index;
 
     /*
     cout << "please enter camera pitch angle in degree (no f at end please)" << endl;
@@ -2207,7 +2228,12 @@ int main(int argc, char **argv) {
             nodes_vec.push_back(n11);
             nodes_vec.push_back(n12);
 */
+            // Save the final plot in a specific path within the user's home directory
+            std::string homeDirectory = getHomeDirectory(); // Get home directory
+            SaveAllPath = homeDirectory + "M300_ws/records/"+record_index+"/";
 
+            // Create directory if it doesn't exist
+            createDirectory(SaveAllPath); // Create directory
 
             double current_GPS_posArray[3];
 
@@ -2242,6 +2268,9 @@ int main(int argc, char **argv) {
                 y.push_back(fire_gps_local_pos[i][1]);
             }
 
+            // Call the function to write vectors to a CSV file
+            // Provide the full path to the CSV file
+            writeVectorsToCSV(x, y, SaveAllPath+"fire_spots_x_and_y_"+record_index+".csv");
 
             // Print x and y before plotting
             std::cout << "X coordinates: ";
@@ -2366,11 +2395,11 @@ int main(int argc, char **argv) {
 
 
 
-            // Save the final plot in a specific path within the user's home directory
-            std::string homeDirectory = getHomeDirectory(); // Get home directory
-            std::string savePath = homeDirectory + "M300_ws/plots/"+plotname+".png"; // Adjust the relative path as needed
-            plt::save(savePath); // Save the plot
-            std::cout << "Plot saved to: " << savePath << std::endl;
+
+
+            std::string saveFigurePath = "/" + record_index + ".png"; // Adjust the relative path as needed
+            plt::save(saveFigurePath); // Save the plot
+            std::cout << "Plot saved to: " << saveFigurePath << std::endl;
 
             ros::spinOnce();
 
@@ -2914,6 +2943,9 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
     // Line best_line = processArrayAndFitLine(fire_gps_local_pos, size);
     best_line = processArrayAndFitLine(fire_coordinates, size, threshold);
 
+
+    writeLineToCSV(best_line, SaveAllPath+record_index+"_line_data.csv");
+
     // Print the parameters of the best-fitting line
     std::cout << "Best-fitting line: y = " << best_line.slope << "x + " << best_line.intercept << std::endl;
     std::cout << "Number of inliers: " << best_line.num_inliers << std::endl;
@@ -2943,8 +2975,11 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
     std::cout << "starting point (x,y): (" << starting_point.x << ", " << starting_point.y << ")"
               << std::endl;
 
+    // Call the function to write the point to a CSV file
+    writePointToCSV(starting_point, SaveAllPath+record_index+"_starting_point.csv");
+
     plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
-    
+
     // Show plot
     plt::show();
 }
@@ -3059,5 +3094,80 @@ void FuzzyVelocityTraversal(const JoystickCommand &offsetDesired, uint32_t timeM
         currentTime = ros::Time::now().toSec();
         elapsedTimeInMs = (currentTime - originTime) * 1000;
         joystick_action_client.call(joystickAction);
+    }
+}
+
+void writeVectorsToCSV(const std::vector<float>& x, const std::vector<float>& y, const std::string& path) {
+    // Open a file in write mode
+    std::ofstream outFile(path);
+
+    // Check if the file is opened successfully
+    if (outFile.is_open()) {
+        // Write the header
+        outFile << "x,y\n";
+
+        // Write the contents of the vectors to the file
+        for (size_t i = 0; i < x.size(); ++i) {
+            outFile << x[i] << "," << y[i] << "\n";
+        }
+
+        // Close the file
+        outFile.close();
+        std::cout << "Data successfully written to " << path << std::endl;
+    } else {
+        std::cerr << "Failed to open the file: " << path << std::endl;
+    }
+}
+
+
+void writeLineToCSV(const Line& line, const std::string& path) {
+    // Open a file in write mode
+    std::ofstream outFile(path);
+
+    // Check if the file is opened successfully
+    if (outFile.is_open()) {
+        // Write the header
+        outFile << "slope,intercept,num_inliers,inlier_x,inlier_y\n";
+
+        // Write the line data
+        outFile << line.slope << ","
+                << line.intercept << ","
+                << line.num_inliers << ","
+                << "\""; // Start of inlier points
+
+        // Write the inlier points
+        for (size_t i = 0; i < line.inlier_points.size(); ++i) {
+            outFile << line.inlier_points[i].x << "," << line.inlier_points[i].y;
+            if (i < line.inlier_points.size() - 1) {
+                outFile << ";"; // Separate points with a semicolon
+            }
+        }
+        outFile << "\"\n"; // End of inlier points
+
+        // Close the file
+        outFile.close();
+        std::cout << "Data successfully written to " << path << std::endl;
+    } else {
+        std::cerr << "Failed to open the file: " << path << std::endl;
+    }
+}
+
+void writePointToCSV(const Point& point, const std::string& path) {
+    // Open a file in write mode
+    std::ofstream outFile(path);
+
+    // Check if the file is opened successfully
+    if (outFile.is_open()) {
+        // Write the header
+        outFile << "x,y\n";
+
+        // Write the point data
+        outFile << point.x << "," << point.y << "\n";
+
+        // Close the file
+        outFile.close();
+        std::cout << "Data successfully written to " << path << std::endl;
+    } else {
+        std::cerr << "Failed to open the file: " << path << std::endl;
     }
 }
