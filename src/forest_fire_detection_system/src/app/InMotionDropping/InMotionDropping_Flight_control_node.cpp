@@ -2539,7 +2539,7 @@ int main(int argc, char **argv) {
                 // In Motion Dropping mission
 
 
-                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 9000,
+                velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, time_of_approach,
                                           abs_vel, run_up_distance, height, release_delay);   // make sure the approach time is long enough especiallly when the approach speed is low
                 // emergency_brake_client.call(emergency_brake);
                 // ros::Duration(4).sleep();
