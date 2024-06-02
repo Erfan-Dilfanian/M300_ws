@@ -964,7 +964,7 @@ int main(int argc, char **argv) {
     double yaw_rate_adjustment = GeneralConfig["general_params"]["yaw_rate_adjustmnet_for_circular_path"].as<double>();
     float abs_vel = GeneralConfig["general_params"]["approach_absolute_velocity"].as<double>(); // absolute velocity to approach line of fire
     double time_of_approach = GeneralConfig["general_params"]["time_of_approach"].as<double>(); // time of in motion dropping in miliseconds
-
+    bool inputExtraYawAdjustment = GeneralConfig["general_params"]["extra_yaw_adjustment"].as<bool>(); 
 
 
 
@@ -2378,7 +2378,7 @@ int main(int argc, char **argv) {
 
             moveByPosOffset(control_task,
                             {starting_point.x - recent_drone_coord.x, starting_point.y - recent_drone_coord.y, 0, 0},
-                            1, 3);  // note that x y z goes into this function
+                            1, 0.01);  // note that x y z goes into this function
             cout << "moved to the starting point" << endl;
             yaw_adjustment = Rad2Deg(atan(best_line.slope));
             cout << "yaw_adjustment is" << yaw_adjustment << endl;
@@ -2388,10 +2388,12 @@ int main(int argc, char **argv) {
 
             cout << "rotated and ready for approaching fire!" << endl;
 
-
+            // preset auto lateral adjustment form yaml file
             moveByPosOffset(control_task,
                             {-lateral_adjustment * sind(yaw_adjustment), lateral_adjustment * cosd(yaw_adjustment), 0,
                              yaw_adjustment}, 1, 3);
+
+            // user lateral adjustment
             // Negative lateral adjustment in yaml file is toward left
 
             if(inputLateralAdjustment == true){
@@ -2425,6 +2427,37 @@ int main(int argc, char **argv) {
                 }
             }
 
+
+            if(inputExtraYawAdjustment == true){
+                double extra_yaw_adjustment;
+                while (true) {
+                    cout << "Please enter extra yaw adjustment value (neagtive is CCW): ";
+                    cin >> extra_yaw_adjustment;
+
+                    moveByPosOffset(control_task, {0, 0, 0, extra_yaw_adjustment}, 1,0.01);  // note that x y z goes into this funciton
+
+                    char continue_adjustment;
+                    bool valid_input = false;
+                    while (!valid_input) {
+                        cout << "Do you want to continue extra yaw adjusting? (y/n): ";
+                        cin >> continue_adjustment;
+                        if (continue_adjustment == 'y' || continue_adjustment == 'Y') {
+                            valid_input = true;
+                        } else if (continue_adjustment == 'n' || continue_adjustment == 'N') {
+                            valid_input = true;
+                            break;
+                        } else {
+                            cout << "Invalid input. Please enter 'y' or 'n'." << endl;
+                        }
+                    }
+
+                    if (continue_adjustment == 'n' || continue_adjustment == 'N') {
+                        break;
+                    }
+                }
+            }
+
+            // fuzzy control
             if (apply_fuzzy_control == true) {
 
                 // Create the first thread for manual stoppping of the fuzzy controller
@@ -2496,8 +2529,6 @@ int main(int argc, char **argv) {
                 }
 
                 // In Motion Dropping mission
-
-
 
 
                 velocityAndYawRateControl({abs_vel * cosd(yaw_adjustment), abs_vel * sind(yaw_adjustment), 0}, 9000,

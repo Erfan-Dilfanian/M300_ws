@@ -13,5 +13,6 @@ general_params:
   fake_fire_spot_counter_mode: true
   yaw_rate_adjustmnet_for_circular_path: 0.01
   approach_absolute_velocity: 1
-  time_of_approach: 7000
+  time_of_approach: 12000
+  extra_yaw_adjustment: true
 
