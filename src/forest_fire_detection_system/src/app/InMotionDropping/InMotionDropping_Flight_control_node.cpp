@@ -2078,19 +2078,17 @@ int main(int argc, char **argv) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
                     gimbalAction.request.rotationMode = 1; // this mode is absolute mode
                     gimbalAction.request.roll = 0;
-                    gimbalAction.request.pitch = -80.0f;
+                    gimbalAction.request.pitch = -70.0f;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     float sweep_pitch = 50.0f;
                     gimbalAction.request.roll = 0;
-                    gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = -20.0f;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     gimbalAction.request.roll = 0;
-                    gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = camera_pitch;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
@@ -2483,7 +2481,7 @@ int main(int argc, char **argv) {
                 }
             }
 
-
+            /*
             if(inputExtraYawAdjustment == true){
                 double extra_yaw_adjustment;
                 while (true) {
@@ -2512,7 +2510,7 @@ int main(int argc, char **argv) {
                     }
                 }
             }
-
+*/
             // fuzzy control
             if (apply_fuzzy_control == true) {
 
