@@ -86,6 +86,8 @@ namespace plt = matplotlibcpp;
 
 #include <filesystem> // for directory creation (C++17 and later)
 
+#include <sys/stat.h> // For mkdir function
+
 //CODE
 
 using namespace dji_osdk_ros;
