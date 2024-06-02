@@ -747,6 +747,7 @@ cout<<"the FireSPotCounter thread finished working";
        while (nodes_vec.size() <= number_of_fire_spots_criterion) {
 
            cout << "number of found fire spots is:" << nodes_vec.size() << endl;
+           ros::spinOnce(); // without this line you won't see the number of firespots regularly
        }
    }
 
