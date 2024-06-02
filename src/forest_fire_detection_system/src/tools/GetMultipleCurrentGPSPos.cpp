@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
     }
 
     // Construct the directory path
-    std::string directory = std::string(homeDir) + "/M300_ws/src/dji_osdk_ros_cv4/config";
+    std::string directory = std::string(homeDir) + "/M300_ws/src/dji_osdk_ros_cv4/config/";
     std::string filepath = directory + "nodes.yaml";
     std::cout<<"filepath: "<<filepath<<std::endl;
 
