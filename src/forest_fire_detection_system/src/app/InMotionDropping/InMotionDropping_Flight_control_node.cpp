@@ -964,7 +964,7 @@ int main(int argc, char **argv) {
     double yaw_rate_adjustment = GeneralConfig["general_params"]["yaw_rate_adjustmnet_for_circular_path"].as<double>();
     float abs_vel = GeneralConfig["general_params"]["approach_absolute_velocity"].as<double>(); // absolute velocity to approach line of fire
     double time_of_approach = GeneralConfig["general_params"]["time_of_approach"].as<double>(); // time of in motion dropping in miliseconds
-    bool inputExtraYawAdjustment = GeneralConfig["general_params"]["extra_yaw_adjustment"].as<bool>(); 
+    bool inputExtraYawAdjustment = GeneralConfig["general_params"]["extra_yaw_adjustment"].as<bool>();
 
 
 
@@ -2233,10 +2233,18 @@ int main(int argc, char **argv) {
             // Plot the points with x and y switched
             plt::plot(y, x, "bo"); // Switched x and y
 
+
             // Set labels and title with switched axes
             plt::xlabel("Y"); // Y-axis now represents X-coordinate
             plt::ylabel("X"); // X-axis now represents Y-coordinate
             plt::title("Scatter Plot of Points");
+
+            // Mark the home position (0, 0) with a red point and label it 'H'
+            plt::plot(std::vector<float>{0.0}, std::vector<float>{0.0}, "ro");
+            plt::annotate("H", 0.0, 0.0);
+
+            // Add grid to the plot
+            plt::grid(true);
 
             // Show plot
             //     plt::show();
@@ -2545,7 +2553,7 @@ int main(int argc, char **argv) {
                 moveByPosOffset(control_task, {fire_gps_local_pos[0][0] - recent_drone_coord.x,
                                                fire_gps_local_pos[0][1] - recent_drone_coord.y, 0, 0}, 1, 3);
                 gimbalAction.request.rotationMode = 0;
-                gimbalAction.request.pitch = -90.0f;
+                gimbalAction.request.pitch = -camera_pitch-90.0f;
                 gimbalAction.request.roll = 0.0f;
                 // gimbalAction.request.yaw = -yaw_const+90;
                 gimbalAction.request.time = 0.5;
