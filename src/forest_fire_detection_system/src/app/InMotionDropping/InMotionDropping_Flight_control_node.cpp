@@ -2076,24 +2076,22 @@ int main(int argc, char **argv) {
                 if (theta == 45 || theta == 90 || theta == 135 || theta == 180 || theta == 225 || theta == 270 ||
                     theta == 315 || theta == 360) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
-                    float downward_sweep_change = -20.0f;  // it seems like its relateive to the previous pitch not absolute value
-                    gimbalAction.request.rotationMode = 1;
+                    gimbalAction.request.rotationMode = 1; // this mode is absolute mode
                     gimbalAction.request.roll = 0;
-                    gimbalAction.request.yaw = 0;
-                    gimbalAction.request.pitch = downward_sweep_change;
+                    gimbalAction.request.pitch = -80.0f;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     float sweep_pitch = 50.0f;
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.yaw = 0;
-                    gimbalAction.request.pitch = sweep_pitch;
+                    gimbalAction.request.pitch = -20.0f;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.yaw = 0;
-                    gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
+                    gimbalAction.request.pitch = camera_pitch;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(700));
@@ -2401,9 +2399,9 @@ int main(int argc, char **argv) {
 
 
 
+            cout<<"saving the figure";
 
-
-            std::string saveFigurePath = "/" + record_index + ".png"; // Adjust the relative path as needed
+            std::string saveFigurePath = SaveAllPath + record_index + ".png"; // Adjust the relative path as needed
             plt::save(saveFigurePath); // Save the plot
             std::cout << "Plot saved to: " << saveFigurePath << std::endl;
 
