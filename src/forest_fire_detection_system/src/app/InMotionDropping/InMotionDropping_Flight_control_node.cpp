@@ -2078,17 +2078,19 @@ int main(int argc, char **argv) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
                     gimbalAction.request.rotationMode = 1; // this mode is absolute mode
                     gimbalAction.request.roll = 0;
+                    gimbalAction.request.yaw = gimbal_yaw_adjustment;
                     gimbalAction.request.pitch = -70.0f;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
-                    float sweep_pitch = 50.0f;
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.pitch = -20.0f;
+                    gimbalAction.request.yaw = gimbal_yaw_adjustment;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(800));
                     gimbalAction.request.roll = 0;
+                    gimbalAction.request.yaw = gimbal_yaw_adjustment;
                     gimbalAction.request.pitch = camera_pitch;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
@@ -2397,11 +2399,7 @@ int main(int argc, char **argv) {
 
 
 
-            cout<<"saving the figure";
 
-            std::string saveFigurePath = SaveAllPath + record_index + ".png"; // Adjust the relative path as needed
-            plt::save(saveFigurePath); // Save the plot
-            std::cout << "Plot saved to: " << saveFigurePath << std::endl;
 
             ros::spinOnce();
 
@@ -2981,6 +2979,14 @@ void doRANSAC(std::vector <node> nodes_vector, double fire_coordinates[][3], Lin
     writePointToCSV(starting_point, SaveAllPath+record_index+"_starting_point.csv");
 
     plt::plot({starting_point.y}, {starting_point.x}, "go"); // DONT FORGET THE BRACKET
+
+
+    //saving plot
+    cout<<"saving the figure";
+
+    std::string saveFigurePath = SaveAllPath + record_index + ".png"; // Adjust the relative path as needed
+    plt::save(saveFigurePath); // Save the plot
+    std::cout << "Plot saved to: " << saveFigurePath << std::endl;
 
     // Show plot
     plt::show();
