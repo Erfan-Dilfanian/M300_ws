@@ -2079,17 +2079,20 @@ int main(int argc, char **argv) {
                     float downward_sweep_change = -20.0f;  // it seems like its relateive to the previous pitch not absolute value
                     gimbalAction.request.rotationMode = 0;
                     gimbalAction.request.roll = 0;
+                    gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = downward_sweep_change;
                     gimbalAction.request.time = 1; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(300));
                     float sweep_pitch = 50.0f;
                     gimbalAction.request.roll = 0;
+                    gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = sweep_pitch;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
                     std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     gimbalAction.request.roll = 0;
+                    gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
