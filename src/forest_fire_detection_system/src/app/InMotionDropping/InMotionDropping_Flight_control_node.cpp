@@ -2124,6 +2124,11 @@ int main(int argc, char **argv) {
 
             // Clear the vector if needed
             nodes_vec.clear();
+
+
+            moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
+            GeoPositioningFlag = 0;
+
             int detect_index;//detection_starter_indicator
             if (in_or_out == 'b') {
                 bool SLAM_flag = 0;
@@ -2135,8 +2140,6 @@ int main(int argc, char **argv) {
                 }
             }
 
-            moveByPosOffset(control_task, {0, 0, 0, yaw_const}, 1, 3);
-            GeoPositioningFlag = 0;
             std::thread FireSpotCounter_thread(FireSpotCounter);
             ZigZagPlanner(control_task, zigzag_params);
             FireSpotCounter_thread.join();
