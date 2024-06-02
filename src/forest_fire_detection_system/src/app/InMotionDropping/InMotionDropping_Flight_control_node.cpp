@@ -2131,7 +2131,7 @@ int main(int argc, char **argv) {
                     cout << "please rosrun detection and SLAM nodes. Then press 1" << endl;
                     cin >> detect_index;
                     if (detect_index == 1) { SLAM_flag = 1; }
-                    else { cout << "Please press 1 if SLAM is initiated"; }
+                    else { cout << "Please press 1 if SLAM is initiated"<<endl; }
                 }
             }
 
