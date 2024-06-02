@@ -2230,7 +2230,7 @@ int main(int argc, char **argv) {
 */
             // Save the final plot in a specific path within the user's home directory
             std::string homeDirectory = getHomeDirectory(); // Get home directory
-            SaveAllPath = homeDirectory + "M300_ws/records/"+record_index+"/";
+            SaveAllPath = homeDirectory + "/M300_ws/records/"+record_index+"/";
 
             // Create directory if it doesn't exist
             createDirectory(SaveAllPath); // Create directory
