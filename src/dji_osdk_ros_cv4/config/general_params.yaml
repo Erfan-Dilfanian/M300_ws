@@ -4,7 +4,7 @@ general_params:
   height: 7
   lateral_adjustment: 0  # minus is toward left
   # gimbal_yaw_adjustment: -80
-  gimbal_yaw_adjustment: -10
+  gimbal_yaw_adjustment: -3
   threshold: 1.8
   run_up_distance: 10.5
   apply_fuzzy_control: true
