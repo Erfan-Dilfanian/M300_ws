@@ -860,11 +860,12 @@ std::string getHomeDirectory() {
 
 // Added function to create a directory
 void createDirectory(const std::string& path) {
-#if __cplusplus >= 201703L // C++17 or later
-    std::filesystem::create_directories(path);
-#else
-    mkdir(path.c_str(), 0777);
-#endif
+    int status = mkdir(path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    if (status == 0) {
+        std::cout << "Directory created: " << path << std::endl;
+    } else {
+        std::cerr << "Failed to create directory: " << path << std::endl;
+    }
 }
 
 
