@@ -2077,7 +2077,7 @@ int main(int argc, char **argv) {
                     theta == 315 || theta == 360) {
                     cout<<endl<<"stop to sweep pitch angle for H20T camera";
                     float downward_sweep_change = -20.0f;  // it seems like its relateive to the previous pitch not absolute value
-                    gimbalAction.request.rotationMode = 0;
+                    gimbalAction.request.rotationMode = 1;
                     gimbalAction.request.roll = 0;
                     gimbalAction.request.yaw = 0;
                     gimbalAction.request.pitch = downward_sweep_change;
@@ -2096,7 +2096,7 @@ int main(int argc, char **argv) {
                     gimbalAction.request.pitch = -sweep_pitch-downward_sweep_change;
                     gimbalAction.request.time = 2.5; // Dont knwo th efunction exactly. make pitch movement smoother?
                     gimbal_control_client.call(gimbalAction);
-                    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+                    std::this_thread::sleep_for(std::chrono::milliseconds(700));
 
 
                     /*
