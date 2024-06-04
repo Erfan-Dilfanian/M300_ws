@@ -83,6 +83,8 @@ First, you need to source your `setup.bash`:
 ```bash
 cd M300_ws
 source devel/setup.bash
+roslaunch dji_osdk_ros dji_vehicle_node.launch 
+
 ```
 
 
